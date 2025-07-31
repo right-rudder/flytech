@@ -22,14 +22,14 @@ const { data } = discoveryFlight;
     <div class="w-full">
       {
         data.form.upperHeading && (
-          <h3 class="mx-auto mt-12 uppercase text-lg lg:text-xl lg:max-w-3xl font-sans text-center font-bold tracking-tight text-sky-600">
+          <h3 class="mx-auto mt-12 uppercase text-lg lg:text-xl lg:max-w-3xl font-sans text-center font-bold tracking-tight text-primary-600">
             {data.form.upperHeading}
           </h3>
         )
       }
       {
         data.form.heading && (
-          <h2 class="mx-auto mb-3 text-4xl lg:text-6xl lg:max-w-3xl font-title text-center font-bold tracking-tight text-sky-950">
+          <h2 class="mx-auto mb-3 text-4xl lg:text-6xl lg:max-w-3xl font-title text-center font-bold tracking-tight text-primary-950">
             {data.form.heading}
           </h2>
         )
@@ -43,7 +43,9 @@ const { data } = discoveryFlight;
       }
     </div>
     <div class="w-full flex flex-wrap justify-center">
-      <div class="w-full lg:w-1/2 px-12 bg-gradient-to-b from-sky-100 to-white">
+      <div
+        class="w-full lg:w-1/2 px-12 bg-gradient-to-b from-primary-100 to-white"
+      >
         {
           data.form.info.map((inf) => (
             <div class="mt-8">

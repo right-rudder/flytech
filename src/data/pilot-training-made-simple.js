@@ -14,7 +14,7 @@ const pilotTrainingMadeSimple = {
       imagePath: "/src/assets/placeholder-img.webp",
       imageAlt:
         "FlyTech Flight School airplane landing at Falcon Field Airport in Saint Joseph, Missouri",
-      headerH1: `PILOT TRAINING</br><span class="text-sky-300">MADE SIMPLE</span>`,
+      headerH1: `PILOT TRAINING</br><span class="text-primary-300">MADE SIMPLE</span>`,
       paragraph:
         "How would you like to learn to fly? At FlyTech, we make it easy to get started. Our flight school offers a variety of pilot training programs to help you achieve your aviation goals.",
       buttons: [

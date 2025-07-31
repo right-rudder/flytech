@@ -81,7 +81,7 @@ const Navbar = ({ pathname }) => {
       <div
         className={`${
           navBar || openMobile
-            ? "bg-sky-500/95 shadow-md"
+            ? "bg-primary-500/95 shadow-md"
             : "bg-gradient-to-b from-white/30 to-transparent"
         } duration-500`}
       >
@@ -120,25 +120,25 @@ const Navbar = ({ pathname }) => {
                         <a
                           href={item.link}
                           target={`${item.link.includes("http") ? "_blank" : "_self"}`}
-                          className="font-bold lg:text-xl duration-300 hover:underline drop-shadow-sm decoration-yellow-400 decoration-4 underline-offset-[10px] py-12 whitespace-nowrap group-last:font-bold group-last:bg-sky-700 group-last:ring-2 group-last:ring-white/50 group-last:py-2 group-last:px-5 group-last:hover:bg-sky-300 group-last:hover:no-underline"
+                          className="font-bold lg:text-xl duration-300 hover:underline drop-shadow-sm decoration-yellow-400 decoration-4 underline-offset-[10px] py-12 whitespace-nowrap group-last:font-bold group-last:bg-primary-700 group-last:ring-2 group-last:ring-white/50 group-last:py-2 group-last:px-5 group-last:hover:bg-primary-300 group-last:hover:no-underline"
                         >
                           <span className="relative group-last:text-white w-full h-full group-last:hover:text-black">
                             {item.name}
                           </span>
                         </a>
                       ) : (
-                        <span className="cursor-default text-lg duration-300 hover:underline decoration-sky-500 decoration-4 underline-offset-[10px] py-12 whitespace-nowrap">
+                        <span className="cursor-default text-lg duration-300 hover:underline decoration-primary-500 decoration-4 underline-offset-[10px] py-12 whitespace-nowrap">
                           {item.name}
                         </span>
                       )}
                       {item.submenu && item.submenu.length > 0 && (
                         <ul
-                          className={`absolute top-10 -left-8 bg-sky-600/95 min-w-56 text-center border-b-4 border-white/20 whitespace-nowrap text-white duration-200 ease-out ${hoveredIndex === index ? "max-h-auto w-auto opacity-100" : "max-h-0 h-0 opacity-0 overflow-hidden"}`}
+                          className={`absolute top-10 -left-8 bg-primary-600/95 min-w-56 text-center border-b-4 border-white/20 whitespace-nowrap text-white duration-200 ease-out ${hoveredIndex === index ? "max-h-auto w-auto opacity-100" : "max-h-0 h-0 opacity-0 overflow-hidden"}`}
                         >
                           {item.submenu.map((subitem, subIndex) => (
                             <li
                               key={subIndex}
-                              className={`${isActive(subitem, pathname) ? "bg-sky-700 text-sky-100" : ""} relative font-normal hover:bg-sky-700 hover:scale-105 px-1 hover:shadow-sm drop-shadow-sm`}
+                              className={`${isActive(subitem, pathname) ? "bg-primary-700 text-primary-100" : ""} relative font-normal hover:bg-primary-700 hover:scale-105 px-1 hover:shadow-sm drop-shadow-sm`}
                               onMouseEnter={() => setSubHoveredIndex(subIndex)}
                               onMouseLeave={() => setSubHoveredIndex(null)}
                             >
@@ -159,7 +159,7 @@ const Navbar = ({ pathname }) => {
                               {subitem.subsubmenu &&
                                 subitem.subsubmenu.length > 0 && (
                                   <ul
-                                    className={`absolute z-20 top-0 bg-sky-400 whitespace-nowrap left-full duration-500 ${subHoveredIndex === subIndex ? "max-h-auto w-auto opacity-100" : "max-h-0 w-0 opacity-0 overflow-hidden"}`}
+                                    className={`absolute z-20 top-0 bg-primary-400 whitespace-nowrap left-full duration-500 ${subHoveredIndex === subIndex ? "max-h-auto w-auto opacity-100" : "max-h-0 w-0 opacity-0 overflow-hidden"}`}
                                   >
                                     {subitem.subsubmenu.map(
                                       (subsubitem, subsubIndex) => (
@@ -242,12 +242,12 @@ const Navbar = ({ pathname }) => {
       <div
         className={`${
           openMobile ? "max-h-screen" : "max-h-0"
-        } overflow-x-hidden duration-700 ease-in-out h-screen lg:hidden absolute w-full bg-gradient-to-b from-sky-800 to-sky-950 z-20 top-0`}
+        } overflow-x-hidden duration-700 ease-in-out h-screen lg:hidden absolute w-full bg-gradient-to-b from-primary-800 to-primary-950 z-20 top-0`}
         id="mobile-menu"
       >
         <div className="flex justify-end pl-5 pr-[26px] py-6">
           <svg
-            className={`${openMobile ? "opacity-100" : "opacity-0"} h-6 w-6 text-sky-100 cursor-pointer z-30 text-sky-900-50 duration-300`}
+            className={`${openMobile ? "opacity-100" : "opacity-0"} h-6 w-6 text-primary-100 cursor-pointer z-30 text-primary-900-50 duration-300`}
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth="2.5"
@@ -278,7 +278,7 @@ const Navbar = ({ pathname }) => {
         </a>
 
         <div
-          className={`absolute w-full h-48 bg-sky-700 top-0 z-20 duration-500 ease-in-out  ${
+          className={`absolute w-full h-48 bg-primary-700 top-0 z-20 duration-500 ease-in-out  ${
             openMobile
               ? "translate-x-0 opacity-90"
               : "-translate-x-full opacity-0"
@@ -289,14 +289,14 @@ const Navbar = ({ pathname }) => {
           {mobileNavbarLinks.map((item, index) => (
             <li
               key={index}
-              className="relative group border-b border-sky-50/20 last:border-none w-full text-center"
+              className="relative group border-b border-primary-50/20 last:border-none w-full text-center"
               onClick={() => handleItemClick(index)}
             >
               {item.link ? (
                 <a
                   href={item.link}
                   target={`${item.link.includes("http") ? "_blank" : "_self"}`}
-                  className="font-medium p-5 block text-xl duration-300 text-white whitespace-nowrap group-last:bg-sky-700 group-last:font-medium group-last:mt-12 group-last:py-4 group-last:px-8 group-last:rounded-none group-last:text-center group-last:mx-5"
+                  className="font-medium p-5 block text-xl duration-300 text-white whitespace-nowrap group-last:bg-primary-700 group-last:font-medium group-last:mt-12 group-last:py-4 group-last:px-8 group-last:rounded-none group-last:text-center group-last:mx-5"
                 >
                   {item.name}
                 </a>
@@ -304,23 +304,23 @@ const Navbar = ({ pathname }) => {
                 <div className="font-medium relative p-5 w-full justify-center flex cursor-pointer text-xl duration-300  border-sky whitespace-nowrap">
                   <p>{item.name}</p>
                   <div
-                    className={`absolute right-3 p-2 pointer-events-none duration-500 ease-in-out rounded-full ${hoveredIndex === index ? "bg-sky-100/30 -rotate-90" : "bg-sky-100/20 rotate-90"} 
+                    className={`absolute right-3 p-2 pointer-events-none duration-500 ease-in-out rounded-full ${hoveredIndex === index ? "bg-primary-100/30 -rotate-90" : "bg-primary-100/20 rotate-90"} 
                     `}
                   >
                     <IoIosArrowForward
-                      className={`${hoveredIndex === index ? "text-sky-100" : "text-sky-200"} size-5`}
+                      className={`${hoveredIndex === index ? "text-primary-100" : "text-primary-200"} size-5`}
                     />
                   </div>
                 </div>
               )}
               {item.submenu && item.submenu.length > 0 && (
                 <ul
-                  className={`mx-auto bg-sky-50/10 whitespace-nowrap left-0 duration-500 overflow-hidden ${hoveredIndex === index ? "max-h-[50rem]" : "max-h-0"}`}
+                  className={`mx-auto bg-primary-50/10 whitespace-nowrap left-0 duration-500 overflow-hidden ${hoveredIndex === index ? "max-h-[50rem]" : "max-h-0"}`}
                 >
                   {item.submenu.map((subitem, subIndex) => (
                     <li
                       key={subIndex}
-                      className="relative border-b border-sky-100/20 w-full"
+                      className="relative border-b border-primary-100/20 w-full"
                       onClick={(event) => handleSubItemClick(event, subIndex)}
                     >
                       {subitem.link ? (
@@ -339,7 +339,7 @@ const Navbar = ({ pathname }) => {
                     `}
                           >
                             <IoIosArrowForward
-                              className={`${subHoveredIndex === subIndex ? "text-sky-500" : "text-sky-100"} size-5`}
+                              className={`${subHoveredIndex === subIndex ? "text-primary-500" : "text-primary-100"} size-5`}
                             />
                           </div>
                         </div>
@@ -374,7 +374,7 @@ const Navbar = ({ pathname }) => {
           <div className="flex gap-3 items-center">
             <a
               href={`tel:${PHONE_NUMBER}`}
-              className="p-2 w-fit rounded-full bg-sky-600"
+              className="p-2 w-fit rounded-full bg-primary-600"
               aria-label="Call"
             >
               <FaPhone className="size-4 text-white" />
