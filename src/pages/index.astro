@@ -24,7 +24,8 @@ const faqSchemaItems = GeneralFAQs.map((faq) => ({
   answer: faq.content.replace(/<[^>]*>?/gm, ""),
 }));
 
-const currentVideo = getCurrentVideo(videoList, "content");
+// const currentVideo = getCurrentVideo(videoList, "content");
+const currentVideo = videoList[0]; // Use the first video for now
 
 const dataForVideo = {
   header: "Where Excellence Takes Flight",
