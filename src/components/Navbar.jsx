@@ -94,7 +94,7 @@ const Navbar = ({ pathname }) => {
               <a
                 href="/"
                 title="FlyTech flight school"
-                className="hover:brightness-110 flex h-[80%] lg:h-16 justify-end align-middle items-center duration-200 ease-in-out py-1 px-2"
+                className="hover:brightness-110 flex h-14 lg:h-16 justify-end align-middle items-center duration-200 ease-in-out py-1 px-2"
               >
                 <img
                   src="/flytech-logo-wg_1000px-980x262.webp"
@@ -202,7 +202,7 @@ const Navbar = ({ pathname }) => {
                 <span className="sr-only">Open main menu</span>
 
                 <svg
-                  className={`${openMobile ? "hidden" : "block"} h-6 w-6 text-slate-950`}
+                  className={`${openMobile ? "hidden" : "block"} h-6 w-6 text-white`}
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="2.0"
@@ -218,7 +218,7 @@ const Navbar = ({ pathname }) => {
                 </svg>
 
                 <svg
-                  className={`${openMobile ? "block" : "hidden"} h-6 w-6 text-slate-950`}
+                  className={`${openMobile ? "block" : "hidden"} h-6 w-6 text-white`}
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="2.0"
@@ -242,7 +242,7 @@ const Navbar = ({ pathname }) => {
       <div
         className={`${
           openMobile ? "max-h-screen" : "max-h-0"
-        } overflow-x-hidden duration-700 ease-in-out h-screen lg:hidden absolute w-full bg-gradient-to-b from-primary-800 to-primary-950 z-20 top-0`}
+        } overflow-x-hidden duration-700 ease-in-out h-screen lg:hidden absolute w-full bg-gradient-to-b from-neutral-900 to-neutral-800 z-20 top-0`}
         id="mobile-menu"
       >
         <div className="flex justify-end pl-5 pr-[26px] py-6">
@@ -266,19 +266,19 @@ const Navbar = ({ pathname }) => {
 
         <a
           href="/"
-          className="z-30 relative flex justify-center items-center align-middle"
+          className="z-30 relative flex justify-center items-center align-middle w-max-md"
         >
           <img
             src="/flytech-logo-wg_1000px-980x262.webp"
             alt="FlyTech Flight School  Logo"
             aria-label="FlyTech Flight School  Logo"
             title="FlyTech Flight School "
-            className="object-contain h-24 w-auto drop-shadow-sm max-w-md"
+            className="object-contain h-24 w-full drop-shadow-sm max-w-md px-10"
           />
         </a>
 
         <div
-          className={`absolute w-full h-48 bg-primary-700 top-0 z-20 duration-500 ease-in-out  ${
+          className={`absolute w-full max-w-3xl h-48 bg-neutral-900 top-0 z-20 duration-500 ease-in-out  ${
             openMobile
               ? "translate-x-0 opacity-90"
               : "-translate-x-full opacity-0"
