@@ -5,6 +5,7 @@ import ProgramSwiper from "../components/ProgramSwiper.astro";
 import CTAColor from "../components/CTAColor.astro";
 import Testimonials from "../components/Testimonials.astro";
 import programsSwiper from "../data/programSwiper";
+import FlightTrainingAdvantages from "../components/FlightTrainingAdvantages.astro";
 import BlogFeed from "../components/BlogFeed.astro";
 import homePage from "../data/homePage";
 import flyWithUsCTA from "../data/fly-with-us-cta";
@@ -14,8 +15,10 @@ import FAQSchema from "../components/FAQSchema.astro";
 import { GeneralFAQs } from "../data/general-faqs";
 const { data } = homePage;
 import CTAVideo from "../components/CTAVideo.astro";
+// import CTAFlight from "../data/CTAFlight";
 import videoList from "../data/videos.js";
 import { getCurrentVideo } from "../scripts/videoSpinner.js";
+import CTAContact from "../components/CTAContact.astro";
 
 // Transform FAQ format for schema
 const faqSchemaItems = GeneralFAQs.map((faq) => ({
@@ -42,11 +45,13 @@ const dataForVideo = {
   <HeaderScreen content={data.header} />
   <CTAVideo video={currentVideo} data={dataForVideo} />
   <AirlinesCloud data={data.airlinesCloud} />
+  <FlightTrainingAdvantages content={data.advantagesInfo} />
+  <CTAColor content={flyWithUsCTA} />
   <ProgramSwiper content={programsSwiper} />
   <Testimonials content={data.testimonials} />
   <!-- <BlogFeed data={data.blogfeed} /> -->
-  <CTAColor content={flyWithUsCTA} />
   <FAQs faqs={GeneralFAQs} type="General" client:visible />
   <FAQSchema items={faqSchemaItems} />
+  <CTAColor content={data.flyWithUsCTA} />
   <script src="../scripts/creativeSwiper.js"></script>
 </BaseLayout>

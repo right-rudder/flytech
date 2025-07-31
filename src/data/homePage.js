@@ -68,6 +68,33 @@ const homePage = {
       ],
     },
 
+    advantagesInfo: {
+      title: "Why Pilots Choose FlyTech",
+      upperheading: "The FlyTech Advantage",
+      description:
+        "At FlyTech Pilot Academy, we’re redefining flight training through innovation, accessibility, and a strong community of aviators. With modern aircraft, immersive technology, and a flexible program designed around your lifestyle, we’re committed to making your path to the skies faster, more efficient, and more enjoyable.",
+      advantages: [
+        {
+          title: "Modern Training Aircraft",
+          description:
+            "Train in the Sling NGT, one of the fastest-growing training aircraft in the U.S., known for its low fuel burn and tech-rich cockpit environment.",
+        },
+        {
+          title: "Integrated iPad Flight Bag",
+          description:
+            "From day one, you'll use an iPad as your primary flight bag—streamlining planning, navigation, checklists, and post-flight debriefing with ForeFlight.",
+        },
+        {
+          title: "Advanced Garmin & Video Feedback",
+          description:
+            "Garmin avionics and cockpit cameras record every maneuver and communication. Post-flight video reviews help accelerate your skills and confidence.",
+        },
+      ],
+      imagePath:
+        "/src/assets/discovery-flight-pilot-and-student-inside-N900FT-flying-4.webp", // Update with actual image path
+      imageAlt: "Cessna 172 parked at Speedway Flight Training during sunset",
+    },
+
     whyElite: {
       upperHeading: "Why FlyTech Pilot Academy",
       heading: "Our Commitment",
@@ -134,7 +161,7 @@ const homePage = {
     flyWithUsCTA: {
       imagePath: "/src/assets/placeholder-img.webp",
       imageAlt: "FlyTech team on the runway preparing a discovery flight",
-      headerH1: `<span class="text-accent-600">Start Your Aviation Journey</br></span>With a Discovery Flight`,
+      headerH1: `<span class="text-primary-600">Start Your Aviation Journey</br></span>With a Discovery Flight`,
       paragraph:
         "Fly over St. Joseph landmarks like the Chiefs training camp and more during your discovery flight. Experience the thrill of flying and see if the skies are calling you.",
       buttons: [

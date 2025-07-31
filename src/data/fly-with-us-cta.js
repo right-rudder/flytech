@@ -1,9 +1,9 @@
 const flyWithUsCTA = {
-  imagePath: "/src/assets/placeholder-img.webp",
-  imageAlt: "FlyTech Flight School student flying over Missouri",
-  headerH1: `<span class="text-primary-600">Fly with the team that makes</br></span>becoming a pilot simple`,
+  // imagePath: "/src/assets/flytech-flight-student-cockpit.webp", // Update with actual path
+  // imageAlt: "FlyTech student pilot in the cockpit of a Sling NGT during flight training",
+  headerH1: `<span class="text-primary-600 uppercase text-lg lg:text-2xl lg:max-w-3xl font-sans text-center font-bold tracking-tight">Fly with the team that’s</br></span>revolutionizing pilot training`,
   paragraph:
-    "We are a team of aviation experts in Saint Joseph, MO with decades of combined experience in the flight training industry. Our simple and effective training programs are designed to get you safely in the air as quickly as possible.",
+    "At FlyTech Pilot Academy, we combine modern aircraft, immersive technology, and a passionate team of instructors to give you an efficient, professional, and enjoyable path to the cockpit. Whether you're starting fresh or advancing your career, we make it simple.",
   buttons: [
     {
       name: "START FLYING TODAY",
@@ -12,4 +12,5 @@ const flyWithUsCTA = {
     },
   ],
 };
+
 export default flyWithUsCTA;
