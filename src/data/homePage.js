@@ -16,12 +16,12 @@ const homePage = {
       buttons: [
         {
           name: "Enroll Now",
-          link: "/enroll-at-FlyTech",
+          link: "#",
           primary: true,
         },
         {
           name: "Book a Discovery Flight",
-          link: "/discovery-flight",
+          link: "#",
           primary: true,
         },
       ],
@@ -159,7 +159,7 @@ const homePage = {
     },
 
     flyWithUsCTA: {
-      imagePath: "/src/assets/placeholder-img.webp",
+      imagePath: "/src/assets/PPL-980x653.webp",
       imageAlt: "FlyTech team on the runway preparing a discovery flight",
       headerH1: `<span class="text-primary-600">Start Your Aviation Journey</br></span>With a Discovery Flight`,
       paragraph:
@@ -167,7 +167,7 @@ const homePage = {
       buttons: [
         {
           name: "Schedule Today",
-          link: "/discovery-flight",
+          link: "/#",
           primary: true,
         },
       ],
@@ -181,7 +181,7 @@ const homePage = {
         "Here’s what some of our students have to say about their training experiences.",
       ],
       buttonText: "Leave Us a Review",
-      buttonLink: "https://g.co/kgs/TLWS5Yz",
+      buttonLink: "#",
       reviews: [
         {
           title: "Tailored Training with a Personal Touch",

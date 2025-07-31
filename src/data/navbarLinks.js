@@ -1,15 +1,15 @@
 export const navbarLinks = [
   {
     name: "New to Flying?",
-    link: "/pilot-training-made-simple",
+    link: "#",
     submenu: [
       {
         name: "Pilot Training Made Simple",
-        link: "/pilot-training-made-simple",
+        link: "#",
       },
       {
         name: "Discovery Flight",
-        link: "/discovery-flight",
+        link: "#",
       },
       // {
       //   name: "Enroll at FlyTech",
@@ -35,19 +35,19 @@ export const navbarLinks = [
   },
   {
     name: "Programs",
-    link: "/programs",
+    link: "#",
     submenu: [
       {
         name: "Private Pilot",
-        link: "/programs/private-pilot",
+        link: "#",
       },
       {
         name: "Instrument Rating",
-        link: "/programs/instrument-rating",
+        link: "#",
       },
       {
         name: "Commercial Pilot",
-        link: "/programs/commercial-pilot",
+        link: "#",
       },
       // {
       //   name: "Multi-Engine Rating",
@@ -55,59 +55,59 @@ export const navbarLinks = [
       // },
       {
         name: "Certified Flight Instructor",
-        link: "/programs/certified-flight-instructor",
+        link: "#",
       },
       {
         name: "CFI - Instruments",
-        link: "/programs/certified-flight-instructor/#addons",
+        link: "#",
       },
       {
         name: "Multi-Engine Instructor",
-        link: "/programs/certified-flight-instructor/#addons",
+        link: "#",
       },
       {
         name: "Ground School",
-        link: "/programs/ground-school",
+        link: "#",
       },
     ],
   },
 
   {
     name: "Financing",
-    link: "/financing",
+    link: "#",
     submenu: [
       {
         name: "Stratus Financial",
-        link: "/stratus-finance",
+        link: "#",
       },
     ],
   },
 
   {
     name: "About",
-    link: "/about",
+    link: "#",
     submenu: [
       {
         name: "Our Team",
-        link: "/about/team",
+        link: "#",
       },
       {
         name: "Visit Us",
-        link: "/about/visit",
+        link: "#",
       },
       {
         name: "Join Us",
-        link: "/about/join-us",
+        link: "#",
       },
       {
         name: "Blog",
-        link: "/blog",
+        link: "#",
       },
     ],
   },
   {
     name: "Enroll Now",
-    link: "/enroll-at-FlyTech",
+    link: "#",
     submenu: [],
   },
 ];
