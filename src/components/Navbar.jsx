@@ -81,7 +81,7 @@ const Navbar = ({ pathname }) => {
       <div
         className={`${
           navBar || openMobile
-            ? "bg-primary-500/95 shadow-md"
+            ? "bg-primary-600/95 shadow-md"
             : "bg-gradient-to-b from-white/80 to-transparent"
         } duration-500`}
       >
@@ -94,7 +94,7 @@ const Navbar = ({ pathname }) => {
               <a
                 href="/"
                 title="FlyTech flight school"
-                className="hover:brightness-110 flex h-[80%] lg:h-16 justify-end align-middle items-center duration-200 ease-in-out"
+                className="hover:brightness-110 flex h-[80%] lg:h-16 justify-end align-middle items-center duration-200 ease-in-out py-1 px-2"
               >
                 <img
                   src="/flytech-logo-wg_1000px-980x262.webp"

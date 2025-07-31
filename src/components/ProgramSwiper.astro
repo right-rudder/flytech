@@ -4,27 +4,25 @@ import ProgramCard from "./ProgramCard.astro";
 const { content } = Astro.props;
 ---
 
-<section
-  class="bg-gradient-to-br from-primary-900 via-primary-950 to-slate-950 pt-8 pb-6 lg:pt-10 overflow-hidden"
->
+<section class="bg-neutral-900 pt-8 pb-6 lg:pt-10 overflow-hidden">
   <div class="">
     {
       content.upperHeading && (
-        <p class="mx-auto mt-12 uppercase text-lg lg:text-xl lg:max-w-3xl font-sans text-center font-bold tracking-tight text-primary-600">
+        <p class="mx-auto mt-12 uppercase text-lg lg:text-xl lg:max-w-3xl font-sans text-center font-bold tracking-tight text-white">
           {content.upperHeading}
         </p>
       )
     }
     {
       content.heading && (
-        <h2 class="mx-auto mb-3 text-4xl lg:text-6xl lg:max-w-3xl font-title text-center font-bold tracking-tight text-primary-950">
+        <h2 class="mx-auto mb-3 text-4xl lg:text-6xl lg:max-w-3xl font-title text-center font-bold tracking-tight text-primary-500">
           {content.heading}
         </h2>
       )
     }
     {
       content.heading && (
-        <p class="mx-auto mb-12 text-lg max-w-3xl text-center tracking-loose text-gray-900">
+        <p class="mx-auto mb-12 text-lg max-w-3xl text-center tracking-loose text-neutral-100">
           {content.description}
         </p>
       )

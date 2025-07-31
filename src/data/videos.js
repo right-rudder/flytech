@@ -6,8 +6,7 @@ const videoList = [
   },
   {
     title: "Lane Hall Solo Flight Training",
-    description:
-      "Lane Hall Solo in FlyTech Pilot Academy Sling NGT also known as Sling 2 Special LSA",
+    description: "Lane Hall Solo",
     videoId: "FSliFHlpze0",
   },
   {
