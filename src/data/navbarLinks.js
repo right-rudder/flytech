@@ -11,26 +11,26 @@ export const navbarLinks = [
         name: "Discovery Flight",
         link: "/discovery-flight",
       },
-      {
-        name: "Enroll at FlyTech",
-        link: "/enroll-at-FlyTech",
-      },
-      {
-        name: "Pilot Training",
-        link: "/pilot-training",
-      },
-      {
-        name: "Begin Pilot Career",
-        link: "/begin-pilot-career",
-      },
-      {
-        name: "Timeline",
-        link: "/timeline-to-be-a-pilot",
-      },
-      {
-        name: "Cost",
-        link: "/approximate-pilot-training-costs",
-      },
+      // {
+      //   name: "Enroll at FlyTech",
+      //   link: "/enroll-at-FlyTech",
+      // },
+      // {
+      //   name: "Pilot Training",
+      //   link: "/pilot-training",
+      // },
+      // {
+      //   name: "Begin Pilot Career",
+      //   link: "/begin-pilot-career",
+      // },
+      // {
+      //   name: "Timeline",
+      //   link: "/timeline-to-be-a-pilot",
+      // },
+      // {
+      //   name: "Cost",
+      //   link: "/approximate-pilot-training-costs",
+      // },
     ],
   },
   {
@@ -49,10 +49,10 @@ export const navbarLinks = [
         name: "Commercial Pilot",
         link: "/programs/commercial-pilot",
       },
-      {
-        name: "Multi-Engine Rating",
-        link: "/programs/multi-engine-rating",
-      },
+      // {
+      //   name: "Multi-Engine Rating",
+      //   link: "/programs/multi-engine-rating",
+      // },
       {
         name: "Certified Flight Instructor",
         link: "/programs/certified-flight-instructor",
