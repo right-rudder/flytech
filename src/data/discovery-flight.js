@@ -11,7 +11,8 @@ const discoveryFlight = {
     //top header
     header: {
       stars: true,
-      imagePath: "/src/assets/FlyTech-flight-school-discovery-flight.jpg",
+
+      imagePath: "/src/assets/placeholder-img.webp",
       imageAlt: "FlyTech Flight School flight over Saint Joseph, MO",
       headerH1: `Discovery Flight`,
       paragraph:

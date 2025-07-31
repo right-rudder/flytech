@@ -12,8 +12,7 @@ const coursesIndex = {
     // Top Header
     header: {
       stars: true,
-      imagePath:
-        "/src/assets/airline-pilot-courses-at-FlyTech-flight-school.webp",
+      imagePath: "/src/assets/placeholder-img.webp",
       imageAlt:
         "Photograph of a FlyTech Flight School aircraft soaring over the Missouri landscape",
       headerH1: `Pilot <br>PROGRAMS</span>`,

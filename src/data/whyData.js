@@ -10,7 +10,7 @@ const whyData = {
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/student-pilot-commemorating-their-new-license.jpg",
+    imagePath: "/src/assets/placeholder-img.webp",
     imageAlt: "FlyTech Flight School campus and facilities",
     headerH1: `Why Choose <br>FlyTech?</span>`,
     paragraph: `Discover the reasons why FlyTech Flight School stands out as the premier choice for aspiring pilots. Our state-of-the-art facilities, experienced instructors, and personalized training programs are designed to help you achieve your aviation goals.`,
@@ -108,8 +108,7 @@ const whyData = {
       link: "/enroll-at-FlyTech",
       primary: true,
     },
-    imagePath:
-      "/src/assets/female-student-pilot-commemorating-her-new-license.jpg",
+    imagePath: "/src/assets/placeholder-img.webp",
     imageAlt: "FlyTech Flight School student smiling in front of an airplane",
   },
 };

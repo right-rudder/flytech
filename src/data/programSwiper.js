@@ -6,7 +6,7 @@ const programsSwiper = {
   cards: [
     {
       title: "Private Pilot",
-      imagePath: "/src/assets/two-pilot-smiling.webp",
+      imagePath: "/src/assets/placeholder-img.webp",
       imageAlt:
         "FlyTech Flight School student and flight instructor in a Cessna airplane",
       description:
@@ -15,8 +15,7 @@ const programsSwiper = {
     },
     {
       title: "Instrument Rating",
-      imagePath:
-        "/src/assets/flying-a-multi-engine-plane-at-FlyTech-flight-school-Saint Joseph-az.jpg",
+      imagePath: "/src/assets/placeholder-img.webp",
       imageAlt: "FlyTech Flight School Cirrus airplane instrument panel",
       description:
         "Navigate through clouds and the skies with precision through our Instrument Rating course.",
@@ -24,7 +23,7 @@ const programsSwiper = {
     },
     {
       title: "Commercial Pilot",
-      imagePath: "/src/assets/FlyTech-cfi.webp",
+      imagePath: "/src/assets/placeholder-img.webp",
       imageAlt:
         "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
       description:
@@ -33,7 +32,7 @@ const programsSwiper = {
     },
     {
       title: "Multi-Engine Rating",
-      imagePath: "/src/assets/multi-pass.webp",
+      imagePath: "/src/assets/placeholder-img.webp",
       imageAlt: "FlyTech Flight School student by a multi-engine airplane",
       description:
         "Master the art of multi engine flying and unlock new horizons in your aviation career.",
@@ -41,8 +40,7 @@ const programsSwiper = {
     },
     {
       title: "Certified Flight Instructor",
-      imagePath:
-        "/src/assets/FlyTech-flexible-pilot-training-airline-cessna.webp",
+      imagePath: "/src/assets/placeholder-img.webp",
       imageAlt:
         "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
       description:
@@ -51,7 +49,7 @@ const programsSwiper = {
     },
     {
       title: "Certified Flight Instructor Instruments",
-      imagePath: "/src/assets/FlyTech-Flight-Training-Programs-CFII.jpg",
+      imagePath: "/src/assets/FlyTech-Flight-Training-Programs-CFII.webp",
       imageAlt:
         "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
       description:
@@ -60,7 +58,7 @@ const programsSwiper = {
     },
     {
       title: "Multi-Engine Instructor",
-      imagePath: "/src/assets/FlyTech-Flight-Training-Programs-MEI.png",
+      imagePath: "/src/assets/placeholder-img.webp",
       imageAlt:
         "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
       description:

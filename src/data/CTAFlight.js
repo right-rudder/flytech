@@ -1,5 +1,5 @@
 const CTAFlight = {
-  imagePath: "/src/assets/FlyTech-cta-bg.webp",
+  imagePath: "/src/assets/placeholder-img.webp",
   imageAlt: "FlyTech Flight School student flying over Missouri",
   headerH1: `<span class="text-primary-800">Take the First Step</br></span>With a Discovery Flight`,
   paragraph:

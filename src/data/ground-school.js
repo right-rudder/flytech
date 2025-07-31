@@ -10,7 +10,7 @@ const groundSchoolData = {
   // Top Header
   header: {
     stars: false,
-    imagePath: "/src/assets/FlyTech-flight-school-flying-over-Missouri.jpg",
+    imagePath: "/src/assets/placeholder-img.webp",
     imageAlt: "FlyTech students participating in a ground school session",
     headerH1: `Ground School at <br>FlyTech`,
     paragraph: `Join our in-person ground school sessions in Saint Joseph, MO—open to anyone who wants to sharpen their aviation knowledge. Whether you're training at FlyTech, another school, or haven’t started flight training yet, our $50, 3-hour sessions are a great way to build your confidence and understanding. Each session is led by our instructor Dolly Woodhall and covers essential topics for every student pilot.`,

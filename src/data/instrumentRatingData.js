@@ -10,8 +10,7 @@ const instrumentRatingData = {
   // Top Header
   header: {
     stars: true,
-    imagePath:
-      "/src/assets/flying-a-multi-engine-plane-at-FlyTech-flight-school-Saint Joseph-az.jpg",
+    imagePath: "/src/assets/placeholder-img.webp",
     imageAlt: "FlyTech Flight School Cirrus airplane instrument panel",
     headerH1: `Instrument <br>RATING</span>`,
     paragraph: `Advance your skills with FlyTech Flight School's Instrument Rating program. Learn to navigate through clouds, low visibility, and controlled airspace with confidence.`,
@@ -49,7 +48,7 @@ const instrumentRatingData = {
     ],
 
     cta: {
-      imagePath: "/src/assets/female_pilot_smiling.webp",
+      imagePath: "/src/assets/placeholder-img.webp",
       imageAlt: "Female pilot smiling",
       title: "Enroll in the Instrument Rating Program",
       description:

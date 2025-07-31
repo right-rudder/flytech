@@ -8,7 +8,7 @@ const contactConfirmation = {
     pageKeywords: `discovery flight, contact us, enroll at ${COMPANY_NAME}, discovery flight training, discovery flight school, aviation academy, ${COMPANY_NAME}, flight training programs, aviation goals, ${KEYWORDS}`,
 
     header: {
-      imagePath: "/src/assets/FlyTech-flight-school-discovery-flight.jpg",
+      imagePath: "/src/assets/placeholder-img.webp",
       imageAlt: `${COMPANY_NAME} crew pulling plane from hangar`,
       headerH1: "THANK YOU",
       paragraph: `Thank for your interest in ${COMPANY_NAME}. This is the first step to achieving your aviation goals!<br>Please allow 1-2 business days for one of our Training Support Specialists to get in touch with you`,

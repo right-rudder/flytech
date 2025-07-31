@@ -10,8 +10,7 @@ const pilotTraining = {
     //top header
     header: {
       stars: true,
-      imagePath:
-        "/src/assets/FlyTech-flight-school-Saint Joseph-az-cfe-and-student-after-successful-checkride.jpg",
+      imagePath: "/src/assets/placeholder-img.webp",
       imageAlt:
         "FlyTech Flight School airplane landing at Falcon Field Airport in Saint Joseph, Missouri",
       headerH1: `Pilot Training<br>Programs`,

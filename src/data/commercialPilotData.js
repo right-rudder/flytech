@@ -10,7 +10,8 @@ const commercialPilotData = {
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/FlyTech-flight-school-pilots.png",
+
+    imagePath: "/src/assets/placeholder-img.webp",
     imageAlt:
       "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
     headerH1: `Commercial <br>PILOT LICENSE</span>`,
@@ -49,7 +50,7 @@ const commercialPilotData = {
     ],
 
     cta: {
-      imagePath: "/src/assets/female_pilot_smiling.webp",
+      imagePath: "/src/assets/placeholder-img.webp",
       imageAlt: "Female pilot smiling",
       title: "Enroll in the Commercial Pilot Program",
       description:

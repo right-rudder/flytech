@@ -63,8 +63,7 @@ const contentSplit = {
     link: "/enroll-at-FlyTech",
     primary: true,
   },
-  imagePath:
-    "/src/assets/FlyTech-flight-school-Saint Joseph-az-student-pilot-with-famyly-certified-private-pilot.jpg",
+  imagePath: "/src/assets/placeholder-img.webp",
   imageAlt:
     "Certified flight instructor assisting a student pilot in a safe training environment",
 };

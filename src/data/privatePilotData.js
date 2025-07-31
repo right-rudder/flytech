@@ -10,7 +10,7 @@ const privatePilotData = {
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/two-pilot-smiling.webp",
+    imagePath: "/src/assets/placeholder-img.webp",
     imageAlt: "A FlyTech Flight School aircraft in flight over Missouri",
     headerH1: `Private Pilot <br>LICENSE</span>`,
     paragraph: `Begin your aviation journey with FlyTech Flight School’s Private Pilot License program. Gain the skills, knowledge, and confidence to take control of the skies.`,
@@ -48,7 +48,7 @@ const privatePilotData = {
     ],
 
     cta: {
-      imagePath: "/src/assets/female_pilot_smiling.webp",
+      imagePath: "/src/assets/placeholder-img.webp",
       imageAlt: "Female pilot smiling",
       title: "Start Your Aviation Journey",
       description:

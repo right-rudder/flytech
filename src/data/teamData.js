@@ -10,7 +10,7 @@ const teamData = {
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/FlyTech-student-pilot-and-cfi-smiling-croped.jpg",
+    imagePath: "/src/assets/placeholder-img.webp",
     imageAlt:
       "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
     headerH1: `Meet Our <br>TEAM</span>`,
@@ -38,7 +38,7 @@ const teamData = {
 
     leadership: [
       {
-        img: "/src/assets/crew-FlyTech-Greg-updated-headshot.jpg",
+        img: "/src/assets/crew-FlyTech-Greg-updated-headshot.webp",
         alt: "Greg Hadley Co-Owner at FlyTech Flight School",
         name: "Greg Hadley",
         title: "Owner",
@@ -136,7 +136,7 @@ const teamData = {
         title: "CFI/CFII",
       },
       {
-        img: "/src/assets/crew-FlyTech-Garrett-Ruddell-CFI.jpg",
+        img: "/src/assets/crew-FlyTech-Garrett-Ruddell-CFI.webp",
         name: "Garrett Ruddell",
         title: "CFI",
       },
@@ -146,12 +146,12 @@ const teamData = {
         title: "A&P",
       },
       {
-        img: "/src/assets/crew-FlyTech-Sara-Van-Sciver-Office-Manager.jpg",
+        img: "/src/assets/crew-FlyTech-Sara-Van-Sciver-Office-Manager.webp",
         name: "Sara Van Sciver",
         title: "Office Manager",
       },
       {
-        img: "/src/assets/crew-FlyTech-Wendi-Painter-Office-Assistant-.jpg",
+        img: "/src/assets/crew-FlyTech-Wendi-Painter-Office-Assistant-.webp",
         name: "Wendi Painter",
         title: "Office Assistant",
       },

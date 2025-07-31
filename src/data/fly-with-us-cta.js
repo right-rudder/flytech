@@ -1,5 +1,5 @@
 const flyWithUsCTA = {
-  imagePath: "/src/assets/valley-of-the-sun-fly-over.webp",
+  imagePath: "/src/assets/placeholder-img.webp",
   imageAlt: "FlyTech Flight School student flying over Missouri",
   headerH1: `<span class="text-sky-600">Fly with the team that makes</br></span>becoming a pilot simple`,
   paragraph:

@@ -10,8 +10,7 @@ const visitData = {
   // Top Header
   header: {
     stars: true,
-    imagePath:
-      "/src/assets/visitors-to-falcon-field-airport-FlyTech-flight-school-Saint Joseph-az-croped.webp",
+    imagePath: "/src/assets/placeholder-img.webp",
     imageAlt: "FlyTech Flight School campus and facilities",
     headerH1: `Visit US`,
     paragraph: `Explore FlyTech Flight School and see firsthand our state-of-the-art facilities and training environment. Schedule a visit today and take the first step towards your aviation career.`,
