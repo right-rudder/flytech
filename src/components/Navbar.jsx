@@ -82,7 +82,7 @@ const Navbar = ({ pathname }) => {
         className={`${
           navBar || openMobile
             ? "bg-primary-500/95 shadow-md"
-            : "bg-gradient-to-b from-white/30 to-transparent"
+            : "bg-gradient-to-b from-white/80 to-transparent"
         } duration-500`}
       >
         <div className="px-4 lg:px-12 mx-auto top-0">
@@ -90,24 +90,24 @@ const Navbar = ({ pathname }) => {
             className={`${navBar || openMobile ? "lg:h-24" : "lg:h-20"} relative flex h-20 align-middle justify-between transition-all`}
             id="navbar"
           >
-            <div className="flex w-full items-center justify-center lg:justify-between">
+            <div className="flex w-full items-center py-5 justify-center lg:justify-between">
               <a
                 href="/"
                 title="FlyTech flight school"
-                className="hover:brightness-110 flex h-20 lg:h-24 justify-end align-middle items-center duration-200 ease-in-out"
+                className="hover:brightness-110 flex h-[80%] lg:h-16 justify-end align-middle items-center duration-200 ease-in-out"
               >
                 <img
-                  src="/flytech-logo_1000px.webp"
+                  src="/flytech-logo-wg_1000px-980x262.webp"
                   alt="FlyTech Flight School  Logo"
                   aria-label="FlyTech Flight School  Logo"
                   title="FlyTech Flight School "
                   loading="eager"
-                  className={`${navBar || openMobile ? "h-[5.5rem] mt-4 md:h-[7.2rem] md:mt-9 lg:mt-7" : "h-24 md:h-36 mt-6 md:mt-12"} object-contain duration-500 drop-shadow-md`}
+                  className={`${navBar || openMobile ? "h-full max-w-1/2" : "h-full  max-w-1/2"} object-contain duration-500 drop-shadow-md`}
                 />
               </a>
               <div className="hidden ml-12 lg:flex justify-end lg:w-[70%]">
                 <ul
-                  className={`${navBar || openMobile ? "text-white" : "text-slate-950"} flex justify-end align-middle gap-7 w-full items-center`}
+                  className={`${navBar || openMobile ? "text-white" : "text-primary-950"} flex justify-end align-middle gap-7 w-full items-center`}
                 >
                   {navbarLinks.map((item, index) => (
                     <li
@@ -120,9 +120,9 @@ const Navbar = ({ pathname }) => {
                         <a
                           href={item.link}
                           target={`${item.link.includes("http") ? "_blank" : "_self"}`}
-                          className="font-bold lg:text-xl duration-300 hover:underline drop-shadow-sm decoration-yellow-400 decoration-4 underline-offset-[10px] py-12 whitespace-nowrap group-last:font-bold group-last:bg-primary-700 group-last:ring-2 group-last:ring-white/50 group-last:py-2 group-last:px-5 group-last:hover:bg-primary-300 group-last:hover:no-underline"
+                          className="font-bold lg:text-xl group-last:text-white group-last:hover:text-primary-700 duration-300 hover:underline drop-shadow-sm decoration-white decoration-4 underline-offset-[10px] py-12 whitespace-nowrap group-last:font-bold group-last:bg-primary-600 group-last:ring-2 group-last:ring-white group-last:py-2 group-last:px-5 group-last:hover:bg-white group-last:hover:no-underline"
                         >
-                          <span className="relative group-last:text-white w-full h-full group-last:hover:text-black">
+                          <span className="relative  w-full h-full ">
                             {item.name}
                           </span>
                         </a>
@@ -269,11 +269,11 @@ const Navbar = ({ pathname }) => {
           className="z-30 relative flex justify-center items-center align-middle"
         >
           <img
-            src="/flytech-logo_1000px.webp"
+            src="/flytech-logo-wg_1000px-980x262.webp"
             alt="FlyTech Flight School  Logo"
             aria-label="FlyTech Flight School  Logo"
             title="FlyTech Flight School "
-            className="object-contain h-24 w-auto drop-shadow-sm"
+            className="object-contain h-24 w-auto drop-shadow-sm max-w-md"
           />
         </a>
 

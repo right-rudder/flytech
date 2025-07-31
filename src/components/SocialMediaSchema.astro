@@ -10,7 +10,7 @@ interface Props {
 const {
   title = SITE_TITLE,
   description = SITE_DESCRIPTION,
-  logoUrl = "/flytech-logo_1000px.webp"
+  logoUrl = "/flytech-logo-wg_1000px-980x262.webp"
 } = Astro.props;
 
 const fullLogoUrl = new URL(logoUrl, Astro.site?.toString() || "https://FlyTechco.com").toString();
