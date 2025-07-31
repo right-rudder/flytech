@@ -119,7 +119,66 @@ const homePage = {
       buttonText: "Leave Us a Review",
       buttonLink: "https://g.co/kgs/TLWS5Yz",
       reviews: [
-        // You can paste your full testimonials array here if needed
+        {
+          title: "Tailored Training with a Personal Touch",
+          body: "I am just about to finish up my private pilot license training at FlyTech. Everyone has been friendly, knowledgeable, and really cares about tailoring flight training to fit the individual student. They are also located at an airport that makes training convenient and effective.",
+          author: "Corey K.",
+        },
+        {
+          title: "Supportive Instructors, Unmatched Experience",
+          body: "FlyTech was the perfect place to finish my Private Pilot License. The instructors were supportive, skilled, and truly wanted me to succeed. I couldn’t have asked for a better experience!",
+          author: "Kolin W.",
+        },
+        {
+          title: "Professional Team, Outstanding Training",
+          body: "I’ve been pleased with my experience at FlyTech. It was awesome to see one of my son’s former colleagues join the instructor team—Connor Musser. The professionalism and quality of instruction here are top-notch.",
+          author: "Steve C.",
+        },
+        {
+          title: "State-of-the-Art Simulator for IFR Proficiency",
+          body: "FlyTech's new full-motion flight simulator is an excellent tool for staying IFR proficient. The AATD Redbird at Hillyard Tech Center, along with instructors like Daniel and Lute, makes for a fantastic training experience.",
+          author: "Caleb H.",
+        },
+        {
+          title: "Brand New Tech & Expert Instructors",
+          body: "Great flight school with a brand-new, state-of-the-art airplane! The staff is professional, knowledgeable, and truly dedicated to student success.",
+          author: "J. Rice",
+        },
+        {
+          title: "A Team That Feels Like Family",
+          body: "I'm nearing my checkride for my private pilot license, and I have to commend Daniel, Connor, Eli, and Lute. They offer a wonderful level of professionalism and a supportive learning environment.",
+          author: "Sam J.",
+        },
+        {
+          title: "Cutting-Edge Planes & Exceptional Training",
+          body: "FlyTech has a brand-new plane decked out with the latest Garmin tech, but what really stands out is their incredible team. They make learning enjoyable and effective—highly recommend!",
+          author: "Stephen B.",
+        },
+        {
+          title: "10/10 for Career & Passion in Aviation",
+          body: "FlyTech deserves 10 stars! The staff’s expertise helps aspiring pilots gain the skills needed to break into the industry. Whether for a career or a passion, you won’t regret choosing FlyTech.",
+          author: "Cole B.",
+        },
+        {
+          title: "A Welcoming Aviation Family",
+          body: "FlyTech is simply amazing. They treat students like family and make everyone feel welcome. If you’re considering a pilot’s license, start here—you won’t regret it.",
+          author: "Amy N.",
+        },
+        {
+          title: "Exceeds Expectations in Every Way",
+          body: "FlyTech has exceeded my expectations! From one-on-one ground training to flight experience, it’s a blessing for our community and aspiring aviators.",
+          author: "Bob B.",
+        },
+        {
+          title: "The Best Flight School in the Midwest",
+          body: "FlyTech is the best flight school in the Midwest. The instructors are highly educated, and the academy itself is excellent in every way.",
+          author: "Mark C.",
+        },
+        {
+          title: "Professionalism at Its Finest",
+          body: "From the owners to the CFIs, FlyTech is nothing but professional! Whether you want a discovery flight or full licensure, there’s no better place.",
+          author: "Anthony B.",
+        },
       ],
     },
   },
