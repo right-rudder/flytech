@@ -107,7 +107,7 @@ const Navbar = ({ pathname }) => {
               </a>
               <div className="hidden ml-12 lg:flex justify-end lg:w-[70%]">
                 <ul
-                  className={`${navBar || openMobile ? "text-white" : "text-primary-950"} flex justify-end align-middle gap-7 w-full items-center`}
+                  className={`${navBar || openMobile ? "text-white" : "text-primary-950"} flex justify-between align-middle gap-7 w-full items-center`}
                 >
                   {navbarLinks.map((item, index) => (
                     <li

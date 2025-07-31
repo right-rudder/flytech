@@ -4,11 +4,11 @@
 
 @layer components {
   .btn-primary {
-    @apply text-center uppercase hover:scale-105 font-title font-bold py-3 px-8 bg-primary-400 w-fit text-slate-900 hover:text-white rounded-sm hover:bg-primary-700 duration-100;
+    @apply text-center uppercase hover:scale-105 font-title font-bold py-3 px-8 bg-primary-500 w-fit text-white rounded-sm hover:bg-primary-700 duration-100;
   }
 
   .btn-accent {
-    @apply text-center hover:scale-105 font-title uppercase font-medium py-3 px-6 bg-primary-400/90 w-fit text-primary-950 hover:text-white hover:bg-primary-600/80 duration-300 ring-2 hover:ring-primary-600 ring-primary-600;
+    @apply text-center hover:scale-105 font-title uppercase font-medium py-3 px-6 bg-primary-500 w-fit text-primary-950 hover:text-white hover:bg-primary-600/80 duration-300 ring-2 hover:ring-primary-600 ring-primary-600;
   }
 
   .btn-animate {
