@@ -84,20 +84,20 @@ export const navbarLinks = [
   },
 
   {
-    name: "FlyTech",
-    link: "/FlyTech",
+    name: "About",
+    link: "/about",
     submenu: [
       {
         name: "Our Team",
-        link: "/FlyTech/team",
+        link: "/about/team",
       },
       {
         name: "Visit Us",
-        link: "/FlyTech/visit",
+        link: "/about/visit",
       },
       {
         name: "Join Us",
-        link: "/FlyTech/join-us",
+        link: "/about/join-us",
       },
       {
         name: "Blog",

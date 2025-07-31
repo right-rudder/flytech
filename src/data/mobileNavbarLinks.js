@@ -85,23 +85,23 @@ export const mobileNavbarLinks = [
   },
 
   {
-    name: "FlyTech",
+    name: "About",
     submenu: [
       {
         name: "Why FlyTech",
-        link: "/FlyTech",
+        link: "/about",
       },
       {
         name: "Our Team",
-        link: "/FlyTech/team",
+        link: "/about/team",
       },
       {
         name: "Visit Us",
-        link: "/FlyTech/visit",
+        link: "/about/visit",
       },
       {
         name: "Join Us",
-        link: "/FlyTech/join-us",
+        link: "/about/join-us",
       },
       {
         name: "Blog",
