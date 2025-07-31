@@ -29,31 +29,39 @@ const { pathname } = Astro.url;
 
 <footer class="relative bg-neutral-900 overflow-hidden">
   <div
-    class="px-4 pt-24 pb-16 lg:pb-2 md:pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
+    class="px-4 pt-24 pb-16 lg:pb-2 flex flex-col lg:flex-row justify-between md:px-24 lg:file:py-10"
   >
-    <div class="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
-      <div class="lg:col-span-2">
+    <div class="flex flex-col lg:flex-row pb-8 justify-around w-full gap-20">
+      <div class="lg:col-span-2 flex flex-col items-center">
         <a
           href="/"
           aria-label="Go home"
           title="Company"
-          class="flex justify-center items-center w-full"
+          class="flex items-start justify-start w-full"
         >
           <Image
             src={logo}
-            alt="Right Rudder Marketing Logo"
-            class="object-contain h-36 w-auto px-5 lg:px-0 drop-shadow-lg"
+            alt="FlyTech Pilot Academy Logo"
+            class="object-contain h-36 w-auto w-max-xl px-5 lg:px-0 drop-shadow-lg lg:-mt-10"
           />
         </a>
-        <div class="mt-2 lg:max-w-sm font-sans2">
+        <div class="flex justify-center align-middle items-center w-full">
+          <a
+            href="/privacy-policy"
+            class="mt-3 mr-4 transition-colors duration-300 text-sm text-white hover:text-primary-400"
+          >
+            200 NW Rosecrans Rd
+            <span class="text-primary-400 text-sm pt-3"> &#x2022; </span>
+            St Joseph, MO 64503
+          </a>
+        </div>
+        <div class="mt-2 lg:max-w-sm font-sans2 w-full">
           <p
-            class="text-sm text-white px-3 lg:px-0 text-center lg:text-justify"
+            class="text-sm text-white px-3 lg:px-0 text-center lg:text-justify w-full"
           >
             {SITE_DESCRIPTION}
           </p>
-          <div
-            class="flex justify-center lg:justify-start align-middle items-center w-full"
-          >
+          <div class="flex justify-center align-middle items-center w-full">
             <a
               href="/privacy-policy"
               class="mt-3 mr-4 transition-colors duration-300 text-sm text-white hover:text-primary-400"
@@ -69,12 +77,12 @@ const { pathname } = Astro.url;
         </div>
       </div>
       <div
-        class="grid grid-cols-2 mt-8 gap-9 lg:col-span-4 lg:grid-cols-9 xl:grid-cols-10"
+        class="flex flex-col lg:flex-row justify-between gap-10 lg: px-20 lg:gap-20 w-full"
       >
         {
           footerLinks.map((column, index) => (
             <div
-              class={`${index % 2 === 0 ? "text-left" : "text-right lg:text-left"} lg:col-span-2`}
+              class={`${index % 2 === 0 ? "text-center" : "text-center lg:text-left"} lg:col-span-2`}
             >
               <p class="font-bold text-xl font-sans lg:text-md tracking-wide text-white">
                 {column.title}
@@ -94,7 +102,7 @@ const { pathname } = Astro.url;
             </div>
           ))
         }
-        <div class="col-span-2 lg:col-span-3 xl:col-span-4 w-full">
+        <div class="col-span-2 lg:col-span-3 xl:col-span-4 w-[400px]">
           <div class="flex justify-center items-center">
             <!--WIDGET METAR-->
             <a
