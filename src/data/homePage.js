@@ -28,7 +28,44 @@ const homePage = {
     },
 
     airlinesCloud: {
-      airlines: [],
+      airlines: [
+        {
+          imagePath: "/src/assets/sling_logo.webp",
+          imageAlt: "Sling Aircraft Logo",
+          link: "https://www.google.com/",
+        },
+        {
+          imagePath: "/src/assets/foreflight_logo-480x241.webp",
+          imageAlt: "ForeFlight Logo",
+          link: "https://www.google.com/",
+        },
+        {
+          imagePath: "/src/assets/garmin_logo-300x150.webp",
+          imageAlt: "Garmin Logo",
+          link: "https://www.google.com/",
+        },
+        {
+          imagePath: "/src/assets/fly_four_forces_logo-1.webp",
+          imageAlt: "Fly Four Forces Logo",
+          link: "https://www.google.com/",
+        },
+        {
+          imagePath: "/src/assets/aopa-logo.webp",
+          imageAlt: "AOPA Logo",
+          link: "https://www.google.com/",
+        },
+        {
+          imagePath: "/src/assets/Screenshot-2025-03-15-at-11.47.30 AM.webp",
+          imageAlt: "Lightspeed Logo",
+          link: "https://www.google.com/",
+        },
+        {
+          imagePath:
+            "/src/assets/Stratus-Tagline-Color-CMYK-300-Outline-980x165.webp",
+          imageAlt: "Stratuss Financial Logo",
+          link: "https://www.google.com/",
+        },
+      ],
     },
 
     whyElite: {
