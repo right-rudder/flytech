@@ -10,7 +10,7 @@ const homePage = {
     header: {
       imagePath: "/src/assets/placeholder-img.webp",
       imageAlt: "FlyTech Pilot Academy team on the runway",
-      headerH1: `MODERN FLIGHT TRAINING FOR ALL`,
+      headerH1: `MODERN <strong class="text-primary-500"> FLIGHT TRAINING </strong> <br> FOR ALL`,
       paragraph:
         "FlyTech Pilot Academy offers accessible and flexible pilot training using modern aircraft, advanced simulators, and one-on-one mentorship. Whether you want to fly for fun or pursue a professional career, FlyTech helps you reach your goals.",
       buttons: [

@@ -82,7 +82,7 @@ const Navbar = ({ pathname }) => {
         className={`${
           navBar || openMobile
             ? "bg-primary-600/95 shadow-md"
-            : "bg-gradient-to-b from-white/80 to-transparent"
+            : "bg-transparent"
         } duration-500`}
       >
         <div className="px-4 lg:px-12 mx-auto top-0">
@@ -107,7 +107,7 @@ const Navbar = ({ pathname }) => {
               </a>
               <div className="hidden ml-12 lg:flex justify-end lg:w-[70%]">
                 <ul
-                  className={`${navBar || openMobile ? "text-white" : "text-primary-950"} flex justify-between align-middle gap-7 w-full items-center`}
+                  className={`${navBar || openMobile ? "text-white" : "text-white"} flex justify-between align-middle gap-7 w-full items-center`}
                 >
                   {navbarLinks.map((item, index) => (
                     <li
@@ -120,7 +120,7 @@ const Navbar = ({ pathname }) => {
                         <a
                           href={item.link}
                           target={`${item.link.includes("http") ? "_blank" : "_self"}`}
-                          className="font-bold lg:text-xl group-last:text-white group-last:hover:text-primary-700 duration-300 hover:underline drop-shadow-sm decoration-white decoration-4 underline-offset-[10px] py-12 whitespace-nowrap group-last:font-bold group-last:bg-primary-600 group-last:ring-2 group-last:ring-white group-last:py-2 group-last:px-5 group-last:hover:bg-white group-last:hover:no-underline"
+                          className="font-bold lg:text-xl group-last:text-white group-last:hover:text-primary-700 duration-300 hover:underline drop-shadow-sm decoration-primary-500 decoration-4 underline-offset-[10px] py-12 whitespace-nowrap group-last:font-bold group-last:bg-primary-600 group-last:ring-2 group-last:ring-white group-last:py-2 group-last:px-5 group-last:hover:bg-white group-last:hover:no-underline"
                         >
                           <span className="relative  w-full h-full ">
                             {item.name}
