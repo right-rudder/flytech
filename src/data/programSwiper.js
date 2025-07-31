@@ -49,7 +49,7 @@ const programsSwiper = {
     },
     {
       title: "Certified Flight Instructor Instruments",
-      imagePath: "/src/assets/FlyTech-Flight-Training-Programs-CFII.webp",
+      imagePath: "/src/assets/placeholder-img.webp",
       imageAlt:
         "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
       description:

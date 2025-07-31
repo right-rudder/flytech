@@ -28,7 +28,7 @@ const publishDateIso = new Date(publishDate).toISOString();
 const updateDateIso = updateDate ? new Date(updateDate).toISOString() : publishDateIso;
 
 // Image with fallback
-const articleImage = featuredImage ? new URL(featuredImage, Astro.url).toString() : new URL("/FlyTech_250.webp", Astro.url).toString();
+const articleImage = featuredImage ? new URL(featuredImage, Astro.url).toString() : new URL("/flytech-logo_1000px.webp", Astro.url).toString();
 ---
 
 <script type="application/ld+json" set:html={JSON.stringify({

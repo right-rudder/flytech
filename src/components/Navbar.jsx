@@ -97,7 +97,7 @@ const Navbar = ({ pathname }) => {
                 className="hover:brightness-110 flex h-20 lg:h-24 justify-end align-middle items-center duration-200 ease-in-out"
               >
                 <img
-                  src="/FlyTech_250.webp"
+                  src="/flytech-logo_1000px.webp"
                   alt="FlyTech Flight School  Logo"
                   aria-label="FlyTech Flight School  Logo"
                   title="FlyTech Flight School "
@@ -269,7 +269,7 @@ const Navbar = ({ pathname }) => {
           className="z-30 relative flex justify-center items-center align-middle"
         >
           <img
-            src="/FlyTech_250.webp"
+            src="/flytech-logo_1000px.webp"
             alt="FlyTech Flight School  Logo"
             aria-label="FlyTech Flight School  Logo"
             title="FlyTech Flight School "

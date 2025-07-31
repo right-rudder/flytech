@@ -13,7 +13,7 @@ const data500 = {
     pageKeywords: `error 500`,
 
     header: {
-      imagePath: "/src/assets/stock-victor-zhuk-3MYtBMg8Ex4-unsplash.webp",
+      imagePath: "/src/assets/placeholder-img.webp",
       imageAlt: `${COMPANY_NAME} plane taking off`,
       headerH1: `well, this is AWKWARD`,
       paragraph: `It appears the form you were trying to send crashed (better here then on the runway right? you're right we shouldn't joke about that, sorry). Please call us on ${PHONE_NUMBER} for your request, also please notify our staff of this error. <br>Now back to landing with you!`,

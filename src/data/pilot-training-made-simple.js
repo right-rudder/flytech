@@ -11,8 +11,7 @@ const pilotTrainingMadeSimple = {
     //top header
     header: {
       stars: true,
-      imagePath:
-        "/src/assets/FlyTech-flight-school-airplane-landing-at-falcon-field-airport-pilot-training-Saint Joseph-Missouri.webp",
+      imagePath: "/src/assets/placeholder-img.webp",
       imageAlt:
         "FlyTech Flight School airplane landing at Falcon Field Airport in Saint Joseph, Missouri",
       headerH1: `PILOT TRAINING</br><span class="text-sky-300">MADE SIMPLE</span>`,
