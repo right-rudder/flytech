@@ -16,6 +16,10 @@ export const COMPANY_NAME = "FlyTech Flight School";
 
 export const CITY_STATE = "Saint Joseph, MO";
 
+export const AIRPORT = "Rosecrans Memorial Airport";
+
+export const AIRPORT_CODE = "KSTJ";
+
 export const LOCATIONS = [
   {
     title: `Flight Dispatch Center`,

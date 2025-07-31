@@ -19,6 +19,7 @@ import CTAVideo from "../components/CTAVideo.astro";
 import videoList from "../data/videos.js";
 import { getCurrentVideo } from "../scripts/videoSpinner.js";
 import CTAContact from "../components/CTAContact.astro";
+import MapsLocation from "../components/MapsLocation.astro";
 
 // Transform FAQ format for schema
 const faqSchemaItems = GeneralFAQs.map((faq) => ({
@@ -52,6 +53,7 @@ const dataForVideo = {
   <!-- <BlogFeed data={data.blogfeed} /> -->
   <FAQs faqs={GeneralFAQs} type="General" client:visible />
   <FAQSchema items={faqSchemaItems} />
+  <MapsLocation />
   <CTAColor content={data.flyWithUsCTA} />
   <script src="../scripts/creativeSwiper.js"></script>
 </BaseLayout>
