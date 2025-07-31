@@ -6,7 +6,7 @@ const programsSwiper = {
   cards: [
     {
       title: "Private Pilot",
-      imagePath: "/src/assets/placeholder-img.webp",
+      imagePath: "/src/assets/N900FT.webp",
       imageAlt:
         "FlyTech Flight School student and flight instructor in a Cessna airplane",
       description:
@@ -15,7 +15,8 @@ const programsSwiper = {
     },
     {
       title: "Instrument Rating",
-      imagePath: "/src/assets/placeholder-img.webp",
+      imagePath:
+        "/src/assets/discovery-flight-pilot-and-student-inside-N900FT-flying.webp",
       imageAlt: "FlyTech Flight School Cirrus airplane instrument panel",
       description:
         "Navigate through clouds and the skies with precision through our Instrument Rating course.",
@@ -23,20 +24,12 @@ const programsSwiper = {
     },
     {
       title: "Commercial Pilot",
-      imagePath: "/src/assets/placeholder-img.webp",
+      imagePath: "/src/assets/family-outside-N900FT-ground.webp",
       imageAlt:
         "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
       description:
         "Start your pilot career with our Commercial Pilot Course. Your path to the captain's seat is here.",
       link: "/programs/commercial-pilot",
-    },
-    {
-      title: "Multi-Engine Rating",
-      imagePath: "/src/assets/placeholder-img.webp",
-      imageAlt: "FlyTech Flight School student by a multi-engine airplane",
-      description:
-        "Master the art of multi engine flying and unlock new horizons in your aviation career.",
-      link: "/programs/multi-engine-rating",
     },
     {
       title: "Certified Flight Instructor",
@@ -49,7 +42,7 @@ const programsSwiper = {
     },
     {
       title: "Certified Flight Instructor Instruments",
-      imagePath: "/src/assets/placeholder-img.webp",
+      imagePath: "/src/assets/cockpit1-980x656.webp",
       imageAlt:
         "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
       description:
@@ -57,13 +50,13 @@ const programsSwiper = {
       link: "/programs/certified-flight-instructor/#addons",
     },
     {
-      title: "Multi-Engine Instructor",
-      imagePath: "/src/assets/placeholder-img.webp",
+      title: "Sport Pilot Certificate",
+      imagePath: "/src/assets/N900FT-ground.webp",
       imageAlt:
         "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
       description:
-        "Become a trusted guide in the world of aviation. Become a CFI and help others reach their dreams.",
-      link: "/programs/certified-flight-instructor/#addons",
+        "This version of a pilot’s license is relatively new (2004). It was created for people who desire to fly one or two seat aircraft that are smaller, lighter, and easier to fly. The Sport Pilot is limited to planes with lower take off weight (smaller, lighter aircraft) with no more than two seats. Sport pilots require a minimum of 20 hours of flight training.",
+      link: "/programs/sport-pilot-certificate/#addons",
     },
   ],
 };
