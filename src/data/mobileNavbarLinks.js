@@ -69,21 +69,6 @@ export const mobileNavbarLinks = [
       },
     ],
   },
-
-  {
-    name: "Financing",
-    submenu: [
-      {
-        name: "Financing",
-        link: "#",
-      },
-      {
-        name: "Stratus Financial",
-        link: "#",
-      },
-    ],
-  },
-
   {
     name: "About",
     submenu: [
@@ -93,6 +78,10 @@ export const mobileNavbarLinks = [
       },
       {
         name: "Our Team",
+        link: "#",
+      },
+      {
+        name: "Financing",
         link: "#",
       },
       {

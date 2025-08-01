@@ -83,7 +83,7 @@ const Navbar = ({ pathname }) => {
           navBar || openMobile
             ? "bg-primary-600/95 shadow-md"
             : "bg-transparent"
-        } lg:px-20 duration-500`}
+        } lg:px-10 duration-500`}
       >
         <div className="px-4 lg:px-12 mx-auto top-0">
           <div

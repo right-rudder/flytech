@@ -71,18 +71,6 @@ export const navbarLinks = [
       },
     ],
   },
-
-  {
-    name: "Financing",
-    link: "#",
-    submenu: [
-      {
-        name: "Stratus Financial",
-        link: "#",
-      },
-    ],
-  },
-
   {
     name: "About",
     link: "#",
@@ -93,6 +81,10 @@ export const navbarLinks = [
       },
       {
         name: "Visit Us",
+        link: "#",
+      },
+      {
+        name: "Financing",
         link: "#",
       },
       {
