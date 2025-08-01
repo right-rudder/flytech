@@ -29,9 +29,9 @@ const { pathname } = Astro.url;
 
 <footer class="relative bg-neutral-900 overflow-hidden">
   <div
-    class="px-4 pt-24 pb-16 lg:pb-2 flex flex-col lg:flex-row justify-between md:px-24 lg:file:py-10"
+    class="px-4 pt-24 pb-16 lg:pb-2 flex flex-col lg:flex-row justify-between lg:px-10 lg:file:py-10"
   >
-    <div class="flex flex-col lg:flex-row pb-8 justify-around w-full gap-20">
+    <div class="flex flex-col lg:flex-row pb-8 justify-around w-full lg:gap-10">
       <div class="lg:col-span-2 flex flex-col items-center">
         <a
           href="/"
@@ -56,9 +56,7 @@ const { pathname } = Astro.url;
           </a>
         </div>
         <div class="mt-2 lg:max-w-sm font-sans2 w-full">
-          <p
-            class="text-sm text-white px-4 lg:px-0 text-center lg:text-justify w-full"
-          >
+          <p class="text-sm text-white px-4 lg:px-0 text-center w-full">
             {SITE_DESCRIPTION}
           </p>
           <div class="flex justify-center align-middle items-center w-full">
@@ -77,14 +75,14 @@ const { pathname } = Astro.url;
         </div>
       </div>
       <div
-        class="flex flex-col lg:flex-row justify-between gap-10 lg:px-20 lg:gap-20 w-full"
+        class="flex flex-col lg:flex-row justify-between gap-10 lg:px-10 lg:gap-10 w-full"
       >
         {
           footerLinks.map((column, index) => (
             <div
               class={`${index % 2 === 0 ? "text-center" : "text-center"} lg:col-span-2`}
             >
-              <p class="font-bold text-xl font-sans lg:text-md tracking-wide text-white uppercase">
+              <p class="font-bold text-xl font-sans lg:text-sm tracking-wide text-white uppercase">
                 {column.title}
               </p>
               <ul class="mt-2 space-y-2 text-lg font-sans2 lg:text-sm">
@@ -102,7 +100,7 @@ const { pathname } = Astro.url;
             </div>
           ))
         }
-        <div class="col-span-2 lg:col-span-3 xl:col-span-4 w-full lg:w-[400px]">
+        <div class="col-span-2 lg:col-span-3 xl:col-span-4 w-full lg:w-[350px]">
           <div class="flex justify-center items-center">
             <!--WIDGET METAR-->
             <a
