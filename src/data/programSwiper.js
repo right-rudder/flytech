@@ -11,7 +11,7 @@ const programsSwiper = {
         "FlyTech Flight School student and flight instructor in a Cessna airplane",
       description:
         "Your passport to the skies! Learn to pilot your dreams with our Private Pilot Course.",
-      link: "/programs/private-pilot",
+      link: "#",
     },
     {
       title: "Instrument Rating",
@@ -20,7 +20,7 @@ const programsSwiper = {
       imageAlt: "FlyTech Flight School Cirrus airplane instrument panel",
       description:
         "Navigate through clouds and the skies with precision through our Instrument Rating course.",
-      link: "/programs/instrument-rating",
+      link: "#",
     },
     {
       title: "Commercial Pilot",
@@ -29,7 +29,7 @@ const programsSwiper = {
         "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
       description:
         "Start your pilot career with our Commercial Pilot Course. Your path to the captain's seat is here.",
-      link: "/programs/commercial-pilot",
+      link: "#",
     },
     {
       title: "Certified Flight Instructor",
@@ -38,7 +38,7 @@ const programsSwiper = {
         "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
       description:
         "Become a trusted guide in the world of aviation. Become a CFI and help others reach their dreams.",
-      link: "/programs/certified-flight-instructor",
+      link: "#",
     },
     {
       title: "Certified Flight Instructor Instruments",
@@ -47,7 +47,7 @@ const programsSwiper = {
         "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
       description:
         "Become a trusted guide in the world of aviation. Become a CFI and help others reach their dreams.",
-      link: "/programs/certified-flight-instructor/#addons",
+      link: "#",
     },
     {
       title: "Sport Pilot Certificate",
@@ -55,8 +55,8 @@ const programsSwiper = {
       imageAlt:
         "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
       description:
-        "This version of a pilot’s license is relatively new (2004). It was created for people who desire to fly one or two seat aircraft that are smaller, lighter, and easier to fly. The Sport Pilot is limited to planes with lower take off weight (smaller, lighter aircraft) with no more than two seats. Sport pilots require a minimum of 20 hours of flight training.",
-      link: "/programs/sport-pilot-certificate/#addons",
+        "Created for people who desire to fly one or two seat aircraft that are smaller, lighter, and easier to fly. Limited to planes with lower take off weight (smaller, lighter aircraft) with no more than two seats. Require a minimum of 20 hours of flight training.",
+      link: "#",
     },
   ],
 };
