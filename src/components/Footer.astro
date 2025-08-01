@@ -82,10 +82,10 @@ const { pathname } = Astro.url;
             <div
               class={`${index % 2 === 0 ? "text-center" : "text-center"} lg:col-span-2`}
             >
-              <p class="font-bold text-xl font-sans lg:text-sm tracking-wide text-white uppercase">
+              <p class="font-bold text-xl lg:pb-3 font-sans lg:text-sm tracking-wide text-white uppercase">
                 {column.title}
               </p>
-              <ul class="mt-2 space-y-2 text-lg font-sans2 lg:text-sm">
+              <ul class="mt-2 space-y-2 text-lg font-sans2 lg:text-sm xl:text-base font-light">
                 {column.links.map((link) => (
                   <li>
                     <a
