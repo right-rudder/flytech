@@ -1,0 +1,56 @@
+---
+import ProgramCard from "./ProgramCard.astro";
+
+const { content } = Astro.props;
+---
+
+<section class="bg-neutral-900 pt-8 pb-6 lg:pt-10 overflow-hidden">
+  <div class="">
+    {
+      content.upperHeading && (
+        <p class="mx-auto mt-12 uppercase text-lg lg:text-xl lg:max-w-3xl font-sans text-center font-bold tracking-tight text-white">
+          {content.upperHeading}
+        </p>
+      )
+    }
+    {
+      content.heading && (
+        <h2 class="mx-auto  mb-3 text-4xl lg:text-6xl lg:max-w-3xl font-title text-center font-bold tracking-tight text-primary-500">
+          {content.heading}
+        </h2>
+      )
+    }
+    {
+      content.heading && (
+        <p class="mx-auto  mb-12 text-lg max-w-3xl text-center tracking-loose text-neutral-100">
+          {content.description}
+        </p>
+      )
+    }
+  </div>
+  <div class="slider-row">
+    <div class="swiper creativeSwiper magic-cursor w-full h-full">
+      <div class="swiper-wrapper pb-8">
+        {
+          content.cards.map((program) => (
+            <div class="swiper-slide">
+              <ProgramCard
+                style="w-full"
+                title={program.title}
+                imagePath={program.imagePath}
+                imageAlt={program.imageAlt}
+                link={program.link}
+                description={program.description}
+              />
+            </div>
+          ))
+        }
+      </div>
+      <div class="hidden lg:block">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </div>
+</section>
