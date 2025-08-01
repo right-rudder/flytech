@@ -82,10 +82,10 @@ const { pathname } = Astro.url;
             <div
               class={`${index % 2 === 0 ? "text-center" : "text-center"} lg:col-span-2`}
             >
-              <p class="font-bold text-xl font-sans lg:text-sm tracking-wide text-white uppercase">
+              <p class="font-bold text-xl lg:pb-3 font-sans lg:text-sm tracking-wide text-white uppercase">
                 {column.title}
               </p>
-              <ul class="mt-2 space-y-2 text-lg font-sans2 lg:text-sm">
+              <ul class="mt-2 space-y-2 text-lg font-sans2 lg:text-sm xl:text-base font-light">
                 {column.links.map((link) => (
                   <li>
                     <a
@@ -104,11 +104,11 @@ const { pathname } = Astro.url;
           <div class="flex justify-center items-center">
             <!--WIDGET METAR-->
             <a
-              href="https://metar-taf.com/KFFZ"
+              href="https://metar-taf.com/metar/KSTJ"
               target="_blank"
               rel="noopener noreferrer"
               title="METAR Falcon Field"
-              id="metartaf-6S893mdu"
+              id="metartaf-QrKodm9Z"
               class="bg-primary-300 p-4 rounded-lg text-center w-full"
               >METAR Falcon Field</a
             >
@@ -116,7 +116,7 @@ const { pathname } = Astro.url;
               async
               defer
               crossorigin="anonymous"
-              src="https://metar-taf.com/embed-js/KFFZ?visibility=mi&qnh=inHg&rh=rh&target=6S893mdu"
+              src="https://metar-taf.com/embed-js/KSTJ?visibility=mi&qnh=inHg&rh=rh&target=QrKodm9Z"
             ></script>
           </div>
         </div>

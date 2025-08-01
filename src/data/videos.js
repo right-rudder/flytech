@@ -5,6 +5,11 @@ const videoList = [
     videoId: "0mwjkKUwlI8",
   },
   {
+    title: "IFR Discovery Flight - Rough Approach",
+    description: "discovery flight",
+    videoId: "UYIGh0f_FsQ",
+  },
+  {
     title: "Lane Hall Solo Flight Training",
     description: "Lane Hall Solo",
     videoId: "FSliFHlpze0",
