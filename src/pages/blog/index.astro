@@ -4,6 +4,7 @@ import FormattedDate from "../../components/FormattedDate.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeaderSmall from "../../components/HeaderSmall.astro";
 import CTAVideoWhite from "../../components/CTAVideoWhite.astro";
+import CTAColor from "../../components/CTAColor.astro";
 import { getCurrentVideo } from "../../scripts/videoSpinner.js";
 import videoList from "../../data/videos.js";
 import flyWithUsCTA from "../../data/fly-with-us-cta";
@@ -19,6 +20,20 @@ const data = {
       {
         name: "Read our articles",
         link: "#blogfeed",
+        primary: true,
+      },
+    ],
+  },
+  cta: {
+    imagePath: "/src/assets/PPL-980x653.webp",
+    imageAlt: "FlyTech team on the runway preparing a discovery flight",
+    headerH1: `<span class="text-primary-600">Start Your Aviation Journey</br></span> Enroll now`,
+    paragraph:
+      "Experience the thrill of flying and see if the skies are calling you.",
+    buttons: [
+      {
+        name: "Enroll Today",
+        link: "/#",
         primary: true,
       },
     ],
@@ -185,4 +200,5 @@ const currentVideo = getCurrentVideo(videoList, "discovery flight");
       </div>
     </div>
   </section>
+  <CTAColor content={data.cta} />
 </BaseLayout>
