@@ -93,7 +93,7 @@ export const navbarLinks = [
       },
       {
         name: "Blog",
-        link: "#",
+        link: "/blog",
       },
     ],
   },

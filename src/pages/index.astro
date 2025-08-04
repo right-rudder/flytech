@@ -20,6 +20,7 @@ import CTAVideo from "../components/CTAVideo.astro";
 // import CTAFlight from "../data/CTAFlight";
 import videoList from "../data/videos.js";
 import { getCurrentVideo } from "../scripts/videoSpinner.js";
+import WidgetGoogleReviews from "../components/FCRM/WidgetGoogleReviews.astro";
 import CTAContact from "../components/CTAContact.astro";
 
 // Transform FAQ format for schema
@@ -51,7 +52,8 @@ const dataForVideo = {
   <CTAVideoWhite video={currentVideo} data={flyWithUsCTA} />
   <!-- <CTAColor content={flyWithUsCTA} /> -->
   <ProgramSwiper content={programsSwiper} />
-  <Testimonials content={data.testimonials} />
+  <WidgetGoogleReviews />
+  <!-- <Testimonials content={data.testimonials} /> -->
   <!-- <BlogFeed data={data.blogfeed} /> -->
   <FAQs faqs={GeneralFAQs} type="General" client:visible />
   <FAQSchema items={faqSchemaItems} />
