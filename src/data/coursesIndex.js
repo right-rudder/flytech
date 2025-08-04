@@ -15,18 +15,13 @@ const coursesIndex = {
       imagePath: "/src/assets/placeholder-img.webp",
       imageAlt:
         "Photograph of a FlyTech Flight School aircraft soaring over the Missouri landscape",
-      headerH1: `Pilot <br>PROGRAMS</span>`,
+      headerH1: `Flight <br> training <strong class="text-primary-600">PROGRAMS</strong>`,
       paragraph: `Join FlyTech Flight School and take your first step towards a successful aviation career. Whether you're starting with a discovery flight or pursuing advanced ratings, we’re here to support you every step of the way.`,
       buttons: [
         {
-          name: "Enroll Today",
-          link: "/enroll-at-FlyTech",
-          primary: false,
-        },
-        {
-          name: "Program Guide",
-          link: "/path",
-          primary: false,
+          name: "Our programs",
+          link: "#programs",
+          primary: true,
         },
       ],
     },
