@@ -35,7 +35,7 @@ export const navbarLinks = [
   },
   {
     name: "Programs",
-    link: "#",
+    link: "/programs",
     submenu: [
       {
         name: "Private Pilot",
