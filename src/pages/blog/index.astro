@@ -3,6 +3,10 @@ import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeaderSmall from "../../components/HeaderSmall.astro";
+import CTAVideoWhite from "../../components/CTAVideoWhite.astro";
+import { getCurrentVideo } from "../../scripts/videoSpinner.js";
+import videoList from "../../data/videos.js";
+import flyWithUsCTA from "../../data/fly-with-us-cta";
 
 const data = {
   header: {
@@ -11,12 +15,21 @@ const data = {
     headerH1: `Our <strong class="text-primary-600">Blog </strong>`,
     paragraph:
       "Get the latest insights and tips from FlyTech Flight School. Stay up-to-date with the latest happenings in the world of flight training.",
+    buttons: [
+      {
+        name: "Read our articles",
+        link: "#blogfeed",
+        primary: true,
+      },
+    ],
   },
 };
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
+
+const currentVideo = getCurrentVideo(videoList, "discovery flight");
 ---
 
 <BaseLayout
@@ -27,12 +40,15 @@ const posts = (await getCollection("blog")).sort(
   <!-- Header -->
   <HeaderSmall content={data.header} />
 
+  <CTAVideoWhite video={currentVideo} data={flyWithUsCTA} />
+
   <section
-    class="relative isolate overflow-hidden bg-neutral-800 py-24 sm:py-32"
+    class="relative isolate overflow-hidden bg-gradient-to-b from-neutral-900 to-neutral-800 py-24 sm:py-32"
+    id="blogfeed"
   >
     <div class="absolute inset-0 -z-10 overflow-hidden">
       <svg
-        class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-neutral-900 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+        class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-neutral-950 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
         aria-hidden="true"
       >
         <defs>
