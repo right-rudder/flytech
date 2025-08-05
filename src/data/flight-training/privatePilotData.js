@@ -3,56 +3,55 @@ import { COMPANY_NAME } from "../../consts";
 const privatePilotData = {
   pageTitle: `Private Pilot License | ${COMPANY_NAME}`,
   pageDescription:
-    "Start your aviation journey with FlyTech Flight School’s Private Pilot License (PPL) program. Learn from experienced instructors and gain the foundational skills needed to become a licensed pilot.",
+    "Begin your aviation journey with FlyTech’s Private Pilot Certificate program. Learn from expert instructors, master essential flight skills, and earn your wings with confidence.",
   pageKeywords:
-    "private pilot license Missouri, flight school Saint Joseph, learn to fly, PPL certification, aviation school, beginner pilot training",
+    "private pilot certificate Missouri, Saint Joseph flight school, learn to fly, FAA pilot license, aviation training, beginner pilot program",
 
   // Top Header
   header: {
     stars: true,
     imagePath: "/src/assets/placeholder-img.webp",
     imageAlt: "A FlyTech Flight School aircraft in flight over Missouri",
-    headerH1: `Private Pilot <br>LICENSE</span>`,
-    paragraph: `Begin your aviation journey with FlyTech Flight School’s Private Pilot License program. Gain the skills, knowledge, and confidence to take control of the skies.`,
+    headerH1: `Private <strong class="text-primary-600">Pilot Certificate</strong>`,
+    paragraph: `Take the first step toward the skies with FlyTech’s Private Pilot Certificate. Train with experienced instructors and gain the flight hours and skills needed to fly confidently and safely.`,
     buttons: [
       {
         name: "Enroll Today",
         link: "/enroll-at-FlyTech",
-        primary: false,
+        primary: true,
       },
     ],
   },
 
   // Program Details
   details: {
-    upperHeading: "Get Started With a",
+    upperHeading: "Take Off With a",
     heading: "Private Pilot License",
     subHeading:
-      "A PPL is the beginning of your journey in aviation, whether you want to fly for fun or professionally, this is the starting point for every aspiring pilot.",
+      "Whether you're flying for fun or aiming for a professional career, the Private Pilot Certificate is where every pilot’s journey begins.",
 
-    title: "Overview",
+    title: "Program Overview",
     description: `
-      Earning your Private Pilot License (PPL) at FlyTech Flight School is your first step into the world of aviation. This program is designed for aspiring pilots who want to learn how to operate an aircraft safely and confidently. Whether you aim to fly recreationally or use this as a stepping stone toward a professional pilot career, our expert instructors will guide you through each phase of your training.
-      <br/>
-      <br/>
-      Throughout the course, you will receive a combination of in-depth ground school instruction and hands-on flight training. You’ll learn about aerodynamics, flight controls, navigation, meteorology, airspace regulations, and emergency procedures. Additionally, you'll gain experience in essential skills such as radio communication, flight planning, and performing takeoffs and landings at different airports.
-      <br/>
-      <br/>
-      By the end of the program, you will have completed the necessary flight hours, mastered basic and advanced maneuvers, and be fully prepared to pass your FAA Private Pilot checkride. Our goal is to ensure that you graduate with not only the knowledge but also the confidence to take to the skies as a licensed private pilot.`,
+      The Private Pilot Certificate is the most common—and most essential—first step in aviation. At FlyTech, you’ll train under FAA-certified instructors through a proven curriculum that balances in-depth ground school with hands-on flight experience.
+      <br/><br/>
+      You'll learn the fundamentals of aerodynamics, aircraft systems, weather theory, FAA regulations, radio communication, and flight planning. Practical training includes day and night flights, solo navigation, instrument work, and cross-country routes—building real-world confidence in the cockpit.
+      <br/><br/>
+      By the end of the program, you’ll have logged at least 40 hours of flight time and be fully prepared to pass your FAA checkride. Whether you’re pursuing aviation professionally or recreationally, FlyTech will help you earn your wings and take flight with skill and confidence.`,
 
     keyPoints: [
-      "Expert Guidance from Certified Flight Instructors",
-      "Comprehensive Flight and Ground Training",
-      "FAA-Approved Curriculum",
-      "Mastering Basic and Advanced Flight Maneuvers",
+      "Minimum of 40 flight hours (including 20 with an instructor and 10 solo)",
+      "Cross-country and night flying experience included",
+      "FAA-approved curriculum led by certified instructors",
+      "Simulated instrument flight training",
+      "Preparation for FAA checkride within 60 days of exam",
     ],
 
     cta: {
       imagePath: "/src/assets/placeholder-img.webp",
       imageAlt: "Female pilot smiling",
-      title: "Start Your Aviation Journey",
+      title: "Ready to Become a Pilot?",
       description:
-        "Take the first step toward your dream of flying. Join FlyTech Flight School’s Private Pilot License program and earn your wings with expert instruction and hands-on training.",
+        "Join FlyTech and earn your Private Pilot Certificate through expert-led training and real-world flight experience. Your journey to the skies starts here.",
       button: {
         name: "Enroll Now",
         link: "/enroll-at-FlyTech",
@@ -61,19 +60,24 @@ const privatePilotData = {
 
     faqs: [
       {
-        question: "How long does it take to get a Private Pilot License?",
+        question: "What are the age requirements to begin training?",
         answer:
-          "On average, it takes 3-6 months to complete the training, depending on your schedule and pace.",
+          "You can begin training at 14, fly solo at 16, and must be at least 17 to obtain your Private Pilot Certificate.",
       },
       {
-        question: "Do I need prior experience?",
+        question: "How long does it take to earn the certificate?",
         answer:
-          "No prior flying experience is necessary! Our program is designed for beginners looking to start their aviation journey.",
+          "Most students complete the program in 3–6 months, depending on their schedule and training frequency.",
       },
       {
-        question: "What does the training include?",
+        question: "Do I need prior flying experience?",
         answer:
-          "The program includes flight instruction, ground school, and FAA exam preparation to help you obtain your Private Pilot Certificate.",
+          "Not at all! This program is designed for beginners with no previous flight experience.",
+      },
+      {
+        question: "Do I need a medical certificate?",
+        answer:
+          "Yes. A valid driver’s license or an FAA medical certificate is required, depending on your specific certification path.",
       },
     ],
   },
