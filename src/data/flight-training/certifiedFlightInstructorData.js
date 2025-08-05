@@ -10,7 +10,6 @@ const certifiedFlightInstructorData = {
   // Top Header
   header: {
     stars: true,
-
     imagePath: "/src/assets/placeholder-img.webp",
     imageAlt:
       "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
@@ -35,14 +34,11 @@ const certifiedFlightInstructorData = {
     title: "Overview",
     description: `
       The Certified Flight Instructor (CFI) program at FlyTech Flight School is designed for pilots looking to advance their careers by teaching others how to fly. This program equips you with the instructional skills, flight proficiency, and teaching techniques necessary to become an FAA-certified instructor.
-      <br/>
-      <br/>
-      FlyTech offers an <strong>accelerated(~4-8 weeks)</strong> and a <strong>flexible(at-your-own pace)</strong> CFI training programs. Our flight instructors will guide you through the process of becoming a proficient flight instructor, preparing you for a rewarding career in aviation.
-      <br/>
-      <br/>
+      <br/><br/>
+      FlyTech offers an <strong>accelerated (~4-8 weeks)</strong> and a <strong>flexible (at-your-own pace)</strong> CFI training program. Our flight instructors will guide you through the process of becoming a proficient flight instructor, preparing you for a rewarding career in aviation.
+      <br/><br/>
       As a CFI, you will develop expertise in aerodynamics, flight instruction principles, and student pilot training strategies. You’ll also refine your communication skills to effectively teach flight maneuvers, emergency procedures, and airspace regulations.
-      <br/>
-      <br/>
+      <br/><br/>
       Upon completion of this program, you will be prepared to pass the FAA Certified Flight Instructor checkride and begin your career as a flight instructor—gaining flight hours and advancing toward airline or corporate pilot opportunities.`,
 
     keyPoints: [
@@ -97,6 +93,50 @@ const certifiedFlightInstructorData = {
           "As a CFI, you can teach student pilots, build valuable flight hours, and gain experience for future airline or corporate pilot opportunities.",
       },
     ],
+
+    pricing: {
+      assumptions: [
+        { item: "TAA SEL (WET)", rate: "$185/hr" },
+        { item: "Instructor Rate", rate: "$60/hr" },
+        { item: "Sim Time", rate: "$50/hr" },
+        { item: "Group Ground School", rate: "$30/hr" },
+        { item: "CFI Checkride", rate: "$1,200" },
+      ],
+      estimatedTotal: "$12,062.50",
+      breakdown: [
+        {
+          category: "Dual Flight Time",
+          details: "15 hrs @ $185/hr",
+          total: "$2,775",
+        },
+        {
+          category: "Flight Instruction",
+          details: "15 hrs @ $60/hr",
+          total: "$900",
+        },
+        {
+          category: "Simulator Time",
+          details: "27.5 hrs @ $50/hr",
+          total: "$1,375",
+        },
+        {
+          category: "Sim Instruction",
+          details: "27.5 hrs @ $60/hr",
+          total: "$1,650",
+        },
+        {
+          category: "Pre/Post Flight Briefing",
+          details: "14 hrs @ $60/hr",
+          total: "$840",
+        },
+        {
+          category: "Ground School",
+          details: "30 hrs @ $60/hr",
+          total: "$1,800",
+        },
+        { category: "Checkride", details: "One-time", total: "$1,200" },
+      ],
+    },
   },
 };
 
