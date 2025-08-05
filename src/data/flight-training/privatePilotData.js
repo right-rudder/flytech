@@ -46,6 +46,60 @@ const privatePilotData = {
       "Preparation for FAA checkride within 60 days of exam",
     ],
 
+    pricing: {
+      assumptions: [
+        { item: "TAA SEL (WET)", rate: "$185/hr" },
+        { item: "Instructor Rate", rate: "$60/hr" },
+        { item: "Sim Time", rate: "$50/hr" },
+        { item: "Ground School", rate: "$60/hr" },
+        { item: "Checkride (Examiner Fee)", rate: "$1,200" },
+      ],
+      estimatedTotal: "$17,925",
+      breakdown: [
+        {
+          category: "Flight Time (Dual)",
+          details: "25 hrs @ $185/hr",
+          total: "$4,625",
+        },
+        {
+          category: "Flight Time (Solo)",
+          details: "15 hrs @ $185/hr",
+          total: "$2,775",
+        },
+        {
+          category: "Instruction (Flight)",
+          details: "25 hrs @ $60/hr",
+          total: "$1,500",
+        },
+        {
+          category: "Simulator Time",
+          details: "5 hrs @ $50/hr",
+          total: "$250",
+        },
+        {
+          category: "Simulator Instruction",
+          details: "5 hrs @ $60/hr",
+          total: "$300",
+        },
+        {
+          category: "Ground Instruction",
+          details: "30 hrs @ $60/hr",
+          total: "$1,800",
+        },
+        {
+          category: "Pre/Post Briefings",
+          details: "20 hrs @ $60/hr",
+          total: "$1,200",
+        },
+        { category: "Checkride Fee", details: "One-time", total: "$1,200" },
+        {
+          category: "Additional Misc. Costs",
+          details: "Books, materials, headset, etc.",
+          total: "$4,275",
+        },
+      ],
+    },
+
     cta: {
       imagePath: "/src/assets/placeholder-img.webp",
       imageAlt: "Female pilot smiling",
