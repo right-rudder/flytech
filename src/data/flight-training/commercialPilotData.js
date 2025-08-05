@@ -10,7 +10,6 @@ const commercialPilotData = {
   // Top Header
   header: {
     stars: true,
-
     imagePath: "/src/assets/placeholder-img.webp",
     imageAlt:
       "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
@@ -35,11 +34,9 @@ const commercialPilotData = {
     title: "Overview",
     description: `
       The Commercial Pilot License (CPL) program at FlyTech Flight School is designed for pilots who want to take their skills to a professional level. This program provides advanced flight training, in-depth aeronautical knowledge, and real-world experience to prepare you for a career in aviation.
-      <br/>
-      <br/>
+      <br/><br/>
       You will refine your piloting skills, master precision maneuvers, and develop the knowledge necessary for safe and efficient commercial flight operations. The course covers advanced aerodynamics, performance-based navigation, emergency procedures, and FAA regulations.
-      <br/>
-      <br/>
+      <br/><br/>
       Upon completion, you will be fully prepared to pass the FAA Commercial Pilot checkride. Whether you plan to become an airline pilot, charter pilot, or flight instructor, this certification is an essential step toward achieving your aviation career goals.`,
 
     keyPoints: [
@@ -78,6 +75,51 @@ const commercialPilotData = {
           "With a CPL, you can work as a commercial pilot in charter flights, corporate aviation, flight instruction, and more.",
       },
     ],
+
+    pricing: {
+      assumptions: [
+        { item: "TAA SEL (WET)", rate: "$185/hr" },
+        { item: "Instructor Rate", rate: "$60/hr" },
+        { item: "Sim Time", rate: "$50/hr" },
+        { item: "Group Ground School", rate: "$30/hr" },
+        { item: "Commercial Checkride + Written", rate: "$1,200" },
+      ],
+      estimatedTotal: "$23,487.50",
+      breakdown: [
+        {
+          category: "Remaining PIC Time Required",
+          details: "50 hrs @ $185/hr",
+          total: "$9,250",
+        },
+        {
+          category: "Dual Hours (Sling, Right Seat)",
+          details: "30 hrs @ $185/hr",
+          total: "$5,550",
+        },
+        {
+          category: "Flight Instruction (Dual Hours)",
+          details: "30 hrs @ $60/hr",
+          total: "$1,800",
+        },
+        { category: "Sim Time", details: "27.5 hrs @ $50/hr", total: "$1,375" },
+        {
+          category: "Sim Instruction",
+          details: "27.5 hrs @ $60/hr",
+          total: "$1,650",
+        },
+        {
+          category: "Pre/Post Flight Instruction",
+          details: "14 hrs @ $60/hr",
+          total: "$840",
+        },
+        {
+          category: "Ground School",
+          details: "30 hrs @ $60/hr",
+          total: "$1,800",
+        },
+        { category: "Checkride (FAA)", details: "One-time", total: "$1,200" },
+      ],
+    },
   },
 };
 
