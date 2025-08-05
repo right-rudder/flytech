@@ -7,26 +7,26 @@ const cta = program.cta;
 const faqs = program.faqs;
 ---
 
-<section class="mx-auto md:px-8 py-12">
+<section class="mx-auto md:px-8 py-12 bg-neutral-900">
   <!-- Program Heading -->
   <div class="w-full text-center">
     {
       program.upperHeading && (
-        <h3 class="mx-auto uppercase text-lg lg:text-xl max-w-3xl font-sans font-bold tracking-tight text-primary-600">
+        <h3 class="mx-auto uppercase text-lg lg:text-xl max-w-3xl font-sans font-bold tracking-tight text-white">
           {program.upperHeading}
         </h3>
       )
     }
     {
       program.heading && (
-        <h2 class="mx-auto mb-3 text-4xl lg:text-6xl max-w-3xl font-title font-bold tracking-tight text-primary-950">
+        <h2 class="mx-auto mb-3 text-4xl lg:text-6xl max-w-3xl font-title font-bold tracking-tight text-primary-500">
           {program.heading}
         </h2>
       )
     }
     {
       program.subHeading && (
-        <p class="mx-auto mb-12 text-lg max-w-3xl tracking-loose text-gray-900">
+        <p class="mx-auto mb-12 text-lg max-w-3xl tracking-loose text-white/90">
           {program.subHeading}
         </p>
       )
@@ -39,10 +39,12 @@ const faqs = program.faqs;
   >
     <!-- Left: Program Details -->
     <div class="lg:w-1/2">
-      <div class="bg-primary-100 h-full p-8 lg:p-12 rounded-lg shadow-md">
-        <h2 class="text-3xl font-semibold mb-6">{program.title}</h2>
+      <div class="bg-white h-full p-8 lg:p-12 rounded-lg shadow-md">
+        <h2 class="text-3xl font-semibold mb-6 text-primary-800">
+          {program.title}
+        </h2>
         <p
-          class="text-gray-800 leading-relaxed mb-10"
+          class="text-neutral-900 leading-relaxed mb-10"
           set:html={program.description}
         />
 
@@ -53,7 +55,7 @@ const faqs = program.faqs;
             {
               program.keyPoints.map((point) => (
                 <li class="flex text-lg items-center bg-white/70 p-3 rounded-md shadow-sm hover:scale-105 hover:shadow-md transition-all duration-300">
-                  <FaCheck className="text-yellow-500 mr-2" /> {point}
+                  <FaCheck className="text-primary-500 mr-2" /> {point}
                 </li>
               ))
             }
@@ -65,7 +67,7 @@ const faqs = program.faqs;
         program.addons && (
           <div
             id="addons"
-            class="bg-primary-200 h-full p-8 lg:p-12 rounded-lg shadow-md mt-8"
+            class="bg-white h-full p-8 lg:p-12 rounded-lg shadow-md mt-8"
           >
             <h3 class="text-2xl font-semibold mb-4">Additional Training</h3>
             <ul class="space-y-3">
