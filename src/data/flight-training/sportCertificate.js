@@ -32,19 +32,18 @@ const sportPilotData = {
 
     title: "Program Overview",
     description: `
-      Introduced in 2004, the Sport Pilot Certificate is a streamlined FAA pilot license designed for those who want to fly small, lightweight aircraft for fun or personal travel. It’s a great option if you're looking for a faster, more affordable path to the skies—without compromising safety or enjoyment.
+      Introduced in 2004, the Sport Pilot Certificate is a streamlined FAA license designed for those who want to fly small, lightweight aircraft for fun or personal travel. It’s a great option if you're looking for a faster, more affordable path to the skies—without compromising safety or enjoyment.
       <br/><br/>
       Sport pilots are limited to flying aircraft with no more than two seats and a maximum takeoff weight under 1,320 lbs. The training requires fewer hours than a traditional Private Pilot certificate and can often be completed without an FAA medical certificate—just a valid U.S. driver’s license is enough.
       <br/><br/>
       FlyTech’s Sport Pilot program covers all FAA-required dual and solo flight time, cross-country navigation, and checkride preparation—getting you safely and confidently into the air.`,
 
     keyPoints: [
-      "Only 20 hours of total flight time required (minimum FAA requirement)",
-      "Ideal for flying small, two-seat aircraft under 1,320 lbs",
-      "15 hours of dual instruction with a certified instructor",
-      "5 hours of supervised solo flight, including cross-country",
+      "Minimum of 20 hours total flight time",
+      "15 hours dual instruction with a Certified Flight Instructor",
+      "5 hours solo flight including a cross-country",
       "No FAA medical certificate required (with valid U.S. driver’s license)",
-      "Perfect for recreational flying and personal adventure",
+      "Designed for flying light sport aircraft under 1,320 lbs",
     ],
 
     cta: {
@@ -78,9 +77,78 @@ const sportPilotData = {
       {
         question: "Can I fly cross-country with a Sport Pilot license?",
         answer:
-          "Yes! You’ll complete at least one solo cross-country over 75 NM with two different landings. Sport pilots can fly cross-country as long as they stay within allowed airspace.",
+          "Yes, you’ll complete at least one solo cross-country over 75 NM with two landings. You may fly cross-country under Sport Pilot rules within approved airspace.",
       },
     ],
+
+    pricing: {
+      assumptions: [
+        { item: "TAA SEL (WET)", rate: "$185/hr" },
+        { item: "Non-TAA SEL (Cherokee, WET)", rate: "$155/hr" },
+        { item: "Twin (estimate)", rate: "$300/hr" },
+        { item: "Instructor Rate", rate: "$60/hr" },
+        { item: "Group Ground School", rate: "$30/hr" },
+        { item: "Sim Time", rate: "$50/hr" },
+        { item: "Enrollment / Orientation", rate: "$99 one-time" },
+        { item: "Online Ground School", rate: "$300 annual" },
+        { item: "Written Exam (est.)", rate: "$175" },
+        { item: "Medical Exam (1st/2nd Class)", rate: "$300" },
+        { item: "Solo Insurance (Optional)", rate: "$300 annual" },
+        { item: "Enrollment Kit (Optional)", rate: "$2,000 one-time" },
+      ],
+      estimatedTotal: "$22,048",
+      breakdown: [
+        {
+          category: "Flight & Sim Hours",
+          details: "60 hrs @ $185/hr",
+          total: "$11,100",
+        },
+        {
+          category: "Flight Instruction",
+          details: "40 hrs @ $60/hr",
+          total: "$2,400",
+        },
+        {
+          category: "Checkride Prep",
+          details: "10 hrs @ $60/hr",
+          total: "$600",
+        },
+        {
+          category: "General Ground School",
+          details: "15 hrs @ $60/hr",
+          total: "$900",
+        },
+        {
+          category: "Group Ground School",
+          details: "8 hrs @ $30/hr",
+          total: "$240",
+        },
+        { category: "Sim Time", details: "2.5 hrs @ $50/hr", total: "$125" },
+        {
+          category: "Checkride Interview Prep",
+          details: "5 hrs @ $60/hr",
+          total: "$300",
+        },
+        {
+          category: "Pre/Post Flight Instruction",
+          details: "15 hrs @ $60/hr",
+          total: "$900",
+        },
+        {
+          category: "Enrollment & Orientation",
+          details: "One-time",
+          total: "$199",
+        },
+        { category: "FAA Checkride", details: "", total: "$1,000" },
+        { category: "Enrollment Kit (Optional)", details: "", total: "$2,500" },
+        { category: "Medical Exam", details: "", total: "$250–$500" },
+        { category: "Written Exam", details: "", total: "$175" },
+        { category: "Online Ground School", details: "", total: "$399–$499" },
+        { category: "Radio Comms App", details: "", total: "$60" },
+        { category: "ForeFlight EFB", details: "", total: "$200" },
+        { category: "Renter’s Insurance", details: "", total: "$350" },
+      ],
+    },
   },
 };
 
