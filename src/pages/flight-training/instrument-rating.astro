@@ -6,6 +6,16 @@ import flyWithUsCTA from "../../data/fly-with-us-cta";
 
 import ProgramDetails from "../../components/ProgramDetails.astro";
 import programData from "../../data/flight-training/instrumentRatingData.js";
+import CTAVideoWhite from "../../components/CTAVideoWhite.astro";
+import videoList from "../../data/videos.js";
+
+const randomVideo = videoList[Math.floor(Math.random() * videoList.length)];
+const dataForVideo = {
+  headerH1: `<span class="text-primary-600 uppercase text-lg lg:text-2xl lg:max-w-3xl font-sans text-center font-bold tracking-tight">Fly with the team that’s</br></span>revolutionizing pilot training`,
+  paragraph:
+    "At FlyTech Pilot Academy, we combine modern aircraft, immersive technology, and a passionate team of instructors to give you an efficient, professional, and enjoyable path to the cockpit. Whether you're starting fresh or advancing your career, we make it simple.",
+  buttons: [],
+};
 ---
 
 <BaseLayout
@@ -14,6 +24,7 @@ import programData from "../../data/flight-training/instrumentRatingData.js";
   keywords={programData.pageKeywords}
 >
   <HeaderSmall content={programData.header} />
+  <CTAVideoWhite video={randomVideo} data={dataForVideo} />
 
   <ProgramDetails program={programData.details} />
 
