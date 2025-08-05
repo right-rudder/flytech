@@ -21,15 +21,15 @@ const { video, data } = Astro.props;
         <h2
           class="text-4xl md:text-5xl lg:text-6xl text-left md:max-w-3xl lg:max-w-5xl lg:leading-[3.3rem] font-title font-black uppercase lg:tracking-tight text-primary-950"
         >
-          <Fragment set:html={data.header} />
+          <Fragment set:html={data.headerH1} />
         </h2>
         <p
           class="text-4xl md:text-5xl font-semibold text-neutral-900 leading-tight"
         >
-          <Fragment set:html={data.description} />
+          <Fragment set:html={data.title} />
         </p>
         <p class="text-lg md:text-xl text-black leading-relaxed">
-          <Fragment set:html={data.title} />
+          <Fragment set:html={data.paragraph} />
         </p>
         <div
           class="mt-6 w-full flex flex-wrap justify-start align-middle items-center gap-6 z-10"
