@@ -1,79 +1,128 @@
 import { COMPANY_NAME } from "../../consts";
 
 const instrumentRatingData = {
-  pageTitle: `Instrument Rating Course in Saint Joseph, MO | ${COMPANY_NAME}`,
+  pageTitle: `Instrument Rating | ${COMPANY_NAME}`,
   pageDescription:
-    "Join FlyTech Flight School in Saint Joseph, MO, for our Instrument Rating course. Master IFR navigation, low-visibility flying, and advance your aviation career with expert training.",
+    "Earn your Instrument Rating with FlyTech Flight School and fly safely in low-visibility conditions. Master IFR procedures, advanced navigation, and weather interpretation with expert instruction.",
   pageKeywords:
-    "instrument rating Saint Joseph MO, IFR training Saint Joseph, flight school Saint Joseph MO, advanced pilot training Saint Joseph, aviation school Saint Joseph MO, instrument flight rules certification",
+    "instrument rating flight school, IFR certification Missouri, advanced pilot training, fly in low visibility, aviation school, FAA instrument training",
 
   // Top Header
   header: {
     stars: true,
     imagePath: "/src/assets/placeholder-img.webp",
-    imageAlt: "FlyTech Flight School Cirrus airplane instrument panel",
-    headerH1: `Instrument <br>RATING</span>`,
-    paragraph: `Advance your skills with FlyTech Flight School's Instrument Rating program. Learn to navigate through clouds, low visibility, and controlled airspace with confidence.`,
+    imageAlt: "Pilot flying with G1000 avionics during instrument flight",
+    headerH1: `Elevate Your Skills with an <strong class="text-primary-600">Instrument Rating</strong>`,
+    paragraph: `Enhance your ability to fly in clouds, rain, and low-visibility environments with FlyTech’s structured Instrument Training program. Learn precision navigation, ATC communication, and weather strategy from certified professionals.`,
     buttons: [
       {
-        name: "Enroll Today",
+        name: "Start Training",
         link: "/enroll-at-FlyTech",
-        primary: false,
+        primary: true,
       },
     ],
   },
 
   // Program Details
   details: {
-    upperHeading: "Advance Your Skills with an",
-    heading: "Instrument Rating Certification",
+    upperHeading: "Advance Your Aviation Skills",
+    heading: "Instrument Rating Program",
     subHeading:
-      "An Instrument Rating (IFR) allows you to fly in all weather conditions, improving your safety and proficiency as a pilot.",
+      "Learn to fly under Instrument Flight Rules (IFR) and expand your capabilities, safety, and career opportunities as a pilot.",
 
-    title: "Overview",
+    title: "Program Overview",
     description: `
-      The Instrument Rating (IFR) course at FlyTech Flight School is designed for pilots looking to enhance their flying abilities and operate safely in low-visibility conditions. This certification is a critical step for those pursuing a commercial aviation career or wanting to improve their overall pilot proficiency.
-      <br/>
-      <br/>
-      Throughout the course, you will gain in-depth knowledge of IFR navigation, meteorology, and the complexities of controlled airspace. You will learn to rely solely on your aircraft's instruments to maintain precise altitude, heading, and approach procedures—even in adverse weather conditions.
-      <br/>
-      <br/>
-      By the end of this program, you will be proficient in instrument flight techniques, holding patterns, approach procedures, and emergency protocols. Our expert instructors will ensure that you develop the skills and confidence to pass the FAA Instrument Rating checkride and safely operate under Instrument Flight Rules (IFR).`,
+      FlyTech’s Instrument Rating program is designed for pilots ready to take their skills to the next level. Flying under IFR allows you to safely operate in challenging weather conditions and improves your precision, situational awareness, and decision-making.
+      <br/><br/>
+      Whether you're flying for career advancement or personal mastery, our program blends simulator and in-aircraft instruction to prepare you for real-world scenarios. You’ll master approaches, holding patterns, IFR communications, flight planning, and more.
+      <br/><br/>
+      Training is flexible—choose to fly in your own airplane, ours, or our full-motion simulator, all guided by experienced Certified Flight Instructors (CFIs). We support local and travel-based training within 60 miles of KSTJ.`,
 
     keyPoints: [
-      "Learn to Fly Safely in Low-Visibility Conditions",
-      "Master IFR Navigation & Approach Procedures",
-      "Enhance Your Skills for a Professional Pilot Career",
-      "Comprehensive Ground & Flight Training",
+      "Fly confidently in clouds, rain, and reduced visibility",
+      "Master IFR procedures, precision navigation, and weather management",
+      "Flexible training options: your aircraft, FlyTech’s fleet, or full-motion simulator",
+      "Certified instructors and modern avionics: Garmin G3X, GTN 650, G5",
+      "Meets FAA requirements for Instrument Rating and career advancement",
     ],
 
     cta: {
       imagePath: "/src/assets/placeholder-img.webp",
-      imageAlt: "Female pilot smiling",
-      title: "Enroll in the Instrument Rating Program",
+      imageAlt: "Pilot flying in instrument conditions",
+      title: "Upgrade Your Flying",
       description:
-        "Take your aviation skills to the next level. Join FlyTech Flight School's Instrument Rating program and become a more capable, professional pilot.",
+        "Add an Instrument Rating to your pilot certificate with FlyTech’s expert instruction and flexible training options. Gain the confidence and capability to fly in all kinds of weather.",
       button: {
-        name: "Enroll Now",
+        name: "Schedule Your First Session",
         link: "/enroll-at-FlyTech",
       },
     },
 
+    pricing: {
+      title: "Training Options & Rates",
+      options: [
+        {
+          title: "Train in Your Own Aircraft",
+          price: "$60/hour",
+          description:
+            "Receive instruction in your aircraft from a Certified Flight Instructor. A one-time $249 registration and insurance fee applies. Instrument and Commercial dual training rate.",
+        },
+        {
+          title: "Train in FlyTech Aircraft",
+          price: "$185/hour",
+          description:
+            "Wet rate (fuel included). 9% sales tax applies to aircraft rental (not to fuel or CFI). CFI rate is $60/hour for Instrument and Commercial dual instruction.",
+        },
+        {
+          title: "Full-Motion Simulator",
+          price: "$50/hour",
+          description:
+            "FAA-certified for Instrument Training. Features both traditional 6-pack and Garmin G1000 avionics. Available in St. Joseph, MO. Includes yoke and stick configurations. For dual time only.",
+        },
+        {
+          title: "Travel Training",
+          price: "TBD/hour",
+          description:
+            "Our CFIs can travel within 60 miles of KSTJ to train you in your aircraft. Pricing depends on location and time. Aircraft ferrying also available at standard rates.",
+        },
+      ],
+    },
+
+    equipment: {
+      title: "Aircraft & Avionics",
+      features: [
+        "✔ Garmin G3X Touch EFIS",
+        "✔ Garmin G5 with backup battery",
+        "✔ Garmin GTN 650 GPS/Nav/Comm",
+        "✔ Angle of Attack Indicator",
+        "✔ Red LED Cabin Lighting",
+        "✔ Rotax 912 ULS (100 hp) & Rotax 912iS engines",
+        "✔ Whirlwind Carbon Fiber Propeller",
+        "✔ Automatic Carb Heat & Electric Pitch Trim",
+        "✔ Pushrod Aileron & Elevator Controls",
+      ],
+    },
+
     faqs: [
       {
-        question: "How long does it take to get an Instrument Rating?",
+        question: "What is an Instrument Rating?",
         answer:
-          "Most students complete the training in 3-4 months, depending on flight frequency and study pace.",
+          "An Instrument Rating allows a pilot to fly under Instrument Flight Rules (IFR), enabling safer flight in poor visibility, clouds, or adverse weather conditions.",
       },
       {
-        question: "Do I need a Private Pilot License first?",
+        question: "Is the simulator approved for FAA instrument time?",
         answer:
-          "Yes, you must have a Private Pilot Certificate before pursuing an Instrument Rating.",
+          "Yes. Our full-motion simulator is certified and can be used toward the flight time requirements for your Instrument Rating.",
       },
       {
-        question: "What does the training include?",
+        question: "Can I use my own aircraft?",
         answer:
-          "The course includes IFR ground school, simulator training, in-flight instrument training, and FAA checkride preparation.",
+          "Absolutely. We offer instruction in your aircraft at a reduced hourly rate. Just be sure your plane is IFR-equipped and insured.",
+      },
+      {
+        question: "How long does Instrument Training take?",
+        answer:
+          "Most students complete their Instrument Rating within 2–4 months, depending on frequency and prior experience.",
       },
     ],
   },
