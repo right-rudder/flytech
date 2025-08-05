@@ -3,9 +3,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HeaderScreen from "../components/HeaderScreen.astro";
 import ProgramSwiper from "../components/ProgramSwiper.astro";
 import CTAColor from "../components/CTAColor.astro";
-import programsSwiper from "../data/programSwiper";
+import programsSwiper from "../data/flight-training/programSwiper.js";
 import flyWithUsCTA from "../data/fly-with-us-cta";
-import pilotTrainingMadeSimple from "../data/pilot-training-made-simple";
+import pilotTrainingMadeSimple from "../data/pages/pilot-training-made-simple.js";
 import PageSummary from "../components/PageSummary.astro";
 import ImageComp from "../components/ImageComp.astro";
 import PriceCalcZero2Hero from "../components/priceCalcZero2Hero";
@@ -134,8 +134,9 @@ const dataForVideo = {
                 land, and navigate the skies with the support of our
                 knowledgeable team.
               </p>
-              <a href="/programs/private-pilot" class="btn-primary w-full"
-                >PRIVATE PILOT TRAINING</a
+              <a
+                href="/flight-training/private-pilot"
+                class="btn-primary w-full">PRIVATE PILOT TRAINING</a
               >
             </div>
             <div class="flex flex-col justify-center mt-8 p-4">
@@ -149,8 +150,9 @@ const dataForVideo = {
                 advanced training program will empower you with the skills and
                 confidence to effortlessly pilot multi-engine aircraft.
               </p>
-              <a href="/programs/multi-engine-rating" class="btn-primary w-full"
-                >MULTI ENGINE TRAINING</a
+              <a
+                href="/flight-training/multi-engine-rating"
+                class="btn-primary w-full">MULTI ENGINE TRAINING</a
               >
             </div>
           </div>
@@ -205,8 +207,9 @@ const dataForVideo = {
                 procedures. Rest assured, you will be thoroughly prepared and
                 equipped to overcome any challenges in your aviation career.
               </p>
-              <a href="/programs/commercial-pilot" class="btn-primary w-full"
-                >COMMERCIAL PILOT TRAINING</a
+              <a
+                href="/flight-training/commercial-pilot"
+                class="btn-primary w-full">COMMERCIAL PILOT TRAINING</a
               >
             </div>
             <div class="flex flex-col justify-center mt-8 p-4">
@@ -221,7 +224,7 @@ const dataForVideo = {
                 airlines.
               </p>
               <a
-                href="/programs/certified-flight-instructor"
+                href="/flight-training/certified-flight-instructor"
                 class="btn-primary w-full">CFI TRAINING</a
               >
             </div>
@@ -248,8 +251,9 @@ const dataForVideo = {
                 instruments. This rating unlocks a multitude of opportunities,
                 enhancing your safety and proficiency as a pilot.
               </p>
-              <a href="/programs/instrument-rating" class="btn-primary w-full"
-                >INSTRUMENT TRAINING</a
+              <a
+                href="/flight-training/instrument-rating"
+                class="btn-primary w-full">INSTRUMENT TRAINING</a
               >
             </div>
             <div class="flex flex-col justify-center mt-8 p-4">
@@ -262,7 +266,7 @@ const dataForVideo = {
                 final step in instructor training at FlyTech Flight School.
               </p>
               <a
-                href="/programs/certified-flight-instructor/#addons"
+                href="/flight-training/certified-flight-instructor/#addons"
                 class="btn-primary w-full">CFII TRAINING</a
               >
             </div>

@@ -1,4 +1,4 @@
-import { COMPANY_NAME } from "../consts";
+import { COMPANY_NAME } from "../../consts";
 
 const multiEngineData = {
   pageTitle: `Multi-Engine Rating Course in Saint Joseph, MO | ${COMPANY_NAME}`,

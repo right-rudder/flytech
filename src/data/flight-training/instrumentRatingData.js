@@ -1,4 +1,4 @@
-import { COMPANY_NAME } from "../consts";
+import { COMPANY_NAME } from "../../consts";
 
 const instrumentRatingData = {
   pageTitle: `Instrument Rating Course in Saint Joseph, MO | ${COMPANY_NAME}`,

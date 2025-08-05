@@ -34,8 +34,8 @@ export const navbarLinks = [
     ],
   },
   {
-    name: "Programs",
-    link: "/programs",
+    name: "Flight Training",
+    link: "/flight-training",
     submenu: [
       {
         name: "Private Pilot",
@@ -51,7 +51,7 @@ export const navbarLinks = [
       },
       // {
       //   name: "Multi-Engine Rating",
-      //   link: "/programs/multi-engine-rating",
+      //   link: "/flight-training/multi-engine-rating",
       // },
       {
         name: "Certified Flight Instructor",

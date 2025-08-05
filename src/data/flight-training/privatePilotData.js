@@ -1,4 +1,4 @@
-import { COMPANY_NAME } from "../consts";
+import { COMPANY_NAME } from "../../consts";
 
 const privatePilotData = {
   pageTitle: `Private Pilot License | ${COMPANY_NAME}`,

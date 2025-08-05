@@ -1,4 +1,4 @@
-import { COMPANY_NAME } from "../consts";
+import { COMPANY_NAME } from "../../consts";
 
 const certifiedFlightInstructorData = {
   pageTitle: `Certified Flight Instructor (CFI) | ${COMPANY_NAME}`,
