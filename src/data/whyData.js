@@ -3,27 +3,27 @@ import { COMPANY_NAME } from "../consts";
 const whyData = {
   pageTitle: `Why Choose FlyTech Flight School in Saint Joseph, MO? | ${COMPANY_NAME}`,
   pageDescription:
-    "Discover why FlyTech Flight School in Saint Joseph, MO, is the top choice for aspiring pilots. With experienced instructors, modern aircraft, and personalized training, we help you achieve your aviation dreams.",
+    "FlyTech Flight School in Saint Joseph, MO offers real-world airspace experience, personalized instruction, and cutting-edge aircraft. Learn to fly with confidence in an environment designed to accelerate your success.",
   pageKeywords:
-    "flight school Saint Joseph MO, pilot training Saint Joseph, aviation school Saint Joseph, personalized flight training, modern aircraft Saint Joseph MO, experienced flight instructors Saint Joseph MO",
+    "flight school Saint Joseph MO, pilot training Missouri, Sling NGT training aircraft, Garmin avionics, ForeFlight, flight school near Kansas City, real-world flight training Missouri",
 
   // Top Header
   header: {
     stars: true,
     imagePath: "/src/assets/placeholder-img.webp",
     imageAlt: "FlyTech Flight School campus and facilities",
-    headerH1: `Why Choose <br>FlyTech?</span>`,
-    paragraph: `Discover the reasons why FlyTech Flight School stands out as the premier choice for aspiring pilots. Our state-of-the-art facilities, experienced instructors, and personalized training programs are designed to help you achieve your aviation goals.`,
+    headerH1: `Why Choose <strong class="text-primary-600">FlyTech?</strong>`,
+    paragraph: `FlyTech isn’t just a flight school — it's a tight-knit team of local aviators, instructors, and mentors passionate about helping the next generation of pilots succeed. With modern training tools, hands-on experience, and a supportive environment, FlyTech offers a better, smarter way to learn to fly.`,
     buttons: [
       {
         name: "Enroll Today",
         link: "/enroll-at-FlyTech",
-        primary: false,
+        primary: true,
       },
       {
         name: "Discovery Flight",
         link: "/discovery-flight",
-        primary: false,
+        primary: true,
       },
     ],
   },
@@ -31,8 +31,8 @@ const whyData = {
   pageSummary: {
     title: "Why Choose FlyTech?",
     paragraphs: [
-      "At FlyTech, we are committed to providing exceptional flight training that prioritizes safety, quality, and personalized instruction. Our experienced instructors, modern aircraft, and comprehensive training programs ensure that you receive the best education possible.",
-      "Whether you are pursuing a career as a professional pilot or looking to fly for leisure, FlyTech offers a supportive and engaging learning environment that caters to your individual needs and goals.",
+      "FlyTech is built by pilots for pilots. We combine cutting-edge training aircraft, real-world airspace exposure, and a mission-driven team to make flight training safer, faster, and more effective.",
+      "From your first takeoff to advanced maneuvers, you’ll benefit from a personalized learning experience, Garmin-integrated cockpit tools, and post-flight video debriefs that accelerate your growth. Whether flying for fun or pursuing a career, FlyTech is your launchpad.",
     ],
     buttons: [
       {
@@ -45,62 +45,62 @@ const whyData = {
 
   contentSplit: {
     upperHeading: "Get Started",
-    heading: "Your Pilot Career Begins Here",
+    heading: "Launch Your Aviation Journey with Confidence",
     descriptions: [
-      "Embark on your journey to becoming a pilot with FlyTech. Our comprehensive training programs are designed to help you achieve your aviation dreams, whether you are aiming for a private pilot license or a commercial pilot career.",
-      "Our certified flight instructors (CFIs) are dedicated to providing top-notch training and support, ensuring that you gain the skills and knowledge needed to succeed in the aviation industry.",
-      "Join the FlyTech community and take advantage of our state-of-the-art facilities, modern aircraft, and personalized training approach. Your pilot career starts here.",
+      "At FlyTech, you’ll train in uncongested airspace while gaining experience in nearby controlled environments — preparing you for real-world flying from day one.",
+      "Our instructors use Garmin avionics, ForeFlight tools, and personalized video debriefs to help you learn faster and retain more — all while flying the technologically advanced Sling NGT aircraft.",
+      "Join a school that adapts to your schedule, supports your goals, and puts your success at the center of everything we do.",
     ],
-    bulletsTitle: "Why Choose FlyTech?",
+    bulletsTitle: "The FlyTech Advantage",
     bullets: [
       {
-        title: "Experienced Instructors",
+        title: "Local, Passionate Instructors",
         descriptions: [
-          "Learn from highly experienced and certified flight instructors who are passionate about aviation and dedicated to your success.",
+          "Train with instructors who are deeply rooted in the local community and invested in your growth every step of the way.",
         ],
-        icon: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z",
+        icon: "M9 12.75 11.25 15 15 9.75...",
       },
       {
-        title: "Modern Aircraft",
+        title: "Advanced Training Aircraft",
         descriptions: [
-          "Train in well-maintained, modern aircraft equipped with the latest technology to ensure a safe and efficient learning experience.",
+          "Learn in the Sling NGT — a sleek, fuel-efficient, tech-rich aircraft built for modern pilot training.",
         ],
-        icon: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z",
+        icon: "M9 12.75 11.25 15 15 9.75...",
       },
       {
-        title: "Personalized Training",
+        title: "Integrated iPad Training Tools",
         descriptions: [
-          "Receive personalized instruction tailored to your individual learning style and goals, ensuring that you progress at your own pace.",
+          "Harness industry-leading tools like ForeFlight and Garmin avionics for real-time flight planning, weather, navigation, and post-flight learning.",
         ],
-        icon: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z",
+        icon: "M9 12.75 11.25 15 15 9.75...",
       },
       {
-        title: "Comprehensive Programs",
+        title: "Video Debriefing System",
         descriptions: [
-          "Benefit from a wide range of training programs, from private pilot licenses to advanced certifications, designed to meet your specific needs.",
+          "Replay your flights with audio and cockpit visuals to boost learning retention and build confidence faster.",
         ],
-        icon: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z",
+        icon: "M9 12.75 11.25 15 15 9.75...",
       },
       {
-        title: "Supportive Community",
+        title: "Flexible, Student-Centered Scheduling",
         descriptions: [
-          "Join a supportive and welcoming community of fellow students and instructors who are passionate about aviation and dedicated to helping you succeed.",
+          "Train at your own pace with flexible scheduling options designed for students balancing school, work, or family.",
         ],
-        icon: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z",
+        icon: "M9 12.75 11.25 15 15 9.75...",
       },
       {
-        title: "Flexible Scheduling",
+        title: "Supportive Training Environment",
         descriptions: [
-          "Take advantage of flexible scheduling options that allow you to balance your flight training with other commitments and responsibilities.",
+          "FlyTech offers a non-intimidating, encouraging environment where your success is the shared mission of every instructor and team member.",
         ],
-        icon: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z",
+        icon: "M9 12.75 11.25 15 15 9.75...",
       },
     ],
     finalSection: {
-      heading: "Ready to Take Off?",
+      heading: "Ready for Takeoff?",
       descriptions: [
-        "At FlyTech, we are dedicated to helping you achieve your aviation dreams. Our comprehensive training programs, experienced instructors, and modern facilities provide the perfect environment for you to succeed.",
-        "Whether you are just starting your journey or looking to advance your career, FlyTech offers the support and resources you need to reach your goals. Click the button below to learn more about our programs and start your journey with FlyTech today.",
+        "Whether you're just discovering aviation or you're ready to pursue a full-time pilot career, FlyTech has the tools, team, and tech to help you get there.",
+        "Start your training in a place where you're more than a student — you're part of a community committed to your future in the skies.",
       ],
     },
     finalButton: {
