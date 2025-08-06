@@ -34,8 +34,9 @@ const currentVideo = getCurrentVideo(videoList, "discovery flight");
 const videoHome = videoList[0]; // Use the first video for now
 
 const dataForVideo = {
-  header: "Where Excellence Takes Flight",
-  text: "If you’ve ever dreamed of flying, there’s no better time to begin. FlyTech Flight School is your launchpad, where you’ll train in modern aircraft, work one-on-one with expert instructors, and earn your pilot certificate and ratings.",
+  headerH1: `<span class="text-primary-600 uppercase text-lg lg:text-2xl lg:max-w-3xl font-sans text-center font-bold tracking-tight">Fly with the team</br></span>Where Excellence Takes Flight`,
+  paragraph:
+    "If you’ve ever dreamed of flying, there’s no better time to begin. FlyTech Flight School is your launchpad, where you’ll train in modern aircraft, work one-on-one with expert instructors, and earn your pilot certificate and ratings.",
 };
 ---
 
@@ -47,16 +48,16 @@ const dataForVideo = {
   <!-- HEADER -->
   <HeaderScreen content={data.header} />
   <CTAVideo video={videoHome} data={dataForVideo} />
+  <WidgetGoogleReviews />
   <AirlinesCloud data={data.airlinesCloud} />
   <FlightTrainingAdvantages content={data.advantagesInfo} />
-  <CTAVideoWhite video={currentVideo} data={flyWithUsCTA} />
   <!-- <CTAColor content={flyWithUsCTA} /> -->
   <ProgramSwiper content={programsSwiper} />
-  <WidgetGoogleReviews />
   <!-- <Testimonials content={data.testimonials} /> -->
   <FAQs faqs={GeneralFAQs} type="General" client:visible />
   <FAQSchema items={faqSchemaItems} />
   <BlogFeed data={data.blogfeed} />
+  <CTAVideoWhite video={currentVideo} data={flyWithUsCTA} />
   <MapsLocation />
   <CTAColor content={data.flyWithUsCTA} />
   <script src="../scripts/creativeSwiper.js"></script>
