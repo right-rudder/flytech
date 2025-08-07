@@ -9,8 +9,11 @@ import PageSummary from "../../components/PageSummary.astro";
 import ContentSplit from "../../components/ContentSplit.astro";
 import TestimonialsSwiper from "../../components/TestimonialsSwiper.astro";
 import Why from "../../components/Why.astro";
+import FlightTrainingAdvantages from "../../components/FlightTrainingAdvantages.astro";
+import GoogleMaps from "../../components/GoogleMaps.astro";
 
 import pageData from "../../data/whyData.js";
+import WhoAreUs from "../../components/WhoAreUs.astro";
 ---
 
 <BaseLayout
@@ -20,16 +23,22 @@ import pageData from "../../data/whyData.js";
 >
   <!-- HEADER -->
   <HeaderSmall content={pageData.header} />
-  <!-- PAGE SUMMARY -->
   <PageSummary content={pageData.pageSummary} />
+  <TestimonialsSwiper />
+  <!-- PAGE SUMMARY -->
+  <FlightTrainingAdvantages content={pageData.advantagesInfo} />
+  <WhoAreUs content={pageData.whoAreUs} />
 
-  <Why />
+  <!-- <Why /> -->
   <div id="info"></div>
   <ContentSplit content={pageData.contentSplit} />
 
-  <TestimonialsSwiper />
+  <section class="w-full flex flex-wrap overflow-hidden">
+    <GoogleMaps data={pageData.gMaps[0]} />
+  </section>
 
   <ProgramSwiper content={programsSwiper} />
+
   <CTAColor content={flyWithUsCTA} />
   <script src="../../scripts/creativeSwiper.js"></script>
 </BaseLayout>
