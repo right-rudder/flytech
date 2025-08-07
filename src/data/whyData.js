@@ -1,3 +1,4 @@
+import WhoAreUs from "../components/WhoAreUs.astro";
 import { COMPANY_NAME } from "../consts";
 
 const whyData = {
@@ -26,6 +27,32 @@ const whyData = {
         primary: true,
       },
     ],
+  },
+
+  advantagesInfo: {
+    title: "Why Pilots Choose FlyTech",
+    upperheading: "The FlyTech Advantage",
+    description:
+      "At FlyTech Pilot Academy, we’re redefining flight training through innovation, accessibility, and a strong community of aviators. With modern aircraft, immersive technology, and a flexible program designed around your lifestyle, we’re committed to making your path to the skies faster, more efficient, and more enjoyable.",
+    advantages: [
+      {
+        title: "Modern Training Aircraft",
+        description:
+          "Train in the Sling NGT, one of the fastest-growing training aircraft in the U.S., known for its low fuel burn and tech-rich cockpit environment.",
+      },
+      {
+        title: "Integrated iPad Flight Bag",
+        description:
+          "From day one, you'll use an iPad as your primary flight bag—streamlining planning, navigation, checklists, and post-flight debriefing with ForeFlight.",
+      },
+      {
+        title: "Advanced Garmin & Video Feedback",
+        description:
+          "Garmin avionics and cockpit cameras record every maneuver and communication. Post-flight video reviews help accelerate your skills and confidence.",
+      },
+    ],
+    imagePath: "/src/assets/N900FT_2.webp", // Update with actual image path
+    imageAlt: "Cessna 172 parked at Speedway Flight Training during sunset",
   },
 
   pageSummary: {
@@ -110,6 +137,48 @@ const whyData = {
     },
     imagePath: "/src/assets/placeholder-img.webp",
     imageAlt: "FlyTech Flight School student smiling in front of an airplane",
+  },
+
+  gMaps: [
+    {
+      location: "St Joseph, MO",
+      inverted: false,
+      body: "Come visit us at our St Joseph location. We are located at Rosecrans Memorial Airport KSTJ.",
+      gMapUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.5819612487417!2d-94.90576712397086!3d39.771493394657824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c00533898f9425%3A0x31ee2a79086483c0!2sFlyTech%20Pilot%20Academy!5e0!3m2!1sen-US!2sus!4v1754590913913!5m2!1sen-US!2sus",
+    },
+  ],
+
+  whoAreUs: {
+    upperHeading: "Who We Are",
+    title: "A Community of Pilots Making Flight Training Accessible",
+    imagePath: "/src/assets/students_groundschool.webp",
+    imageAlt:
+      "FlyTech Flight School instructors and students standing in front of an airplane",
+    descriptions: [
+      "FlyTech is a community built by local recreational, commercial, and military pilots, united by a mission to make flight training more accessible, efficient, and enjoyable for everyone.",
+      "We recognized how difficult it used to be to become a pilot—and we set out to change that. With advancements in technology and evolving regulations, it’s never been a better time to start flying.",
+      "As a Part 61 flight school, we give you the flexibility to train at your own pace, or follow one of our recommended timelines (6, 9, 12, or 18 months) to fit your lifestyle.",
+      "We’ve streamlined the path to your license without compromising on safety or quality—making it more affordable, more efficient, and more enjoyable.",
+    ],
+    bullets: [
+      {
+        title: "Experienced Instructors",
+        numbers: "10+",
+      },
+      {
+        title: "Pilots in Our Community",
+        numbers: "100+",
+      },
+      {
+        title: "Flexible Training Schedules",
+        numbers: "4 Options",
+      },
+      {
+        title: "Years of Combined Aviation Insight",
+        numbers: "50+",
+      },
+    ],
   },
 };
 
