@@ -8,7 +8,7 @@
   }
 
   .btn-accent {
-    @apply text-center hover:scale-105 font-title uppercase font-medium py-3 px-6 bg-primary-600 w-fit text-primary-950 hover:text-white hover:bg-primary-600/80 duration-300 ring-2 hover:ring-primary-600 ring-primary-600;
+    @apply text-center hover:scale-105 font-title uppercase font-medium py-3 px-6 bg-white w-fit text-primary-800 font-bold hover:text-white hover:bg-primary-600/80 duration-300 ring-2 hover:ring-primary-700 ring-primary-600;
   }
 
   .btn-animate {
