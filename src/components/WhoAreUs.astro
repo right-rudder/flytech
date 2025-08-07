@@ -39,8 +39,10 @@ const { content } = Astro.props;
             content.bullets &&
               content.bullets.map((bullet) => (
                 <div class="flex flex-col gap-y-3 border-l border-gray-900/10 pl-6">
-                  <dt class="text-sm/6 text-gray-600">{bullet.title}</dt>
-                  <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900">
+                  <dt class="text-sm/6 lg:text-base text-neutral-800">
+                    {bullet.title}
+                  </dt>
+                  <dd class="order-first text-3xl lg:text-4xl font-semibold tracking-tight text-primary-700">
                     {bullet.numbers}
                   </dd>
                 </div>
