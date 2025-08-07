@@ -59,7 +59,7 @@ const PriceCalcZero2Hero = () => {
 
   return (
     <section id="cost-calc" className="overflow-hidden">
-      <div className="bg-primary-100 py-16 sm:py-32">
+      <div className="bg-white py-16 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto w-full lg:mx-0">
             <h3 className="section-upper">
@@ -73,13 +73,13 @@ const PriceCalcZero2Hero = () => {
             <div className="relative group w-full lg:w-1/2">
               <div
                 aria-hidden="true"
-                className="absolute top-0 w-full h-full rounded-2xl bg-gradient-to-br from-primary-200 to-primary-300 shadow-lg transition duration-500 group-hover:scale-105 transform-gpu"
+                className="absolute top-0 w-full h-full rounded-2xl bg-neutral-700 shadow-lg transition duration-500 group-hover:scale-105 transform-gpu"
               ></div>
-              <div className="relative p-5 pt-12 md:p-8 md:pl-8 md:rounded-r-2xl lg:pl-10 lg:p-12">
+              <div className="relative p-5 pt-12 md:p-8 md:pl-8 md:rounded-r-2xl lg:pl-10 lg:p-12 text-white">
                 <div className="mt-2 flex justify-between gap-6 w-full">
                   <div className="grid grid-cols-1">
                     <fieldset>
-                      <legend className="mb-2 text-xl font-title leading-tight text-gray-800 font-semibold">
+                      <legend className="mb-2 text-xl font-title leading-tight text-center uppercase text-primary-500 font-semibold">
                         Certificates and Ratings Currently Held:
                       </legend>
 
@@ -244,14 +244,14 @@ const PriceCalcZero2Hero = () => {
             <div className="relative z-10 min-h-[screen-1/2] m-0 lg:-mx-4 group w-full lg:w-3/5 lg:max-w-3/5">
               <div
                 aria-hidden="true"
-                className="absolute top-0 w-full h-full rounded-2xl bg-gradient-to-b from-primary-200 to-primary-100 shadow-xl transition duration-500 group-hover:scale-105 transform-gpu"
+                className="absolute top-0 w-full h-full rounded-2xl bg-primary-600 shadow-xl transition duration-500 group-hover:scale-105 transform-gpu"
               ></div>
               <div className="relative p-6 space-y-6 lg:p-8">
                 <div className="p-6 lg:p-8">
-                  <h3 className="text-5xl text-gray-800 font-bold text-center font-title">
+                  <h3 className="text-5xl text-white font-bold text-center font-title">
                     Zero to Hero
                   </h3>
-                  <p className="italic mt-2 text-center text-gray-700">
+                  <p className="italic mt-2 text-center text-white/90">
                     Fly for a career, within a year!
                   </p>
                   <div className="flex justify-around has-tooltip">
@@ -268,11 +268,11 @@ const PriceCalcZero2Hero = () => {
                     </span>
                     <div className="my-6 flex items-center">
                       <div className="">
-                        <span className="block text-3xl text-gray-700 font-bold">
+                        <span className="block text-3xl text-white font-bold">
                           $
                         </span>
                       </div>
-                      <span className="text-4xl text-gray-700 font-bold leading-0">
+                      <span className="text-4xl text-white font-bold leading-0">
                         {total.toLocaleString()}
                       </span>
                     </div>
@@ -280,7 +280,7 @@ const PriceCalcZero2Hero = () => {
 
                   <ul
                     role="list"
-                    className="w-full px-3 flex flex-col gap-2 text-gray-800 text-sm mt-3 mb-8"
+                    className="w-full px-3 flex flex-col gap-2 text-white/90 text-sm mt-3 mb-8"
                   >
                     {total == 0 && (
                       <li className="text-center">
@@ -291,14 +291,14 @@ const PriceCalcZero2Hero = () => {
                     )}
                     {ppl && (
                       <li className="space-x-2 flex flex-nowrap align-middle items-center">
-                        <FaCheckCircle className="text-green-600 text-xl" />
+                        <FaCheckCircle className="text-primary-300 text-xl" />
                         <span>Private Pilot Certificate</span>
                       </li>
                     )}
                     {instrument && (
                       <li className="space-x-2 flex flex-nowrap align-middle items-center">
                         <span className="text-primary-500 font-semibold">
-                          <FaCheckCircle className="text-green-600 text-xl" />
+                          <FaCheckCircle className="text-primary-300 text-xl" />
                         </span>
                         <span>Instrument Rating</span>
                       </li>
@@ -306,7 +306,7 @@ const PriceCalcZero2Hero = () => {
                     {cplSolo && (
                       <li className="space-x-2 flex flex-nowrap align-middle items-center">
                         <span className="text-primary-500 font-semibold">
-                          <FaCheckCircle className="text-green-600 text-xl" />
+                          <FaCheckCircle className="text-primary-300 text-xl" />
                         </span>
                         <span>Commercial Pilot Certificate</span>
                       </li>
@@ -314,7 +314,7 @@ const PriceCalcZero2Hero = () => {
                     {cfi && (
                       <li className="space-x-2 flex flex-nowrap align-middle items-center">
                         <span className="text-primary-500 font-semibold">
-                          <FaCheckCircle className="text-green-600 text-xl" />
+                          <FaCheckCircle className="text-primary-300 text-xl" />
                         </span>
                         <span>Certified Flight Instructor</span>
                       </li>
@@ -322,7 +322,7 @@ const PriceCalcZero2Hero = () => {
                     {cfii && (
                       <li className="space-x-2 flex flex-nowrap align-middle items-center">
                         <span className="text-primary-500 font-semibold">
-                          <FaCheckCircle className="text-green-600 text-xl" />
+                          <FaCheckCircle className="text-primary-300 text-xl" />
                         </span>
                         <span>Certified Flight Instructor-Instrument</span>
                       </li>
@@ -330,15 +330,15 @@ const PriceCalcZero2Hero = () => {
                     {me && (
                       <li className="space-x-2 flex flex-nowrap align-middle items-center">
                         <span className="text-primary-500 font-semibold">
-                          <FaCheckCircle className="text-green-600 text-xl" />
+                          <FaCheckCircle className="text-primary-300 text-xl" />
                         </span>
                         <span>Multi-Engine Rating</span>
                       </li>
                     )}
                   </ul>
-                  <fieldset className="flex flex-col justify-center items-center align-top w-full text-left">
-                    <legend className="mb-2 text-xl font-title text-center w-full text-gray-800 font-semibold">
-                      Add Ons:
+                  <fieldset className="flex flex-col justify-center items-center align-top w-full text-left text-white/90">
+                    <legend className="mb-2 text-xl font-title text-center w-full text-white uppercase font-semibold">
+                      Add Ons
                     </legend>
 
                     <div>
@@ -468,11 +468,11 @@ const PriceCalcZero2Hero = () => {
             <div className="relative group w-full lg:w-1/2">
               <div
                 aria-hidden="true"
-                className="absolute top-0 w-full h-full rounded-2xl bg-gradient-to-l from-primary-200 to-primary-300 shadow-lg transition duration-500 group-hover:scale-105 transform-gpu"
+                className="absolute top-0 w-full h-full rounded-2xl bg-neutral-700 shadow-lg transition duration-500 group-hover:scale-105 transform-gpu"
               ></div>
-              <div className="relative p-5 pt-12 md:p-8 md:pl-8 md:rounded-r-2xl lg:pr-10 lg:p-12">
+              <div className="relative p-5 pt-12 md:p-8 md:pl-8 md:rounded-r-2xl lg:pr-10 lg:p-12 text-white">
                 <fieldset>
-                  <legend className="mb-2 font-title leading-tight text-xl text-gray-800 font-semibold">
+                  <legend className="mb-2 text-xl font-title leading-tight text-center uppercase text-primary-500 font-semibold">
                     Certificates and Ratings You Want to Obtain:
                   </legend>
 
