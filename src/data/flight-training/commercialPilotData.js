@@ -13,7 +13,7 @@ const commercialPilotData = {
     imagePath: "/src/assets/placeholder-img.webp",
     imageAlt:
       "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
-    headerH1: `Commercial <br>PILOT LICENSE</span>`,
+    headerH1: `Fly high with a <br> <strong class="text-primary-600" >Commercial PILOT Certificate</strong>`,
     paragraph: `Turn your passion for flying into a career with FlyTech Flight School's Commercial Pilot License program. Gain the expertise needed to fly professionally and get paid to do what you love.`,
     buttons: [
       {
