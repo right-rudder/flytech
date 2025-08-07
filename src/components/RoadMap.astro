@@ -1,0 +1,258 @@
+---
+const { content } = Astro.props;
+---
+
+<section
+  id="first-time-pilots"
+  class="py-24 px-5 w-full bg-white flex flex-col items-center mx-auto scroll-my-20"
+>
+  <h3 class="section-upper">Pilot Training Made Simple</h3>
+  <h4 class="section-title text-neutral-800">FlyTech’s Training Structure</h4>
+  <p class="text-gray-600 text-center max-w-5xl mt-6">
+    FlyTech Flight School offers career-track pilot training (Zero to Hero) for
+    students in the greater Phoenix area at Falcon Field Airport (KFFZ) in Saint
+    Joseph, Missouri. Our goal is for students to fly 3-4 times per week with
+    additional ground school and personal study.
+  </p>
+  <div class="grid mt-12 lg:grid-cols-3 mx-auto gap-10">
+    <div
+      class="border border-primary-500/50 rounded py-8 px-12 flex flex-col gap-5 justify-between bg-neutral-800 hover:bg-primary-700 duration-500 group"
+    >
+      <a href="#daily-training">
+        <div class="flex justify-center align-middle items-center">
+          <h3
+            class="text-lg text-white uppercase font-semibold tracking-widest duration-500"
+          >
+            Daily Training Schedule
+          </h3>
+          <svg class="placeholder-svg"></svg>
+        </div>
+      </a>
+    </div>
+
+    <div
+      class="border border-primary-500/50 rounded py-8 px-12 flex flex-col gap-5 justify-between bg-neutral-800 hover:bg-primary-700 duration-500 group"
+    >
+      <a href="#expectations">
+        <div class="flex justify-center align-middle items-center">
+          <h3
+            class="text-lg text-white uppercase font-semibold tracking-widest duration-700"
+          >
+            Student Expectations
+          </h3>
+          <svg class="placeholder-svg"></svg>
+        </div>
+      </a>
+    </div>
+
+    <div
+      class="border border-primary-500/50 rounded py-8 px-12 flex flex-col gap-5 justify-between bg-neutral-800 hover:bg-primary-700 duration-500 group"
+    >
+      <a href="#cost-calc">
+        <div class="flex justify-center align-middle items-center">
+          <h3
+            class="text-lg text-white uppercase font-semibold tracking-widest duration-700"
+          >
+            Training Cost Estimator
+          </h3>
+          <svg class="placeholder-svg"></svg>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="daily-training" class="bg-neutral-800 md:px-16 py-20">
+  <h3 class="section-upper">FlyTechs' Pilot Roadmap</h3>
+  <h2 class="section-title text-white">FlyTech’s Flight Training Blocks</h2>
+
+  <div class="flex flex-col items-center">
+    <p
+      class="lg:w-1/2 lg:mx-16 mx-5 mt-4 text-center items-center mb-10 text-white/90"
+    >
+      At FlyTech, we are committed to providing the highest quality training
+      programs for our students. Our team is here ensure that you receive the
+      best possible training. Contact us today to learn more about our pilot
+      training programs and take the first step towards achieving your aviation
+      career goals!
+    </p>
+  </div>
+
+  <div class="min-h-screen flex items-center justify-center">
+    <div class="flex flex-col md:grid grid-cols-9 mx-auto p-2">
+      <div class="flex flex-row-reverse md:contents">
+        <div
+          class="w-full col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto bg-white"
+        >
+          <h3
+            class="font-bold text-4xl font-title mb-2 text-primary-700 text-center uppercase"
+          >
+            Starting Your Journey
+          </h3>
+          <div class="flex flex-col justify-center p-4">
+            <h4 class="text-3xl text-slate-600 italic py-5 mb-1 text-center">
+              Sports Pilot Certificate (SPL)
+            </h4>
+            <p class="text-slate-800 p-text pb-5 text-justify">
+              Perfect for recreational pilots, the Sport Pilot Certificate lets
+              you fly smaller, lighter aircraft with less training time and
+              lower costs.Introduced in 2004, the Sport Pilot Certificate is a
+              streamlined FAA license designed for those who want to fly small,
+              lightweight aircraft for fun or personal travel. It’s a great
+              option if you're looking for a faster, more affordable path to the
+              skies—without compromising safety or enjoyment.
+            </p>
+            <a href="/flight-training/private-pilot" class="btn-primary w-full"
+              >SPORTS PILOT CERTIFICATE</a
+            >
+          </div>
+          <div class="flex flex-col justify-center p-4">
+            <h4 class="text-3xl text-slate-600 italic py-5 mb-1 text-center">
+              Private Pilot Certification (PPL)
+            </h4>
+            <p class="text-slate-800 p-text pb-5 text-justify">
+              Embark on your aviation journey with a private pilot certificate,
+              the first stepping stone for aspiring pilots. This certification
+              allows you to operate an aircraft for non-commercial purposes. Our
+              experienced instructors are committed to providing thorough
+              guidance, ensuring you master the fundamental skills of flight.
+              Learn to confidently take off, land, and navigate the skies with
+              the support of our knowledgeable team.
+            </p>
+            <a href="/flight-training/private-pilot" class="btn-primary w-full"
+              >PRIVATE PILOT TRAINING</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="col-start-5 col-end-6 md:mx-auto hidden md:block relative mr-10"
+        >
+          <div class="h-full w-6 flex items-center justify-center">
+            <div
+              class="h-full w-0.5 bg-primary-500 pointer-events-none rounded-xl"
+            >
+            </div>
+          </div>
+
+          <div
+            class="w-6 h-6 absolute top-1/2 -mt-3 border-2 border-primary-500 rounded-full bg-primary-500 shadow"
+          >
+          </div>
+        </div>
+      </div>
+
+      <div class="flex md:contents">
+        <div
+          class="col-start-5 col-end-6 mr-10 md:mx-auto hidden md:block relative"
+        >
+          <div class="h-full w-6 flex items-center justify-center">
+            <div class="h-full w-0.5 bg-primary-500 pointer-events-none"></div>
+          </div>
+
+          <div
+            class="w-6 h-6 absolute top-1/2 -mt-3 border-2 border-primary-500 rounded-full bg-primary-500 shadow"
+          >
+          </div>
+        </div>
+
+        <div
+          class="w-full col-start-6 col-end-10 my-4 mr-auto p-4 bg-white rounded-xl"
+        >
+          <h3
+            class="font-bold text-4xl mb-2 font-title text-primary-700 uppercase text-center"
+          >
+            Your career path
+          </h3>
+          <div class="flex flex-col justify-center p-4">
+            <h4 class="text-3xl text-slate-600 italic py-5 mb-1 text-center">
+              Commercial Pilot Certification (CPL)
+            </h4>
+            <p class="text-slate-800 p-text pb-5 text-justify">
+              A commercial certificate grants you the privilege to fly for
+              compensation or hire. With the guidance of our seasoned
+              instructors, you'll acquire the mastery of operating advanced
+              aircraft, encompassing advanced maneuvers and emergency
+              procedures. Rest assured, you will be thoroughly prepared and
+              equipped to overcome any challenges in your aviation career.
+            </p>
+            <a
+              href="/flight-training/commercial-pilot"
+              class="btn-primary w-full">COMMERCIAL PILOT TRAINING</a
+            >
+          </div>
+          <div class="flex flex-col justify-center mt-8 p-4">
+            <h4 class="text-3xl text-slate-600 italic py-5 mb-1 text-center">
+              Certified Flight Instructor (CFI)
+            </h4>
+            <p class="text-slate-800 p-text pb-5 text-justify">
+              Share your expertise and proficiency with aspiring pilots, while
+              accumulating valuable flight hours and experience. Once you get
+              your CFI at FlyTech, we offer guaranteed interviews to instruct at
+              FlyTech. Build you hours here and then qualify to go to the
+              airlines.
+            </p>
+            <a
+              href="/flight-training/certified-flight-instructor"
+              class="btn-primary w-full">CFI TRAINING</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-row-reverse md:contents">
+        <div
+          class="w-full col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto bg-white"
+        >
+          <h3
+            class="font-bold text-4xl mb-2 font-title text-primary-700 uppercase text-center"
+          >
+            Advancing Your Skills
+          </h3>
+          <div class="flex flex-col justify-center p-4">
+            <h4 class="text-3xl text-slate-600 italic py-5 mb-1 text-center">
+              Instrument Rating
+            </h4>
+            <p class="text-slate-800 p-text pb-5 text-justify">
+              The Instrument Rating empowers you with the expertise and
+              abilities to navigate through low visibility and challenging
+              weather conditions, relying solely on your aircraft's instruments.
+              This rating unlocks a multitude of opportunities, enhancing your
+              safety and proficiency as a pilot.
+            </p>
+            <a
+              href="/flight-training/instrument-rating"
+              class="btn-primary w-full">INSTRUMENT TRAINING</a
+            >
+          </div>
+          <div class="flex flex-col justify-center mt-8 p-4">
+            <h4 class="text-3xl text-slate-600 italic py-5 mb-1 text-center">
+              Certified Flight Instructor-Instrument (CFII)
+            </h4>
+            <p class="text-slate-800 p-text pb-5 text-justify">
+              Advance in your flight instructor capabilities by adding an
+              instrument rating to your teaching credentials. This is the final
+              step in instructor training at FlyTech Flight School.
+            </p>
+            <a
+              href="/flight-training/certified-flight-instructor/#addons"
+              class="btn-primary w-full">CFII TRAINING</a
+            >
+          </div>
+        </div>
+        <div
+          class="col-start-5 col-end-6 mr-10 md:mx-auto hidden md:block relative"
+        >
+          <div class="h-full w-6 flex items-center justify-center">
+            <div class="h-full w-0.5 bg-primary-500 pointer-events-none"></div>
+          </div>
+
+          <div
+            class="w-6 h-6 absolute top-1/2 -mt-3 border-2 border-primary-500 rounded-full bg-primary-500 shadow"
+          >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
