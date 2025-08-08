@@ -4,33 +4,13 @@ export const navbarLinks = [
     link: "#",
     submenu: [
       {
-        name: "Pilot Training Made Simple",
-        link: "#",
+        name: "Why become a pilot?",
+        link: "/why-become-a-pilot",
       },
       {
         name: "Discovery Flight",
         link: "#",
       },
-      // {
-      //   name: "Enroll at FlyTech",
-      //   link: "/enroll-at-FlyTech",
-      // },
-      // {
-      //   name: "Pilot Training",
-      //   link: "/pilot-training",
-      // },
-      // {
-      //   name: "Begin Pilot Career",
-      //   link: "/begin-pilot-career",
-      // },
-      // {
-      //   name: "Timeline",
-      //   link: "/timeline-to-be-a-pilot",
-      // },
-      // {
-      //   name: "Cost",
-      //   link: "/approximate-pilot-training-costs",
-      // },
     ],
   },
   {
@@ -39,15 +19,15 @@ export const navbarLinks = [
     submenu: [
       {
         name: "Private Pilot",
-        link: "#",
-      },
-      {
-        name: "Instrument Rating",
-        link: "#",
+        link: "/flight-training/private-pilot",
       },
       {
         name: "Commercial Pilot",
-        link: "#",
+        link: "/flight-training/commercial-pilot",
+      },
+      {
+        name: "Instrument Rating",
+        link: "/flight-training/instrument-rating",
       },
       // {
       //   name: "Multi-Engine Rating",
@@ -55,36 +35,66 @@ export const navbarLinks = [
       // },
       {
         name: "Certified Flight Instructor",
-        link: "#",
+        link: "/flight-training/certified-flight-instructor",
       },
       {
         name: "CFI - Instruments",
-        link: "#",
+        link: "/flight-training/certified-flight-instructor-instruments",
       },
       {
-        name: "Multi-Engine Instructor",
+        name: "Sports Pilot Certificate",
+        link: "/flight-training/sports-pilot-certificate",
+      },
+      // {
+      //   name: "Multi-Engine Instructor",
+      //   link: "/flight-training/commercial-pilot",
+      // },
+    ],
+  },
+  {
+    name: "Current Students",
+    link: "#",
+    submenu: [
+      {
+        name: "Four Forces",
         link: "#",
       },
       {
         name: "Ground School",
         link: "#",
       },
+      {
+        name: "Student Resources",
+        link: "#",
+      },
     ],
   },
   {
     name: "About",
-    link: "#",
+    link: "/about",
     submenu: [
       {
         name: "Our Team",
+        link: "/about/team",
+      },
+      {
+        name: "Our Fleet",
         link: "#",
       },
       {
-        name: "Visit Us",
-        link: "#",
+        name: "FAQ",
+        link: "/about/faq",
       },
       {
         name: "Financing",
+        link: "#",
+      },
+      {
+        name: "Housing",
+        link: "#",
+      },
+      {
+        name: "Store",
         link: "#",
       },
       {
