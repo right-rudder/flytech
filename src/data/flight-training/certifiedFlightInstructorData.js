@@ -13,7 +13,7 @@ const certifiedFlightInstructorData = {
     imagePath: "/src/assets/stock-ben-bracken-XeVFehBtCXo-unsplash.webp",
     imageAlt:
       "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
-    headerH1: `Certified Flight <br>INSTRUCTOR (CFI)</span>`,
+    headerH1: `Certified Flight <strong class="text-primary-600" >INSTRUCTOR (CFI)</strong>`,
     paragraph: `Become a leader in aviation with FlyTech Flight School’s CFI program. Gain valuable experience while teaching aspiring pilots and advancing your own career.`,
     buttons: [
       {
