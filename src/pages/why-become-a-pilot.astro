@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import HeaderScreen from "../components/HeaderScreen.astro";
+import HeaderSmall from "../components/HeaderSmall.astro";
 import ProgramSwiper from "../components/ProgramSwiper.astro";
 import CTAColor from "../components/CTAColor.astro";
 import programsSwiper from "../data/flight-training/programSwiper.js";
@@ -31,13 +31,13 @@ const dataForVideo = {
   keywords={data.pageKeywords}
 >
   <!-- HEADER -->
-  <HeaderScreen content={data.header} />
+  <HeaderSmall content={data.header} />
   <!-- PAGE SUMMARY -->
   <PageSummary content={data.pageSummary} />
   <RoadMap content={data.roadMap} />
   <CTAVideo video={currentVideo} data={dataForVideo} />
 
-  <PriceCalcZero2Hero client:load />
+  <!-- <PriceCalcZero2Hero client:load /> -->
 
   <ProgramSwiper content={programsSwiper} />
   <CTAColor content={flyWithUsCTA} />
