@@ -38,6 +38,23 @@ const teamData = {
 
     leadership: [
       {
+        imagePath: "/src/assets/lute-1.webp",
+        imageAlt: "Lute Atieh Pilot, Managing Partner at FlyTech Flight School",
+        name: "Lute Atieh",
+        title: "Pilot, Managing Partner",
+        summary:
+          "Lute Atieh is a Pilot and Managing Partner at FlyTech Flight School. With extensive experience in aviation, Lute is dedicated to providing high-quality flight training and ensuring the safety and success of all students. His leadership and expertise in the field make him a vital part of the FlyTech team, as he works tirelessly to foster a supportive and effective learning environment for aspiring pilots.",
+      },
+      {
+        imagePath: "/src/assets/Daniel-Lamaster.webp",
+        imageAlt:
+          "Daniel Lamaster Chief Flight Instructor at FlyTech Flight School",
+        name: "Daniel Lamaster",
+        title: "Chief Flight Instructor",
+        summary:
+          "Daniel Lamaster is the Chief Flight Instructor at FlyTech Flight School. With a wealth of experience in flight training, Daniel is committed to providing exceptional instruction and mentorship to students. His expertise in aviation and dedication to safety ensure that students receive the highest quality training. As a leader in the FlyTech team, Daniel plays a crucial role in shaping the next generation of skilled pilots.",
+      },
+      {
         imagePath: "/src/assets/Travis.webp",
         imageAlt:
           "Travis Hawkins partner and Director of Technology at FlyTech Flight School",
@@ -54,23 +71,6 @@ const teamData = {
         title: "Partner, Dir of H.S. Partnerships, Student Pilot",
         summary:
           "Jason Chase is a Partner and Director of High School Partnerships at FlyTech Flight School. With a focus on building strong relationships with high schools, he plays a crucial role in expanding opportunities for students interested in aviation. As a student pilot himself, Jason understands the challenges and rewards of flight training, and he is committed to helping aspiring pilots achieve their goals. His passion for aviation and dedication to education make him a key member of the FlyTech team.",
-      },
-      {
-        imagePath: "/src/assets/lute-1.webp",
-        imageAlt: "Lute Atieh Pilot, Managing Partner at FlyTech Flight School",
-        name: "Lute Atieh",
-        title: "Pilot, Managing Partner",
-        summary:
-          "Lute Atieh is a Pilot and Managing Partner at FlyTech Flight School. With extensive experience in aviation, Lute is dedicated to providing high-quality flight training and ensuring the safety and success of all students. His leadership and expertise in the field make him a vital part of the FlyTech team, as he works tirelessly to foster a supportive and effective learning environment for aspiring pilots.",
-      },
-      {
-        imagePath: "/src/assets/Daniel-Lamaster.webp",
-        imageAlt:
-          "Daniel Lamaster Chief Flight Instructor at FlyTech Flight School",
-        name: "Daniel Lamaster",
-        title: "Chief Flight Instructor",
-        summary:
-          "Daniel Lamaster is the Chief Flight Instructor at FlyTech Flight School. With a wealth of experience in flight training, Daniel is committed to providing exceptional instruction and mentorship to students. His expertise in aviation and dedication to safety ensure that students receive the highest quality training. As a leader in the FlyTech team, Daniel plays a crucial role in shaping the next generation of skilled pilots.",
       },
       {
         imagePath: "/src/assets/Dan-Batliner-980x980.webp",
