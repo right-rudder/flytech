@@ -48,16 +48,16 @@ const dataForVideo = {
   <!-- HEADER -->
   <HeaderScreen content={data.header} />
   <CTAVideo video={videoHome} data={dataForVideo} />
-  <WidgetGoogleReviews />
+  <BlogFeed data={data.blogfeed} />
   <AirlinesCloud data={data.airlinesCloud} />
   <FlightTrainingAdvantages content={data.advantagesInfo} />
+  <WidgetGoogleReviews />
   <!-- <CTAColor content={flyWithUsCTA} /> -->
+  <CTAVideoWhite video={currentVideo} data={flyWithUsCTA} />
   <ProgramSwiper content={programsSwiper} />
   <!-- <Testimonials content={data.testimonials} /> -->
   <FAQs faqs={GeneralFAQs} type="General" client:visible />
   <FAQSchema items={faqSchemaItems} />
-  <BlogFeed data={data.blogfeed} />
-  <CTAVideoWhite video={currentVideo} data={flyWithUsCTA} />
   <MapsLocation />
   <CTAColor content={data.flyWithUsCTA} />
   <script src="../scripts/creativeSwiper.js"></script>
