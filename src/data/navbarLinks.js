@@ -4,87 +4,101 @@ export const navbarLinks = [
     link: "#",
     submenu: [
       {
-        name: "Pilot Training Made Simple",
-        link: "#",
+        name: "Why become a pilot?",
+        link: "/why-become-a-pilot",
       },
       {
         name: "Discovery Flight",
         link: "#",
       },
+    ],
+  },
+  {
+    name: "Flight Training",
+    link: "/flight-training",
+    submenu: [
+      {
+        name: "Private Pilot",
+        link: "/flight-training/private-pilot",
+      },
+      {
+        name: "Commercial Pilot",
+        link: "/flight-training/commercial-pilot",
+      },
+      {
+        name: "Instrument Rating",
+        link: "/flight-training/instrument-rating",
+      },
       // {
-      //   name: "Enroll at FlyTech",
-      //   link: "/enroll-at-FlyTech",
+      //   name: "Multi-Engine Rating",
+      //   link: "/flight-training/multi-engine-rating",
       // },
+      {
+        name: "Certified Flight Instructor",
+        link: "/flight-training/certified-flight-instructor",
+      },
+      {
+        name: "CFI - Instruments",
+        link: "/flight-training/certified-flight-instructor-instruments",
+      },
+      {
+        name: "Sports Pilot Certificate",
+        link: "/flight-training/sports-pilot-certificate",
+      },
       // {
-      //   name: "Pilot Training",
-      //   link: "/pilot-training",
-      // },
-      // {
-      //   name: "Begin Pilot Career",
-      //   link: "/begin-pilot-career",
-      // },
-      // {
-      //   name: "Timeline",
-      //   link: "/timeline-to-be-a-pilot",
-      // },
-      // {
-      //   name: "Cost",
-      //   link: "/approximate-pilot-training-costs",
+      //   name: "Multi-Engine Instructor",
+      //   link: "/flight-training/commercial-pilot",
       // },
     ],
   },
   {
-    name: "Programs",
+    name: "Current Students",
     link: "#",
     submenu: [
       {
-        name: "Private Pilot",
-        link: "#",
-      },
-      {
-        name: "Instrument Rating",
-        link: "#",
-      },
-      {
-        name: "Commercial Pilot",
-        link: "#",
-      },
-      // {
-      //   name: "Multi-Engine Rating",
-      //   link: "/programs/multi-engine-rating",
-      // },
-      {
-        name: "Certified Flight Instructor",
-        link: "#",
-      },
-      {
-        name: "CFI - Instruments",
-        link: "#",
-      },
-      {
-        name: "Multi-Engine Instructor",
+        name: "Four Forces",
         link: "#",
       },
       {
         name: "Ground School",
         link: "#",
       },
+      {
+        name: "Student Resources",
+        link: "#",
+      },
     ],
   },
   {
     name: "About",
-    link: "#",
+    link: "/about",
     submenu: [
       {
+        name: "About",
+        link: "/about",
+      },
+      {
         name: "Our Team",
+        link: "/about/team",
+      },
+      {
+        name: "Our Fleet",
         link: "#",
       },
       {
-        name: "Visit Us",
-        link: "#",
+        name: "FAQ",
+        link: "/about/faq",
       },
       {
         name: "Financing",
+        link: "#",
+      },
+      {
+        name: "Housing",
+        link: "#",
+      },
+      {
+        name: "Store",
         link: "#",
       },
       {
@@ -93,7 +107,7 @@ export const navbarLinks = [
       },
       {
         name: "Blog",
-        link: "#",
+        link: "/blog",
       },
     ],
   },

@@ -5,19 +5,19 @@ const { content } = Astro.props;
 ---
 
 <section
-  class="grid grid-cols-1 lg:grid-cols-2 px-4 lg:px-12 lg:py-12 h-full bg-white"
+  class="grid grid-cols-1 lg:grid-cols-2 px-4 lg:px-12 lg:py-12 h-full bg-neutral-900"
 >
   <div class="pr-4 lg:pr-12 py-6 lg:py-0">
     {
       content.upperHeading && (
-        <h3 class="mx-auto mt-12 uppercase text-lg lg:text-xl lg:max-w-3xl font-sans text-center font-bold tracking-tight text-primary-600">
+        <h3 class="mx-auto mt-12 uppercase text-lg lg:text-xl lg:max-w-3xl font-sans text-center font-bold tracking-tight text-primary-500">
           {content.upperHeading}
         </h3>
       )
     }
     {
       content.heading && (
-        <h2 class="mx-auto mb-6 text-4xl lg:text-6xl lg:max-w-3xl font-title text-center font-bold tracking-tight text-primary-950">
+        <h2 class="mx-auto mb-6 text-4xl lg:text-6xl lg:max-w-3xl font-title text-center font-bold tracking-tight text-white">
           {content.heading}
         </h2>
       )
@@ -26,7 +26,7 @@ const { content } = Astro.props;
       content.descriptions &&
         content.descriptions.map((p) => (
           <p
-            class="mx-auto mb-5 text-lg max-w-3xl text-center tracking-loose text-gray-900"
+            class="mx-auto mb-5 text-lg max-w-3xl text-center tracking-loose text-white/90"
             set:html={p}
           />
         ))
@@ -36,7 +36,7 @@ const { content } = Astro.props;
         <div class="mt-6 flex flex-col justify-center align-middle items-center">
           {content.bulletsTitle && (
             <h4
-              class="font-title text-3xl mt-8 mb-3"
+              class="font-title text-3xl mt-8 mb-3 text-primary-500"
               set:html={content.bulletsTitle}
             />
           )}
@@ -61,11 +61,11 @@ const { content } = Astro.props;
                   />
                 </svg>
                 <span class="leading-snug">
-                  <strong class="font-bold text-primary-900 tracking-tight uppercase">
+                  <strong class="font-bold text-primary-700 tracking-tight uppercase">
                     {bullet.title}
                   </strong>{" "}
                   {bullet.descriptions.map((dec) => (
-                    <p class="mb-2 text-gray-700" set:html={dec} />
+                    <p class="my-2 text-neutral-900" set:html={dec} />
                   ))}
                 </span>
               </li>
@@ -77,8 +77,10 @@ const { content } = Astro.props;
     {
       content.finalSection && (
         <div class="mt-10 mb-5">
-          <h2 class="font-title text-3xl">{content.finalSection.heading}</h2>
-          <div class="">
+          <h2 class="font-title text-3xl text-primary-500">
+            {content.finalSection.heading}
+          </h2>
+          <div class="text-white/90 mt-4">
             {content.finalSection.descriptions.map((desc) => (
               <p class="mt-2" set:html={desc} />
             ))}

@@ -38,6 +38,6 @@ export const GeneralFAQs = [
   {
     title:
       "Are there any opportunities for flight experience beyond the standard training curriculum?",
-    content: `Yes! Students who complete all their ratings through FlyTech are guaranteed an interview for a certified flight instructor (CFI) position. Becoming a CFI is a great way to build flight hours and gain experience for a career in aviation. Check out our page about beginning your pilot career as a <a href="/programs/certified-flight-instructor"  class="text-primary-800 hover:underline hover:brightness-125 duration-200">CFI</a> for more details.`,
+    content: `Yes! Students who complete all their ratings through FlyTech are guaranteed an interview for a certified flight instructor (CFI) position. Becoming a CFI is a great way to build flight hours and gain experience for a career in aviation. Check out our page about beginning your pilot career as a <a href="/flight-training/certified-flight-instructor"  class="text-primary-800 hover:underline hover:brightness-125 duration-200">CFI</a> for more details.`,
   },
 ];

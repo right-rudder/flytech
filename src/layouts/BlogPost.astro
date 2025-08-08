@@ -3,9 +3,23 @@ import type { CollectionEntry } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
 import BaseLayout from "./BaseLayout.astro";
 import { KEYWORDS } from "../consts";
-import CTAColor from "../components/CTAColor.astro";
-import flyWithUsCTA from "../data/fly-with-us-cta";
 import BlogPostSchema from "../components/BlogPostSchema.astro";
+import CTAVideoWhite from "../components/CTAVideoWhite.astro";
+import videoList from "../data/videos.js";
+
+const randomVideo = videoList[Math.floor(Math.random() * videoList.length)];
+const dataForVideo = {
+  header: `<span class="text-primary-600 uppercase text-lg lg:text-2xl lg:max-w-3xl font-sans text-center font-bold tracking-tight">Fly with the team that’s</br></span>revolutionizing pilot training`,
+  title:
+    "At FlyTech Pilot Academy, we combine modern aircraft, immersive technology, and a passionate team of instructors to give you an efficient, professional, and enjoyable path to the cockpit. Whether you're starting fresh or advancing your career, we make it simple.",
+  buttons: [
+    {
+      name: "START FLYING TODAY",
+      link: "#",
+      primary: true,
+    },
+  ],
+};
 
 type Props = CollectionEntry<"blog">["data"];
 const {
@@ -28,9 +42,9 @@ const {
   ogImage={heroImage}
 >
   <section
-    class="flex pt-20 justify-center bg-gradient-to-b from-primary-50 to-primary-100"
+    class="flex pt-20 justify-center bg-gradient-to-b from-neutral-900 to-neutral-800"
   >
-    <article class="mx-auto max-w-4xl">
+    <article class="mx-auto max-w-4xl my-12">
       <div
         class="mb-12 lg:mb-0 aspect-square lg:aspect-video lg:rounded-t-md shadow-md overflow-hidden"
       >
@@ -44,7 +58,7 @@ const {
           )
         }
       </div>
-      <div class="mx-auto max-w-4xl bg-white prose font-sans pt-12 pb-32 px-5">
+      <div class="mx-auto max-w-6xl bg-white prose font-sans pt-12 pb-32 px-5">
         <div class="title">
           <div class="date animate-fade-bottom">
             <FormattedDate date={pubDate} />
@@ -57,7 +71,7 @@ const {
             }
           </div>
           <h1
-            class="text-6xl leading-[3.5rem] m-0 font-title font-bold animate-fade-top"
+            class="text-6xl leading-[3.5rem] m-0 font-title font-bold animate-fade-top text-primary-700 uppercase"
           >
             {title}
           </h1>
@@ -93,8 +107,8 @@ const {
       </div>
     </article>
   </section>
-  <CTAColor content={flyWithUsCTA} />
 
+  <CTAVideoWhite video={randomVideo} data={dataForVideo} />
   <!-- Add BlogPost Schema for SEO -->
   <BlogPostSchema
     title={title}

@@ -1,0 +1,51 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeaderSmall from "../../components/HeaderSmall.astro";
+import ProgramSwiper from "../../components/ProgramSwiper.astro";
+import CTAColor from "../../components/CTAColor.astro";
+import programsSwiper from "../../data/flight-training/programSwiper.js";
+import faqPage from "../../data/pages/faq.js";
+import flyWithUsCTA from "../../data/fly-with-us-cta";
+import FAQs from "../../components/FAQs";
+import FAQSchema from "../../components/FAQSchema.astro";
+import MapsLocation from "../../components/MapsLocation.astro";
+import CTAVideoWhite from "../../components/CTAVideoWhite.astro";
+import { GeneralFAQs } from "../../data/general-faqs";
+import CTAVideo from "../../components/CTAVideo.astro";
+import videoList from "../../data/videos.js";
+import { getCurrentVideo } from "../../scripts/videoSpinner.js";
+const { data } = faqPage;
+
+// Transform FAQ format for schema
+const faqSchemaItems = GeneralFAQs.map((faq) => ({
+  question: faq.title,
+  // Remove HTML tags for clean schema
+  answer: faq.content.replace(/<[^>]*>?/gm, ""),
+}));
+
+const currentVideo = getCurrentVideo(videoList, "discovery flight");
+const videoHome = videoList[0]; // Use the first video for now
+
+const dataForVideo = {
+  headerH1: `<span class="text-primary-600 uppercase text-lg lg:text-2xl lg:max-w-3xl font-sans text-center font-bold tracking-tight">Fly with the team</br></span>Where Excellence Takes Flight`,
+  paragraph:
+    "If you’ve ever dreamed of flying, there’s no better time to begin. FlyTech Flight School is your launchpad, where you’ll train in modern aircraft, work one-on-one with expert instructors, and earn your pilot certificate and ratings.",
+};
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <HeaderSmall content={data.header} />
+  <CTAVideo video={videoHome} data={dataForVideo} />
+  <FAQs faqs={GeneralFAQs} type="General" client:visible />
+  <ProgramSwiper content={programsSwiper} />
+  <FAQSchema items={faqSchemaItems} />
+  <!-- <CTAVideoWhite video={currentVideo} data={flyWithUsCTA} /> -->
+  <MapsLocation />
+  <CTAColor content={data.flyWithUsCTA} />
+  <script src="../../scripts/creativeSwiper.js"></script>
+</BaseLayout>

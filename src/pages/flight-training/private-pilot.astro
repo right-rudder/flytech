@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeaderSmall from "../../components/HeaderSmall.astro";
+import CTAColor from "../../components/CTAColor.astro";
+import flyWithUsCTA from "../../data/fly-with-us-cta";
+import ProgramDetails from "../../components/ProgramDetails.astro";
+import programData from "../../data/flight-training/privatePilotData.js";
+import CourseSchema from "../../components/CourseSchema.astro";
+import BreadcrumbSchema from "../../components/BreadcrumbSchema.astro";
+import CTAVideoWhite from "../../components/CTAVideoWhite.astro";
+import videoList from "../../data/videos.js";
+
+const randomVideo = videoList[Math.floor(Math.random() * videoList.length)];
+const dataForVideo = {
+  headerH1: `<span class="text-primary-600 uppercase text-lg lg:text-2xl lg:max-w-3xl font-sans text-center font-bold tracking-tight">Fly with the team that’s</br></span>revolutionizing pilot training`,
+  paragraph:
+    "At FlyTech Pilot Academy, we combine modern aircraft, immersive technology, and a passionate team of instructors to give you an efficient, professional, and enjoyable path to the cockpit. Whether you're starting fresh or advancing your career, we make it simple.",
+  buttons: [],
+};
+
+const breadcrumbItems = [
+  { name: "Home", item: "/" },
+  { name: "Flight Training", item: "/flight-training" },
+  { name: "Private Pilot License", item: "/flight-training/private-pilot" },
+];
+---
+
+<BaseLayout
+  siteTitle={programData.pageTitle}
+  siteDescription={programData.pageDescription}
+  keywords={programData.pageKeywords}
+>
+  <HeaderSmall content={programData.header} />
+  <CTAVideoWhite video={randomVideo} data={dataForVideo} />
+  <ProgramDetails program={programData.details} />
+  <CTAColor content={flyWithUsCTA} />
+
+  <CourseSchema
+    title={programData.pageTitle}
+    description={programData.pageDescription}
+    courseWorkload="Approximately 55-60 hours of flight time and ground instruction"
+    programDuration="3-6 months on average"
+  />
+  <BreadcrumbSchema items={breadcrumbItems} />
+</BaseLayout>

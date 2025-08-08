@@ -33,7 +33,7 @@ export const mobileNavbarLinks = [
     ],
   },
   {
-    name: "Programs",
+    name: "Flight Training",
     submenu: [
       {
         name: "All Programs",
@@ -53,7 +53,7 @@ export const mobileNavbarLinks = [
       },
       // {
       //   name: "Multi-Engine Rating",
-      //   link: "/programs/multi-engine-rating",
+      //   link: "/flight-training/multi-engine-rating",
       // },
       {
         name: "Certified Flight Instructor",

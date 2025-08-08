@@ -4,10 +4,10 @@ import HeaderScreen from "../components/HeaderScreen.astro";
 import ProgramSwiper from "../components/ProgramSwiper.astro";
 import CTAColor from "../components/CTAColor.astro";
 import Testimonials from "../components/Testimonials.astro";
-import programsSwiper from "../data/programSwiper";
+import programsSwiper from "../data/flight-training/programSwiper.js";
 import FlightTrainingAdvantages from "../components/FlightTrainingAdvantages.astro";
 import BlogFeed from "../components/BlogFeed.astro";
-import homePage from "../data/homePage";
+import homePage from "../data/pages/homePage.js";
 import flyWithUsCTA from "../data/fly-with-us-cta";
 import AirlinesCloud from "../components/AirlinesCloud.astro";
 import FAQs from "../components/FAQs";
@@ -20,6 +20,7 @@ import CTAVideo from "../components/CTAVideo.astro";
 // import CTAFlight from "../data/CTAFlight";
 import videoList from "../data/videos.js";
 import { getCurrentVideo } from "../scripts/videoSpinner.js";
+import WidgetGoogleReviews from "../components/FCRM/WidgetGoogleReviews.astro";
 import CTAContact from "../components/CTAContact.astro";
 
 // Transform FAQ format for schema
@@ -33,8 +34,9 @@ const currentVideo = getCurrentVideo(videoList, "discovery flight");
 const videoHome = videoList[0]; // Use the first video for now
 
 const dataForVideo = {
-  header: "Where Excellence Takes Flight",
-  text: "If you’ve ever dreamed of flying, there’s no better time to begin. FlyTech Flight School is your launchpad, where you’ll train in modern aircraft, work one-on-one with expert instructors, and earn your pilot certificate and ratings.",
+  headerH1: `<span class="text-primary-600 uppercase text-lg lg:text-2xl lg:max-w-3xl font-sans text-center font-bold tracking-tight">Fly with the team</br></span>Where Excellence Takes Flight`,
+  paragraph:
+    "If you’ve ever dreamed of flying, there’s no better time to begin. FlyTech Flight School is your launchpad, where you’ll train in modern aircraft, work one-on-one with expert instructors, and earn your pilot certificate and ratings.",
 };
 ---
 
@@ -46,13 +48,14 @@ const dataForVideo = {
   <!-- HEADER -->
   <HeaderScreen content={data.header} />
   <CTAVideo video={videoHome} data={dataForVideo} />
+  <BlogFeed data={data.blogfeed} />
   <AirlinesCloud data={data.airlinesCloud} />
   <FlightTrainingAdvantages content={data.advantagesInfo} />
-  <CTAVideoWhite video={currentVideo} data={flyWithUsCTA} />
+  <WidgetGoogleReviews />
   <!-- <CTAColor content={flyWithUsCTA} /> -->
+  <CTAVideoWhite video={currentVideo} data={flyWithUsCTA} />
   <ProgramSwiper content={programsSwiper} />
-  <Testimonials content={data.testimonials} />
-  <!-- <BlogFeed data={data.blogfeed} /> -->
+  <!-- <Testimonials content={data.testimonials} /> -->
   <FAQs faqs={GeneralFAQs} type="General" client:visible />
   <FAQSchema items={faqSchemaItems} />
   <MapsLocation />

@@ -2,7 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ProgramSwiper from "../components/ProgramSwiper.astro";
 import CTAColor from "../components/CTAColor.astro";
-import programsSwiper from "../data/programSwiper";
+import programsSwiper from "../data/flight-training/programSwiper.js";
 import flyWithUsCTA from "../data/fly-with-us-cta";
 import ImageComp from "../components/ImageComp.astro";
 import HeaderSmall from "../components/HeaderSmall.astro";
@@ -18,7 +18,7 @@ const data = {
   header: {
     imagePath: "/src/assets/placeholder-img.webp",
     imageAlt: "FlyTech Flight School Team at the runway",
-    headerH1: `Financing for Pilot Training`,
+    headerH1: `Pilot Training <strong class="text-primary-600">Financing</strong>`,
     paragraph:
       "We are committed to helping you achieve your aviation dreams, which is why we have partnered with reputable financing companies to offer you convenient options tailored to your needs.",
     buttons: [
@@ -56,6 +56,7 @@ const dataForVideo = {
   <!-- HEADER -->
   <HeaderSmall content={data.header} />
 
+  <CTAVideo video={currentVideo} data={dataForVideo} />
   <section class="py-24 bg-primary-50">
     <div class="">
       <h2 class="text-xl font-semibold italic text-center mx-auto">
@@ -174,8 +175,6 @@ const dataForVideo = {
       </div>
     </div>
   </section>
-
-  <CTAVideo video={currentVideo} data={dataForVideo} />
 
   <ProgramSwiper content={programsSwiper} />
   <CTAColor content={flyWithUsCTA} />
