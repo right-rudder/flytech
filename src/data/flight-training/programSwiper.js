@@ -33,7 +33,7 @@ const programsSwiper = {
     },
     {
       title: "Certified Flight Instructor",
-      imagePath: "/src/assets/placeholder-img.webp",
+      imagePath: "/src/assets/stock-pierre-goiffon-t56w7xguZWA-unsplash.webp",
       imageAlt:
         "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
       description:

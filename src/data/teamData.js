@@ -10,7 +10,7 @@ const teamData = {
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/placeholder-img.webp",
+    imagePath: "/src/assets/stock-pierre-goiffon-t56w7xguZWA-unsplash.webp",
     imageAlt:
       "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
     headerH1: `Meet our <strong class="text-primary-600">TEAM</strong>`,

@@ -11,7 +11,8 @@ const aproxPilotTrainingCosts = {
     //top header
     header: {
       stars: true,
-      imagePath: "/src/assets/placeholder-img.webp",
+      imagePath:
+        "/src/assets/stock-randy-dautzenberg-UgVWw4BjH7g-unsplash.webp",
       imageAlt:
         "FlyTech Flight School airplane landing at Falcon Field Airport in Saint Joseph, Missouri",
       headerH1: `Approximate<br>Training Costs`,

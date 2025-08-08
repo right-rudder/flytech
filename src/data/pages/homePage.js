@@ -133,7 +133,7 @@ const homePage = {
           icon: "M9 12.75 11.25 15 15 9.75...",
         },
       ],
-      imagePath: "/src/assets/placeholder-img.webp",
+      imagePath: "/src/assets/stock-ben-bracken-XeVFehBtCXo-unsplash.webp",
       imageAlt: "FlyTech Pilot Academy aircraft and instructors",
     },
 
@@ -146,7 +146,7 @@ const homePage = {
         `Take our quiz to explore if becoming a pilot is the right path for you and learn more about training with FlyTech Pilot Academy.`,
       ],
       imageLegend: `Luke Poulos<br><small class="text-white font-normal text-sm">Founder & CEO</small>`,
-      imagePath: "/src/assets/placeholder-img.webp",
+      imagePath: "/src/assets/stock-max-nustedt-_uwWKY22_HA-unsplash.webp",
       imageAlt: "FlyTech Pilot Academy 172 instrument panel",
       quizModal: true,
     },

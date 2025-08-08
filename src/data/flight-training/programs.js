@@ -6,7 +6,7 @@ const programs = {
   cards: [
     {
       title: "Private Pilot Certificate",
-      imagePath: "/src/assets/placeholder-img.webp",
+      imagePath: "/src/assets/stock-ben-bracken-XeVFehBtCXo-unsplash.webp",
       imageAlt: "Photograph of a FlyTech training aircraft on the runway",
       description:
         "Embark on your aviation journey with our comprehensive Private Pilot Certificate program, allowing you to operate an aircraft for non-commercial purposes.",
@@ -14,7 +14,7 @@ const programs = {
     },
     {
       title: "Instrument Rating",
-      imagePath: "/src/assets/placeholder-img.webp",
+      imagePath: "/src/assets/stock-kamil-pietrzak-w9KTlrW7rOU-unsplash.webp",
       imageAlt: "Close-up of FlyTech aircraft instruments",
       description:
         "Enhance your skills to navigate through low-visibility conditions confidently with our Instrument Rating course.",
@@ -22,7 +22,7 @@ const programs = {
     },
     {
       title: "Commercial Pilot Certificate",
-      imagePath: "/src/assets/placeholder-img.webp",
+      imagePath: "/src/assets/stock-yves-scheuber-Hn2t_74pp3Q-unsplash.webp",
       imageAlt: "FlyTech aircraft in flight, viewed from behind the pilots",
       description:
         "Advance your career with our Commercial Pilot Certificate program, enabling you to fly for compensation or hire.",
@@ -30,7 +30,7 @@ const programs = {
     },
     {
       title: "Multi-Engine Rating",
-      imagePath: "/src/assets/placeholder-img.webp",
+      imagePath: "/src/assets/stock-yves-scheuber-Hn2t_74pp3Q-unsplash.webp",
       imageAlt:
         "FlyTech's multi-engine aircraft on the runway viewed from the front",
       description:
@@ -39,7 +39,8 @@ const programs = {
     },
     {
       title: "Certified Flight Instructor (CFI)",
-      imagePath: "/src/assets/placeholder-img.webp",
+      imagePath:
+        "/src/assets/stock-marko-pavlichenko-Zy7hXqw2he8-unsplash.webp",
       imageAlt: "FlyTech instructor checking aircraft instruments",
       description:
         "Share your passion for flying and inspire the next generation by becoming a Certified Flight Instructor through our accelerated 30-day CFI program.",

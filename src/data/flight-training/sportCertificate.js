@@ -10,7 +10,7 @@ const sportPilotData = {
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/placeholder-img.webp",
+    imagePath: "/src/assets/stock-pierre-goiffon-t56w7xguZWA-unsplash.webp",
     imageAlt: "Light sport aircraft flying in Missouri skies",
     headerH1: `Get Started with a <strong class="text-primary-600">Sport Pilot Certificate</strong>`,
     paragraph: `Looking for a fun, affordable, and efficient way to become a pilot? The Sport Pilot Certificate is ideal for flying light aircraft with fewer training hours and simpler requirements.`,
@@ -47,7 +47,8 @@ const sportPilotData = {
     ],
 
     cta: {
-      imagePath: "/src/assets/placeholder-img.webp",
+      imagePath:
+        "/src/assets/stock-randy-dautzenberg-UgVWw4BjH7g-unsplash.webp",
       imageAlt: "Student pilot pre-flighting a light sport aircraft",
       title: "Take Flight, Your Way",
       description:

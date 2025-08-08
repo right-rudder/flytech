@@ -11,7 +11,7 @@ const instructAtFlyTech = {
     //top header
     header: {
       stars: true,
-      imagePath: "/src/assets/placeholder-img.webp",
+      imagePath: "/src/assets/stock-max-nustedt-_uwWKY22_HA-unsplash.webp",
       imageAlt:
         "FlyTech Flight School airplane landing at Falcon Field Airport in Saint Joseph, Missouri",
       headerH1: `Career Track<br>Pilots`,
@@ -103,7 +103,7 @@ const instructAtFlyTech = {
         link: "/accelerated-30-day-cfi-program",
         primary: true,
       },
-      imagePath: "/src/assets/placeholder-img.webp",
+      imagePath: "/src/assets/stock-tadeu-jnr-kAzSa_azENM-unsplash.webp",
       imageAlt:
         "sun city aviation founder luke poulos in front of a sun city airplane",
     },

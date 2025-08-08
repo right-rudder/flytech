@@ -10,7 +10,7 @@ const certifiedFlightInstructorData = {
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/placeholder-img.webp",
+    imagePath: "/src/assets/stock-ben-bracken-XeVFehBtCXo-unsplash.webp",
     imageAlt:
       "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
     headerH1: `Certified Flight <br>INSTRUCTOR (CFI)</span>`,
@@ -64,7 +64,8 @@ const certifiedFlightInstructorData = {
     ],
 
     cta: {
-      imagePath: "/src/assets/placeholder-img.webp",
+      imagePath:
+        "/src/assets/stock-steward-masweneng-n9By7oBszM0-unsplash.webp",
       imageAlt: "Female pilot smiling",
       title: "Enroll in the CFI Program",
       description:
