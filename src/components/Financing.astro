@@ -1,0 +1,172 @@
+---
+const { content } = Astro.props;
+
+import ImageComp from "./ImageComp.astro";
+---
+
+<div class="bg-white pb-12 overflow-hidden">
+  <main class="isolate">
+    <!-- Hero section -->
+    <div class="relative isolate -z-10 overflow-hidden bg-neutral-800 pt-14">
+      <div
+        aria-hidden="true"
+        class="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-primary-600 shadow-2xl ring-1 shadow-primary-600/70 ring-primary-400 sm:-mr-80 lg:-mr-96"
+      >
+      </div>
+      <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
+        <div
+          class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8"
+        >
+          <h1
+            class="max-w-2xl text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl lg:col-span-2 xl:col-auto"
+          >
+            {content.title}
+          </h1>
+          <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
+            <p
+              class="text-lg font-medium text-pretty text-white/90 sm:text-xl/8"
+            >
+              {content.description}
+            </p>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1567532900872-f4e906cbf06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80"
+            alt=""
+            class="mt-10 aspect-video w-full max-w-2xl object-cover outline-1 -outline-offset-1 outline-black/5 sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
+          />
+        </div>
+      </div>
+      <div
+        class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-linear-to-t from-primary-800 sm:h-32"
+      >
+      </div>
+    </div>
+
+    <!-- CTA section -->
+    <div class="py-12 overflow-hidden">
+      <div class="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
+        <div
+          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:max-w-none lg:min-w-full lg:flex-none lg:gap-y-8"
+        >
+          <div class="w-full lg:max-w-xl lg:flex-auto">
+            <h3 class="text-primary-600 uppercase bold text-xl">
+              {content.descriptions.upperHeading}
+            </h3>
+            <h2
+              class="text-3xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl lg:text-5xl uppercase"
+            >
+              {content.descriptions.title}
+            </h2>
+            <p class="mt-6 text-xl/8 text-gray-600">
+              {content.descriptions.description}
+            </p>
+
+            <ul class="-my-8 py-12 divide-y divide-neutral-400">
+              {
+                content.details &&
+                  content.details.map((detail) => (
+                    <li class="py-4">
+                      <dl class="relative flex flex-wrap gap-x-3">
+                        <dt class="sr-only">Role</dt>
+                        <dd class="w-full flex-none text-lg font-semibold tracking-tight text-gray-900">
+                          <a href="#" class="text-primary-600 uppercase">
+                            {detail.title}
+                            <span aria-hidden="true" class="absolute inset-0" />
+                          </a>
+                        </dd>
+                        {/* <dt class="sr-only">Description</dt> */}
+                        <dd class="mt-2 w-full flex-none text-base/7 text-gray-600">
+                          {detail.description}
+                        </dd>
+                        {/* <dt class="sr-only">Salary</dt> */}
+                        <dd class="mt-4 text-base/7 font-semibold text-gray-900">
+                          {detail.subtitle}
+                        </dd>
+                        {/* <dt class="sr-only">Location</dt> */}
+                        <dd class="mt-4 flex items-center gap-x-3 text-base/7 text-gray-500">
+                          <svg
+                            viewBox="0 0 2 2"
+                            aria-hidden="true"
+                            class="size-0.5 flex-none fill-gray-300"
+                          >
+                            <circle r="1" cx="1" cy="1" />
+                          </svg>
+                          {detail.underheading}
+                        </dd>
+                      </dl>
+                    </li>
+                  ))
+              }
+            </ul>
+            <!-- <div class="mt-8 flex border-t border-gray-100 pt-8">
+              <a
+                href="#"
+                class="text-sm/6 font-semibold text-primary-600 hover:text-primary-500"
+                >View all openings <span aria-hidden="true">&rarr;</span></a
+              >
+            </div> -->
+            <div class="flex flex-col lg:flex-row gap-5">
+              {
+                content.buttons &&
+                  content.buttons.map((button) => (
+                    <a
+                      href={button.link}
+                      class={`btn-primary w-full md:w-auto`}
+                    >
+                      <span class="drop-shadow-sm">{button.name}</span>
+                    </a>
+                  ))
+              }
+            </div>
+          </div>
+
+          <!-- Images -->
+          <div
+            class="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents"
+          >
+            <div
+              class="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1670272502246-768d249768ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&q=80"
+                alt=""
+                class="aspect-7/5 w-148 max-w-none rounded-2xl bg-gray-50 object-cover"
+              />
+            </div>
+            <div
+              class="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-148 lg:items-start lg:justify-end lg:gap-x-8"
+            >
+              <div
+                class="order-first flex w-64 flex-none justify-end self-end lg:w-auto"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1605656816944-971cd5c1407f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80"
+                  alt=""
+                  class="aspect-4/3 w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
+                />
+              </div>
+              <div
+                class="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&h=842&q=80"
+                  alt=""
+                  class="aspect-7/5 w-148 max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
+                />
+              </div>
+              <div
+                class="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80"
+                  alt=""
+                  class="aspect-4/3 w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
