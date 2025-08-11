@@ -1,0 +1,88 @@
+---
+import { FaCheck } from "react-icons/fa";
+import ImageComp from "./ImageComp.astro";
+const content = Astro.props.content || {};
+const {
+  title,
+  upperheading,
+  description,
+  advantages,
+  imagePath,
+  imageAlt,
+  descriptions,
+} = content;
+---
+
+<section class="py-16 lg:py-24 bg-white">
+  <div class="w-full mx-auto max-w-7xl px-6 lg:px-8">
+    <p
+      class="text-lg
+      font-bold
+      text-primary-600
+      uppercase
+      tracking-wide
+      mb-4
+      text-center
+      lg:text-left"
+    >
+      {upperheading}
+    </p>
+    <h2
+      class="text-3xl lg:text-5xl font-bold text-neutral-800 mb-4 text-center lg:text-left"
+    >
+      {title}
+    </h2>
+    <p class="text-xl lg:text-3xl text-muted-800 mb-6 text-center lg:text-left">
+      {description}
+    </p>
+  </div>
+  <div
+    class="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col lg:flex-row items-start gap-12"
+  >
+    <!-- Image Section (Left) -->
+    <div class="w-full lg:w-1/2 py-12" data-aos="fade-right">
+      <ImageComp
+        imagePath={imagePath}
+        imageAlt={imageAlt}
+        styles=" shadow-lg  object-cover object-top"
+      />
+    </div>
+    <!-- Text Content (Right) -->
+    <div class="w-full lg:w-1/2 py-12">
+      <p
+        class="text-lg font-bold text-primary-600 uppercase tracking-wide mb-4 text-center lg:text-left"
+      >
+        {descriptions.upperheading}
+      </p>
+      <h2
+        class="text-3xl lg:text-4xl font-bold text-neutral-800 mb-4 text-center lg:text-left"
+      >
+        {descriptions.title}
+      </h2>
+      <p class="text-base text-muted-800 mb-6 text-center lg:text-left">
+        {descriptions.description}
+      </p>
+      <ul class="space-y-4 text-center lg:text-left">
+        {
+          advantages.map((advantage, index) => (
+            <li
+              class="flex text-muted-600 items-start space-x-3"
+              data-aos="fade-right"
+              data-aos-delay={index * 100}
+            >
+              <span class="text-primary-600 text-2xl hidden lg:block lg:self-center px-2">
+                <FaCheck />
+              </span>
+              <div>
+                <h3 class="text-lg font-semibold text-primary-600">
+                  {advantage.title}
+                </h3>
+                <p class="">{advantage.description}</p>
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</section>
