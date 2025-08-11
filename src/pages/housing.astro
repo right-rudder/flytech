@@ -1,0 +1,105 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ProgramSwiper from "../components/ProgramSwiper.astro";
+import CTAColor from "../components/CTAColor.astro";
+import programsSwiper from "../data/flight-training/programSwiper.js";
+import flyWithUsCTA from "../data/fly-with-us-cta";
+import ImageComp from "../components/ImageComp.astro";
+import HeaderSmall from "../components/HeaderSmall.astro";
+import CTAVideo from "../components/CTAVideo.astro";
+import CTAVideoWhite from "../components/CTAVideoWhite.astro";
+import videoList from "../data/videos.js";
+import HousingComponent from "../components/Housing.astro";
+
+const data = {
+  pageTitle: "Financing | FlyTech Flight School, Saint Joseph, MO",
+  pageDescription:
+    "FlyTech Flight School  offers flight training in Saint Joseph, MO. We offer private pilot training, instrument rating training, commercial pilot training, and more. Contact us today!",
+  pageKeywords:
+    "flight training, flight school, pilot training, private pilot training, instrument rating training, commercial pilot training, Saint Joseph, MO",
+  header: {
+    imagePath: "/src/assets/placeholder-img.webp",
+    imageAlt: "FlyTech Flight School Team at the runway",
+    headerH1: `Pilot Training <strong class="text-primary-600">Financing</strong>`,
+    paragraph:
+      "We are committed to helping you achieve your aviation dreams, which is why we have partnered with reputable financing companies to offer you convenient options tailored to your needs.",
+    buttons: [
+      {
+        name: "Start Your Journey",
+        link: "/enroll-at-FlyTech",
+        primary: true,
+      },
+      {
+        name: "Book a Discovery Flight",
+        link: "/discovery-flight",
+        primary: true,
+      },
+    ],
+  },
+  advantagesInfo: {
+    title: "Exclusive Student Housing at FlyTech Pilot Academy",
+    upperheading: "Your Gateway to the Skies",
+    description:
+      "Experience unparalleled convenience and comfort with our private rooms located right on the airfield. Perfect for dedicated flight training students.",
+    descriptions: {
+      title: "Why Stay With Us?",
+      upperheading: "",
+      description: [
+        "Our private rooms on the airfield provide a unique living experience tailored for flight training students. Enjoy the convenience of being steps away from your training sessions, allowing you to focus entirely on your aviation goals. Each room is designed with your comfort and privacy in mind, ensuring a peaceful environment for study and rest.",
+        "Choosing to stay in our on-site accommodations means you are part of a community of aspiring pilots. Benefit from the camaraderie and support of fellow students, while having access to all the amenities you need. Our mission is to provide a seamless and supportive living experience, so you can achieve your dream of becoming a pilot.",
+      ],
+    },
+    advantages: [
+      {
+        title: "Prime Location",
+        description:
+          "Located directly on the airfield, our housing offers unparalleled convenience for flight training students. Save time and focus more on your training with easy access to aircraft and facilities.",
+      },
+      {
+        title: "Comfort & Privacy",
+        description:
+          "Each room is designed to provide a comfortable and private living space, perfect for studying and relaxing after a day of training.",
+      },
+      {
+        title: "Fully Furnished",
+        description:
+          "Each room comes fully furnished with essential amenities, including a comfortable bed, study desk, and high-speed internet. Move in hassle-free and start your training right away.",
+      },
+      {
+        title: "24/7 Support",
+        description:
+          "Our dedicated staff is available around the clock to assist with any needs or concerns, ensuring a safe and supportive living environment.",
+      },
+    ],
+    imagePath:
+      "/src/assets/discovery-flight-pilot-and-student-inside-N900FT-flying-4.webp", // Update with actual image path
+    imageAlt: "Cessna 172 parked at Speedway Flight Training during sunset",
+  },
+};
+
+// Video related logic
+const currentVideo = videoList[0];
+const dataForVideo = {
+  headerH1:
+    "How we can help you <br> <strong class='text-primary-600'> fund your training</strong>",
+  paragraph:
+    "We understand that financing your flight training can be a significant concern. That’s why we’ve partnered with Stratus Financial, Flight Training Finance, and AOPA to provide you with tailored financing solutions that make your dream of becoming a pilot more accessible than ever.",
+};
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <HeaderSmall content={data.header} />
+
+  <CTAVideo video={currentVideo} data={dataForVideo} />
+
+  <HousingComponent content={data.advantagesInfo} />
+
+  <ProgramSwiper content={programsSwiper} />
+  <CTAColor content={flyWithUsCTA} />
+  <script src="../scripts/creativeSwiper.js"></script>
+</BaseLayout>
