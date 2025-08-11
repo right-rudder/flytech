@@ -91,15 +91,15 @@ export const navbarLinks = [
       },
       {
         name: "Financing",
-        link: "#",
+        link: "/about/financing",
       },
       {
         name: "Housing",
-        link: "#",
+        link: "/about/housing",
       },
       {
         name: "Store",
-        link: "#",
+        link: "https://flytech.myspreadshop.com",
       },
       {
         name: "Join Us",
