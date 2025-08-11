@@ -10,6 +10,7 @@ const {
   imagePath,
   imageAlt,
   descriptions,
+  testimonials,
 } = content;
 ---
 
@@ -80,5 +81,48 @@ const {
         }
       </ul>
     </div>
+  </div>
+
+  <div>
+    <section class="bg-white">
+      <div class="container px-6 py-10 mx-auto">
+        <div>
+          <h1
+            class="text-3xl lg:text-4xl font-bold text-neutral-800 mb-4 text-center lg:text-center"
+          >
+            What our clients are saying
+          </h1>
+        </div>
+        <div class="mt-6 md:flex md:items-center md:justify-between">
+          <section class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 lg:grid-cols-3">
+            {
+              testimonials &&
+                testimonials.map((testimonial) => (
+                  <div class="p-8 border rounded-lg dark:border-gray-700">
+                    <p class="leading-loose text-gray-500 dark:text-gray-400">
+                      “Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Tempore quibusdam ducimus libero ad tempora doloribus
+                      expedita laborum saepe voluptas perferendis delectus
+                      assumenda rerum, culpa aperiam dolorum, obcaecati corrupti
+                      aspernatur a.”.
+                    </p>
+
+                    <div class="flex items-center mt-8 -mx-2">
+                      <div class="mx-2">
+                        <h1 class="font-semibold text-gray-800 dark:text-white">
+                          Robert
+                        </h1>
+                        <span class="text-sm text-gray-500 dark:text-gray-400">
+                          CTO, Robert Consultency
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                ))
+            }
+          </section>
+        </div>
+      </div>
+    </section>
   </div>
 </section>
