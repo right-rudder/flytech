@@ -7,6 +7,7 @@ import flyWithUsCTA from "../data/fly-with-us-cta";
 import ImageComp from "../components/ImageComp.astro";
 import HeaderSmall from "../components/HeaderSmall.astro";
 import CTAVideo from "../components/CTAVideo.astro";
+import CTAVideoWhite from "../components/CTAVideoWhite.astro";
 import videoList from "../data/videos.js";
 import FinancingComponent from "../components/Financing.astro";
 
@@ -105,8 +106,10 @@ const currentVideo =
       v.description?.trim().toLowerCase() === "about flytech pilot academy",
   ) || null;
 const dataForVideo = {
-  header: "How we can help you fund your training",
-  text: "We understand that financing your flight training can be a significant concern. That’s why we’ve partnered with Stratus Financial, Flight Training Finance, and AOPA to provide you with tailored financing solutions that make your dream of becoming a pilot more accessible than ever.",
+  headerH1:
+    "How we can help you <br> <strong class='text-primary-600'> fund your training</strong>",
+  paragraph:
+    "We understand that financing your flight training can be a significant concern. That’s why we’ve partnered with Stratus Financial, Flight Training Finance, and AOPA to provide you with tailored financing solutions that make your dream of becoming a pilot more accessible than ever.",
 };
 ---
 
