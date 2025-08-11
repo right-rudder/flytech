@@ -68,7 +68,22 @@ const {
               data-aos-delay={index * 100}
             >
               <span class="text-primary-600 text-2xl hidden lg:block lg:self-center px-2">
-                <FaCheck />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 640 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d={
+                      advantage.iconPath ||
+                      "M320 32C150.1 32 8 174.1 8 344c0 169.9 142.1 312 312 312s312-142.1 312-312C632 174.1 489.9 32 320 32zm0 560c-136.9 0-248-111.1-248-248S183.1 96 320 96s248 111.1 248 248-111.1 248-248 248zm120-360H200c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h240c13.3 0 24-10.7 24-24v-16c0-13.3-10.7-24-24-24zm0 112H200c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h240c13.3 0 24-10.7 24-24v-16c0-13.3-10.7-24-24-24z"
+                    }
+                    stroke-width="13"
+                    stroke="currentColor"
+                  />
+                </svg>
               </span>
               <div>
                 <h3 class="text-lg font-semibold text-primary-600">
@@ -98,22 +113,18 @@ const {
             {
               testimonials &&
                 testimonials.map((testimonial) => (
-                  <div class="p-8 border rounded-lg dark:border-gray-700">
-                    <p class="leading-loose text-gray-500 dark:text-gray-400">
-                      “Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Tempore quibusdam ducimus libero ad tempora doloribus
-                      expedita laborum saepe voluptas perferendis delectus
-                      assumenda rerum, culpa aperiam dolorum, obcaecati corrupti
-                      aspernatur a.”.
+                  <div class="p-8 border rounded-lg dark:border-gray-700 text-center">
+                    <p class="leading-loose text-gray-500 dark:text-gray-400 text-center">
+                      {testimonial.description}
                     </p>
 
-                    <div class="flex items-center mt-8 -mx-2">
+                    <div class="flex items-center justify-center mt-8 -mx-2">
                       <div class="mx-2">
                         <h1 class="font-semibold text-gray-800 dark:text-white">
-                          Robert
+                          {testimonial.name}
                         </h1>
                         <span class="text-sm text-gray-500 dark:text-gray-400">
-                          CTO, Robert Consultency
+                          Student
                         </span>
                       </div>
                     </div>
