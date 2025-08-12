@@ -203,17 +203,16 @@ import imgLeft from "../../assets/N900FT-ground.webp";
             </el-tab-list>
           </div>
           <el-tab-panels>
+          <!-- Model Specifications Panel -->
             <div id="tab-panel-model" class="-mb-10">
               <h3 class="sr-only">Model specifications:</h3>
 
-              <div class="flex space-x-4 text-sm text-white">
-                <div class="py-10">
-                  <h3 class="font-medium text-primary-600">
+                  <h3 class="py-5 font-medium text-primary-600">
                     Model - {content.model}
                   </h3>
-
-                  <div class="mt-2">
-                    <p class="text-sm/6 text-white/80">Engine</p>
+              <div class="flex space-x-4 text-sm text-white flex-wrap gap-4">
+                <div class="py-5 flex flex-wrap">
+                  <div class="mt-2 ">
                     <div class="mt-4 flex items-center">
                       <svg
                         viewBox="0 0 20 20"
@@ -229,6 +228,8 @@ import imgLeft from "../../assets/N900FT-ground.webp";
                       </svg>
 
                       <div class="pl-2 text-sm/6 text-white">
+                        
+                    <p class="text-sm/6 text-white/80">Engine</p>
                         <p>
                           {content.engine}
                         </p>
@@ -327,6 +328,7 @@ import imgLeft from "../../assets/N900FT-ground.webp";
               </div>
             </div>
 
+          <!-- Model FAQ Panel -->
             <div id="tab-panel-faq" hidden class="text-sm text-white">
               <h3 class="sr-only">Frequently Asked Questions</h3>
 
