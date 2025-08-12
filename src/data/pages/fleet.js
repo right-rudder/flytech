@@ -187,54 +187,53 @@ const fleetPage = {
           ],
         },
       ],
-    },
-
-    testimonials: {
-      title: "What our pilots say",
-      description:
-        "Hear from our students about their experiences training with FlyTech Pilot Academy.",
-      testimonials: [
-        {
-          name: "Daniel Lamaster",
-          role: "",
-          feedback:
-            "Flying the Sling NGT with FlyTech was an exhilarating experience. The aircraft’s reliability and performance are unmatched!",
-          imagePath: "",
-          imageAlt: "Daniel Lamaster, Pilot",
-        },
-        {
-          name: "Conner Musser",
-          role: "",
-          feedback:
-            "The Sling NGT was a joy to fly. FlyTech’s attention to detail made my training seamless and enjoyable.",
-          imagePath: "",
-          imageAlt: "Conner Musser, Pilot",
-        },
-        {
-          name: "George Hawkins",
-          role: "",
-          feedback:
-            "As an aviation enthusiast, I was thrilled by the availability. The team truly understands a pilot’s needs.",
-          imagePath: "",
-          imageAlt: "George Hawkins, Pilot",
-        },
-        {
-          name: "Elijah Leininger",
-          role: "",
-          feedback:
-            "The avionics and technology in the Sling NGT are next-level! This aircraft is packed with innovation. Anyone would be impressed by its advanced features.",
-          imagePath: null,
-          imageAlt: "Elijah Leininger, Pilot",
-        },
-        {
-          name: "David Ayers",
-          role: "",
-          feedback:
-            "As a pilot, I’ve experienced firsthand how Avi Technology enhances the Sling NGT. The advanced avionics, efficiency, and safety features make a noticeable difference. Adding real-world applications.",
-          imagePath: null,
-          imageAlt: "David Ayers, Pilot",
-        },
-      ],
+      testimonials: {
+        title: "What our pilots say",
+        description:
+          "Hear from our pilots about their experiences flying in FlyTech Pilot Academy.",
+        testimonials: [
+          {
+            name: "Daniel Lamaster",
+            role: "",
+            feedback:
+              "Flying the Sling NGT with FlyTech was an exhilarating experience. The aircraft’s reliability and performance are unmatched!",
+            imagePath: "",
+            imageAlt: "Daniel Lamaster, Pilot",
+          },
+          {
+            name: "Conner Musser",
+            role: "",
+            feedback:
+              "The Sling NGT was a joy to fly. FlyTech’s attention to detail made my training seamless and enjoyable.",
+            imagePath: "",
+            imageAlt: "Conner Musser, Pilot",
+          },
+          {
+            name: "George Hawkins",
+            role: "",
+            feedback:
+              "As an aviation enthusiast, I was thrilled by the availability. The team truly understands a pilot’s needs.",
+            imagePath: "",
+            imageAlt: "George Hawkins, Pilot",
+          },
+          {
+            name: "Elijah Leininger",
+            role: "",
+            feedback:
+              "The avionics and technology in the Sling NGT are next-level! This aircraft is packed with innovation. Anyone would be impressed by its advanced features.",
+            imagePath: null,
+            imageAlt: "Elijah Leininger, Pilot",
+          },
+          {
+            name: "David Ayers",
+            role: "",
+            feedback:
+              "As a pilot, I’ve experienced firsthand how Avi Technology enhances the Sling NGT. The advanced avionics, efficiency, and safety features make a noticeable difference. Adding real-world applications.",
+            imagePath: null,
+            imageAlt: "David Ayers, Pilot",
+          },
+        ],
+      },
     },
 
     flyWithUsCTA: {
