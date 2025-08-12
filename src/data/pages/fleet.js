@@ -104,6 +104,13 @@ const fleetPage = {
             "Manual flaps",
             "Standard six-pack instrument layout",
           ],
+          faq: [
+            {
+              question: "What is the fuel capacity of the Sling LSA?",
+              answer:
+                "The Sling LSA has a fuel capacity of 24.5 gallons (93 liters).",
+            },
+          ],
           images: [
             {
               imagePath: "/images/fleet/cessna-172-side.jpg",
@@ -150,6 +157,13 @@ const fleetPage = {
             "Whirlwind Carbon Fiber Prop",
             "Automatic Carb Heat & Electrically Operated Pitch Trim",
             "Aileron and Elevator Pushrod Controls",
+          ],
+          faq: [
+            {
+              question: "What is the fuel capacity of the Sling LSA?",
+              answer:
+                "The Sling LSA has a fuel capacity of 24.5 gallons (93 liters).",
+            },
           ],
           images: [
             {

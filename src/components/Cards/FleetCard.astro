@@ -186,109 +186,142 @@ import imgLeft from "../../assets/N900FT-ground.webp";
           <div class="border-b border-gray-200">
             <el-tab-list class="-mb-px flex space-x-8">
               <button
-                id="tab-reviews"
-                class="border-b-2 border-transparent py-6 text-sm font-medium whitespace-nowrap text-white/90 hover:border-gray-300 hover:text-gray-800 aria-selected:border-primary-600 aria-selected:text-primary-600"
-                >Customer Reviews</button
+                id="tab-model"
+                class="border-b-2 border-transparent py-6 text-sm font-medium whitespace-nowrap text-white/90 hover:border-gray-300 hover:text-primary-600 aria-selected:border-primary-600 aria-selected:text-primary-600"
+                >Model</button
               >
               <button
                 id="tab-faq"
-                class="border-b-2 border-transparent py-6 text-sm font-medium whitespace-nowrap text-white/90 hover:border-gray-300 hover:text-gray-800 aria-selected:border-primary-600 aria-selected:text-primary-600"
+                class="border-b-2 border-transparent py-6 text-sm font-medium whitespace-nowrap text-white/90 hover:border-gray-300 hover:text-primary-600 aria-selected:border-primary-600 aria-selected:text-primary-600"
                 >FAQ</button
               >
-              <button
+              <!-- <button
                 id="tab-license"
-                class="border-b-2 border-transparent py-6 text-sm font-medium whitespace-nowrap text-white/90 hover:border-gray-300 hover:text-gray-800 aria-selected:border-primary-600 aria-selected:text-primary-600"
+                class="border-b-2 border-transparent py-6 text-sm font-medium whitespace-nowrap text-white/90 hover:border-gray-300 hover:text-primary-600 aria-selected:border-primary-600 aria-selected:text-primary-600"
                 >License</button
-              >
+              > -->
             </el-tab-list>
           </div>
           <el-tab-panels>
-            <div id="tab-panel-reviews" class="-mb-10">
-              <h3 class="sr-only">Customer Reviews</h3>
+            <div id="tab-panel-model" class="-mb-10">
+              <h3 class="sr-only">Model specifications:</h3>
 
               <div class="flex space-x-4 text-sm text-white">
-                <div class="flex-none py-10">
-                  <img
-                    src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80"
-                    alt=""
-                    class="size-10 rounded-full bg-gray-100"
-                  />
-                </div>
                 <div class="py-10">
-                  <h3 class="font-medium text-primary-600">Emily Selman</h3>
-                  <p><time datetime="2021-07-16">July 16, 2021</time></p>
+                  <h3 class="font-medium text-primary-600">
+                    Model - {content.model}
+                  </h3>
 
-                  <div class="mt-4 flex items-center">
-                    <!-- Active: "text-yellow-400", Default: "text-neutral-100" -->
-                    <svg
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      data-slot="icon"
-                      aria-hidden="true"
-                      class="size-5 shrink-0 text-yellow-400"
-                    >
-                      <path
-                        d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
-                        clip-rule="evenodd"
-                        fill-rule="evenodd"></path>
-                    </svg>
-                    <svg
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      data-slot="icon"
-                      aria-hidden="true"
-                      class="size-5 shrink-0 text-yellow-400"
-                    >
-                      <path
-                        d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
-                        clip-rule="evenodd"
-                        fill-rule="evenodd"></path>
-                    </svg>
-                    <svg
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      data-slot="icon"
-                      aria-hidden="true"
-                      class="size-5 shrink-0 text-yellow-400"
-                    >
-                      <path
-                        d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
-                        clip-rule="evenodd"
-                        fill-rule="evenodd"></path>
-                    </svg>
-                    <svg
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      data-slot="icon"
-                      aria-hidden="true"
-                      class="size-5 shrink-0 text-yellow-400"
-                    >
-                      <path
-                        d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
-                        clip-rule="evenodd"
-                        fill-rule="evenodd"></path>
-                    </svg>
-                    <svg
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      data-slot="icon"
-                      aria-hidden="true"
-                      class="size-5 shrink-0 text-yellow-400"
-                    >
-                      <path
-                        d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
-                        clip-rule="evenodd"
-                        fill-rule="evenodd"></path>
-                    </svg>
+                  <div class="mt-2">
+                    <p class="text-sm/6 text-white/80">Engine</p>
+                    <div class="mt-4 flex items-center">
+                      <svg
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        data-slot="icon"
+                        aria-hidden="true"
+                        class="size-5 shrink-0 text-primary-400"
+                      >
+                        <path
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
+                          clip-rule="evenodd"
+                          fill-rule="evenodd"></path>
+                      </svg>
+
+                      <div class="pl-2 text-sm/6 text-white">
+                        <p>
+                          {content.engine}
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <p class="sr-only">5 out of 5 stars</p>
-
-                  <div class="mt-4 text-sm/6 text-white">
-                    <p>
-                      This icon pack is just what I need for my latest project.
-                      There's an icon for just about anything I could ever need.
-                      Love the playful look!
-                    </p>
+                  <div class="mt-2">
+                    <p class="text-sm/6 text-white/80">Weight</p>
+                    <div class="mt-4 flex items-center">
+                      <svg
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        data-slot="icon"
+                        aria-hidden="true"
+                        class="size-5 shrink-0 text-primary-400"
+                      >
+                        <path
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
+                          clip-rule="evenodd"
+                          fill-rule="evenodd"></path>
+                      </svg>
+                      <div class="pl-2 text-sm/6 text-white">
+                        <p>
+                          {content.weight}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-2">
+                    <p class="text-sm/6 text-white/80">Horsepower</p>
+                    <div class="mt-4 flex items-center">
+                      <svg
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        data-slot="icon"
+                        aria-hidden="true"
+                        class="size-5 shrink-0 text-primary-400"
+                      >
+                        <path
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
+                          clip-rule="evenodd"
+                          fill-rule="evenodd"></path>
+                      </svg>
+                      <div class="pl-2 text-sm/6 text-white">
+                        <p>
+                          {content.horsepower}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-2">
+                    <p class="text-sm/6 text-white/80">Speed</p>
+                    <div class="mt-4 flex items-center">
+                      <svg
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        data-slot="icon"
+                        aria-hidden="true"
+                        class="size-5 shrink-0 text-primary-400"
+                      >
+                        <path
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
+                          clip-rule="evenodd"
+                          fill-rule="evenodd"></path>
+                      </svg>
+                      <div class="pl-2 text-sm/6 text-white">
+                        <p>
+                          {content.speed}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-2">
+                    <p class="text-sm/6 text-white/80">Airworthiness</p>
+                    <div class="mt-4 flex items-center">
+                      <svg
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        data-slot="icon"
+                        aria-hidden="true"
+                        class="size-5 shrink-0 text-primary-400"
+                      >
+                        <path
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
+                          clip-rule="evenodd"
+                          fill-rule="evenodd"></path>
+                      </svg>
+                      <div class="pl-2 text-sm text-white">
+                        <p>
+                          {content.airworthiness}
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -298,41 +331,23 @@ import imgLeft from "../../assets/N900FT-ground.webp";
               <h3 class="sr-only">Frequently Asked Questions</h3>
 
               <dl>
-                <dt class="mt-10 font-medium text-primary-600">
-                  What format are these icons?
-                </dt>
-                <dd class="mt-2 text-sm/6 text-white">
-                  <p>
-                    The icons are in SVG (Scalable Vector Graphic) format. They
-                    can be imported into your design tool of choice and used
-                    directly in code.
-                  </p>
-                </dd>
-                <dt class="mt-10 font-medium text-primary-600">
-                  Can I use the icons at different sizes?
-                </dt>
-                <dd class="mt-2 text-sm/6 text-white">
-                  <p>
-                    Yes. The icons are drawn on a 24 x 24 pixel grid, but the
-                    icons can be scaled to different sizes as needed. We
-                    don&#039;t recommend going smaller than 20 x 20 or larger
-                    than 64 x 64 to retain legibility and visual balance.
-                  </p>
-                </dd>
-                <dt class="mt-10 font-medium text-primary-600">
-                  Do I have to add attribution to my projects?
-                </dt>
-                <dd class="mt-2 text-sm/6 text-white">
-                  <p>
-                    No. You are allowed to use these icons freely in your
-                    personal and professional work. If you enjoy the icon pack,
-                    feel free to tell others!
-                  </p>
-                </dd>
+                {
+                    content.faq.map((item) => (
+                      <dt class="mt-10 font-medium text-primary-600">
+                        {item.question}?
+                      </dt>
+                      <dd class="mt-2 text-sm/6 text-white">
+                        <p>
+                            {item.answer}
+                        </p>
+                      </dd>   
+                    ))
+                }
+                
               </dl>
             </div>
 
-            <div id="tab-panel-license" hidden class="pt-10">
+            <!-- <div id="tab-panel-license" hidden class="pt-10">
               <h3 class="sr-only">License</h3>
 
               <div
@@ -378,7 +393,7 @@ import imgLeft from "../../assets/N900FT-ground.webp";
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> -->
           </el-tab-panels>
         </el-tab-group>
       </div>
