@@ -30,7 +30,7 @@ const fleetPage = {
     fleet: {
       title: "Our Fleet",
       description:
-        "At FlyTech Pilot Academy, we pride ourselves on maintaining a modern and reliable fleet of aircraft and simulators to provide our students with the best possible training experience. Our fleet is regularly inspected and maintained to ensure safety and performance.",
+        "At FlyTech Pilot Academy, we pride ourselves on maintaining a modern and reliable fleet of aircraft and simulators to provide our students with the best possible training experience. Our fleet is regularly inspected and maintained to ensure safety, performance, and comfort.",
       imagePath: "/images/fleet/fleet-overview.jpg",
       imageAlt: "Overview of FlyTech Pilot Academy's fleet",
       features: [
@@ -52,23 +52,23 @@ const fleetPage = {
         {
           title: "Comfort and Luxury",
           description:
-            "From spacious cabins to luxurious interiors, our airplanes provide a comfortable and premium flying experience.",
+            "From spacious cabins to premium interiors, our airplanes provide a comfortable and enjoyable flying experience.",
         },
       ],
       others: [
         {
           title: "ForeFlight",
           description:
-            "FlyTech is a Foreflight school. Safety meets convenience with a sophisticated runway and obstacle analysis along with flight records and access to FlyTechs airplane handbook, pre-flight documents, and digital SOP’s for the flight school on the student and CFI’s iPads.  As a Foreflight school, we will be able to see all student logs, records, and usage data to monitor how students are progressing.  This data is also valuable for business forecasting. Foreflight will be included in the students’ tuition.",
+            "FlyTech is a ForeFlight school. Safety meets convenience with advanced runway and obstacle analysis, flight records, and access to FlyTech’s airplane handbook, pre-flight documents, and digital SOPs directly on students’ and CFIs’ iPads. We monitor student progress through logs, records, and usage data—also valuable for business forecasting. ForeFlight is included in the tuition.",
           imagePath: "/images/fleet/foreflight-logo.png",
           imageAlt: "ForeFlight logo",
         },
         {
-          title: "In and Out of Cockpit video",
+          title: "In and Out of Cockpit Video",
           description:
-            "The FlyTech VIRB Ultra 30 Aviation In-Cockpit Bundle is designed to enhance your flight experience by seamlessly integrating high-quality video and audio recording. This bundle includes a stereo headset audio cable, allowing pilot-to-pilot communications and air traffic control transmissions to be embedded directly into your recordings. To ensure clear, distortion-free visuals, a propeller filter is included, eliminating the propeller blur often seen in in-flight footage and photos. Additionally, the lightweight cage mount provides a compact and secure way to install the VIRB Ultra 30 inside the cockpit, making it the perfect companion for capturing every moment in the air with FlyTech.",
+            "The FlyTech VIRB Ultra 30 Aviation In-Cockpit Bundle enhances training by recording high-quality video and audio from every flight. Stereo headset audio cables capture pilot communications and ATC transmissions directly in your footage. A propeller filter ensures clear visuals, while the lightweight cage mount secures the camera inside the cockpit—perfect for reviewing and sharing your flights.",
           imagePath: "/images/fleet/garmin-virb-ultra-30.jpg",
-          imageAlt: "Garmin VIRB Ultra 30 aircraft",
+          imageAlt: "Garmin VIRB Ultra 30 aircraft camera",
         },
       ],
       planes: [
@@ -77,10 +77,10 @@ const fleetPage = {
           tail: "N733AJ",
           model: "C172",
           summary:
-            "1976 CESSNA 172N Fixed wing single engine (4 seats / 1 engine)",
+            "1976 CESSNA 172N — Fixed-wing single engine (4 seats / 1 engine)",
           year: 1976,
           manufacture: "Cessna",
-          engine: "LYCOMING O-320 SERIES (Reciprocating)",
+          engine: "Lycoming O-320 Series (Reciprocating)",
           weight: "Less than 12,500 lbs",
           horsepower: "180 hp",
           airworthiness: "Standard",
@@ -88,11 +88,21 @@ const fleetPage = {
           imagePath: "/images/fleet/cessna-172.jpg",
           imageAlt: "Cessna 172 Skyhawk aircraft",
           description:
-            "The Cessna 172 Skyhawk is the world’s most popular training aircraft, known for its reliability and ease of handling. Perfect for new pilots.",
+            "The Cessna 172 Skyhawk is the world’s most popular training aircraft, celebrated for its reliability, forgiving handling, and excellent safety record. It’s the perfect choice for both new and experienced pilots looking to refine their skills.",
           features: [
             "Four-seat capacity",
-            "High-wing design for stability",
-            "Simple avionics for easy navigation",
+            "High-wing design for stability and visibility",
+            "Simple yet reliable avionics",
+          ],
+          avionics: [
+            "Garmin GNS 430 GPS/NAV/COM",
+            "Dual NAV/COM radios",
+            "VOR with glideslope",
+          ],
+          equipment: [
+            "Dual yoke controls",
+            "Manual flaps",
+            "Standard six-pack instrument layout",
           ],
           images: [
             {
@@ -110,10 +120,10 @@ const fleetPage = {
           tail: "N900FT",
           model: "LSA 2023",
           summary:
-            "2023 SLING AIRCRAFT (PTY) LTD SLING LSA Fixed wing single engine (2 seats / 1 engine)",
+            "2023 SLING AIRCRAFT (PTY) LTD SLING LSA — Fixed-wing single engine (2 seats / 1 engine)",
           year: 2023,
           manufacture: "Sling Aircraft",
-          engine: "ROTAX 912 iS (4 Cycle)",
+          engine: "Rotax 912 iS (4 Cycle)",
           weight: "Less than 12,500 lbs",
           horsepower: "100 hp",
           airworthiness: "Light Sport / Acrobatic",
@@ -121,7 +131,7 @@ const fleetPage = {
           imagePath: "/images/fleet/sling-lsa.jpg",
           imageAlt: "Sling LSA aircraft on runway",
           description:
-            "The Sling LSA is a modern, lightweight sport aircraft offering exceptional efficiency and handling. Ideal for training and recreational flying, it combines advanced avionics with a sleek design.",
+            "The Sling LSA is a cutting-edge, lightweight sport aircraft designed for agility, efficiency, and comfort. With modern glass cockpit avionics, excellent fuel economy, and responsive handling, it’s ideal for both training and recreational flying.",
           features: [
             "Two-seat configuration",
             "All-metal low-wing design",
@@ -157,7 +167,7 @@ const fleetPage = {
         {
           name: "Redbird FMX",
           description:
-            "The experience gained in our simulators, classrooms, and cockpit equips our students with the calmness and composure needed for any situation.",
+            "The Redbird FMX is a full-motion flight simulator designed to prepare students for real-world flying. Training here builds confidence, decision-making skills, and the ability to handle any situation in the air.",
           imagePath: "/images/fleet/redbird-fmx.jpg",
           imageAlt: "Redbird FMX flight simulator",
           images: [
