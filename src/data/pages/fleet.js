@@ -10,9 +10,9 @@ const fleetPage = {
     header: {
       imagePath: "/src/assets/stock-tadeu-jnr-kAzSa_azENM-unsplash.webp", // Consider updating with a relevant FAQ image
       imageAlt: "Student pilot and instructor reviewing FAQ documents",
-      headerH1: `FREQUENTLY <strong class="text-primary-500">ASKED QUESTIONS</strong>`,
+      headerH1: `Our <strong class="text-primary-500">Fleet</strong>`,
       paragraph:
-        "Got questions? We’ve compiled answers to the most common inquiries about our programs, costs, timelines, eligibility, and more. Whether you're just curious or ready to enroll, this page will guide you.",
+        "Explore our modern and reliable fleet of aircraft and simulators, designed to provide the best training experience for aspiring pilots.",
       buttons: [
         {
           name: "Contact Us",
