@@ -28,6 +28,49 @@ const fleetPage = {
     },
 
     fleet: {
+      title: "Our Fleet",
+      description:
+        "At FlyTech Pilot Academy, we pride ourselves on maintaining a modern and reliable fleet of aircraft and simulators to provide our students with the best possible training experience. Our fleet is regularly inspected and maintained to ensure safety and performance.",
+      imagePath: "/images/fleet/fleet-overview.jpg",
+      imageAlt: "Overview of FlyTech Pilot Academy's fleet",
+      features: [
+        {
+          title: "Advanced Avionics",
+          description:
+            "Our airplanes are equipped with state-of-the-art avionics systems, ensuring precision navigation and enhanced safety.",
+        },
+        {
+          title: "High Performance",
+          description:
+            "Experience unmatched performance with powerful engines and aerodynamic designs that deliver exceptional speed and agility.",
+        },
+        {
+          title: "Fuel Efficiency",
+          description:
+            "Designed with sustainability in mind, our aircraft offer superior fuel efficiency, reducing environmental impact.",
+        },
+        {
+          title: "Comfort and Luxury",
+          description:
+            "From spacious cabins to luxurious interiors, our airplanes provide a comfortable and premium flying experience.",
+        },
+      ],
+      others: [
+        {
+          title: "ForeFlight",
+          description:
+            "FlyTech is a Foreflight school. Safety meets convenience with a sophisticated runway and obstacle analysis along with flight records and access to FlyTechs airplane handbook, pre-flight documents, and digital SOP’s for the flight school on the student and CFI’s iPads.  As a Foreflight school, we will be able to see all student logs, records, and usage data to monitor how students are progressing.  This data is also valuable for business forecasting. Foreflight will be included in the students’ tuition.",
+          imagePath: "/images/fleet/foreflight-logo.png",
+          imageAlt: "ForeFlight logo",
+        },
+        {
+          title: "In and Out of Cockpit video",
+          description:
+            "The FlyTech VIRB Ultra 30 Aviation In-Cockpit Bundle is designed to enhance your flight experience by seamlessly integrating high-quality video and audio recording. This bundle includes a stereo headset audio cable, allowing pilot-to-pilot communications and air traffic control transmissions to be embedded directly into your recordings. To ensure clear, distortion-free visuals, a propeller filter is included, eliminating the propeller blur often seen in in-flight footage and photos. Additionally, the lightweight cage mount provides a compact and secure way to install the VIRB Ultra 30 inside the cockpit, making it the perfect companion for capturing every moment in the air with FlyTech.",
+          imagePath: "/images/fleet/garmin-virb-ultra-30.jpg",
+          imageAlt: "Garmin VIRB Ultra 30 aircraft",
+        },
+      ],
       planes: [
         {
           name: "Cessna 172 Skyhawk",
@@ -84,6 +127,20 @@ const fleetPage = {
             "All-metal low-wing design",
             "Modern glass cockpit avionics",
           ],
+          avionics: [
+            "Garmin G3X Touch EFIS",
+            "Garmin GTX 335 Transponder",
+            "Garmin G5 with integral battery",
+            "Garmin GTN 650",
+            "Angle of Attack indicator",
+            "Internal Red LED Cabin Light",
+          ],
+          equipment: [
+            "Rotax 912 ULS (100 hp) & Rotax 912iS",
+            "Whirlwind Carbon Fiber Prop",
+            "Automatic Carb Heat & Electrically Operated Pitch Trim",
+            "Aileron and Elevator Pushrod Controls",
+          ],
           images: [
             {
               imagePath: "/images/fleet/sling-lsa-side.jpg",
@@ -96,13 +153,78 @@ const fleetPage = {
           ],
         },
       ],
+      simulators: [
+        {
+          name: "Redbird FMX",
+          description:
+            "The experience gained in our simulators, classrooms, and cockpit equips our students with the calmness and composure needed for any situation.",
+          imagePath: "/images/fleet/redbird-fmx.jpg",
+          imageAlt: "Redbird FMX flight simulator",
+          images: [
+            {
+              imagePath: "/images/fleet/redbird-fmx-side.jpg",
+              imageAlt: "Redbird FMX side view",
+            },
+            {
+              imagePath: "/images/fleet/redbird-fmx-cockpit.jpg",
+              imageAlt: "Redbird FMX cockpit",
+            },
+          ],
+          features: [
+            "Full-motion flight simulator",
+            "Realistic cockpit environment",
+            "Advanced avionics simulation",
+          ],
+        },
+      ],
     },
-    fleetGrid: {
-      title: "",
-      description: "",
-      imagePath: "",
-      imageAlt: "",
-      fleet: {},
+
+    testimonials: {
+      title: "What our pilots say",
+      description:
+        "Hear from our students about their experiences training with FlyTech Pilot Academy.",
+      testimonials: [
+        {
+          name: "Daniel Lamaster",
+          role: "",
+          feedback:
+            "Flying the Sling NGT with FlyTech was an exhilarating experience. The aircraft’s reliability and performance are unmatched!",
+          imagePath: "",
+          imageAlt: "Daniel Lamaster, Pilot",
+        },
+        {
+          name: "Conner Musser",
+          role: "",
+          feedback:
+            "The Sling NGT was a joy to fly. FlyTech’s attention to detail made my training seamless and enjoyable.",
+          imagePath: "",
+          imageAlt: "Conner Musser, Pilot",
+        },
+        {
+          name: "George Hawkins",
+          role: "",
+          feedback:
+            "As an aviation enthusiast, I was thrilled by the availability. The team truly understands a pilot’s needs.",
+          imagePath: "",
+          imageAlt: "George Hawkins, Pilot",
+        },
+        {
+          name: "Elijah Leininger",
+          role: "",
+          feedback:
+            "The avionics and technology in the Sling NGT are next-level! This aircraft is packed with innovation. Anyone would be impressed by its advanced features.",
+          imagePath: null,
+          imageAlt: "Elijah Leininger, Pilot",
+        },
+        {
+          name: "David Ayers",
+          role: "",
+          feedback:
+            "As a pilot, I’ve experienced firsthand how Avi Technology enhances the Sling NGT. The advanced avionics, efficiency, and safety features make a noticeable difference. Adding real-world applications.",
+          imagePath: null,
+          imageAlt: "David Ayers, Pilot",
+        },
+      ],
     },
 
     flyWithUsCTA: {
