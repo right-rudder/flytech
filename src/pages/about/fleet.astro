@@ -45,7 +45,11 @@ const dataForVideo = {
   <!-- <FleetGrid content={data.fleetGrid} /> -->
   <FAQSchema items={faqSchemaItems} />
   <FleetGrid content={data.fleet} />
-  {data.fleet.planes.map((plane) => <FleetCard content={plane} />)}
+  {
+    data.fleet.planes.map((plane, index) => (
+      <FleetCard content={plane} index={index} />
+    ))
+  }
   <!-- <CTAVideoWhite video={currentVideo} data={flyWithUsCTA} /> -->
   <ProgramSwiper content={programsSwiper} />
   <CTAColor content={data.flyWithUsCTA} />
