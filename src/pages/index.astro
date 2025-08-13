@@ -22,6 +22,7 @@ import videoList from "../data/videos.js";
 import { getCurrentVideo } from "../scripts/videoSpinner.js";
 import WidgetGoogleReviews from "../components/FCRM/WidgetGoogleReviews.astro";
 import CTAContact from "../components/CTAContact.astro";
+import Enroll from "../components/Forms/Enroll.astro";
 
 // Transform FAQ format for schema
 const faqSchemaItems = GeneralFAQs.map((faq) => ({
@@ -58,6 +59,7 @@ const dataForVideo = {
   <!-- <Testimonials content={data.testimonials} /> -->
   <FAQs faqs={GeneralFAQs} type="General" client:visible />
   <FAQSchema items={faqSchemaItems} />
+  <Enroll />
   <MapsLocation />
   <CTAColor content={data.flyWithUsCTA} />
   <script src="../scripts/creativeSwiper.js"></script>
