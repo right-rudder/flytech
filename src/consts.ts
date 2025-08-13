@@ -13,6 +13,7 @@ export const KEYWORDS =
 export const OG_IMAGE = "/flytech-logo-wg_1000px-980x262.webp";
 
 export const COMPANY_NAME = "FlyTech Flight School";
+export const COMPANY_NICKNAME = "FlyTech";
 
 export const CITY_STATE = "Saint Joseph, MO";
 
