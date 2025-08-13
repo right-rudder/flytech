@@ -67,7 +67,7 @@ import imgLeft from "../../assets/N900FT-ground.webp";
             >
               {
                 content.features.map((feature) => (
-                  <li class="pl-2">{feature}</li>
+                  <li class="">{feature}</li>
                 ))
               }
             </ul>
@@ -83,7 +83,7 @@ import imgLeft from "../../assets/N900FT-ground.webp";
             >
               {
                 content.avionics.map((avionics) => (
-                  <li class="pl-2">{avionics}</li>
+                  <li class="">{avionics}</li>
                 ))
               }
             </ul>
@@ -98,7 +98,7 @@ import imgLeft from "../../assets/N900FT-ground.webp";
             >
               {
                 content.equipment.map((equipment) => (
-                  <li class="pl-2">{equipment}</li>
+                  <li class="">{equipment}</li>
                 ))
               }
             </ul>
@@ -210,11 +210,13 @@ import imgLeft from "../../assets/N900FT-ground.webp";
                   <h3 class="py-5 font-medium text-primary-600">
                     Model - {content.model}
                   </h3>
-              <div class="flex space-x-4 text-sm text-white flex-wrap gap-4">
-                <div class="py-5 flex flex-wrap">
-                  <div class="mt-2 ">
+              <div class="flex space-x-4 text-sm text-white ">
+                <div class="py-5 flex flex-wrap w-3/4 gap-12">
+                  
+                  <div class="mt-2">
+                    <p class="text-sm/6 text-white/80">Engine</p>
                     <div class="mt-4 flex items-center">
-                      <svg
+                      <!-- <svg
                         viewBox="0 0 20 20"
                         fill="currentColor"
                         data-slot="icon"
@@ -225,21 +227,19 @@ import imgLeft from "../../assets/N900FT-ground.webp";
                           d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
                           clip-rule="evenodd"
                           fill-rule="evenodd"></path>
-                      </svg>
-
-                      <div class="pl-2 text-sm/6 text-white">
-                        
-                    <p class="text-sm/6 text-white/80">Engine</p>
+                      </svg> -->
+                      <div class=" text-sm/6 text-white">
                         <p>
                           {content.engine}
                         </p>
                       </div>
                     </div>
                   </div>
+                  <!-- Weight -->
                   <div class="mt-2">
                     <p class="text-sm/6 text-white/80">Weight</p>
                     <div class="mt-4 flex items-center">
-                      <svg
+                      <!-- <svg
                         viewBox="0 0 20 20"
                         fill="currentColor"
                         data-slot="icon"
@@ -250,18 +250,19 @@ import imgLeft from "../../assets/N900FT-ground.webp";
                           d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
                           clip-rule="evenodd"
                           fill-rule="evenodd"></path>
-                      </svg>
-                      <div class="pl-2 text-sm/6 text-white">
+                      </svg> -->
+                      <div class=" text-sm/6 text-white">
                         <p>
                           {content.weight}
                         </p>
                       </div>
                     </div>
                   </div>
+                  <!-- Horsepower -->
                   <div class="mt-2">
                     <p class="text-sm/6 text-white/80">Horsepower</p>
                     <div class="mt-4 flex items-center">
-                      <svg
+                      <!-- <svg
                         viewBox="0 0 20 20"
                         fill="currentColor"
                         data-slot="icon"
@@ -272,18 +273,19 @@ import imgLeft from "../../assets/N900FT-ground.webp";
                           d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
                           clip-rule="evenodd"
                           fill-rule="evenodd"></path>
-                      </svg>
-                      <div class="pl-2 text-sm/6 text-white">
+                      </svg> -->
+                      <div class=" text-sm/6 text-white">
                         <p>
                           {content.horsepower}
                         </p>
                       </div>
                     </div>
                   </div>
+                  <!-- Speed -->
                   <div class="mt-2">
                     <p class="text-sm/6 text-white/80">Speed</p>
                     <div class="mt-4 flex items-center">
-                      <svg
+                      <!-- <svg
                         viewBox="0 0 20 20"
                         fill="currentColor"
                         data-slot="icon"
@@ -294,18 +296,19 @@ import imgLeft from "../../assets/N900FT-ground.webp";
                           d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
                           clip-rule="evenodd"
                           fill-rule="evenodd"></path>
-                      </svg>
-                      <div class="pl-2 text-sm/6 text-white">
+                      </svg> -->
+                      <div class=" text-sm/6 text-white">
                         <p>
                           {content.speed}
                         </p>
                       </div>
                     </div>
                   </div>
+                  <!-- Airworthiness -->
                   <div class="mt-2">
                     <p class="text-sm/6 text-white/80">Airworthiness</p>
                     <div class="mt-4 flex items-center">
-                      <svg
+                      <!-- <svg
                         viewBox="0 0 20 20"
                         fill="currentColor"
                         data-slot="icon"
@@ -316,8 +319,8 @@ import imgLeft from "../../assets/N900FT-ground.webp";
                           d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
                           clip-rule="evenodd"
                           fill-rule="evenodd"></path>
-                      </svg>
-                      <div class="pl-2 text-sm text-white">
+                      </svg> -->
+                      <div class=" text-sm text-white">
                         <p>
                           {content.airworthiness}
                         </p>
@@ -353,7 +356,7 @@ import imgLeft from "../../assets/N900FT-ground.webp";
               <h3 class="sr-only">License</h3>
 
               <div
-                class="text-sm text-white [&_h4]:mt-5 [&_h4]:font-medium [&_h4]:text-primary-600 [&_li]:pl-2 [&_li::marker]:text-neutral-100 [&_p]:my-2 [&_p]:text-sm/6 [&_ul]:my-4 [&_ul]:list-disc [&_ul]:space-y-1 [&_ul]:pl-5 [&_ul]:text-sm/6 [&>:first-child]:mt-0"
+                class="text-sm text-white [&_h4]:mt-5 [&_h4]:font-medium [&_h4]:text-primary-600 [&_li]: [&_li::marker]:text-neutral-100 [&_p]:my-2 [&_p]:text-sm/6 [&_ul]:my-4 [&_ul]:list-disc [&_ul]:space-y-1 [&_ul]:pl-5 [&_ul]:text-sm/6 [&>:first-child]:mt-0"
               >
                 <h4>Overview</h4>
 
