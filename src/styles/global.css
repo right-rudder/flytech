@@ -66,12 +66,12 @@
 }
 
 .swiper-pagination-bullet {
-  background-color: rgb(71, 184, 228) !important;
+  background-color: #94db94 !important;
   opacity: 0.5;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: rgb(39, 130, 235) !important;
+  background-color: #469444 !important;
 }
 
 /* .swiper-wrapper {
