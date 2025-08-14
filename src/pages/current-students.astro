@@ -1,0 +1,26 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeaderSmall from "../components/HeaderSmall.astro";
+import ProgramSwiper from "../components/ProgramSwiper.astro";
+import programsSwiper from "../data/flight-training/programSwiper.js";
+import GoogleMaps from "../components/GoogleMaps.astro";
+
+import pageData from "../data/whyData.js";
+---
+
+<BaseLayout
+  siteTitle={pageData.pageTitle}
+  siteDescription={pageData.pageDescription}
+  keywords={pageData.pageKeywords}
+>
+  <!-- HEADER -->
+  <HeaderSmall content={pageData.header} />
+
+  <section class="w-full flex flex-wrap overflow-hidden">
+    <GoogleMaps data={pageData.gMaps[0]} />
+  </section>
+
+  <ProgramSwiper content={programsSwiper} />
+
+  <script src="../scripts/creativeSwiper.js"></script>
+</BaseLayout>

@@ -53,19 +53,19 @@ export const navbarLinks = [
   },
   {
     name: "Current Students",
-    link: "#",
+    link: "/current-students",
     submenu: [
       {
         name: "Four Forces",
-        link: "#",
+        link: "https://flyfourforces.com/login",
       },
       {
         name: "Ground School",
-        link: "#",
+        link: "https://groundschool.com",
       },
       {
         name: "Student Resources",
-        link: "#",
+        link: "/current-students#student-resources",
       },
     ],
   },
