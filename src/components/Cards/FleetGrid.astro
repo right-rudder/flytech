@@ -9,34 +9,126 @@ import imgBottom from "../../assets/simulator.webp";
 
 <div class="bg-white">
   <div class="pt-6">
-    <!-- Image gallery -->
+    {/* Image gallery */}
     <div
       class="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8"
     >
-    
-      <img
-        src={imgLeft.src}
-        alt="Two each of gray, white, and black shirts laying flat."
-        class="row-span-2 aspect-3/4 size-full object-cover max-lg:hidden"
-      />
-      <img
-        src={imgTop.src}
-        alt="Model wearing plain black basic tee."
+      <a
+        href="#slinger"
+        class="row-span-2 aspect-3/4 size-full object-cover max-lg:hidden group relative hover:ring-2 hover:ring-primary-300"
+      >
+        <!-- Background image -->
+        <img
+          src={imgLeft.src}
+          alt="Two each of gray, white, and black shirts laying flat."
+          class="row-span-2 aspect-3/4 size-full object-cover max-lg:hidden"
+        />
+
+        <!-- Background overlay - now properly positioned -->
+        <div
+          class="absolute inset-0 z-10 bg-primary-900/60 lg:bg-primary-900/40 group-hover:bg-primary-900/60 duration-500"
+        >
+        </div>
+
+        <!-- Text - needs higher z-index than overlay -->
+        <div class="absolute inset-0 z-20 flex flex-col justify-end pb-8 px-8">
+          <p
+            class="text-lg font-bold text-primary-400 uppercase tracking-wide mb-4 text-center lg:text-left"
+          >
+            Aircraft
+          </p>
+          <h2
+            class="text-3xl lg:text-5xl font-bold text-white mb-4 text-center lg:text-left"
+          >
+            Sling
+          </h2>
+          <p class="text-lg text-muted-200 mb-6 text-center lg:text-left">
+            Advanced aircraft
+          </p>
+        </div>
+      </a>
+
+      <a
+        href="#fleet"
         class="col-start-2 aspect-3/2 size-full object-cover max-lg:hidden"
-      />
-      <img
-        src={imgBottom.src}
-        alt="Model wearing plain gray basic tee."
-        class="col-start-2 row-start-2 aspect-3/2 size-full object-cover max-lg:hidden"
-      />
-      <img
-        src={imgRight.src}
-        alt="Model wearing plain white basic tee."
-        class="row-span-2 aspect-4/5 size-full object-cover lg:aspect-3/4"
-      />
+      >
+        <img
+          src={imgTop.src}
+          alt="Model wearing plain black basic tee."
+          class="col-start-2 aspect-3/2 size-full object-cover max-lg:hidden"
+        />
+      </a>
+
+      <a
+        href="#simulator"
+        class="col-start-2 row-start-2 aspect-3/2 size-full object-cover max-lg:hidden group relative"
+      >
+        <!-- Background image -->
+        <img
+          src={imgBottom.src}
+          alt="Flight simulator"
+          class="col-start-2 row-start-2 aspect-3/2 size-full object-cover max-lg:hidden"
+        />
+
+        <!-- Background overlay -->
+        <div
+          class="absolute inset-0 z-10 bg-primary-900/70 lg:bg-primary-900/50 group-hover:bg-primary-900/70 duration-500"
+        >
+        </div>
+
+        <!-- Text content -->
+        <div
+          class="absolute inset-0 z-20 flex flex-col justify-end items-center p-6 text-center"
+        >
+          <p
+            class="text-lg font-bold text-primary-500 uppercase tracking-wide mb-2"
+          >
+            Training
+          </p>
+          <h2 class="text-3xl lg:text-4xl font-bold text-white mb-2">
+            Simulator
+          </h2>
+          <p class="text-lg text-muted-200">Advanced flight training</p>
+        </div>
+      </a>
+
+      <a
+        href="#cesna"
+        class="row-span-2 aspect-4/5 size-full object-cover lg:aspect-3/4 group relative"
+      >
+        <!-- Background image -->
+        <img
+          src={imgRight.src}
+          alt="Cessna aircraft"
+          class="row-span-2 aspect-4/5 size-full object-cover lg:aspect-3/4"
+        />
+
+        <!-- Background overlay -->
+        <div
+          class="absolute inset-0 z-10 bg-primary-900/70 lg:bg-primary-900/50 group-hover:bg-primary-900/70 duration-500"
+        >
+        </div>
+
+        <!-- Text content -->
+        <div class="absolute inset-0 z-20 flex flex-col justify-end pb-8 px-8">
+          <p
+            class="text-lg font-bold text-primary-500 uppercase tracking-wide mb-4 text-center lg:text-right"
+          >
+            Plane
+          </p>
+          <h2
+            class="text-3xl lg:text-5xl font-bold text-white mb-4 text-center lg:text-right"
+          >
+            Cessna
+          </h2>
+          <p class="text-lg text-muted-200 mb-6 text-center lg:text-right">
+            Our reliable trainer
+          </p>
+        </div>
+      </a>
     </div>
 
-    <!-- Product info -->
+    {/* Product info */}
     <div
       class="mx-auto max-w-2xl px-4 pt-10 pb-16 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto_auto_1fr] lg:gap-x-8 lg:px-8 lg:pt-16 lg:pb-24"
     >
@@ -48,95 +140,50 @@ import imgBottom from "../../assets/simulator.webp";
         </h2>
       </div>
 
-      <!-- Options -->
+      {/* Options */}
       <div class="mt-4 lg:row-span-3 lg:mt-0">
         <h2 class="sr-only">Product information</h2>
-        <p class="text-3xl tracking-tight text-gray-900">{content.testimonials.title}</p>
-        <p class="mt-4 text-base text-gray-600">
-            {content.testimonials.description}  
+        <p class="text-3xl tracking-tight text-gray-900">
+          {content.testimonials.title}
         </p>
-        
+        <p class="mt-4 text-base text-gray-600">
+          {content.testimonials.description}
+        </p>
 
         {
-            content.testimonials.testimonials.map((testimonial) => (     
-                <div class="mt-6">
-                    <h3 class="sr-only">Reviews</h3>
-                    <div class="flex items-center">
-                        <div class="flex items-center">
-                        <!-- Active: "text-gray-900", Default: "text-gray-200" -->
-                        <svg
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            data-slot="icon"
-                            aria-hidden="true"
-                            class="size-5 shrink-0 text-primary-600"
-                        >
-                            <path
-                            d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
-                            clip-rule="evenodd"
-                            fill-rule="evenodd"></path>
-                        </svg>
-                        <svg
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            data-slot="icon"
-                            aria-hidden="true"
-                            class="size-5 shrink-0 text-primary-600"
-                        >
-                            <path
-                            d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
-                            clip-rule="evenodd"
-                            fill-rule="evenodd"></path>
-                        </svg>
-                        <svg
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            data-slot="icon"
-                            aria-hidden="true"
-                            class="size-5 shrink-0 text-primary-600"
-                        >
-                            <path
-                            d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
-                            clip-rule="evenodd"
-                            fill-rule="evenodd"></path>
-                        </svg>
-                        <svg
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            data-slot="icon"
-                            aria-hidden="true"
-                            class="size-5 shrink-0 text-primary-600"
-                        >
-                            <path
-                            d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
-                            clip-rule="evenodd"
-                            fill-rule="evenodd"></path>
-                        </svg>
-                        <svg
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            data-slot="icon"
-                            aria-hidden="true"
-                            class="size-5 shrink-0 text-primary-600"
-                        >
-                            <path
-                            d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
-                            clip-rule="evenodd"
-                            fill-rule="evenodd"></path>
-                        </svg>
-                        </div>
-                        <p class="sr-only">5 out of 5 stars</p>
-                        <a
-                        href="#"
-                        class="ml-3 text-sm font-medium text-neutral-600 hover:text-primary-600"
-                        >{testimonial.name}</a
-                        >
-                    </div>
-                    <p class="py-2 text-sm text-gray-500">
-                        {testimonial.feedback}
-                    </p>
+          content.testimonials.testimonials.map((testimonial) => (
+            <div class="mt-6">
+              <h3 class="sr-only">Reviews</h3>
+              <div class="flex items-center">
+                <div class="flex items-center">
+                  {/* Active: "text-gray-900", Default: "text-gray-200" */}
+                  {[1, 2, 3, 4, 5].map(() => (
+                    <svg
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      data-slot="icon"
+                      aria-hidden="true"
+                      class="size-5 shrink-0 text-primary-600"
+                    >
+                      <path
+                        d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
+                        clip-rule="evenodd"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  ))}
                 </div>
-            ))
+                <p class="sr-only">5 out of 5 stars</p>
+                <a
+                  href="#"
+                  class="ml-3 text-sm font-medium text-neutral-600 hover:text-primary-600"
+                >
+                  {testimonial.name}
+                </a>
+              </div>
+              <p class="py-2 text-sm text-gray-500">{testimonial.feedback}</p>
+            </div>
+          ))
         }
 
         <div class="mt-10">
@@ -146,23 +193,25 @@ import imgBottom from "../../assets/simulator.webp";
               <a
                 href="#"
                 class="text-sm font-medium text-primary-600 hover:text-primary-500"
-                >Check out our planes!</a
               >
+                Check out our planes!
+              </a>
             </div>
           </div>
 
           <a
             href="#"
-            class="mt-10 flex w-full items-center justify-center  border border-transparent bg-primary-600 px-8 py-3 text-base font-medium text-white hover:bg-primary-700 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:outline-hidden"
-            >Book a Discovery Flight</a
+            class="mt-10 flex w-full items-center justify-center border border-transparent bg-primary-600 px-8 py-3 text-base font-medium text-white hover:bg-primary-700 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:outline-hidden"
           >
+            Book a Discovery Flight
+          </a>
         </div>
       </div>
 
       <div
         class="py-10 lg:col-span-2 lg:col-start-1 lg:border-r lg:border-gray-200 lg:pt-6 lg:pr-8 lg:pb-16"
       >
-        <!-- Description and details -->
+        {/* Description and details */}
         <div>
           <h3 class="sr-only">Description</h3>
 
