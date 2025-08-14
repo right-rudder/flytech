@@ -8,7 +8,7 @@ const fleetPage = {
 
     // Top header
     header: {
-      imagePath: "/src/assets/stock-tadeu-jnr-kAzSa_azENM-unsplash.webp", // Consider updating with a relevant FAQ image
+      imagePath: "/src/assets/plane-slinger-ground-3.webp", // Consider updating with a relevant FAQ image
       imageAlt: "Student pilot and instructor reviewing FAQ documents",
       headerH1: `Our <strong class="text-primary-500">Fleet</strong>`,
       paragraph:
@@ -85,7 +85,7 @@ const fleetPage = {
           horsepower: "180 hp",
           airworthiness: "Standard",
           speed: "105 mph",
-          imagePath: "/images/fleet/cessna-172.jpg",
+          imagePath: "/src/assets/plane-cesna-ground-flytech (4).webp",
           imageAlt: "Cessna 172 Skyhawk aircraft",
           description:
             "The Cessna 172 Skyhawk is the world’s most popular training aircraft, celebrated for its reliability, forgiving handling, and excellent safety record. It’s the perfect choice for both new and experienced pilots looking to refine their skills.",
@@ -113,7 +113,7 @@ const fleetPage = {
           ],
           images: [
             {
-              imagePath: "/images/fleet/cessna-172-side.jpg",
+              imagePath: "/src/assets/plane-ground-sunset.webp",
               imageAlt: "Cessna 172 side view",
             },
             {
@@ -135,7 +135,8 @@ const fleetPage = {
           horsepower: "100 hp",
           airworthiness: "Light Sport / Acrobatic",
           speed: "120 mph",
-          imagePath: "/images/fleet/sling-lsa.jpg",
+          imagePath:
+            "/src/assets/plane-slinger-ground-pilots-saying-goodbye.webp",
           imageAlt: "Sling LSA aircraft on runway",
           description:
             "The Sling LSA is a cutting-edge, lightweight sport aircraft designed for agility, efficiency, and comfort. With modern glass cockpit avionics, excellent fuel economy, and responsive handling, it’s ideal for both training and recreational flying.",
@@ -167,7 +168,7 @@ const fleetPage = {
           ],
           images: [
             {
-              imagePath: "/images/fleet/sling-lsa-side.jpg",
+              imagePath: "/src/assets/flytech-plane-car-ground.webp",
               imageAlt: "Sling LSA side view",
             },
             {
