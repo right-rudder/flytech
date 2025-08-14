@@ -10,7 +10,7 @@ const contactPage = {
     checkboxText: `I agree to <a href="/terms-of-service" target="_blank" class="font-semibold hover:underline">terms</a> & <a href="/privacy-policy" target="_blank" class="font-semibold hover:underline">conditions</a> provided by the company. By providing my phone number, I agree to receive text messages from the business.`,
 
     header: {
-      imagePath: "/src/assets/placeholder-img.webp",
+      imagePath: "/src/assets/plane-pilots-checking-airship.webp",
       imageAlt: "FlyTech Flight School aircraft parked on runway at sunset",
       headerH1: `Contact  <strong class="text-primary-600">us</strong>`,
       paragraph:

@@ -10,7 +10,7 @@ const instrumentRatingData = {
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/stock-max-nustedt-_uwWKY22_HA-unsplash.webp",
+    imagePath: "/src/assets/cockpit-instruments.webp",
     imageAlt: "Pilot flying with G1000 avionics during instrument flight",
     headerH1: `Elevate Your Skills with an <strong class="text-primary-600">Instrument Rating</strong>`,
     paragraph: `Enhance your ability to fly in clouds, rain, and low-visibility environments with FlyTech’s structured Instrument Training program. Learn precision navigation, ATC communication, and weather strategy from certified professionals.`,
@@ -47,7 +47,7 @@ const instrumentRatingData = {
     ],
 
     cta: {
-      imagePath: "/src/assets/stock-mateusz-suski-ilz44HzYh5I-unsplash.webp",
+      imagePath: "/src/assets/female-pilot-flying.webp",
       imageAlt: "Pilot flying in instrument conditions",
       title: "Upgrade Your Flying",
       description:

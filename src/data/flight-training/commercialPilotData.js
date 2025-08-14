@@ -10,7 +10,7 @@ const commercialPilotData = {
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/stock-pierre-goiffon-t56w7xguZWA-unsplash.webp",
+    imagePath: "/src/assets/simulator-with-student.webp",
     imageAlt:
       "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
     headerH1: `Fly high with a <br> <strong class="text-primary-600" >Commercial PILOT Certificate</strong>`,

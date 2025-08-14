@@ -12,7 +12,7 @@ const discoveryFlight = {
     header: {
       stars: true,
 
-      imagePath: "/src/assets/placeholder-img.webp",
+      imagePath: "/src/assets/discovery-flight-pilot-and-kid.webp",
       imageAlt: "FlyTech Flight School flight over Saint Joseph, MO",
       headerH1: `Discovery <strong class="text-primary-600">Flight</strong>`,
       paragraph:

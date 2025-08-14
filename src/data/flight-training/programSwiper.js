@@ -15,8 +15,7 @@ const programsSwiper = {
     },
     {
       title: "Instrument Rating",
-      imagePath:
-        "/src/assets/discovery-flight-pilot-and-student-inside-N900FT-flying.webp",
+      imagePath: "/src/assets/cockpit-instruments.webp",
       imageAlt: "FlyTech Flight School Cirrus airplane instrument panel",
       description:
         "Navigate through clouds and the skies with precision through our Instrument Rating course.",
@@ -33,7 +32,7 @@ const programsSwiper = {
     },
     {
       title: "Certified Flight Instructor",
-      imagePath: "/src/assets/stock-pierre-goiffon-t56w7xguZWA-unsplash.webp",
+      imagePath: "/src/assets/pilots-in-front-cesna.webp",
       imageAlt:
         "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
       description:
@@ -42,7 +41,7 @@ const programsSwiper = {
     },
     {
       title: "Certified Flight Instructor Instruments",
-      imagePath: "/src/assets/cockpit1-980x656.webp",
+      imagePath: "/src/assets/cockpit-flying-sunset.webp",
       imageAlt:
         "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
       description:

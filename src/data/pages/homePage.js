@@ -8,7 +8,7 @@ const homePage = {
 
     //top header
     header: {
-      imagePath: "/src/assets/placeholder-img.webp",
+      imagePath: "/src/assets/plane-wing-view-sky.webp",
       imageAlt: "FlyTech Pilot Academy team on the runway",
       headerH1: `MODERN <strong class="text-primary-500"> FLIGHT TRAINING </strong> <br> FOR ALL`,
       paragraph:
@@ -133,7 +133,7 @@ const homePage = {
           icon: "M9 12.75 11.25 15 15 9.75...",
         },
       ],
-      imagePath: "/src/assets/stock-ben-bracken-XeVFehBtCXo-unsplash.webp",
+      imagePath: "/src/assets/student-shaking-hands-certificate.webp",
       imageAlt: "FlyTech Pilot Academy aircraft and instructors",
     },
 
@@ -146,7 +146,7 @@ const homePage = {
         `Take our quiz to explore if becoming a pilot is the right path for you and learn more about training with FlyTech Pilot Academy.`,
       ],
       imageLegend: `Luke Poulos<br><small class="text-white font-normal text-sm">Founder & CEO</small>`,
-      imagePath: "/src/assets/stock-max-nustedt-_uwWKY22_HA-unsplash.webp",
+      imagePath: "/src/assets/student-holding-certificate.webp",
       imageAlt: "FlyTech Pilot Academy 172 instrument panel",
       quizModal: true,
     },

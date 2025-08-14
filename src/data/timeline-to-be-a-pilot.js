@@ -11,7 +11,7 @@ const timelineToBePilot = {
     //top header
     header: {
       stars: true,
-      imagePath: "/src/assets/stock-tadeu-jnr-kAzSa_azENM-unsplash.webp",
+      imagePath: "/src/assets/planes-orange-yellow-ground.webp",
       imageAlt:
         "FlyTech Flight School airplane landing at Falcon Field Airport in Saint Joseph, Missouri",
       headerH1: `Pilot Training<br>Timeline`,

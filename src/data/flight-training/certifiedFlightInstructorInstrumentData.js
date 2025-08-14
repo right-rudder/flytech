@@ -10,7 +10,7 @@ const certifiedFlightInstructorInstrumentsData = {
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/stock-steward-masweneng-n9By7oBszM0-unsplash.webp",
+    imagePath: "/src/assets/plane-pilots-checking-airship.webp",
     imageAlt:
       "FlyTech Flight School instructor and student practicing instrument flight in a Cessna cockpit",
     headerH1: `Certified Flight Instructor – <strong class="text-primary-600">Instrument (CFII)</strong>`,

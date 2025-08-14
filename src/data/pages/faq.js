@@ -8,7 +8,7 @@ const faqPage = {
 
     // Top header
     header: {
-      imagePath: "/src/assets/stock-mateusz-suski-ilz44HzYh5I-unsplash.webp", // Consider updating with a relevant FAQ image
+      imagePath: "/src/assets/ground-school-students-studying.webp", // Consider updating with a relevant FAQ image
       imageAlt: "Student pilot and instructor reviewing FAQ documents",
       headerH1: `FREQUENTLY <strong class="text-primary-500">ASKED QUESTIONS</strong>`,
       paragraph:

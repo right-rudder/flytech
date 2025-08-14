@@ -11,7 +11,7 @@ const whyData = {
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/stock-adrien-brun-L87clzV761M-unsplash.webp",
+    imagePath: "/src/assets/plane-orange-ground-usa-flag.webp",
     imageAlt: "FlyTech Flight School campus and facilities",
     headerH1: `Why Choose <strong class="text-primary-600">FlyTech?</strong>`,
     paragraph: `FlyTech isn’t just a flight school — it's a tight-knit team of local aviators, instructors, and mentors passionate about helping the next generation of pilots succeed. With modern training tools, hands-on experience, and a supportive environment, FlyTech offers a better, smarter way to learn to fly.`,
@@ -135,7 +135,7 @@ const whyData = {
       link: "/enroll-at-FlyTech",
       primary: true,
     },
-    imagePath: "/src/assets/stock-kamil-pietrzak-w9KTlrW7rOU-unsplash.webp",
+    imagePath: "/src/assets/student-receiving-signed-shirt.webp",
     imageAlt: "FlyTech Flight School student smiling in front of an airplane",
   },
 
