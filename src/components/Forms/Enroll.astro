@@ -8,6 +8,9 @@ import {
 import FormEnroll from "../../components/Forms/FormEnroll.astro";
 import ImageComp2 from "../../components/ImageComp2.astro";
 import imgForm from "../../assets/plane-wing-at-cloudy-sunset.webp";
+const upperheading = "Enroll now";
+const title = `Reach out at <span class="text-primary-500">${COMPANY_NICKNAME}</span>`;
+const description = "Let's Get You In The Air";
 ---
 
 <section
@@ -28,7 +31,23 @@ import imgForm from "../../assets/plane-wing-at-cloudy-sunset.webp";
       <!-- Text Section -->
       <div class="w-full lg:w-1/2">
         <div class="w-full flex flex-col">
-          <h2
+          <div class="w-full py-2">
+            <p
+              class="text-lg font-bold text-primary-500 uppercase tracking-wide mb-4 text-center lg:text-right"
+            >
+              {upperheading}
+            </p>
+            <h2
+              class="text-3xl lg:text-5xl font-bold text-white mb-4 text-center lg:text-right"
+            >
+              <Fragment set:html={title} />
+            </h2>
+            <p class="text-lg text-muted-200 mb-6 text-center lg:text-right">
+              {description}
+            </p>
+          </div>
+          <!-- Old Text -->
+          <!-- <h2
             class="text-right text-2xl font-semibold tracking-tighter uppercase pb-5 text-primary-500"
           >
             Enroll Now
@@ -42,7 +61,7 @@ import imgForm from "../../assets/plane-wing-at-cloudy-sunset.webp";
           <h4 class="text-2xl tracking-wider pb-5 text-right">
             Let's Get You In The Air
           </h4>
-          <div class="bg-primary-500 w-72 h-1 mb-16"></div>
+          <div class="bg-primary-500 w-72 h-1 mb-16"></div> -->
 
           <!--NAP-->
           <div
