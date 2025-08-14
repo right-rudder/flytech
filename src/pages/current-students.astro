@@ -6,6 +6,7 @@ import programsSwiper from "../data/flight-training/programSwiper.js";
 import currentStudents from "../data/pages/current-students";
 import CurrentStudentCard from "../components/Cards/CurrentStudentCard.astro";
 import CurrentStudentGrid from "../components/Cards/CurrentStudentGrid.astro";
+import CurrentStudentCards from "../components/Cards/CurrentStudentCards.astro";
 ---
 
 <BaseLayout
@@ -16,7 +17,7 @@ import CurrentStudentGrid from "../components/Cards/CurrentStudentGrid.astro";
   <!-- HEADER -->
   <HeaderSmall content={currentStudents.header} />
   <CurrentStudentGrid />
-  <CurrentStudentCard />
+  <CurrentStudentCards />
   <ProgramSwiper content={programsSwiper} />
 
   <script src="../scripts/creativeSwiper.js"></script>

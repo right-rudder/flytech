@@ -1,0 +1,68 @@
+---
+import CurrentStudentCard from "./CurrentStudentCard.astro";
+import TextCardDark from "./TextCardDark.astro";
+
+const textContent = {
+  upperheading: "STUDENT RESOURCES",
+  title: `At <span class="text-primary-500">FlyTech</span> you learn more`,
+  description:
+    "We provide our students with the best content and resources. We tailor the knowledge to everthing you must know",
+};
+---
+
+<section class="relative bg-neutral-900 py-20">
+  <div class="relative z-10 max-w-7xl mx-auto">
+    <!-- Text Roll -->
+    <div class="flex flex-col gap-2 lg:flex-row">
+      <div class="w-full lg:w-2/3">
+        <CurrentStudentCard />
+      </div>
+      <div class="w-full lg:w-1/3">
+        <TextCardDark content={textContent} />
+      </div>
+    </div>
+
+    <!-- 1 Roll -->
+    <div class="flex flex-col gap-2 lg:flex-row">
+      <div class="w-full">
+        <CurrentStudentCard />
+      </div>
+    </div>
+
+    <!-- 2 Roll -->
+    <div class="flex flex-col gap-2 lg:flex-row">
+      <div class="w-full lg:w-2/3">
+        <CurrentStudentCard />
+      </div>
+
+      <div class="w-full lg:w-1/3">
+        <CurrentStudentCard />
+      </div>
+    </div>
+
+    <!-- 3 Roll -->
+    <div class="flex flex-col gap-2 lg:flex-row">
+      <div class="w-full lg:w-1/3">
+        <CurrentStudentCard />
+      </div>
+
+      <div class="w-full lg:w-1/3">
+        <CurrentStudentCard />
+      </div>
+
+      <div class="w-full lg:w-1/3">
+        <CurrentStudentCard />
+      </div>
+    </div>
+
+    <!-- 2 Roll -->
+    <div class="flex flex-col gap-2 lg:flex-row">
+      <div class="w-full lg:w-1/3">
+        <CurrentStudentCard />
+      </div>
+      <div class="w-full lg:w-2/3">
+        <CurrentStudentCard />
+      </div>
+    </div>
+  </div>
+</section>
