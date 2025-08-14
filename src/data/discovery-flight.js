@@ -14,7 +14,7 @@ const discoveryFlight = {
 
       imagePath: "/src/assets/placeholder-img.webp",
       imageAlt: "FlyTech Flight School flight over Saint Joseph, MO",
-      headerH1: `Discovery Flight`,
+      headerH1: `Discovery <strong class="text-primary-600">Flight</strong>`,
       paragraph:
         "Fly at FlyTech and See if Flying is for You! Book a Discovery Flight Today!",
       buttons: [],
