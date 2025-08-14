@@ -73,7 +73,7 @@ const PriceCalcZero2Hero = () => {
             <div className="relative group w-full lg:w-1/2">
               <div
                 aria-hidden="true"
-                className="absolute top-0 w-full h-full rounded-2xl bg-neutral-700 shadow-lg transition duration-500 group-hover:scale-105 transform-gpu"
+                className="absolute top-0 w-full h-full  bg-neutral-700 shadow-lg transition duration-500 group-hover:scale-105 transform-gpu"
               ></div>
               <div className="relative p-5 pt-12 md:p-8 md:pl-8 md:rounded-r-2xl lg:pl-10 lg:p-12 text-white">
                 <div className="mt-2 flex justify-between gap-6 w-full">
@@ -244,7 +244,7 @@ const PriceCalcZero2Hero = () => {
             <div className="relative z-10 min-h-[screen-1/2] m-0 lg:-mx-4 group w-full lg:w-3/5 lg:max-w-3/5">
               <div
                 aria-hidden="true"
-                className="absolute top-0 w-full h-full rounded-2xl bg-primary-600 shadow-xl transition duration-500 group-hover:scale-105 transform-gpu"
+                className="absolute top-0 w-full h-full  bg-primary-600 shadow-xl transition duration-500 group-hover:scale-105 transform-gpu"
               ></div>
               <div className="relative p-6 space-y-6 lg:p-8">
                 <div className="p-6 lg:p-8">
@@ -468,7 +468,7 @@ const PriceCalcZero2Hero = () => {
             <div className="relative group w-full lg:w-1/2">
               <div
                 aria-hidden="true"
-                className="absolute top-0 w-full h-full rounded-2xl bg-neutral-700 shadow-lg transition duration-500 group-hover:scale-105 transform-gpu"
+                className="absolute top-0 w-full h-full  bg-neutral-700 shadow-lg transition duration-500 group-hover:scale-105 transform-gpu"
               ></div>
               <div className="relative p-5 pt-12 md:p-8 md:pl-8 md:rounded-r-2xl lg:pr-10 lg:p-12 text-white">
                 <fieldset>

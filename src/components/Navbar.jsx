@@ -192,7 +192,7 @@ const Navbar = ({ pathname }) => {
             <div className="absolute inset-y-0 right-0 flex items-center lg:hidden">
               <button
                 type="button"
-                className="mobile-menu-button relative inline-flex items-center justify-center rounded-md p-2"
+                className="mobile-menu-button relative inline-flex items-center justify-center  p-2"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
                 aria-label="Open main menu"
@@ -304,7 +304,7 @@ const Navbar = ({ pathname }) => {
                 <div className="font-medium relative p-5 w-full justify-center flex cursor-pointer text-xl duration-300  border-sky whitespace-nowrap">
                   <p>{item.name}</p>
                   <div
-                    className={`absolute right-3 p-2 pointer-events-none duration-500 ease-in-out rounded-full ${hoveredIndex === index ? "bg-primary-100/30 -rotate-90" : "bg-primary-100/20 rotate-90"} 
+                    className={`absolute right-3 p-2 pointer-events-none duration-500 ease-in-out  ${hoveredIndex === index ? "bg-primary-100/30 -rotate-90" : "bg-primary-100/20 rotate-90"} 
                     `}
                   >
                     <IoIosArrowForward
@@ -335,7 +335,7 @@ const Navbar = ({ pathname }) => {
                         <div className="font-normal p-5 w-full justify-between flex cursor-pointer text-lg duration-300 border-sky whitespace-nowrap">
                           <p>{subitem.name}</p>
                           <div
-                            className={`p-1 pointer-events-none duration-300 rounded-full ${subHoveredIndex === subIndex ? "bg-white rotate-90" : "bg-sky -rotate-90"} 
+                            className={`p-1 pointer-events-none duration-300  ${subHoveredIndex === subIndex ? "bg-white rotate-90" : "bg-sky -rotate-90"} 
                     `}
                           >
                             <IoIosArrowForward
@@ -374,7 +374,7 @@ const Navbar = ({ pathname }) => {
           <div className="flex gap-3 items-center">
             <a
               href={`tel:${PHONE_NUMBER}`}
-              className="p-2 w-fit rounded-full bg-primary-600"
+              className="p-2 w-fit  bg-primary-600"
               aria-label="Call"
             >
               <FaPhone className="size-4 text-white" />
