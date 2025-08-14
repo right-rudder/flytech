@@ -4,6 +4,8 @@ import HeaderSmall from "../components/HeaderSmall.astro";
 import ProgramSwiper from "../components/ProgramSwiper.astro";
 import programsSwiper from "../data/flight-training/programSwiper.js";
 import currentStudents from "../data/pages/current-students";
+import CurrentStudentCard from "../components/Cards/CurrentStudentCard.astro";
+import CurrentStudentGrid from "../components/Cards/CurrentStudentGrid.astro";
 ---
 
 <BaseLayout
@@ -13,7 +15,8 @@ import currentStudents from "../data/pages/current-students";
 >
   <!-- HEADER -->
   <HeaderSmall content={currentStudents.header} />
-
+  <CurrentStudentGrid />
+  <CurrentStudentCard />
   <ProgramSwiper content={programsSwiper} />
 
   <script src="../scripts/creativeSwiper.js"></script>
