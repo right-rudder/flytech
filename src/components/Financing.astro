@@ -1,6 +1,7 @@
 ---
 const { content } = Astro.props;
 import imgFinancing from "../assets/student-holding-certificate.webp";
+import imgGrid from "../assets/IMG_1183.webp";
 import ImageComp2 from "./ImageComp2.astro";
 
 import ImageComp from "./ImageComp.astro";
@@ -48,7 +49,7 @@ import ImageComp from "./ImageComp.astro";
     <div class="py-12 overflow-hidden">
       <div class="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
         <div
-          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:max-w-none lg:min-w-full lg:flex-none lg:gap-y-8"
+          class="mx-auto flex max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:max-w-none lg:min-w-full lg:flex-none lg:gap-y-8"
         >
           <div class="w-full lg:max-w-xl lg:flex-auto">
             <h3 class="text-primary-600 uppercase bold text-xl">
@@ -126,7 +127,8 @@ import ImageComp from "./ImageComp.astro";
           <div
             class="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents"
           >
-            <div
+            <ImageComp2 imagePath={imgGrid} imageAlt="" styles="w-full" />
+            <!-- <div
               class="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end"
             >
               <img
@@ -134,8 +136,8 @@ import ImageComp from "./ImageComp.astro";
                 alt=""
                 class="aspect-7/5 w-148 max-w-none bg-gray-50 object-cover"
               />
-            </div>
-            <div
+            </div> -->
+            <!-- <div
               class="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-148 lg:items-start lg:justify-end lg:gap-x-8"
             >
               <div
@@ -165,7 +167,7 @@ import ImageComp from "./ImageComp.astro";
                   class="aspect-4/3 w-[24rem] max-w-none bg-gray-50 object-cover"
                 />
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
