@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import programsSwiper from "../data/flight-training/programSwiper";
 import enrollInfo from "../data/enroll-info";
+import contactPage from "../data/contactPage";
 import ProgramSwiper from "../components/ProgramSwiper.astro";
 import ContactComponent from "../components/Forms/Contact.astro";
 import CTAVideoWhite from "../components/CTAVideoWhite.astro";
@@ -15,7 +16,7 @@ const dataForVideo = {
     "At FlyTech Pilot Academy, we combine modern aircraft, immersive technology, and a passionate team of instructors to give you an efficient, professional, and enjoyable path to the cockpit. Whether you're starting fresh or advancing your career, we make it simple.",
   buttons: [],
 };
-const { data } = enrollInfo;
+const { data } = contactPage;
 ---
 
 <BaseLayout

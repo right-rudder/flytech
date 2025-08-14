@@ -9,7 +9,7 @@ export const navbarLinks = [
       },
       {
         name: "Discovery Flight",
-        link: "#",
+        link: "/discovery-flight",
       },
     ],
   },
@@ -83,7 +83,7 @@ export const navbarLinks = [
       },
       {
         name: "Our Fleet",
-        link: "#",
+        link: "/about/fleet",
       },
       {
         name: "FAQ",
@@ -102,8 +102,8 @@ export const navbarLinks = [
         link: "https://flytech.myspreadshop.com",
       },
       {
-        name: "Join Us",
-        link: "#",
+        name: "Contact Us",
+        link: "/contact",
       },
       {
         name: "Blog",
