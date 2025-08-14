@@ -1,27 +1,33 @@
 ---
 import TextCard from "./TextCard.astro";
+import ImageComp2 from "../ImageComp2.astro";
+
+import img1 from "../../assets/students-in-front-of-slinger-3.webp";
+import img2 from "../../assets/simulator-with-student.webp";
+import img3 from "../../assets/student-receiving-certificate-3.webp";
 
 const textContent = {
-  upperheading: "Enroll now",
-  title: `Reach out at <span class="text-primary-500">FlyTech</span>`,
-  description: "Let's Get You In The Air",
+  upperheading: "STUDENT RESOURCES",
+  title: `At <span class="text-primary-500">FlyTech</span> you learn more`,
+  description:
+    "We provide our students with the best content and resources. We tailor the knowledge to everthing you must know",
 };
 
 const cardContent = {
   cardMain: {
-    upperheading: "Enroll now",
-    title: `Reach out at <span class="text-primary-500">FlyTech</span>`,
-    description: "Let's Get You In The Air",
+    upperheading: "Resources",
+    title: `Resources`,
+    description: "Check our student resources",
   },
   cardTop: {
     upperheading: "Enroll now",
-    title: `Reach out at <span class="text-primary-500">FlyTech</span>`,
-    description: "Let's Get You In The Air",
+    title: `Video Content`,
+    description: "Prepare yourself with great videos and channels",
   },
   cardBottom: {
-    upperheading: "Enroll now",
-    title: `Reach out at <span class="text-primary-500">FlyTech</span>`,
-    description: "Let's Get You In The Air",
+    upperheading: "Login now",
+    title: `Login now`,
+    description: "Login to your account at Four Forces / Ground School",
   },
 };
 ---
@@ -38,17 +44,17 @@ const cardContent = {
       >
         <!-- Card Left -->
         <div
-          class="group overflow-hidden relative aspect-square rounded-lg sm:row-span-2 bg-black"
+          class="group overflow-hidden relative aspect-square sm:row-span-2 bg-black"
         >
-          <img
-            src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-featured-category.jpg"
-            alt="Two models wearing women's black cotton crewneck tee and off-white cotton crewneck tee."
-            class="absolute size-full object-cover group-hover:opacity-75"
+          <ImageComp2
+            imagePath={img3}
+            imageAlt="Background Image"
+            styles="absolute size-full object-cover group-hover:opacity-65 opacity-70"
           />
           <div aria-hidden="true" class="absolute inset-0 bg--black/60"></div>
           <div class="absolute inset-0 flex items-end pl-12 pb-12">
             <div>
-              <h3 class="text-3xl font-semibold text-white">
+              <h3 class="text-3xl font-bold uppercase text-white">
                 <a href="#">
                   <Fragment set:html={cardContent.cardMain.title} />
                 </a>
@@ -61,53 +67,55 @@ const cardContent = {
         </div>
         <!-- Card Top -->
         <div
-          class="group overflow-hidden relative aspect-square rounded-lg sm:aspect-auto bg-black"
+          class="group overflow-hidden relative aspect-square sm:aspect-auto bg-black"
         >
-          <img
-            src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-category-01.jpg"
-            alt="Wooden shelf with gray and olive drab green baseball caps, next to wooden clothes hanger with sweaters."
-            class="absolute size-full object-cover group-hover:opacity-25"
+          <ImageComp2
+            imagePath={img1}
+            imageAlt="Background Image"
+            styles="absolute size-full object-cover group-hover:opacity-65 opacity-70"
           />
           <div
             aria-hidden="true"
             class="absolute inset-0 bg-linear-to-b from-transparent to-black opacity-50"
           >
           </div>
-          <div class="absolute inset-0 flex items-end p-6">
+          <div class="absolute inset-0 flex items-end pl-6 pb-6">
             <div>
-              <h3 class="font-semibold text-white">
+              <h3 class="text-2xl font-bold uppercase text-white">
                 <a href="#">
-                  <span class="absolute inset-0"></span>
-                  Accessories
+                  <Fragment set:html={cardContent.cardTop.title} />
                 </a>
               </h3>
-              <p aria-hidden="true" class="mt-1 text-sm text-white">Shop now</p>
+              <p aria-hidden="true" class="mt-1 text-lg text-white">
+                <Fragment set:html={cardContent.cardTop.description} />
+              </p>
             </div>
           </div>
         </div>
         <!-- Card Bottom -->
         <div
-          class="group overflow-hidden relative aspect-square rounded-lg sm:aspect-auto bg-black"
+          class="group overflow-hidden relative aspect-square sm:aspect-auto bg-black"
         >
-          <img
-            src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-category-02.jpg"
-            alt="Walnut desk organizer set with white modular trays, next to porcelain mug on wooden desk."
-            class="absolute size-full object-cover group-hover:opacity-75"
+          <ImageComp2
+            imagePath={img2}
+            imageAlt="Background Image"
+            styles="absolute size-full object-cover group-hover:opacity-65 opacity-70"
           />
           <div
             aria-hidden="true"
             class="absolute inset-0 bg-linear-to-b from-transparent to-black opacity-50"
           >
           </div>
-          <div class="absolute inset-0 flex items-end p-6">
+          <div class="absolute inset-0 flex items-end pl-6 pb-6">
             <div>
-              <h3 class="font-semibold text-white">
+              <h3 class="text-2xl font-bold uppercase text-white">
                 <a href="#">
-                  <span class="absolute inset-0"></span>
-                  Workspace
+                  <Fragment set:html={cardContent.cardBottom.title} />
                 </a>
               </h3>
-              <p aria-hidden="true" class="mt-1 text-sm text-white">Shop now</p>
+              <p aria-hidden="true" class="mt-1 text-lg text-white">
+                <Fragment set:html={cardContent.cardBottom.description} />
+              </p>
             </div>
           </div>
         </div>
