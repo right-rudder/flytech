@@ -1,7 +1,7 @@
 ---
 const ENROLL_FORM_WEBHOOK_URL = import.meta.env.ENROLL_FORM_WEBHOOK_URL;
 const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
-const SCHOOL_ID = "";
+const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
 
 const programs = [
   "Private Pilot",
@@ -148,12 +148,18 @@ const programs = [
   </div>
 </form>
 
-<script define:vars={{ ENROLL_FORM_WEBHOOK_URL, PORTAL_API_KEY }}>
+<script
+  define:vars={{
+    ENROLL_FORM_WEBHOOK_URL,
+    PORTAL_API_KEY,
+    CP_ACCOUNT_RANDOM_ID,
+  }}
+>
   const toggle = document.getElementById("terms-toggle");
   const thumb = document.getElementById("terms-thumb");
   const hiddenInput = document.getElementById("agree-terms");
   const submitBtn = document.getElementById("submit-btn");
-  const account_id = SCHOOL_ID;
+  const account_id = CP_ACCOUNT_RANDOM_ID;
 
   let isChecked = false;
 
