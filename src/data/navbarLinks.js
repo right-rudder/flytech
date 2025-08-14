@@ -113,7 +113,7 @@ export const navbarLinks = [
   },
   {
     name: "Enroll Now",
-    link: "#",
+    link: "#enroll",
     submenu: [],
   },
 ];
