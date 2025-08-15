@@ -83,9 +83,9 @@ const Navbar = ({ pathname }) => {
           navBar || openMobile
             ? "bg-primary-600/95 shadow-md"
             : "bg-transparent"
-        } lg:px-10 duration-500`}
+        }duration-500`}
       >
-        <div className="px-4 lg:px-12 mx-auto top-0">
+        <div className="px-4 lg:px-8 top-0">
           <div
             className={`${navBar || openMobile ? "lg:h-24" : "lg:h-20"} relative flex h-20 align-middle justify-between transition-all`}
             id="navbar"
@@ -120,7 +120,7 @@ const Navbar = ({ pathname }) => {
                         <a
                           href={item.link}
                           target={`${item.link.includes("http") ? "_blank" : "_self"}`}
-                          className="font-bold lg:text-xl group-last:text-white group-last:hover:text-primary-700 duration-300 hover:underline drop-shadow-sm decoration-primary-500 decoration-4 underline-offset-[10px] py-12 whitespace-nowrap group-last:font-bold group-last:bg-primary-600 group-last:ring-2 group-last:ring-white group-last:py-2 group-last:px-5 group-last:hover:bg-white group-last:hover:no-underline"
+                          className="font-bold  sm:text-lg xl:text-xl group-last:text-white group-last:hover:text-primary-700 duration-300 hover:underline drop-shadow-sm decoration-primary-500 decoration-4 underline-offset-[10px] py-12 whitespace-nowrap group-last:font-bold group-last:bg-primary-600 group-last:ring-2 group-last:ring-white group-last:py-2 group-last:px-5 group-last:hover:bg-white group-last:hover:no-underline"
                         >
                           <span className="relative  w-full h-full ">
                             {item.name}
