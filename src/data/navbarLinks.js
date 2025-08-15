@@ -29,10 +29,6 @@ export const navbarLinks = [
         name: "Instrument Rating",
         link: "/flight-training/instrument-rating",
       },
-      // {
-      //   name: "Multi-Engine Rating",
-      //   link: "/flight-training/multi-engine-rating",
-      // },
       {
         name: "Certified Flight Instructor",
         link: "/flight-training/certified-flight-instructor",
@@ -45,14 +41,10 @@ export const navbarLinks = [
         name: "Sports Pilot Certificate",
         link: "/flight-training/sports-pilot-certificate",
       },
-      // {
-      //   name: "Multi-Engine Instructor",
-      //   link: "/flight-training/commercial-pilot",
-      // },
     ],
   },
   {
-    name: "Current Students",
+    name: "Students",
     link: "/current-students",
     submenu: [
       {
