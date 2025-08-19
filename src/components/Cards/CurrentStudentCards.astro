@@ -1,67 +1,137 @@
 ---
 import CurrentStudentCard from "./CurrentStudentCard.astro";
 import TextCardDark from "./TextCardDark.astro";
+import currentStudents from "../../data/pages/current-students";
 
 const textContent = {
   upperheading: "STUDENT RESOURCES",
   title: `At <span class="text-primary-500">FlyTech</span> you learn more`,
   description:
     "We provide our students with the best content and resources. We tailor the knowledge to everthing you must know",
+  cards: [
+    {
+      title: "Resources",
+      description: "Check our student resources",
+      image: "",
+      imageAlt: "Student receiving certificate",
+      button: "View Resources",
+      buttonLink: "/resources",
+    },
+    {
+      title: "Video Content",
+      description: "Prepare yourself with great videos and channels",
+      image: "",
+      imageAlt: "Student receiving certificate",
+      button: "Watch Videos",
+      buttonLink: "/videos",
+    },
+    {
+      title: "Login now",
+      description: "Login to your account at Four Forces / Ground School",
+      image: "",
+      imageAlt: "Student receiving certificate",
+      button: "Login",
+      buttonLink: "/login",
+    },
+  ],
 };
 ---
 
 <section class="relative bg-neutral-900 py-20">
   <div class="relative z-10 max-w-7xl mx-auto">
+    <!-- ESSENTIAL -->
     <!-- Text Roll -->
     <div class="flex flex-col gap-2 lg:flex-row">
       <div class="w-full lg:w-2/3">
-        <CurrentStudentCard />
+        <CurrentStudentCard
+          content={currentStudents.resources.categories[0]}
+          items={currentStudents.resources.categories[0].items}
+        />
       </div>
       <div class="w-full lg:w-1/3">
-        <TextCardDark content={textContent} />
+        <TextCardDark
+          content={currentStudents.resources}
+          textOrientation="left"
+        />
       </div>
     </div>
 
     <!-- 1 Roll -->
     <div class="flex flex-col gap-2 lg:flex-row">
-      <div class="w-full">
-        <CurrentStudentCard />
-      </div>
-    </div>
-
-    <!-- 2 Roll -->
-    <div class="flex flex-col gap-2 lg:flex-row">
       <div class="w-full lg:w-2/3">
-        <CurrentStudentCard />
+        <CurrentStudentCard
+          content={currentStudents.resources.categories[1]}
+          items={currentStudents.resources.categories[1].items}
+        />
       </div>
 
       <div class="w-full lg:w-1/3">
-        <CurrentStudentCard />
+        <CurrentStudentCard
+          content={currentStudents.resources.categories[2]}
+          items={currentStudents.resources.categories[2].items}
+        />
+      </div>
+    </div>
+
+    <!-- MEDICAL -->
+    <!-- Text Roll -->
+    <div class="flex flex-col gap-2 lg:flex-row">
+      <div class="w-full lg:w-1/3">
+        <TextCardDark
+          content={currentStudents.medicalResources}
+          textOrientation="right"
+        />
+      </div>
+      <div class="w-full lg:w-2/3">
+        <CurrentStudentCard
+          content={currentStudents.medicalResources.categories[0]}
+          items={currentStudents.medicalResources.categories[0].items}
+        />
+      </div>
+    </div>
+
+    <!-- VIDEO -->
+
+    <!-- Text Roll -->
+    <div class="flex flex-col gap-2 lg:flex-row">
+      <div class="w-full lg:w-2/3">
+        <CurrentStudentCard
+          content={currentStudents.videoResources.categories[1]}
+          items={currentStudents.videoResources.categories[1].items}
+        />
+      </div>
+      <div class="w-full lg:w-1/3">
+        <TextCardDark
+          content={currentStudents.videoResources}
+          textOrientation="left"
+        />
       </div>
     </div>
 
     <!-- 3 Roll -->
     <div class="flex flex-col gap-2 lg:flex-row">
       <div class="w-full lg:w-1/3">
-        <CurrentStudentCard />
+        <CurrentStudentCard
+          content={currentStudents.videoResources.categories[0]}
+          items={currentStudents.videoResources.categories[0].items}
+          video={currentStudents.videoResources.categories[0].videos[0]}
+        />
       </div>
 
       <div class="w-full lg:w-1/3">
-        <CurrentStudentCard />
+        <CurrentStudentCard
+          content={currentStudents.videoResources.categories[0]}
+          items={currentStudents.videoResources.categories[0].items}
+          video={currentStudents.videoResources.categories[0].videos[1]}
+        />
       </div>
 
       <div class="w-full lg:w-1/3">
-        <CurrentStudentCard />
-      </div>
-    </div>
-
-    <!-- 2 Roll -->
-    <div class="flex flex-col gap-2 lg:flex-row">
-      <div class="w-full lg:w-1/3">
-        <CurrentStudentCard />
-      </div>
-      <div class="w-full lg:w-2/3">
-        <CurrentStudentCard />
+        <CurrentStudentCard
+          content={currentStudents.videoResources.categories[0]}
+          items={currentStudents.videoResources.categories[0].items}
+          video={currentStudents.videoResources.categories[0].videos[2]}
+        />
       </div>
     </div>
   </div>

@@ -10,22 +10,24 @@ const upperheading = "Enroll now";
 const title = `Reach out at <span class="text-primary-500">${COMPANY_NICKNAME}</span>`;
 const description = "Let's Get You In The Air";
 
-const { content } = Astro.props;
+const { content, textOrientation } = Astro.props;
 ---
 
 <div class="w-full h-full flex flex-col items-center justify-center">
   <div class="w-full py-2">
     <p
-      class="text-lg font-bold text-primary-500 uppercase tracking-wide mb-4 text-center lg:text-left"
+      class=`text-lg font-bold text-primary-500 uppercase tracking-wide mb-4 text-center lg:text-${textOrientation}`
     >
       {content.upperheading}
     </p>
     <h2
-      class="text-3xl lg:text-5xl font-bold text-white mb-4 text-center lg:text-left"
+      class=`text-3xl lg:text-5xl font-bold text-white mb-4 text-center lg:text-${textOrientation} lg:mb-6`
     >
       <Fragment set:html={content.title || title} />
     </h2>
-    <p class="text-lg text-white/90 mb-6 text-center lg:text-left">
+    <p
+      class=`text-lg text-white/90 mb-6 text-center lg:text-${textOrientation}`
+    >
       {content.description || description}
     </p>
   </div>

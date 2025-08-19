@@ -26,10 +26,15 @@ const currentStudents = {
 
   // Page Content Sections
   resources: {
+    upperheading: "Essential ",
     title: "Essential Training Materials",
+    description:
+      "Download these essential documents to prepare for your training at FlyTech Pilot Academy. These resources will help you get started with your flight training and familiarize yourself",
     categories: [
       {
         name: "New Enrolling Student",
+        description:
+          "Download these essential documents to prepare for your training at FlyTech Pilot Academy.",
         items: [
           {
             title: "New Student Interview Guide",
@@ -69,69 +74,91 @@ const currentStudents = {
           },
         ],
       },
+      {
+        name: "Recommended Student Gear",
+        description: "Check out our Amazon wishlist for recommended equipment:",
+        items: [
+          {
+            title: "View Gear List",
+            link: "https://www.amazon.com/hz/wishlist/ls/3BBJYS4D00N6I?ref_=wl_share",
+            type: "PDF",
+          },
+        ],
+      },
     ],
   },
 
   // Additional Sections
   medicalResources: {
+    upperheading: "Medical",
     title: "Aviation Medical Examiners",
-    providers: [
+    description:
+      "If you need to obtain an aviation medical certificate, here are some local AMEs who can assist you",
+    categories: [
       {
-        name: "Dr. Sam Barton, DO",
-        specialty: "Aviation Medical Examiner",
-        phone: "816-632-2139",
-        link: "https://www.cameronregional.org/physician/sam-barton-do",
-      },
-      {
-        name: "Aaron Florkowski, MD",
-        specialty: "Colorblind Testing",
-        phone: "913-787-6724",
-        link: "https://kansascityame.com/",
+        name: "Aviation Medical Examiner",
+        description: "Find a local AME for your aviation medical needs.",
+        items: [
+          {
+            title: "Dr. Sam Barton, DO",
+            specialty: "Aviation Medical Examiner",
+            phone: "816-632-2139",
+            link: "https://www.cameronregional.org/physician/sam-barton-do",
+          },
+          {
+            title: "Aaron Florkowski, MD",
+            specialty: "Colorblind Testing",
+            phone: "913-787-6724",
+            link: "https://kansascityame.com/",
+          },
+        ],
       },
     ],
-  },
-
-  recommendedGear: {
-    title: "Recommended Student Gear",
-    description: "Check out our Amazon wishlist for recommended equipment:",
-    link: {
-      text: "View Gear List",
-      url: "https://www.amazon.com/hz/wishlist/ls/3BBJYS4D00N6I?ref_=wl_share",
-    },
   },
 
   videoResources: {
+    upperheading: "Videos",
     title: "Helpful Training Videos",
-    videos: [
+    description:
+      "Watch these instructional videos to familiarize yourself with the Sling NGT and flight training procedures. These resources will help you prepare for your first lesson and understand the aircraft you'll be flying.",
+    categories: [
       {
-        title: "Pre Flight The Sling NGT",
-        youtubeId: "ArhGt5JgDHU",
+        name: "Videos",
+        description:
+          "Watch these instructional videos to prepare for your training.",
+        items: [],
+        videos: [
+          {
+            title: "Pre Flight The Sling NGT",
+            youtubeId: "ArhGt5JgDHU",
+          },
+          {
+            title: "Sling NGT Cockpit Tour",
+            youtubeId: "mQ53FsBfvHA",
+          },
+          {
+            title: "Student Solo Flight",
+            youtubeId: "FSliFHlpze0",
+          },
+        ],
       },
       {
-        title: "Sling NGT Cockpit Tour",
-        youtubeId: "mQ53FsBfvHA",
-      },
-      {
-        title: "Student Solo Flight",
-        youtubeId: "FSliFHlpze0",
-      },
-    ],
-  },
-
-  youtubeChannels: {
-    title: "Recommended YouTube Channels",
-    channels: [
-      {
-        name: "Pilot Debrief",
-        link: "https://youtube.com/@pilot-debrief",
-      },
-      {
-        name: "Blancolirio",
-        link: "https://youtube.com/@blancolirio",
-      },
-      {
-        name: "Mentour Pilot",
-        link: "https://youtube.com/@mentourpilot",
+        name: "YouTube Channels",
+        description: "Subscribe to these channels for aviation content.",
+        items: [
+          {
+            title: "Pilot Debrief",
+            link: "https://youtube.com/@pilot-debrief",
+          },
+          {
+            title: "Blancolirio",
+            link: "https://youtube.com/@blancolirio",
+          },
+          {
+            title: "Mentour Pilot",
+            link: "https://youtube.com/@mentourpilot",
+          },
+        ],
       },
     ],
   },
