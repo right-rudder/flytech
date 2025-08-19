@@ -168,7 +168,7 @@ const fleetPage = {
           ],
           images: [
             {
-              imagePath: "/src/assets/flytech-plane-car-ground.webp",
+              imagePath: "/src/assets/plane-slinger-ground.webp",
               imageAlt: "Sling LSA side view",
             },
             {
