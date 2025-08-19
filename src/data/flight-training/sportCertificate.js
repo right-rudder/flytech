@@ -10,14 +10,14 @@ const sportPilotData = {
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/stock-pierre-goiffon-t56w7xguZWA-unsplash.webp",
+    imagePath: "/src/assets/IMG_0608.webp",
     imageAlt: "Light sport aircraft flying in Missouri skies",
     headerH1: `Get Started with a <strong class="text-primary-600">Sport Pilot Certificate</strong>`,
     paragraph: `Looking for a fun, affordable, and efficient way to become a pilot? The Sport Pilot Certificate is ideal for flying light aircraft with fewer training hours and simpler requirements.`,
     buttons: [
       {
         name: "Start Flying",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
         primary: true,
       },
     ],
@@ -47,15 +47,14 @@ const sportPilotData = {
     ],
 
     cta: {
-      imagePath:
-        "/src/assets/stock-randy-dautzenberg-UgVWw4BjH7g-unsplash.webp",
+      imagePath: "/src/assets/student-in-front-of-slinger.webp",
       imageAlt: "Student pilot pre-flighting a light sport aircraft",
       title: "Take Flight, Your Way",
       description:
         "Join FlyTech and earn your Sport Pilot Certificate with fewer hours, lower cost, and maximum fun. Start flying light sport aircraft today.",
       button: {
         name: "Enroll Today",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
       },
     },
 

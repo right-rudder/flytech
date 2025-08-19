@@ -1,0 +1,138 @@
+---
+import TextCard from "./TextCard.astro";
+import ImageComp2 from "../ImageComp2.astro";
+
+import img1 from "../../assets/students-in-front-of-slinger-3.webp";
+import img2 from "../../assets/simulator-with-student.webp";
+import img3 from "../../assets/student-receiving-certificate-3.webp";
+import { link } from "fs";
+
+const textContent = {
+  upperheading: "STUDENT RESOURCES",
+  title: `At <span class="text-primary-500">FlyTech</span> you learn more`,
+  description:
+    "We provide our students with the best content and resources. We tailor the knowledge to everthing you must know",
+};
+
+const cardContent = {
+  cardMain: {
+    upperheading: "Resources",
+    title: `Resources`,
+    description: "Check our student resources",
+    imagePath: img3,
+    imageAlt: "Student receiving certificate",
+    link: "#essential",
+  },
+  cardTop: {
+    upperheading: "Enroll now",
+    title: `Video Content`,
+    description: "Prepare yourself with great videos and channels",
+    imagePath: img1,
+    imageAlt: "Student receiving certificate",
+    link: "#videos",
+  },
+  cardBottom: {
+    upperheading: "others",
+    title: `Useful Documents`,
+    description: "Download our useful documents",
+    imagePath: img2,
+    imageAlt: "Simulator with student",
+    link: "#others",
+  },
+};
+---
+
+<section class="relative bg-white py-20">
+  <div class="relative z-10 max-w-7xl mx-auto">
+    <div class="flex flex-col gap-10 lg:flex-row">
+      <div class="w-full lg:w-1/3">
+        <TextCard content={textContent} />
+      </div>
+
+      <div
+        class="w-full h-full lg:w-2/3 mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8"
+      >
+        <!-- Card Left -->
+        <a
+          href={cardContent.cardMain.link}
+          class="group overflow-hidden relative aspect-square sm:row-span-2 bg-black"
+        >
+          <ImageComp2
+            imagePath={img3}
+            imageAlt="Background Image"
+            styles="absolute size-full object-cover group-hover:opacity-65 opacity-70"
+          />
+          <div aria-hidden="true" class="absolute inset-0 bg--black/60"></div>
+          <div class="absolute inset-0 flex items-end pl-12 pb-12">
+            <div>
+              <h3 class="text-3xl font-bold uppercase text-white">
+                <p>
+                  <Fragment set:html={cardContent.cardMain.title} />
+                </p>
+              </h3>
+              <p aria-hidden="true" class="mt-1 text-lg text-white">
+                <Fragment set:html={cardContent.cardMain.description} />
+              </p>
+            </div>
+          </div>
+        </a>
+        <!-- Card Top -->
+        <a
+          href={cardContent.cardTop.link}
+          class="group overflow-hidden relative aspect-square sm:aspect-auto bg-black"
+        >
+          <ImageComp2
+            imagePath={img1}
+            imageAlt="Background Image"
+            styles="absolute size-full object-cover group-hover:opacity-65 opacity-70"
+          />
+          <div
+            aria-hidden="true"
+            class="absolute inset-0 bg-linear-to-b from-transparent to-black opacity-50"
+          >
+          </div>
+          <div class="absolute inset-0 flex items-end pl-6 pb-6">
+            <div>
+              <h3 class="text-2xl font-bold uppercase text-white">
+                <p>
+                  <Fragment set:html={cardContent.cardTop.title} />
+                </p>
+              </h3>
+              <p aria-hidden="true" class="mt-1 text-lg text-white">
+                <Fragment set:html={cardContent.cardTop.description} />
+              </p>
+            </div>
+          </div>
+        </a>
+        <!-- Card Bottom -->
+        <a
+          href={cardContent.cardBottom.link}
+          class="group overflow-hidden relative aspect-square sm:aspect-auto bg-black"
+        >
+          <ImageComp2
+            imagePath={img2}
+            imageAlt="Background Image"
+            styles="absolute size-full object-cover group-hover:opacity-65 opacity-70"
+          />
+          <div
+            aria-hidden="true"
+            class="absolute inset-0 bg-linear-to-b from-transparent to-black opacity-50"
+          >
+          </div>
+          <div class="absolute inset-0 flex items-end pl-6 pb-6">
+            <div>
+              <h3 class="text-2xl font-bold uppercase text-white">
+                <p>
+                  <Fragment set:html={cardContent.cardBottom.title} />
+                </p>
+              </h3>
+              <p aria-hidden="true" class="mt-1 text-lg text-white">
+                <Fragment set:html={cardContent.cardBottom.description} />
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

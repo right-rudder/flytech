@@ -12,17 +12,16 @@ const beginPilotCareer = {
     header: {
       stars: true,
 
-      imagePath:
-        "/src/assets/stock-randy-dautzenberg-UgVWw4BjH7g-unsplash.webp",
+      imagePath: "/src/assets/plane-cesna-ground.webp",
       imageAlt:
-        "FlyTech Flight School airplane landing at Falcon Field Airport in Saint Joseph, Missouri",
+        "FlyTech Flight School airplane landing at Rosecrans Memorial Airport in Saint Joseph, Missouri",
       headerH1: `Career Track<br>Pilots`,
       paragraph:
         "Start your pilot career after getting your commercial certificate. Start flying now and build the necessary hours to become an airline pilot. One way FlyTech can help is by becoming a certified flight instructor (CFI).",
       buttons: [
         {
           name: "Enroll Now",
-          link: "/enroll-at-FlyTech",
+          link: "/#enroll",
           primary: false,
         },
       ],
@@ -109,11 +108,11 @@ const beginPilotCareer = {
       },
       finalButton: {
         name: "Enroll at FlyTech",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
         primary: true,
       },
 
-      imagePath: "/src/assets/stock-kamil-pietrzak-w9KTlrW7rOU-unsplash.webp",
+      imagePath: "/src/assets/plane-pilots-checking-airship.webp",
       imageAlt:
         "sun city aviation founder luke poulos in front of a sun city airplane",
     },

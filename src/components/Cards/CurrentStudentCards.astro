@@ -1,0 +1,294 @@
+---
+import CurrentStudentCard from "./CurrentStudentCard.astro";
+import TextCardDark from "./TextCardDark.astro";
+import currentStudents from "../../data/pages/current-students";
+import type { ImageMetadata } from "astro";
+
+// const imageImports = import.meta.glob<{ default: ImageMetadata }>(
+//   "../../assets/*.webp",
+// );
+// const sortedImagePaths = Object.keys(imageImports).sort();
+// const imageModules = await Promise.all(
+//   sortedImagePaths.map((path) => imageImports[path]()),
+// );
+// const allImages = imageModules.map((mod) => mod.default);
+
+import img1 from "../../assets/IMG_0414.webp";
+import img2 from "../../assets/IMG_0415.webp";
+import img3 from "../../assets/IMG_0424.webp";
+import img4 from "../../assets/IMG_0461.webp";
+import img5 from "../../assets/IMG_0524.webp";
+import img6 from "../../assets/IMG_0608.webp";
+import img7 from "../../assets/IMG_0609.webp";
+import img8 from "../../assets/IMG_0610.webp";
+import img9 from "../../assets/IMG_0629.webp";
+import img10 from "../../assets/IMG_0639.webp";
+import img11 from "../../assets/IMG_0847.webp";
+import img12 from "../../assets/IMG_0860.webp";
+import img13 from "../../assets/IMG_1183.webp";
+import img14 from "../../assets/IMG_1205.webp";
+import img15 from "../../assets/IMG_1221.webp";
+import img16 from "../../assets/IMG_1279-3.webp";
+import img17 from "../../assets/IMG_1683.webp";
+import img18 from "../../assets/IMG_1746.webp";
+import img19 from "../../assets/IMG_2879.webp";
+import img20 from "../../assets/IMG_2889.webp";
+import img21 from "../../assets/IMG_3797.webp";
+import img22 from "../../assets/IMG_4436.webp";
+import img23 from "../../assets/IMG_5287.webp";
+import img24 from "../../assets/IMG_5339.webp";
+import img25 from "../../assets/IMG_5365.webp";
+import img26 from "../../assets/IMG_5369.webp";
+import img27 from "../../assets/IMG_5375.webp";
+import img28 from "../../assets/IMG_5377.webp";
+import img29 from "../../assets/IMG_5378.webp";
+
+const textContent = {
+  upperheading: "STUDENT RESOURCES",
+  title: `At <span class="text-primary-500">FlyTech</span> you learn more`,
+  description:
+    "We provide our students with the best content and resources. We tailor the knowledge to everything you must know",
+  cards: [
+    {
+      title: "Resources",
+      description: "Check our student resources",
+      image: "",
+      imageAlt: "Student receiving certificate",
+      button: "View Resources",
+      buttonLink: "/resources",
+    },
+    {
+      title: "Video Content",
+      description: "Prepare yourself with great videos and channels",
+      image: "",
+      imageAlt: "Student receiving certificate",
+      button: "Watch Videos",
+      buttonLink: "/videos",
+    },
+    {
+      title: "Login now",
+      description: "Login to your account at Four Forces / Ground School",
+      image: "",
+      imageAlt: "Student receiving certificate",
+      button: "Login",
+      buttonLink: "/login",
+    },
+  ],
+};
+---
+
+<!-- Previous imports remain the same -->
+<section class="relative bg-neutral-900 py-20">
+  <div class="relative z-10 max-w-7xl mx-auto">
+    <!-- ESSENTIAL -->
+    <!-- Text Roll -->
+    <div class="flex flex-col-reverse gap-2 lg:flex-row" id="essential">
+      <div class="w-full lg:w-2/3">
+        <CurrentStudentCard
+          content={currentStudents.resources.categories[0]}
+          items={currentStudents.resources.categories[0].items}
+          imageBackground={img1}
+        />
+      </div>
+      <div class="w-full lg:w-1/3">
+        <TextCardDark
+          content={currentStudents.resources}
+          textOrientation="left"
+        />
+      </div>
+    </div>
+
+    <!-- 1 Roll -->
+    <div class="flex flex-col gap-2 lg:flex-row">
+      <div class="w-full lg:w-2/3">
+        <CurrentStudentCard
+          content={currentStudents.resources.categories[1]}
+          items={currentStudents.resources.categories[1].items}
+          imageBackground={img2}
+        />
+      </div>
+
+      <div class="w-full lg:w-1/3">
+        <CurrentStudentCard
+          content={currentStudents.resources.categories[2]}
+          items={currentStudents.resources.categories[2].items}
+          imageBackground={img3}
+        />
+      </div>
+    </div>
+
+    <!-- MEDICAL -->
+    <!-- Text Roll -->
+    <div class="flex flex-col gap-2 lg:flex-row" id="medical">
+      <div class="w-full lg:w-1/3">
+        <TextCardDark
+          content={currentStudents.medicalResources}
+          textOrientation="right"
+        />
+      </div>
+      <div class="w-full lg:w-2/3">
+        <CurrentStudentCard
+          content={currentStudents.medicalResources.categories[0]}
+          items={currentStudents.medicalResources.categories[0].items}
+          imageBackground={img4}
+        />
+      </div>
+    </div>
+
+    <!-- VIDEO -->
+    <!-- Text Roll -->
+    <div class="flex flex-col-reverse gap-2 lg:flex-row" id="videos">
+      <div class="w-full lg:w-2/3">
+        <CurrentStudentCard
+          content={currentStudents.videoResources.categories[1]}
+          items={currentStudents.videoResources.categories[1].items}
+          imageBackground={img5}
+        />
+      </div>
+      <div class="w-full lg:w-1/3">
+        <TextCardDark
+          content={currentStudents.videoResources}
+          textOrientation="left"
+        />
+      </div>
+    </div>
+
+    <!-- 3 Roll -->
+    <div class="flex flex-col gap-2 lg:flex-row">
+      <div class="w-full lg:w-1/3">
+        <CurrentStudentCard
+          content={currentStudents.videoResources.categories[0]}
+          items={currentStudents.videoResources.categories[0].items}
+          video={currentStudents.videoResources.categories[0].videos[0]}
+          imageBackground={img6}
+        />
+      </div>
+
+      <div class="w-full lg:w-1/3">
+        <CurrentStudentCard
+          content={currentStudents.videoResources.categories[0]}
+          items={currentStudents.videoResources.categories[0].items}
+          video={currentStudents.videoResources.categories[0].videos[1]}
+          imageBackground={img7}
+        />
+      </div>
+
+      <div class="w-full lg:w-1/3">
+        <CurrentStudentCard
+          content={currentStudents.videoResources.categories[0]}
+          items={currentStudents.videoResources.categories[0].items}
+          video={currentStudents.videoResources.categories[0].videos[2]}
+          imageBackground={img8}
+        />
+      </div>
+    </div>
+
+    <!-- Other -->
+    <!-- Text Roll -->
+    <div class="flex flex-col-reverse gap-2 lg:flex-row" id="others">
+      <div class="w-full">
+        <TextCardDark content={currentStudents.other} />
+      </div>
+    </div>
+
+    <!-- 3 Roll -->
+    <div class="flex flex-col gap-2 lg:flex-row">
+      <div class="w-full lg:w-1/3">
+        <CurrentStudentCard
+          content={currentStudents.other.categories[0]}
+          items={[currentStudents.other.categories[0].items[0]]}
+          imageBackground={img9}
+        />
+      </div>
+
+      <div class="w-full lg:w-1/3">
+        <CurrentStudentCard
+          content={currentStudents.other.categories[0]}
+          items={[currentStudents.other.categories[0].items[1]]}
+          imageBackground={img10}
+        />
+      </div>
+
+      <div class="w-full lg:w-1/3">
+        <CurrentStudentCard
+          content={currentStudents.other.categories[0]}
+          items={[currentStudents.other.categories[0].items[2]]}
+          imageBackground={img11}
+        />
+      </div>
+    </div>
+
+    <!-- 3 Roll -->
+    <div class="flex flex-col gap-2 lg:flex-row">
+      <div class="w-full lg:w-1/3">
+        <CurrentStudentCard
+          content={currentStudents.other.categories[0]}
+          items={[currentStudents.other.categories[0].items[3]]}
+          imageBackground={img12}
+        />
+      </div>
+
+      <div class="w-full lg:w-1/3">
+        <CurrentStudentCard
+          content={currentStudents.other.categories[0]}
+          items={[currentStudents.other.categories[0].items[4]]}
+          imageBackground={img13}
+        />
+      </div>
+
+      <div class="w-full lg:w-1/3">
+        <CurrentStudentCard
+          content={currentStudents.other.categories[0]}
+          items={[currentStudents.other.categories[0].items[5]]}
+          imageBackground={img14}
+        />
+      </div>
+    </div>
+
+    <!-- 3 Roll -->
+    <div class="flex flex-col gap-2 lg:flex-row">
+      <div class="w-full lg:w-1/3">
+        <CurrentStudentCard
+          content={currentStudents.other.categories[0]}
+          items={[currentStudents.other.categories[0].items[6]]}
+          imageBackground={img15}
+        />
+      </div>
+
+      <div class="w-full lg:w-1/3">
+        <CurrentStudentCard
+          content={currentStudents.other.categories[0]}
+          items={[currentStudents.other.categories[0].items[7]]}
+          imageBackground={img16}
+        />
+      </div>
+
+      <div class="w-full lg:w-1/3">
+        <CurrentStudentCard
+          content={currentStudents.other.categories[0]}
+          items={[currentStudents.other.categories[0].items[8]]}
+          imageBackground={img17}
+        />
+      </div>
+    </div>
+
+    <!-- 2 Roll -->
+    <div class="flex flex-col gap-2 lg:flex-row">
+      <div class="w-full lg:w-1/3">
+        <CurrentStudentCard
+          content={currentStudents.other.categories[0]}
+          items={[currentStudents.other.categories[0].items[9]]}
+          imageBackground={img18}
+        />
+      </div>
+
+      <div class="w-full lg:w-2/3">
+        <CurrentStudentCard
+          content={currentStudents.other.categories[0]}
+          items={[currentStudents.other.categories[0].items[10]]}
+          imageBackground={img19}
+        />
+      </div>
+    </div>
+  </div>
+</section>

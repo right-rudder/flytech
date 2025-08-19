@@ -11,17 +11,16 @@ const aproxPilotTrainingCosts = {
     //top header
     header: {
       stars: true,
-      imagePath:
-        "/src/assets/stock-randy-dautzenberg-UgVWw4BjH7g-unsplash.webp",
+      imagePath: "/src/assets/IMG_2879.webp",
       imageAlt:
-        "FlyTech Flight School airplane landing at Falcon Field Airport in Saint Joseph, Missouri",
+        "FlyTech Flight School airplane landing at Rosecrans Memorial Airport in Saint Joseph, Missouri",
       headerH1: `Approximate<br>Training Costs`,
       paragraph:
         "The cost of flight training varies greatly depending on a number of factors such as type of training, the student's aptitude and experience level, and the type of aircraft used. Affordable options for pilot training are available at FlyTech Flight School.",
       buttons: [
         {
           name: "Enroll Now",
-          link: "/enroll-at-FlyTech",
+          link: "/#enroll",
           primary: false,
         },
       ],

@@ -1,0 +1,23 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeaderSmall from "../components/HeaderSmall.astro";
+import ProgramSwiper from "../components/ProgramSwiper.astro";
+import programsSwiper from "../data/flight-training/programSwiper.js";
+import currentStudents from "../data/pages/current-students";
+import CurrentStudentGrid from "../components/Cards/CurrentStudentGrid.astro";
+import CurrentStudentCards from "../components/Cards/CurrentStudentCards.astro";
+---
+
+<BaseLayout
+  siteTitle={currentStudents.pageTitle}
+  siteDescription={currentStudents.pageDescription}
+  keywords={currentStudents.pageKeywords}
+>
+  <!-- HEADER -->
+  <HeaderSmall content={currentStudents.header} />
+  <CurrentStudentGrid />
+  <CurrentStudentCards />
+  <ProgramSwiper content={programsSwiper} />
+
+  <script src="../scripts/creativeSwiper.js"></script>
+</BaseLayout>

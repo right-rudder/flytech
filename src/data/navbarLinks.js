@@ -9,7 +9,7 @@ export const navbarLinks = [
       },
       {
         name: "Discovery Flight",
-        link: "#",
+        link: "/discovery-flight",
       },
     ],
   },
@@ -29,10 +29,6 @@ export const navbarLinks = [
         name: "Instrument Rating",
         link: "/flight-training/instrument-rating",
       },
-      // {
-      //   name: "Multi-Engine Rating",
-      //   link: "/flight-training/multi-engine-rating",
-      // },
       {
         name: "Certified Flight Instructor",
         link: "/flight-training/certified-flight-instructor",
@@ -45,27 +41,23 @@ export const navbarLinks = [
         name: "Sports Pilot Certificate",
         link: "/flight-training/sports-pilot-certificate",
       },
-      // {
-      //   name: "Multi-Engine Instructor",
-      //   link: "/flight-training/commercial-pilot",
-      // },
     ],
   },
   {
-    name: "Current Students",
-    link: "#",
+    name: "Students",
+    link: "/current-students",
     submenu: [
       {
         name: "Four Forces",
-        link: "#",
+        link: "https://flyfourforces.com/login",
       },
       {
         name: "Ground School",
-        link: "#",
+        link: "https://groundschool.com",
       },
       {
         name: "Student Resources",
-        link: "#",
+        link: "/current-students#student-resources",
       },
     ],
   },
@@ -83,7 +75,7 @@ export const navbarLinks = [
       },
       {
         name: "Our Fleet",
-        link: "#",
+        link: "/about/fleet",
       },
       {
         name: "FAQ",
@@ -91,19 +83,19 @@ export const navbarLinks = [
       },
       {
         name: "Financing",
-        link: "#",
+        link: "/about/financing",
       },
       {
         name: "Housing",
-        link: "#",
+        link: "/about/housing",
       },
       {
         name: "Store",
-        link: "#",
+        link: "https://flytech.myspreadshop.com",
       },
       {
-        name: "Join Us",
-        link: "#",
+        name: "Contact Us",
+        link: "/contact",
       },
       {
         name: "Blog",
@@ -113,7 +105,7 @@ export const navbarLinks = [
   },
   {
     name: "Enroll Now",
-    link: "#",
+    link: "#enroll",
     submenu: [],
   },
 ];

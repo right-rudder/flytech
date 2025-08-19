@@ -10,14 +10,14 @@ const privatePilotData = {
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/stock-randy-dautzenberg-UgVWw4BjH7g-unsplash.webp",
+    imagePath: "/src/assets/cockpit-flying-slinger.webp",
     imageAlt: "A FlyTech Flight School aircraft in flight over Missouri",
     headerH1: `Private <strong class="text-primary-600">Pilot Certificate</strong>`,
     paragraph: `Take the first step toward the skies with FlyTech’s Private Pilot Certificate. Train with experienced instructors and gain the flight hours and skills needed to fly confidently and safely.`,
     buttons: [
       {
         name: "Enroll Today",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
         primary: true,
       },
     ],
@@ -109,7 +109,7 @@ const privatePilotData = {
         "Join FlyTech and earn your Private Pilot Certificate through expert-led training and real-world flight experience. Your journey to the skies starts here.",
       button: {
         name: "Enroll Now",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
       },
     },
 

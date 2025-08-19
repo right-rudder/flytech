@@ -10,7 +10,7 @@ const teamData = {
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/stock-pierre-goiffon-t56w7xguZWA-unsplash.webp",
+    imagePath: "/src/assets/pilot-checking-plane-engine.webp",
     imageAlt:
       "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
     headerH1: `Meet our <strong class="text-primary-600">TEAM</strong>`,
@@ -18,7 +18,7 @@ const teamData = {
     buttons: [
       {
         name: "Enroll Today",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
         primary: true,
       },
       {
@@ -106,7 +106,7 @@ const teamData = {
         "Start your journey as a Certified Flight Instructor at FlyTech Flight School and gain the experience needed for a successful aviation career.",
       button: {
         name: "Enroll Now",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
       },
     },
 

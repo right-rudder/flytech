@@ -10,16 +10,16 @@ const pilotTraining = {
     //top header
     header: {
       stars: true,
-      imagePath: "/src/assets/stock-pierre-goiffon-t56w7xguZWA-unsplash.webp",
+      imagePath: "/src/assets/plane-slinger-ground-4.webp",
       imageAlt:
-        "FlyTech Flight School airplane landing at Falcon Field Airport in Saint Joseph, Missouri",
+        "FlyTech Flight School airplane landing at Rosecrans Memorial Airport in Saint Joseph, Missouri",
       headerH1: `Pilot Training<br>Programs`,
       paragraph:
         "FlyTech makes becoming a pilot simple. Offering pathways to the airlines, we will take you from square one to being a commercial pilot. Our programs are designed to be efficient and easy to understand.",
       buttons: [
         {
           name: "Enroll Now",
-          link: "/enroll-at-FlyTech",
+          link: "/#enroll",
           primary: true,
         },
       ],

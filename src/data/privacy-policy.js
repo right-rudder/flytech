@@ -2,8 +2,16 @@ import { COMPANY_NAME, WEBSITE_URL, EMAIL_ADDRESS } from "../consts";
 
 const privacyPolicies = {
   data: {
+    header: {
+      stars: true,
+      imagePath: "/src/assets/plane-orange-ground-usa-flag.webp",
+      imageAlt: "FlyTech Flight School campus and facilities",
+      headerH1: `Privacy Policy of<br /> ${COMPANY_NAME}`,
+      paragraph: ``,
+      buttons: [],
+    },
     heading: `Privacy Policy of<br /> ${COMPANY_NAME}`,
-    subheading: `Last updated: 04/10/2025`,
+    subheading: `Last updated: 08/20/2025`,
     content: [
       {
         heading: "Introduction",

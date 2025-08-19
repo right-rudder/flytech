@@ -2,10 +2,21 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import programsSwiper from "../data/flight-training/programSwiper";
 import enrollInfo from "../data/enroll-info";
+import contactPage from "../data/contactPage";
 import ProgramSwiper from "../components/ProgramSwiper.astro";
-import ContactForm from "../components/ContactForm.astro";
+import ContactComponent from "../components/Forms/Contact.astro";
+import CTAVideoWhite from "../components/CTAVideoWhite.astro";
+import HeaderSmall from "../components/HeaderSmall.astro";
+import videoList from "../data/videos.js";
 
-const { data } = enrollInfo;
+const randomVideo = videoList[Math.floor(Math.random() * videoList.length)];
+const dataForVideo = {
+  headerH1: `<span class="text-primary-600 uppercase text-lg lg:text-2xl lg:max-w-3xl font-sans text-center font-bold tracking-tight">Fly with the team that’s</br></span>revolutionizing pilot training`,
+  paragraph:
+    "At FlyTech Pilot Academy, we combine modern aircraft, immersive technology, and a passionate team of instructors to give you an efficient, professional, and enjoyable path to the cockpit. Whether you're starting fresh or advancing your career, we make it simple.",
+  buttons: [],
+};
+const { data } = contactPage;
 ---
 
 <BaseLayout
@@ -13,9 +24,9 @@ const { data } = enrollInfo;
   siteDescription={data.pageDescription}
   keywords={data.pageKeywords}
 >
-  <div class="h-24 lg:h-28 w-full bg-primary-300"></div>
-
-  <ContactForm />
+  <HeaderSmall content={data.header} />
+  <!-- <CTAVideoWhite video={randomVideo} data={dataForVideo} /> -->
+  <ContactComponent />
   <ProgramSwiper content={programsSwiper} />
   <script src="../scripts/creativeSwiper.js"></script>
 </BaseLayout>

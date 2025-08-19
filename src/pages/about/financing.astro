@@ -1,0 +1,171 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProgramSwiper from "../../components/ProgramSwiper.astro";
+import CTAColor from "../../components/CTAColor.astro";
+import programsSwiper from "../../data/flight-training/programSwiper.js";
+import flyWithUsCTA from "../../data/fly-with-us-cta";
+import ImageComp from "../../components/ImageComp.astro";
+import HeaderSmall from "../../components/HeaderSmall.astro";
+import CTAVideo from "../../components/CTAVideo.astro";
+import CTAVideoWhite from "../../components/CTAVideoWhite.astro";
+import videoList from "../../data/videos.js";
+import FinancingComponent from "../../components/Financing.astro";
+
+const data = {
+  pageTitle: "Financing | FlyTech Flight School, Saint Joseph, MO",
+  pageDescription:
+    "FlyTech Flight School  offers flight training in Saint Joseph, MO. We offer private pilot training, instrument rating training, commercial pilot training, and more. Contact us today!",
+  pageKeywords:
+    "flight training, flight school, pilot training, private pilot training, instrument rating training, commercial pilot training, Saint Joseph, MO",
+  header: {
+    imagePath: "/src/assets/IMG_2889.webp",
+    imageAlt: "FlyTech Flight School Team at the runway",
+    headerH1: `Pilot Training <strong class="text-primary-600">Financing</strong>`,
+    paragraph:
+      "We are committed to helping you achieve your aviation dreams, which is why we have partnered with reputable financing companies to offer you convenient options tailored to your needs.",
+    buttons: [
+      {
+        name: "Start Your Journey",
+        link: "/#enroll",
+        primary: true,
+      },
+      {
+        name: "Book a Discovery Flight",
+        link: "/discovery-flight",
+        primary: true,
+      },
+    ],
+  },
+  financing: {
+    upperheading: "Unlock Your Future in Aviation",
+    title: "Flexible Financing for Aspiring Pilots",
+    description:
+      "Stratus Financial was founded by FAA Certificated Flight and Ground Instructors passionate about helping others achieve their aviation dreams.  We know it’s not just about achieving your dreams (because we looked up in the sky every time, we heard an airplane too!), but funding your family’s dreams as well.  That’s why Stratus was created, because with Stratus, the sky is no longer the limit.",
+    imagePath: "",
+    imageAlt: "",
+    descriptions: {
+      upperHeading: "Stratus Financial",
+      title: "Your Aviation Dreams Start Here",
+      description:
+        "We look forward to helping you achieving your aviation dreams and seeing you in the sky!",
+    },
+    details: [
+      {
+        title: "You’re not just a number, and it shows with Stratus. ",
+        description:
+          "We look beyond the typical FICO scores and look at you as a whole aviator.  We want to set you up for success before you even apply with us!",
+        subtitle: "The best rate you’ll get!",
+        underheading: "Anywhere to go from zero to hero!",
+      },
+      {
+        title: "Flexible Financing Options",
+        description:
+          "Stratus Financial was founded by FAA Certificated Flight and Ground Instructors passionate about helping others achieve their aviation dreams. We know it's not just about achieving your dreams (because welooked up in the sky every time, we heard an airplane too!), but funding        your family's dreams as well. That's why Stratus was created, because with Stratus, the sky is no longer the limit.",
+        subtitle: "Full financing for your entire flight training and more",
+      },
+      {
+        title: "Tailored Solutions for Your Aviation Journey",
+        description:
+          "Stratus Financial specializes in offering comprehensive loan programs designed specifically for flight training and aircraft financing. With Stratus Financial, you can benefit from financing options that align with the unique requirements of pursuing a career in aviation.",
+        subtitle: "Affordable payment options",
+        underheading:
+          "including deferment for 12 months while you complete your training and find a job",
+      },
+      {
+        title: "Empowering Your Aviation Dreams",
+        description:
+          "Stratus Financial helps pilots acheive their dreams and fills the constant pilot demand through student pilots' access to instructional funding, including flight school loans, and fast traction built by flight schools.",
+        subtitle: "Pay your loan off any time",
+        underheading: "with no consequences or penalties whatsoever",
+      },
+      // {
+      //   title: "Free Informational Booklet",
+      //   description:
+      //     "We've prepared a free informational booklet to help you understand how financing with Stratus Financial works. Click below to find out more and download the booklet.",
+      // },
+    ],
+    buttons: [
+      {
+        name: "Check out Stratus",
+        link: "https://stratus.finance",
+        primary: true,
+      },
+      // {
+      //   name: "Download Stratus Booklet",
+      //   link: "",
+      //   primary: true,
+      // },
+    ],
+  },
+};
+
+// Video related logic
+const currentVideo =
+  videoList.find(
+    (v: { description: string }) =>
+      v.description?.trim().toLowerCase() === "about flytech pilot academy",
+  ) || null;
+const dataForVideo = {
+  headerH1:
+    "How we can help you <br> <strong class='text-primary-600'> fund your training</strong>",
+  paragraph:
+    "We understand that financing your flight training can be a significant concern. That’s why we’ve partnered with Stratus Financial, Flight Training Finance, and AOPA to provide you with tailored financing solutions that make your dream of becoming a pilot more accessible than ever.",
+};
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <HeaderSmall content={data.header} />
+
+  <CTAVideo video={currentVideo} data={dataForVideo} />
+
+  <!-- <section class="py-24 bg-primary-50">
+    <div class="">
+      <h2 class="text-xl font-semibold italic text-center mx-auto">
+        FlyTech has partnered with the following companies to help our students
+        fund their pilot training
+      </h2>
+    </div>
+    <div class="flex flex-wrap justify-center items-center gap-10 mt-10">
+      <a href="/stratus-finance" class="w-full md:w-1/5">
+        <ImageComp
+          imagePath="/src/assets/stratus_logo.webp"
+          imageAlt="Stratus Finance logo"
+          styles="object-contain max-h-16 w-full px-4"
+        />
+      </a>
+      <a
+        href="https://www.flighttrainingfinancellc.com"
+        target="_blank"
+        class="w-full md:w-1/5"
+      >
+        <ImageComp
+          imagePath="/src/assets/flight-training-finance.webp"
+          imageAlt="Flight Training Finance logo"
+          styles="object-contain max-h-16 w-full px-4"
+        />
+      </a>
+      <a
+        href="https://finance.aopa.org"
+        target="_blank"
+        class="w-full md:w-1/5"
+      >
+        <ImageComp
+          imagePath="/src/assets/aopa.webp"
+          imageAlt="AOPA Finance logo"
+          styles="object-contain max-h-16 w-full px-4"
+        />
+      </a>
+    </div>
+  </section> -->
+
+  <FinancingComponent content={data.financing} />
+
+  <ProgramSwiper content={programsSwiper} />
+  <CTAColor content={flyWithUsCTA} />
+  <script src="../../scripts/creativeSwiper.js"></script>
+</BaseLayout>

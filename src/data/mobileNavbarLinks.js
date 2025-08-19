@@ -3,69 +3,66 @@ export const mobileNavbarLinks = [
     name: "New to Flying?",
     submenu: [
       {
-        name: "Pilot Training Made Simple",
-        link: "#",
+        name: "Why become a pilot?",
+        link: "/why-become-a-pilot",
       },
       {
         name: "Discovery Flight",
-        link: "#",
+        link: "/discovery-flight",
       },
-      // {
-      //   name: "Enroll at FlyTech",
-      //   link: "/enroll-at-FlyTech",
-      // },
-      // {
-      //   name: "Pilot Training",
-      //   link: "/pilot-training",
-      // },
-      // {
-      //   name: "Begin Pilot Career",
-      //   link: "/begin-pilot-career",
-      // },
-      // {
-      //   name: "Timeline",
-      //   link: "/timeline-to-be-a-pilot",
-      // },
-      // {
-      //   name: "Cost",
-      //   link: "/approximate-pilot-training-costs",
-      // },
     ],
   },
   {
     name: "Flight Training",
     submenu: [
       {
-        name: "All Programs",
-        link: "#",
+        name: "Flight Training",
+        link: "/flight-training",
       },
       {
         name: "Private Pilot",
-        link: "#",
-      },
-      {
-        name: "Instrument Rating",
-        link: "#",
+        link: "/flight-training/private-pilot",
       },
       {
         name: "Commercial Pilot",
-        link: "#",
+        link: "/flight-training/commercial-pilot",
       },
-      // {
-      //   name: "Multi-Engine Rating",
-      //   link: "/flight-training/multi-engine-rating",
-      // },
+      {
+        name: "Instrument Rating",
+        link: "/flight-training/instrument-rating",
+      },
       {
         name: "Certified Flight Instructor",
-        link: "#",
+        link: "/flight-training/certified-flight-instructor",
       },
       {
         name: "CFI - Instruments",
-        link: "#",
+        link: "/flight-training/certified-flight-instructor-instruments",
       },
       {
-        name: "Multi-Engine Instructor",
-        link: "#",
+        name: "Sports Pilot Certificate",
+        link: "/flight-training/sports-pilot-certificate",
+      },
+    ],
+  },
+  {
+    name: "Students",
+    submenu: [
+      {
+        name: "Students",
+        link: "/current-students",
+      },
+      {
+        name: "Four Forces",
+        link: "https://flyfourforces.com/login",
+      },
+      {
+        name: "Ground School",
+        link: "https://groundschool.com",
+      },
+      {
+        name: "Student Resources",
+        link: "/current-students#student-resources",
       },
     ],
   },
@@ -73,38 +70,46 @@ export const mobileNavbarLinks = [
     name: "About",
     submenu: [
       {
-        name: "Why FlyTech",
-        link: "#",
+        name: "About",
+        link: "/about",
       },
       {
         name: "Our Team",
-        link: "#",
+        link: "/about/team",
+      },
+      {
+        name: "Our Fleet",
+        link: "/about/fleet",
+      },
+      {
+        name: "FAQ",
+        link: "/about/faq",
       },
       {
         name: "Financing",
-        link: "#",
+        link: "/about/financing",
       },
       {
-        name: "Visit Us",
-        link: "#",
+        name: "Housing",
+        link: "/about/housing",
       },
       {
-        name: "Join Us",
-        link: "#",
+        name: "Store",
+        link: "https://flytech.myspreadshop.com",
+      },
+      {
+        name: "Contact Us",
+        link: "/contact",
       },
       {
         name: "Blog",
-        link: "#",
-      },
-      {
-        name: "Contact",
-        link: "#",
+        link: "/blog",
       },
     ],
   },
   {
-    name: "Start Today",
-    link: "#",
+    name: "Enroll Now",
+    link: "#enroll",
     submenu: [],
   },
 ];

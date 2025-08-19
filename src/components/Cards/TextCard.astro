@@ -1,0 +1,32 @@
+---
+import {
+  COMPANY_NICKNAME,
+  LOCATIONS,
+  PHONE_NUMBER,
+  EMAIL_ADDRESS,
+} from "../../consts";
+
+const upperheading = "Enroll now";
+const title = `Reach out at <span class="text-primary-500">${COMPANY_NICKNAME}</span>`;
+const description = "Let's Get You In The Air";
+
+const { content } = Astro.props;
+---
+
+<div class="w-full h-full flex flex-col items-center justify-center">
+  <div class="w-full py-2">
+    <p
+      class="text-lg font-bold text-primary-500 uppercase tracking-wide mb-4 text-center lg:text-right"
+    >
+      {content.upperheading}
+    </p>
+    <h2
+      class="text-3xl lg:text-5xl font-bold text-neural-900 mb-4 text-center lg:text-right"
+    >
+      <Fragment set:html={content.title || title} />
+    </h2>
+    <p class="text-lg text-neutral-800 mb-6 text-center lg:text-right">
+      {content.description || description}
+    </p>
+  </div>
+</div>

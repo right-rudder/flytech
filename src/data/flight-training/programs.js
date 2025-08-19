@@ -14,7 +14,7 @@ const programs = {
     },
     {
       title: "Instrument Rating",
-      imagePath: "/src/assets/stock-kamil-pietrzak-w9KTlrW7rOU-unsplash.webp",
+      imagePath: "/src/assets/cockpit-instruments.webp",
       imageAlt: "Close-up of FlyTech aircraft instruments",
       description:
         "Enhance your skills to navigate through low-visibility conditions confidently with our Instrument Rating course.",
@@ -29,18 +29,8 @@ const programs = {
       link: "/flight-training/commercial-pilot",
     },
     {
-      title: "Multi-Engine Rating",
-      imagePath: "/src/assets/stock-yves-scheuber-Hn2t_74pp3Q-unsplash.webp",
-      imageAlt:
-        "FlyTech's multi-engine aircraft on the runway viewed from the front",
-      description:
-        "Expand your capabilities with our Multi-Engine Rating course, designed to elevate your aviation skills.",
-      link: "/flight-training/multi-engine-rating",
-    },
-    {
       title: "Certified Flight Instructor (CFI)",
-      imagePath:
-        "/src/assets/stock-marko-pavlichenko-Zy7hXqw2he8-unsplash.webp",
+      imagePath: "/src/assets/cockpit-flying-sunset.webp",
       imageAlt: "FlyTech instructor checking aircraft instruments",
       description:
         "Share your passion for flying and inspire the next generation by becoming a Certified Flight Instructor through our accelerated 30-day CFI program.",

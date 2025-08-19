@@ -8,7 +8,7 @@ import {
 const terms = {
   data: {
     heading: `Terms of Service of<br /> ${COMPANY_NAME}`,
-    subheading: `Last updated: 04/10/2025`,
+    subheading: `Last updated: 08/20/2025`,
     content: [
       {
         heading: "Terms",

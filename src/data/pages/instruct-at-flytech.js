@@ -13,7 +13,7 @@ const instructAtFlyTech = {
       stars: true,
       imagePath: "/src/assets/stock-max-nustedt-_uwWKY22_HA-unsplash.webp",
       imageAlt:
-        "FlyTech Flight School airplane landing at Falcon Field Airport in Saint Joseph, Missouri",
+        "FlyTech Flight School airplane landing at Rosecrans Memorial Airport in Saint Joseph, Missouri",
       headerH1: `Career Track<br>Pilots`,
       paragraph:
         "Start your pilot career after getting your commercial certificate. Start flying now and build the necessary hours to become an airline pilot. One way FlyTech can help is by becoming a certified flight instructor (CFI).",

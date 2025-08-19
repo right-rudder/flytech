@@ -11,16 +11,16 @@ const timelineToBePilot = {
     //top header
     header: {
       stars: true,
-      imagePath: "/src/assets/stock-tadeu-jnr-kAzSa_azENM-unsplash.webp",
+      imagePath: "/src/assets/planes-orange-yellow-ground.webp",
       imageAlt:
-        "FlyTech Flight School airplane landing at Falcon Field Airport in Saint Joseph, Missouri",
+        "FlyTech Flight School airplane landing at Rosecrans Memorial Airport in Saint Joseph, Missouri",
       headerH1: `Pilot Training<br>Timeline`,
       paragraph:
         "Start your pilot career after getting your commercial certificate. Start flying now and build the necessary hours to become an airline pilot. One way FlyTech can help is by becoming a certified flight instructor (CFI).",
       buttons: [
         {
           name: "Enroll Now",
-          link: "/enroll-at-FlyTech",
+          link: "/#enroll",
           primary: true,
         },
       ],
@@ -51,7 +51,7 @@ const timelineToBePilot = {
       ],
       finalButton: {
         name: "Enroll Now",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
         primary: true,
       },
       imagePath: "/src/assets/stock-adrien-brun-L87clzV761M-unsplash.webp",

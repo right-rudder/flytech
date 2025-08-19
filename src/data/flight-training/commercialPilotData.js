@@ -10,7 +10,7 @@ const commercialPilotData = {
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/stock-pierre-goiffon-t56w7xguZWA-unsplash.webp",
+    imagePath: "/src/assets/simulator-with-student.webp",
     imageAlt:
       "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
     headerH1: `Fly high with a <br> <strong class="text-primary-600" >Commercial PILOT Certificate</strong>`,
@@ -18,7 +18,7 @@ const commercialPilotData = {
     buttons: [
       {
         name: "Enroll Today",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
         primary: false,
       },
     ],
@@ -55,7 +55,7 @@ const commercialPilotData = {
         "Take the next step in your aviation career. Join FlyTech Flight School's Commercial Pilot program and train to become a professional pilot.",
       button: {
         name: "Enroll Now",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
       },
     },
 

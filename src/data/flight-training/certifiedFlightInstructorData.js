@@ -10,7 +10,7 @@ const certifiedFlightInstructorData = {
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/stock-ben-bracken-XeVFehBtCXo-unsplash.webp",
+    imagePath: "/src/assets/students-in-front-of-slinger-2.webp",
     imageAlt:
       "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
     headerH1: `Certified Flight <strong class="text-primary-600" >INSTRUCTOR (CFI)</strong>`,
@@ -18,7 +18,7 @@ const certifiedFlightInstructorData = {
     buttons: [
       {
         name: "Enroll Today",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
         primary: false,
       },
     ],
@@ -64,15 +64,14 @@ const certifiedFlightInstructorData = {
     ],
 
     cta: {
-      imagePath:
-        "/src/assets/stock-steward-masweneng-n9By7oBszM0-unsplash.webp",
+      imagePath: "/src/assets/student-holding-signed-shirt-2.webp",
       imageAlt: "Female pilot smiling",
       title: "Enroll in the CFI Program",
       description:
         "Start your journey as a Certified Flight Instructor at FlyTech Flight School and gain the experience needed for a successful aviation career.",
       button: {
         name: "Enroll Now",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
       },
     },
 

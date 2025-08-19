@@ -83,9 +83,9 @@ const Navbar = ({ pathname }) => {
           navBar || openMobile
             ? "bg-primary-600/95 shadow-md"
             : "bg-transparent"
-        } lg:px-10 duration-500`}
+        }duration-500`}
       >
-        <div className="px-4 lg:px-12 mx-auto top-0">
+        <div className="px-4 lg:px-8 top-0">
           <div
             className={`${navBar || openMobile ? "lg:h-24" : "lg:h-20"} relative flex h-20 align-middle justify-between transition-all`}
             id="navbar"
@@ -120,7 +120,7 @@ const Navbar = ({ pathname }) => {
                         <a
                           href={item.link}
                           target={`${item.link.includes("http") ? "_blank" : "_self"}`}
-                          className="font-bold lg:text-xl group-last:text-white group-last:hover:text-primary-700 duration-300 hover:underline drop-shadow-sm decoration-primary-500 decoration-4 underline-offset-[10px] py-12 whitespace-nowrap group-last:font-bold group-last:bg-primary-600 group-last:ring-2 group-last:ring-white group-last:py-2 group-last:px-5 group-last:hover:bg-white group-last:hover:no-underline"
+                          className="font-bold  sm:text-lg xl:text-xl group-last:text-white group-last:hover:text-primary-700 duration-300 hover:underline drop-shadow-sm decoration-primary-500 decoration-4 underline-offset-[10px] py-12 whitespace-nowrap group-last:font-bold group-last:bg-primary-600 group-last:ring-2 group-last:ring-white group-last:py-2 group-last:px-5 group-last:hover:bg-white group-last:hover:no-underline"
                         >
                           <span className="relative  w-full h-full ">
                             {item.name}
@@ -192,7 +192,7 @@ const Navbar = ({ pathname }) => {
             <div className="absolute inset-y-0 right-0 flex items-center lg:hidden">
               <button
                 type="button"
-                className="mobile-menu-button relative inline-flex items-center justify-center rounded-md p-2"
+                className="mobile-menu-button relative inline-flex items-center justify-center  p-2"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
                 aria-label="Open main menu"
@@ -304,7 +304,7 @@ const Navbar = ({ pathname }) => {
                 <div className="font-medium relative p-5 w-full justify-center flex cursor-pointer text-xl duration-300  border-sky whitespace-nowrap">
                   <p>{item.name}</p>
                   <div
-                    className={`absolute right-3 p-2 pointer-events-none duration-500 ease-in-out rounded-full ${hoveredIndex === index ? "bg-primary-100/30 -rotate-90" : "bg-primary-100/20 rotate-90"} 
+                    className={`absolute right-3 p-2 pointer-events-none duration-500 ease-in-out  ${hoveredIndex === index ? "bg-primary-100/30 -rotate-90" : "bg-primary-100/20 rotate-90"} 
                     `}
                   >
                     <IoIosArrowForward
@@ -335,7 +335,7 @@ const Navbar = ({ pathname }) => {
                         <div className="font-normal p-5 w-full justify-between flex cursor-pointer text-lg duration-300 border-sky whitespace-nowrap">
                           <p>{subitem.name}</p>
                           <div
-                            className={`p-1 pointer-events-none duration-300 rounded-full ${subHoveredIndex === subIndex ? "bg-white rotate-90" : "bg-sky -rotate-90"} 
+                            className={`p-1 pointer-events-none duration-300  ${subHoveredIndex === subIndex ? "bg-white rotate-90" : "bg-sky -rotate-90"} 
                     `}
                           >
                             <IoIosArrowForward
@@ -374,7 +374,7 @@ const Navbar = ({ pathname }) => {
           <div className="flex gap-3 items-center">
             <a
               href={`tel:${PHONE_NUMBER}`}
-              className="p-2 w-fit rounded-full bg-primary-600"
+              className="p-2 w-fit  bg-primary-600"
               aria-label="Call"
             >
               <FaPhone className="size-4 text-white" />

@@ -38,7 +38,7 @@ import groundSchoolSessions from "../data/sessions";
           ${list
             .map(
               (session) => `
-            <div class="border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition duration-200 ${isPast ? "opacity-70" : ""}">
+            <div class="border border-gray-200  p-6 shadow-sm hover:shadow-md transition duration-200 ${isPast ? "opacity-70" : ""}">
               <h3 class="text-xl ${isTBD ? "font-bold text-primary-800" : isPast ? "font-semibold text-gray-600" : "font-semibold text-primary-800"} mb-1">
                 ${isTBD ? session.topics.join(" + ") : session.date}
               </h3>
@@ -54,7 +54,7 @@ import groundSchoolSessions from "../data/sessions";
                   : `
               <p class="text-gray-600 text-sm mb-4">Time: <span class="font-semibold">TBD</span></p>`
               }
-              <span class="inline-block px-3 py-1 text-sm rounded-full ${isPast ? "bg-gray-100 text-gray-600" : isTBD ? "bg-yellow-100 text-yellow-800" : "bg-green-100 text-green-800"}">
+              <span class="inline-block px-3 py-1 text-sm  ${isPast ? "bg-gray-100 text-gray-600" : isTBD ? "bg-yellow-100 text-yellow-800" : "bg-green-100 text-green-800"}">
                 ${session.status}
               </span>
               ${

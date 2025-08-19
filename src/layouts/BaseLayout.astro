@@ -8,8 +8,9 @@ import Navbar from "../components/Navbar";
 import SocialMediaSchema from "../components/SocialMediaSchema.astro";
 const { pathname } = Astro.url;
 const { siteTitle, siteDescription, keywords } = Astro.props;
-import ChatWidget from "../components/ChatWidget.astro";
+// import ChatWidget from "../components/ChatWidget.astro";
 import Banner from "../components/Banner.astro";
+import Enroll from "../components/Forms/Enroll.astro";
 ---
 
 <!doctype html>
@@ -39,6 +40,7 @@ import Banner from "../components/Banner.astro";
     <main>
       <slot />
     </main>
+    <Enroll />
     <Footer />
     <!-- <ChatWidget /> -->
     <!-- <SocialMediaSchema title={siteTitle} description={siteDescription} /> -->
