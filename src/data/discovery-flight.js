@@ -1,3 +1,5 @@
+import PageSummary from "../components/PageSummary.astro";
+
 const discoveryFlight = {
   data: {
     //SEO Header Stuff
@@ -18,6 +20,21 @@ const discoveryFlight = {
       paragraph:
         "Fly at FlyTech and See if Flying is for You! Book a Discovery Flight Today!",
       buttons: [],
+    },
+
+    pageSummary: {
+      title: "Why Choose FlyTech?",
+      paragraphs: [
+        "FlyTech is built by pilots for pilots. We combine cutting-edge training aircraft, real-world airspace exposure, and a mission-driven team to make flight training safer, faster, and more effective.",
+        "From your first takeoff to advanced maneuvers, you’ll benefit from a personalized learning experience, Garmin-integrated cockpit tools, and post-flight video debriefs that accelerate your growth. Whether flying for fun or pursuing a career, FlyTech is your launchpad.",
+      ],
+      buttons: [
+        // {
+        //   name: "Learn More",
+        //   link: "#info",
+        //   primary: true,
+        // },
+      ],
     },
     form: {
       upperHeading: "Book a Discovery Flight",

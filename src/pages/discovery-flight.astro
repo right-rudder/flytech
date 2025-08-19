@@ -13,6 +13,7 @@ const { data } = discoveryFlight;
 import ImageComp from "../components/ImageComp.astro";
 import { COMPANY_NAME, PHONE_NUMBER, EMAIL_ADDRESS } from "../consts";
 import FormDiscoveryFlight from "../components/Forms/FormDiscoveryFlight.astro";
+import PageSummary from "../components/PageSummary.astro";
 
 const breadcrumbs = [
   { name: "Home", url: "/" },
@@ -71,6 +72,7 @@ const discoveryFlightSchema = {
 >
   <!-- HEADER -->
   <HeaderSmall content={data.header} />
+  <PageSummary content={data.pageSummary} />
   <!-- BreadCrumps -->
   <!-- <div class="bg-gray-50 border-b border-gray-200 pt-20">
     <div class="max-w-7xl mx-auto px-6 py-4">
