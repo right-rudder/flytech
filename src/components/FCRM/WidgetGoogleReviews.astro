@@ -1,18 +1,31 @@
 ---
-
+import TextCardDark from "../Cards/TextCardDark.astro";
 ---
 
-<section class="bg-neutral-900 lg:min-h-[600px] px-20">
-  <script
-    type="text/javascript"
-    src="https://reputationhub.site/reputation/assets/review-widget.js"
-    async></script>
-  <iframe
-    class="lc_reviews_widget"
-    src="https://reputationhub.site/reputation/widgets/review_widget/3vFNi9MbXshlpgYHZ34h"
-    frameborder="0"
-    scrolling="no"
-    style="min-width: 100%; width: 100%;"
-  >
-  </iframe>
+<section class="bg-neutral-900 px-5 lg:px-20">
+  <div class="max-w-7xl mx-auto py-10">
+    <TextCardDark
+      content={{
+        upperheading: "What Our Students Say",
+        title: `Our Students <span class="text-primary-500"> Love Us</span>`,
+        description:
+          "At FlyTech Pilot Academy, we prioritize creating a supportive and safe learning environment where students thrive. Here’s what some of our students have to say about their training experiences.",
+      }}
+      textOrientation="center"
+    />
+  </div>
+  <div class="min-h-20 lg:min-h-[600px]">
+    <script
+      type="text/javascript"
+      src="https://reputationhub.site/reputation/assets/review-widget.js"
+      async></script>
+    <iframe
+      class="lc_reviews_widget"
+      src="https://reputationhub.site/reputation/widgets/review_widget/3vFNi9MbXshlpgYHZ34h"
+      frameborder="0"
+      scrolling="no"
+      style="min-width: 100%; width: 100%;"
+    >
+    </iframe>
+  </div>
 </section>
