@@ -45,4 +45,4 @@ export const LINKEDIN_URL =
 export const YOUTUBE_URL = null;
 export const TWITTER_URL = null;
 export const EMAIL_ADDRESS = "info@flystj.com";
-export const WEBSITE_URL = "https://FlyTechco.com/";
+export const WEBSITE_URL = "https://flystj.com";

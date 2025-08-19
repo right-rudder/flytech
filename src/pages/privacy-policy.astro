@@ -2,7 +2,7 @@
 import privacyPolicies from "../data/privacy-policy";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { COMPANY_NAME } from "../consts";
-
+import HeaderSmall from "../components/HeaderSmall.astro";
 const { data } = privacyPolicies;
 ---
 
@@ -10,7 +10,7 @@ const { data } = privacyPolicies;
   siteTitle=`Privacy Policy | ${COMPANY_NAME}`
   siteDescription=`Privacy Policy of ${COMPANY_NAME}`
 >
-  <div class="h-24 lg:h-32 w-full"></div>
+  <!-- <HeaderSmall content={data.header} /> -->
 
   <section class="pt-12 font-serif flex flex-col items-center bg-white">
     <h1
