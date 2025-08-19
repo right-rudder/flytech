@@ -94,61 +94,80 @@ const currentStudents = {
   },
 
   other: {
-    upperheading: "Essential ",
-    title: "Essential Training Materials",
+    upperheading: "Others Resources",
+    title: "Useful Documents",
     description:
-      "Download these essential documents to prepare for your training at FlyTech Pilot Academy. These resources will help you get started with your flight training and familiarize yourself",
+      "These documents are useful for all students at FlyTech Pilot Academy. Download them to access important information about your training and the aircraft you'll be flying.",
     categories: [
       {
         name: "Useful Documents",
         items: [
           {
             title: "Liability waiver",
+            description: "Please sign this waiver before your first flight.",
             link: "https://drive.google.com/file/d/1WdtvAY_NFuowfp1xK3s1my1kvFPR87nG/view",
             type: "PDF",
           },
           {
             title: "Private Pilot Certificate",
+            description:
+              "Everything you need to know about becoming a Private Pilot.",
             link: "students/Private-Pilot-Everything-You-Need-To-Know.pdf",
             type: "PDF",
           },
           {
             title: "Gold Seal Sign up",
+            description:
+              "Sign up for Gold Seal Online Ground School to access comprehensive training materials.",
             link: "students/Gold-Seal-Sign-Up.pdf",
             type: "PDF",
           },
           {
             title: "Media consent form",
+            description:
+              "Please sign this form to allow us to use your images and videos for promotional purposes.",
             link: "students/FlyTech-Media-Consent-Form.pdf",
             type: "PDF",
           },
           {
             title: "Private Pilot Syllabus",
+            description:
+              "Download the Private Pilot Syllabus to understand the training structure and requirements.",
             link: "students/Private-Pilot-Syllabus-Gold-Seal-Online-Ground-School.pdf",
             type: "PDF",
           },
           {
             title: "ForeFlight W&B File for N900FT",
+            description:
+              "Download the ForeFlight weight and balance file for the Sling NGT (N900FT).",
             link: "https://login.foreflight.com/login?next=https%3A%2F%2Fplan.foreflight.com%2Fwb%2Fshare%2Faccept%2Ff0a74aEkEhzk",
             type: "PDF",
           },
           {
             title: "Airman Certification Standards",
+            description:
+              "Download the FAA's Airman Certification Standards for Private Pilot.",
             link: "https://www.faa.gov/training_testing/testing/acs",
             type: "PDF",
           },
           {
             title: "Private Pilot Check-Ride Checklist",
+            description:
+              "Download the checklist to prepare for your Private Pilot check-ride.",
             link: "students/FlyTech-Private-Pilot-Check-ride-Checklist.pdf",
             type: "PDF",
           },
           {
             title: "VFR Syllabus Overview",
+            description:
+              "Download the VFR Syllabus to understand the training structure for Visual Flight Rules.",
             link: "students/VFR-Syllabus-V1.pdf",
             type: "PDF",
           },
           {
             title: "3 Parking and Access",
+            description:
+              "Download the parking and access information for FlyTech Pilot Academy.",
             link: "students/3-Parking-and-Access.pdf",
             type: "PDF",
           },
