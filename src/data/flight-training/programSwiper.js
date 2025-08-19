@@ -11,7 +11,7 @@ const programsSwiper = {
         "FlyTech Flight School student and flight instructor in a Cessna airplane",
       description:
         "Your passport to the skies! Learn to pilot your dreams with our Private Pilot Course.",
-      link: "#",
+      link: "/flight-training/private-pilot",
     },
     {
       title: "Instrument Rating",
@@ -19,7 +19,7 @@ const programsSwiper = {
       imageAlt: "FlyTech Flight School Cirrus airplane instrument panel",
       description:
         "Navigate through clouds and the skies with precision through our Instrument Rating course.",
-      link: "#",
+      link: "/flight-training/instrument-rating",
     },
     {
       title: "Commercial Pilot",
@@ -28,7 +28,7 @@ const programsSwiper = {
         "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
       description:
         "Start your pilot career with our Commercial Pilot Course. Your path to the captain's seat is here.",
-      link: "#",
+      link: "/flight-training/commercial-pilot",
     },
     {
       title: "Certified Flight Instructor",
@@ -37,7 +37,7 @@ const programsSwiper = {
         "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
       description:
         "Become a trusted guide in the world of aviation. Become a CFI and help others reach their dreams.",
-      link: "#",
+      link: "/flight-training/certified-flight-instructor",
     },
     {
       title: "Certified Flight Instructor Instruments",
@@ -46,7 +46,7 @@ const programsSwiper = {
         "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
       description:
         "Become a trusted guide in the world of aviation. Become a CFI and help others reach their dreams.",
-      link: "#",
+      link: "/flight-training/certified-flight-instructor-instruments",
     },
     {
       title: "Sport Pilot Certificate",
@@ -55,7 +55,7 @@ const programsSwiper = {
         "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
       description:
         "Created for people who desire to fly one or two seat aircraft that are smaller, lighter, and easier to fly. Limited to planes with lower take off weight (smaller, lighter aircraft) with no more than two seats. Require a minimum of 20 hours of flight training.",
-      link: "#",
+      link: "/flight-training/sports-pilot-certificate",
     },
   ],
 };

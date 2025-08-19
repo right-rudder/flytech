@@ -167,7 +167,7 @@ const homePage = {
       buttons: [
         {
           name: "Schedule Today",
-          link: "/#",
+          link: "/discovery-flight",
           primary: true,
         },
       ],
@@ -181,7 +181,7 @@ const homePage = {
         "Here’s what some of our students have to say about their training experiences.",
       ],
       buttonText: "Leave Us a Review",
-      buttonLink: "#",
+      buttonLink: "#enroll",
       reviews: [
         {
           title: "Tailored Training with a Personal Touch",

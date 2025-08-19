@@ -22,7 +22,7 @@ const visitData = {
       },
       {
         name: "Contact Us",
-        link: "#contact",
+        link: "/contact",
         primary: false,
       },
     ],

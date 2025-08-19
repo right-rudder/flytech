@@ -17,12 +17,7 @@ const groundSchoolData = {
     buttons: [
       {
         name: "Sign Up Now",
-        link: "#form",
-        primary: true,
-      },
-      {
-        name: "See Schedule",
-        link: "#schedule",
+        link: "#enroll",
         primary: true,
       },
       {
