@@ -38,7 +38,7 @@ const currentStudents = {
         items: [
           {
             title: "New Student Interview Guide",
-            link: "students/2-New-Student-Interview-Guide.pdf",
+            link: "/students/2-New-Student-Interview-Guide.pdf",
             type: "PDF",
           },
           {
@@ -59,22 +59,22 @@ const currentStudents = {
         items: [
           {
             title: "Airplane Manual",
-            link: "students/Pilot-Operating-Handbook-Rev-3.2.pdf",
+            link: "/students/Pilot-Operating-Handbook-Rev-3.2.pdf",
             type: "PDF",
           },
           {
             title: "Maneuvers Manual",
-            link: "students/Sling-LSA-Maneuver-Guide.pdf",
+            link: "/students/Sling-LSA-Maneuver-Guide.pdf",
             type: "PDF",
           },
           {
             title: "Sling 912iS Checklist",
-            link: "students/Updated-Sling-Checklist.pdf",
+            link: "/students/Updated-Sling-Checklist.pdf",
             type: "PDF",
           },
           {
             title: "Sling 2 and Sling LSA Maintenance",
-            link: "students/Sling-2-LSA-Maintenance-Manual-Rev-2.9.pdf",
+            link: "/students/Sling-2-LSA-Maintenance-Manual-Rev-2.9.pdf",
             type: "PDF",
           },
         ],
@@ -112,28 +112,28 @@ const currentStudents = {
             title: "Private Pilot Certificate",
             description:
               "Everything you need to know about becoming a Private Pilot.",
-            link: "students/Private-Pilot-Everything-You-Need-To-Know.pdf",
+            link: "/students/Private-Pilot-Everything-You-Need-To-Know.pdf",
             type: "PDF",
           },
           {
             title: "Gold Seal Sign up",
             description:
               "Sign up for Gold Seal Online Ground School to access comprehensive training materials.",
-            link: "students/Gold-Seal-Sign-Up.pdf",
+            link: "/students/Gold-Seal-Sign-Up.pdf",
             type: "PDF",
           },
           {
             title: "Media consent form",
             description:
               "Please sign this form to allow us to use your images and videos for promotional purposes.",
-            link: "students/FlyTech-Media-Consent-Form.pdf",
+            link: "/students/FlyTech-Media-Consent-Form.pdf",
             type: "PDF",
           },
           {
             title: "Private Pilot Syllabus",
             description:
               "Download the Private Pilot Syllabus to understand the training structure and requirements.",
-            link: "students/Private-Pilot-Syllabus-Gold-Seal-Online-Ground-School.pdf",
+            link: "/students/Private-Pilot-Syllabus-Gold-Seal-Online-Ground-School.pdf",
             type: "PDF",
           },
           {
@@ -154,21 +154,21 @@ const currentStudents = {
             title: "Private Pilot Check-Ride Checklist",
             description:
               "Download the checklist to prepare for your Private Pilot check-ride.",
-            link: "students/FlyTech-Private-Pilot-Check-ride-Checklist.pdf",
+            link: "/students/FlyTech-Private-Pilot-Check-ride-Checklist.pdf",
             type: "PDF",
           },
           {
             title: "VFR Syllabus Overview",
             description:
               "Download the VFR Syllabus to understand the training structure for Visual Flight Rules.",
-            link: "students/VFR-Syllabus-V1.pdf",
+            link: "/students/VFR-Syllabus-V1.pdf",
             type: "PDF",
           },
           {
             title: "3 Parking and Access",
             description:
               "Download the parking and access information for FlyTech Pilot Academy.",
-            link: "students/3-Parking-and-Access.pdf",
+            link: "/students/3-Parking-and-Access.pdf",
             type: "PDF",
           },
           {
