@@ -38,7 +38,7 @@ const currentStudents = {
         items: [
           {
             title: "New Student Interview Guide",
-            link: "https://flystj.com/wp-content/uploads/2025/03/2-New-Student-Interview-Guide.pdf",
+            link: "students/2-New-Student-Interview-Guide.pdf",
             type: "PDF",
           },
           {
@@ -59,17 +59,22 @@ const currentStudents = {
         items: [
           {
             title: "Airplane Manual",
-            link: "https://flystj.com/wp-content/uploads/2025/03/Pilot-Operating-Handbook-Rev-3.2.pdf",
+            link: "students/Pilot-Operating-Handbook-Rev-3.2.pdf",
             type: "PDF",
           },
           {
             title: "Maneuvers Manual",
-            link: "https://flystj.com/wp-content/uploads/2025/03/Sling-LSA-Maneuver-Guide.pdf",
+            link: "students/Sling-LSA-Maneuver-Guide.pdf",
             type: "PDF",
           },
           {
             title: "Sling 912iS Checklist",
-            link: "https://flystj.com/wp-content/uploads/2025/07/Updated-Sling-Checklist.pdf",
+            link: "students/Updated-Sling-Checklist.pdf",
+            type: "PDF",
+          },
+          {
+            title: "Sling 2 and Sling LSA Maintenance",
+            link: "students/Sling-2-LSA-Maintenance-Manual-Rev-2.9.pdf",
             type: "PDF",
           },
         ],
@@ -88,6 +93,76 @@ const currentStudents = {
     ],
   },
 
+  other: {
+    upperheading: "Essential ",
+    title: "Essential Training Materials",
+    description:
+      "Download these essential documents to prepare for your training at FlyTech Pilot Academy. These resources will help you get started with your flight training and familiarize yourself",
+    categories: [
+      {
+        name: "Useful Documents",
+        items: [
+          {
+            title: "Liability waiver",
+            link: "https://drive.google.com/file/d/1WdtvAY_NFuowfp1xK3s1my1kvFPR87nG/view",
+            type: "PDF",
+          },
+          {
+            title: "Private Pilot Certificate",
+            link: "students/Private-Pilot-Everything-You-Need-To-Know.pdf",
+            type: "PDF",
+          },
+          {
+            title: "Gold Seal Sign up",
+            link: "students/Gold-Seal-Sign-Up.pdf",
+            type: "PDF",
+          },
+          {
+            title: "Media consent form",
+            link: "students/FlyTech-Media-Consent-Form.pdf",
+            type: "PDF",
+          },
+          {
+            title: "Private Pilot Syllabus",
+            link: "students/Private-Pilot-Syllabus-Gold-Seal-Online-Ground-School.pdf",
+            type: "PDF",
+          },
+          {
+            title: "ForeFlight W&B File for N900FT",
+            link: "https://login.foreflight.com/login?next=https%3A%2F%2Fplan.foreflight.com%2Fwb%2Fshare%2Faccept%2Ff0a74aEkEhzk",
+            type: "PDF",
+          },
+          {
+            title: "Airman Certification Standards",
+            link: "https://www.faa.gov/training_testing/testing/acs",
+            type: "PDF",
+          },
+          {
+            title: "Private Pilot Check-Ride Checklist",
+            link: "students/FlyTech-Private-Pilot-Check-ride-Checklist.pdf",
+            type: "PDF",
+          },
+          {
+            title: "VFR Syllabus Overview",
+            link: "students/VFR-Syllabus-V1.pdf",
+            type: "PDF",
+          },
+          {
+            title: "3 Parking and Access",
+            link: "students/3-Parking-and-Access.pdf",
+            type: "PDF",
+          },
+          {
+            title: "Student renters insurance needed for solo cross-country",
+            description:
+              "Students are required to carry at least $250,000 / 25,000 in Bodily injury and property damage.  Additionally the Physical damage to Non-Owned aircraft minimum is $20,000. This will roughly cost you roughly $336 per year.",
+            link: "https://ap-aerospace.my.site.com/APAerospace/s/requestquote?c__step=Search",
+            type: "PDF",
+          },
+        ],
+      },
+    ],
+  },
   // Additional Sections
   medicalResources: {
     upperheading: "Medical",
@@ -144,7 +219,6 @@ const currentStudents = {
       },
       {
         name: "YouTube Channels",
-        description: "Subscribe to these channels for aviation content.",
         items: [
           {
             title: "Pilot Debrief",
@@ -157,6 +231,18 @@ const currentStudents = {
           {
             title: "Mentour Pilot",
             link: "https://youtube.com/@mentourpilot",
+          },
+          {
+            title: "Aero news network",
+            link: "https://www.youtube.com/@aerotvnetwork",
+          },
+          {
+            title: "Air safety institute",
+            link: "https://www.youtube.com/@airsafetyinstitute",
+          },
+          {
+            title: "74 Gear",
+            link: "https://www.youtube.com/@74gear",
           },
         ],
       },
