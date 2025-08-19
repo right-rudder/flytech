@@ -13,7 +13,7 @@ const pilotTrainingMadeSimple = {
       stars: true,
       imagePath: "/src/assets/N900FT.webp",
       imageAlt:
-        "FlyTech Flight School airplane landing at Falcon Field Airport in Saint Joseph, Missouri",
+        "FlyTech Flight School airplane landing at Rosecrans Memorial Airport in Saint Joseph, Missouri",
       headerH1: `BECOME A PILOT</br><span class="text-primary-600">WITH CONFIDENCE</span>`,
       paragraph:
         "At FlyTech, we make flight training approachable and effective. Whether you're dreaming of recreational flying or pursuing a professional career in aviation, our expert instructors and streamlined programs will help you take off with confidence.",

@@ -8,9 +8,9 @@ export const SITE_DESCRIPTION =
 
 // Updated keywords with a focus on SEO, including relevant aviation terms and multiple localities
 export const KEYWORDS =
-  "FlyTech Flight School, flight training Saint Joseph MO, pilot school Saint Joseph Missouri, how to become a pilot Missouri, flight school near me, find a flight school Saint Joseph, private pilot license Saint Joseph MO, discovery flight Saint Joseph, introductory flight Missouri, instrument rating Falcon Field, commercial pilot school Saint Joseph, commercial pilot license Missouri, certified flight instructor training MO, CFI academy Missouri, airline pilot program Missouri, aviation academy Missouri, best flight school Saint Joseph, top flight schools Phoenix area, multi-engine rating MO, learn to fly Cessna Saint Joseph MO, Diamond aircraft training Missouri, flight training cost Saint Joseph MO, pilot certification Saint Joseph, Falcon Field flight school, KFFZ pilot training";
+  "FlyTech Flight School, flight training Saint Joseph MO, pilot school Saint Joseph Missouri, how to become a pilot Missouri, flight school near me, find a flight school Saint Joseph, private pilot license Saint Joseph MO, discovery flight Saint Joseph, introductory flight Missouri, instrument rating Falcon Field, commercial pilot school Saint Joseph, commercial pilot license Missouri, certified flight instructor training MO, CFI academy Missouri, airline pilot program Missouri, aviation academy Missouri, best flight school Saint Joseph, top flight schools Phoenix area, multi-engine rating MO, learn to fly Cessna Saint Joseph MO, Diamond aircraft training Missouri, flight training cost Saint Joseph MO, pilot certification Saint Joseph, Falcon Field flight school, KSTJ pilot training";
 
-export const OG_IMAGE = "/flytech-logo-wg_1000px-980x262.webp";
+export const OG_IMAGE = "/FlyTech-OG-Image.png";
 
 export const COMPANY_NAME = "FlyTech Flight School";
 export const COMPANY_NICKNAME = "FlyTech";
