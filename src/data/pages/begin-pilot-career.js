@@ -21,7 +21,7 @@ const beginPilotCareer = {
       buttons: [
         {
           name: "Enroll Now",
-          link: "/enroll-at-FlyTech",
+          link: "/#enroll",
           primary: false,
         },
       ],
@@ -108,7 +108,7 @@ const beginPilotCareer = {
       },
       finalButton: {
         name: "Enroll at FlyTech",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
         primary: true,
       },
 

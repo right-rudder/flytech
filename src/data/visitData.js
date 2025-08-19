@@ -17,7 +17,7 @@ const visitData = {
     buttons: [
       {
         name: "Enroll Today",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
         primary: false,
       },
       {

@@ -17,7 +17,7 @@ const sportPilotData = {
     buttons: [
       {
         name: "Start Flying",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
         primary: true,
       },
     ],
@@ -54,7 +54,7 @@ const sportPilotData = {
         "Join FlyTech and earn your Sport Pilot Certificate with fewer hours, lower cost, and maximum fun. Start flying light sport aircraft today.",
       button: {
         name: "Enroll Today",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
       },
     },
 

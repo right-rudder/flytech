@@ -19,7 +19,7 @@ const pilotTraining = {
       buttons: [
         {
           name: "Enroll Now",
-          link: "/enroll-at-FlyTech",
+          link: "/#enroll",
           primary: true,
         },
       ],

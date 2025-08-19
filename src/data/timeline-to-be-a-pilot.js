@@ -20,7 +20,7 @@ const timelineToBePilot = {
       buttons: [
         {
           name: "Enroll Now",
-          link: "/enroll-at-FlyTech",
+          link: "/#enroll",
           primary: true,
         },
       ],
@@ -51,7 +51,7 @@ const timelineToBePilot = {
       ],
       finalButton: {
         name: "Enroll Now",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
         primary: true,
       },
       imagePath: "/src/assets/stock-adrien-brun-L87clzV761M-unsplash.webp",

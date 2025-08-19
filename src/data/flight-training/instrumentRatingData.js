@@ -17,7 +17,7 @@ const instrumentRatingData = {
     buttons: [
       {
         name: "Start Training",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
         primary: true,
       },
     ],
@@ -54,7 +54,7 @@ const instrumentRatingData = {
         "Add an Instrument Rating to your pilot certificate with FlyTech’s expert instruction and flexible training options. Gain the confidence and capability to fly in all kinds of weather.",
       button: {
         name: "Schedule Your First Session",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
       },
     },
 

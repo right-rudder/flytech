@@ -18,7 +18,7 @@ const certifiedFlightInstructorInstrumentsData = {
     buttons: [
       {
         name: "Enroll Today",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
         primary: false,
       },
     ],
@@ -67,7 +67,7 @@ const certifiedFlightInstructorInstrumentsData = {
         "Advance your instructional skills and become an expert in teaching IFR procedures with FlyTech’s CFII program.",
       button: {
         name: "Enroll Now",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
       },
     },
 

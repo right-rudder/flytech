@@ -17,7 +17,7 @@ const privatePilotData = {
     buttons: [
       {
         name: "Enroll Today",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
         primary: true,
       },
     ],
@@ -109,7 +109,7 @@ const privatePilotData = {
         "Join FlyTech and earn your Private Pilot Certificate through expert-led training and real-world flight experience. Your journey to the skies starts here.",
       button: {
         name: "Enroll Now",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
       },
     },
 

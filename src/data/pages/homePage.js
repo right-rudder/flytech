@@ -16,12 +16,12 @@ const homePage = {
       buttons: [
         {
           name: "Enroll Now",
-          link: "#",
+          link: "#enroll",
           primary: true,
         },
         {
           name: "Book a Discovery Flight",
-          link: "#",
+          link: "/discovery-flight",
           primary: true,
         },
       ],

@@ -60,7 +60,7 @@ const contentSplit = {
   },
   finalButton: {
     name: "Get Started",
-    link: "/enroll-at-FlyTech",
+    link: "/#enroll",
     primary: true,
   },
   imagePath: "/src/assets/placeholder-img.webp",

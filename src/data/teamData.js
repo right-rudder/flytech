@@ -18,7 +18,7 @@ const teamData = {
     buttons: [
       {
         name: "Enroll Today",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
         primary: true,
       },
       {
@@ -106,7 +106,7 @@ const teamData = {
         "Start your journey as a Certified Flight Instructor at FlyTech Flight School and gain the experience needed for a successful aviation career.",
       button: {
         name: "Enroll Now",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
       },
     },
 

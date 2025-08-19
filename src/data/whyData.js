@@ -18,7 +18,7 @@ const whyData = {
     buttons: [
       {
         name: "Enroll Today",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
         primary: true,
       },
       {
@@ -132,7 +132,7 @@ const whyData = {
     },
     finalButton: {
       name: "Get Started",
-      link: "/enroll-at-FlyTech",
+      link: "/#enroll",
       primary: true,
     },
     imagePath: "/src/assets/student-receiving-signed-shirt.webp",

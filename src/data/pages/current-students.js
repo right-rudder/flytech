@@ -18,7 +18,7 @@ const currentStudents = {
     buttons: [
       {
         name: "Enroll Now",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
         primary: true,
       },
     ],

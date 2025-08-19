@@ -18,7 +18,7 @@ const commercialPilotData = {
     buttons: [
       {
         name: "Enroll Today",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
         primary: false,
       },
     ],
@@ -55,7 +55,7 @@ const commercialPilotData = {
         "Take the next step in your aviation career. Join FlyTech Flight School's Commercial Pilot program and train to become a professional pilot.",
       button: {
         name: "Enroll Now",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
       },
     },
 

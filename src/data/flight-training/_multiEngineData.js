@@ -17,7 +17,7 @@ const multiEngineData = {
     buttons: [
       {
         name: "Enroll Today",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
         primary: false,
       },
     ],
@@ -64,7 +64,7 @@ const multiEngineData = {
         "Advance your aviation skills and career opportunities by earning your Multi-Engine Rating at FlyTech Flight School.",
       button: {
         name: "Enroll Now",
-        link: "/enroll-at-FlyTech",
+        link: "/#enroll",
       },
     },
 
