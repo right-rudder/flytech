@@ -9,7 +9,7 @@ const currentStudents = {
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/N900FT.webp",
+    imagePath: "/src/assets/N900FT_cropped.jpg",
     imageAlt:
       "FlyTech Flight School Sling aircraft parked on ramp at Rosecrans Memorial Airport",
     headerH1: `NEW STUDENT</br><span class="text-primary-600">RESOURCES</span>`,

@@ -11,7 +11,7 @@ const pilotTrainingMadeSimple = {
     //top header
     header: {
       stars: true,
-      imagePath: "/src/assets/N900FT.webp",
+      imagePath: "/src/assets/N900FT_cropped.jpg",
       imageAlt:
         "FlyTech Flight School airplane landing at Rosecrans Memorial Airport in Saint Joseph, Missouri",
       headerH1: `BECOME A PILOT</br><span class="text-primary-600">WITH CONFIDENCE</span>`,
