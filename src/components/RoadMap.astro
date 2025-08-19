@@ -6,24 +6,24 @@ const { content } = Astro.props;
   id="first-time-pilots"
   class="py-24 px-5 w-full bg-white flex flex-col items-center mx-auto scroll-my-20"
 >
-  <h3 class="section-upper">Pilot Training Made Simple</h3>
+  <h3 class="section-upper">STRUCTURED TRAINING, CLEAR PROGRESS</h3>
   <h4 class="section-title text-neutral-800">FlyTech’s Training Structure</h4>
   <p class="text-gray-600 text-center max-w-5xl mt-6">
-    FlyTech Flight School offers career-track pilot training (Zero to Hero) for
-    students in the greater Phoenix area at Falcon Field Airport (KFFZ) in Saint
-    Joseph, Missouri. Our goal is for students to fly 3-4 times per week with
-    additional ground school and personal study.
+    guiding students from Zero to Hero at Rosecrans Memorial Airport (KSTJ) in
+    Saint Joseph, Missouri. Serving the greater Phoenix area, our program is
+    designed for students to fly 3–4 times per week, supported by structured
+    ground school sessions and dedicated personal study.
   </p>
   <div class="grid mt-12 lg:grid-cols-3 mx-auto gap-10">
     <div
       class="border border-primary-500/50 rounded py-8 px-12 flex flex-col gap-5 justify-between bg-neutral-800 hover:bg-primary-700 duration-500 group"
     >
-      <a href="#daily-training">
+      <a href="#starting">
         <div class="flex justify-center align-middle items-center">
           <h3
             class="text-lg text-white uppercase font-semibold tracking-widest duration-500"
           >
-            Daily Training Schedule
+            Starting Your Journey
           </h3>
           <svg class="placeholder-svg"></svg>
         </div>
@@ -33,12 +33,12 @@ const { content } = Astro.props;
     <div
       class="border border-primary-500/50 rounded py-8 px-12 flex flex-col gap-5 justify-between bg-neutral-800 hover:bg-primary-700 duration-500 group"
     >
-      <a href="#expectations">
+      <a href="#career">
         <div class="flex justify-center align-middle items-center">
           <h3
             class="text-lg text-white uppercase font-semibold tracking-widest duration-700"
           >
-            Student Expectations
+            Your career path
           </h3>
           <svg class="placeholder-svg"></svg>
         </div>
@@ -48,12 +48,12 @@ const { content } = Astro.props;
     <div
       class="border border-primary-500/50 rounded py-8 px-12 flex flex-col gap-5 justify-between bg-neutral-800 hover:bg-primary-700 duration-500 group"
     >
-      <a href="#cost-calc">
+      <a href="#advancing">
         <div class="flex justify-center align-middle items-center">
           <h3
             class="text-lg text-white uppercase font-semibold tracking-widest duration-700"
           >
-            Training Cost Estimator
+            Advancing Your Skills
           </h3>
           <svg class="placeholder-svg"></svg>
         </div>
@@ -62,7 +62,7 @@ const { content } = Astro.props;
   </div>
 </section>
 
-<section id="daily-training" class="md:px-16 py-20">
+<section id="starting" class="md:px-16 py-20">
   <h3 class="section-upper">FlyTechs' Pilot Roadmap</h3>
   <h2 class="section-title text-white">FlyTech’s Flight Training Blocks</h2>
 
@@ -151,7 +151,10 @@ const { content } = Astro.props;
           </div>
         </div>
 
-        <div class="w-full col-start-6 col-end-10 my-4 mr-auto p-4 bg-white">
+        <div
+          class="w-full col-start-6 col-end-10 my-4 mr-auto p-4 bg-white"
+          id="career"
+        >
           <h3
             class="font-bold text-4xl mb-2 font-title text-primary-700 uppercase text-center"
           >
@@ -197,6 +200,7 @@ const { content } = Astro.props;
         <div class="w-full col-start-1 col-end-5 p-4 my-4 ml-auto bg-white">
           <h3
             class="font-bold text-4xl mb-2 font-title text-primary-700 uppercase text-center"
+            id="advancing"
           >
             Advancing Your Skills
           </h3>

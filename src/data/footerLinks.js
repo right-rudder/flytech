@@ -4,23 +4,23 @@ export const footerLinks = [
     links: [
       {
         name: "Discovery Flight",
-        link: "#",
+        link: "/discovery-flight",
       },
       {
-        name: "Enroll at FlyTech",
-        link: "#",
+        name: "Enroll",
+        link: "#enroll",
       },
       {
-        name: "Pilot Training",
-        link: "#",
+        name: "Flight Training",
+        link: "/flight-training",
       },
       {
-        name: "Begin Pilot Career",
-        link: "#",
+        name: "Why become a Pilot",
+        link: "/why-become-a-pilot",
       },
       {
         name: "Contact Us",
-        link: "#",
+        link: "/contact",
       },
     ],
   },
@@ -29,23 +29,44 @@ export const footerLinks = [
     links: [
       {
         name: "Private Pilot",
-        link: "#",
-      },
-      {
-        name: "Instrument Rating",
-        link: "#",
+        link: "/flight-training/private-pilot",
       },
       {
         name: "Commercial Pilot",
-        link: "#",
+        link: "/flight-training/commercial-pilot",
       },
       {
-        name: "CFI",
-        link: "#",
+        name: "Instrument Rating",
+        link: "/flight-training/instrument-rating",
       },
       {
-        name: "CFII",
-        link: "#",
+        name: "Certified Flight Instructor",
+        link: "/flight-training/certified-flight-instructor",
+      },
+      {
+        name: "CFI - Instruments",
+        link: "/flight-training/certified-flight-instructor-instruments",
+      },
+      {
+        name: "Sports Pilot Certificate",
+        link: "/flight-training/sports-pilot-certificate",
+      },
+    ],
+  },
+  {
+    title: "Students",
+    links: [
+      {
+        name: "Four Forces",
+        link: "https://flyfourforces.com/login",
+      },
+      {
+        name: "Ground School",
+        link: "https://groundschool.com",
+      },
+      {
+        name: "Student Resources",
+        link: "/current-students",
       },
     ],
   },
@@ -53,28 +74,40 @@ export const footerLinks = [
     title: "About",
     links: [
       {
-        name: "Why FlyTech",
-        link: "#",
+        name: "About",
+        link: "/about",
       },
       {
         name: "Our Team",
-        link: "#",
+        link: "/about/team",
       },
       {
-        name: "Visit Us",
-        link: "#",
+        name: "Our Fleet",
+        link: "/about/fleet",
       },
       {
-        name: "Join Us",
-        link: "#",
+        name: "FAQ",
+        link: "/about/faq",
       },
       {
         name: "Financing",
-        link: "#",
+        link: "/about/financing",
+      },
+      {
+        name: "Housing",
+        link: "/about/housing",
+      },
+      {
+        name: "Store",
+        link: "https://flytech.myspreadshop.com",
+      },
+      {
+        name: "Contact Us",
+        link: "/contact",
       },
       {
         name: "Blog",
-        link: "#",
+        link: "/blog",
       },
     ],
   },
