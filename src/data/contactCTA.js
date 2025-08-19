@@ -1,5 +1,5 @@
 const contactCTA = {
-  imagePath: "/src/assets/placeholder-img.webp",
+  imagePath: "/src/assets/plane-cesna-ground-flytech (4).webp",
   imageAlt: "FlyTech Flight School student flying over Missouri",
   headerH1: `Still have questions?<br/>Contact us so we can help!`,
   buttons: [
