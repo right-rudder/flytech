@@ -41,7 +41,7 @@ const textContent = {
   <div class="relative z-10 max-w-7xl mx-auto">
     <!-- ESSENTIAL -->
     <!-- Text Roll -->
-    <div class="flex flex-col-reverse gap-2 lg:flex-row">
+    <div class="flex flex-col-reverse gap-2 lg:flex-row" id="essential">
       <div class="w-full lg:w-2/3">
         <CurrentStudentCard
           content={currentStudents.resources.categories[0]}
@@ -75,7 +75,7 @@ const textContent = {
 
     <!-- MEDICAL -->
     <!-- Text Roll -->
-    <div class="flex flex-col gap-2 lg:flex-row">
+    <div class="flex flex-col gap-2 lg:flex-row" id="medical">
       <div class="w-full lg:w-1/3">
         <TextCardDark
           content={currentStudents.medicalResources}
@@ -93,7 +93,7 @@ const textContent = {
     <!-- VIDEO -->
 
     <!-- Text Roll -->
-    <div class="flex flex-col-reverse gap-2 lg:flex-row">
+    <div class="flex flex-col-reverse gap-2 lg:flex-row" id="videos">
       <div class="w-full lg:w-2/3">
         <CurrentStudentCard
           content={currentStudents.videoResources.categories[1]}
@@ -138,7 +138,7 @@ const textContent = {
     <!-- Other -->
 
     <!-- Text Roll -->
-    <div class="flex flex-col-reverse gap-2 lg:flex-row">
+    <div class="flex flex-col-reverse gap-2 lg:flex-row" id="others">
       <div class="w-full">
         <TextCardDark content={currentStudents.other} />
       </div>

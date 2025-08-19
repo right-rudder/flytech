@@ -5,6 +5,7 @@ import ImageComp2 from "../ImageComp2.astro";
 import img1 from "../../assets/students-in-front-of-slinger-3.webp";
 import img2 from "../../assets/simulator-with-student.webp";
 import img3 from "../../assets/student-receiving-certificate-3.webp";
+import { link } from "fs";
 
 const textContent = {
   upperheading: "STUDENT RESOURCES",
@@ -20,6 +21,7 @@ const cardContent = {
     description: "Check our student resources",
     imagePath: img3,
     imageAlt: "Student receiving certificate",
+    link: "#essential",
   },
   cardTop: {
     upperheading: "Enroll now",
@@ -27,13 +29,15 @@ const cardContent = {
     description: "Prepare yourself with great videos and channels",
     imagePath: img1,
     imageAlt: "Student receiving certificate",
+    link: "#videos",
   },
   cardBottom: {
-    upperheading: "Login now",
-    title: `Login now`,
-    description: "Login to your account at Four Forces / Ground School",
+    upperheading: "others",
+    title: `Useful Documents`,
+    description: "Download our useful documents",
     imagePath: img2,
     imageAlt: "Simulator with student",
+    link: "#others",
   },
 };
 ---
@@ -49,7 +53,8 @@ const cardContent = {
         class="w-full h-full lg:w-2/3 mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8"
       >
         <!-- Card Left -->
-        <div
+        <a
+          href={cardContent.cardMain.link}
           class="group overflow-hidden relative aspect-square sm:row-span-2 bg-black"
         >
           <ImageComp2
@@ -61,18 +66,19 @@ const cardContent = {
           <div class="absolute inset-0 flex items-end pl-12 pb-12">
             <div>
               <h3 class="text-3xl font-bold uppercase text-white">
-                <a href="#">
+                <p>
                   <Fragment set:html={cardContent.cardMain.title} />
-                </a>
+                </p>
               </h3>
               <p aria-hidden="true" class="mt-1 text-lg text-white">
                 <Fragment set:html={cardContent.cardMain.description} />
               </p>
             </div>
           </div>
-        </div>
+        </a>
         <!-- Card Top -->
-        <div
+        <a
+          href={cardContent.cardTop.link}
           class="group overflow-hidden relative aspect-square sm:aspect-auto bg-black"
         >
           <ImageComp2
@@ -88,18 +94,19 @@ const cardContent = {
           <div class="absolute inset-0 flex items-end pl-6 pb-6">
             <div>
               <h3 class="text-2xl font-bold uppercase text-white">
-                <a href="#">
+                <p>
                   <Fragment set:html={cardContent.cardTop.title} />
-                </a>
+                </p>
               </h3>
               <p aria-hidden="true" class="mt-1 text-lg text-white">
                 <Fragment set:html={cardContent.cardTop.description} />
               </p>
             </div>
           </div>
-        </div>
+        </a>
         <!-- Card Bottom -->
-        <div
+        <a
+          href={cardContent.cardBottom.link}
           class="group overflow-hidden relative aspect-square sm:aspect-auto bg-black"
         >
           <ImageComp2
@@ -115,16 +122,16 @@ const cardContent = {
           <div class="absolute inset-0 flex items-end pl-6 pb-6">
             <div>
               <h3 class="text-2xl font-bold uppercase text-white">
-                <a href="#">
+                <p>
                   <Fragment set:html={cardContent.cardBottom.title} />
-                </a>
+                </p>
               </h3>
               <p aria-hidden="true" class="mt-1 text-lg text-white">
                 <Fragment set:html={cardContent.cardBottom.description} />
               </p>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
