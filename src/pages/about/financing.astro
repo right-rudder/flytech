@@ -10,6 +10,7 @@ import CTAVideo from "../../components/CTAVideo.astro";
 import CTAVideoWhite from "../../components/CTAVideoWhite.astro";
 import videoList from "../../data/videos.js";
 import FinancingComponent from "../../components/Financing.astro";
+import FinancingRequest from "../../components/Forms/FinancingRequest.astro";
 
 const data = {
   pageTitle: "Financing | FlyTech Flight School, Saint Joseph, MO",
@@ -165,6 +166,7 @@ const dataForVideo = {
 
   <FinancingComponent content={data.financing} />
 
+  <FinancingRequest />
   <ProgramSwiper content={programsSwiper} />
   <CTAColor content={flyWithUsCTA} />
   <script src="../../scripts/creativeSwiper.js"></script>
