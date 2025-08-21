@@ -5,7 +5,7 @@ const discoveryFlight = {
     //SEO Header Stuff
     pageTitle: "Discovery Flight | FlyTech Flight School, Saint Joseph, MO",
     pageDescription:
-      "Book a Discovery Flight at FlyTech Flight School in Saint Joseph, MO. Experience the thrill of flying and see if becoming a pilot is right for you!",
+      "Book a Flight at FlyTech Flight School in Saint Joseph, MO. Experience the thrill of flying and see if becoming a pilot is right for you!",
     pageKeywords:
       "Discovery Flight, Flight School, Flight Training, Pilot Training, Learn to Fly, Private Pilot, Sport Pilot, Recreational Pilot, Flight Instructor, Flight Instruction, Flight School Saint Joseph, MO, Kankakee Flight School, Kankakee Flight Training, Saint Joseph Pilot Training, Saint Joseph Learn to Fly, Saint Joseph Private Pilot, Saint Joseph Sport Pilot, Saint Joseph Recreational Pilot, Saint Joseph Flight Instructor, Saint Joseph Flight Instruction",
     //
@@ -18,7 +18,7 @@ const discoveryFlight = {
       imageAlt: "FlyTech Flight School flight over Saint Joseph, MO",
       headerH1: `Discovery <strong class="text-primary-600">Flight</strong>`,
       paragraph:
-        "Fly at FlyTech and See if Flying is for You! Book a Discovery Flight Today!",
+        "Fly at FlyTech and See if Flying is for You! Book a Flight Today!",
       buttons: [],
     },
 
@@ -32,7 +32,7 @@ const discoveryFlight = {
     },
 
     form: {
-      upperHeading: "Book a Discovery Flight",
+      upperHeading: "Book a Flight",
       heading: "Let's Get You in the Air!",
       description: "Fill out the form below to book your discovery flight.",
       info: [

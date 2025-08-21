@@ -32,10 +32,10 @@ const faqPage = {
       imageAlt: "FlyTech aircraft preparing for a discovery flight",
       headerH1: `<span class="text-primary-600">Still Have Questions?</br></span>Experience It Firsthand`,
       paragraph:
-        "Book a Discovery Flight and get a firsthand feel for flying with FlyTech. It’s the perfect way to decide if aviation is right for you — and we’ll be happy to answer your questions in person.",
+        "Book a Flight and get a firsthand feel for flying with FlyTech. It’s the perfect way to decide if aviation is right for you — and we’ll be happy to answer your questions in person.",
       buttons: [
         {
-          name: "Book a Discovery Flight",
+          name: "Book a Flight",
           link: "/discovery-flight",
           primary: true,
         },
