@@ -14,7 +14,7 @@ const discoveryFlight = {
     header: {
       stars: true,
 
-      imagePath: "/src/assets/discovery-flight-pilot-and-kid.webp",
+      imagePath: "/src/assets/plane-hangar-back-sunset.webp",
       imageAlt: "FlyTech Flight School flight over Saint Joseph, MO",
       headerH1: `Discovery <strong class="text-primary-600">Flight</strong>`,
       paragraph:
@@ -23,19 +23,14 @@ const discoveryFlight = {
     },
 
     pageSummary: {
-      title: "Why Choose FlyTech?",
+      title: "Experience a Discovery Flight at FlyTech",
       paragraphs: [
-        "FlyTech is built by pilots for pilots. We combine cutting-edge training aircraft, real-world airspace exposure, and a mission-driven team to make flight training safer, faster, and more effective.",
-        "From your first takeoff to advanced maneuvers, you’ll benefit from a personalized learning experience, Garmin-integrated cockpit tools, and post-flight video debriefs that accelerate your growth. Whether flying for fun or pursuing a career, FlyTech is your launchpad.",
+        "There’s no better way to see if flying is right for you than with a Discovery Flight at FlyTech. From the moment you step into the cockpit, you’ll feel what it’s like to be in control of an aircraft, guided by one of our experienced instructors.",
+        "During your flight, you’ll learn the basics of handling the controls, explore the skies above, and enjoy breathtaking views—all while gaining a true sense of what pilot training is like. It’s the perfect first step whether you’re curious about aviation or ready to begin your journey toward becoming a pilot.",
       ],
-      buttons: [
-        // {
-        //   name: "Learn More",
-        //   link: "#info",
-        //   primary: true,
-        // },
-      ],
+      buttons: [],
     },
+
     form: {
       upperHeading: "Book a Discovery Flight",
       heading: "Let's Get You in the Air!",
