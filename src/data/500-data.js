@@ -24,8 +24,8 @@ const data500 = {
           primary: false,
         },
         {
-          name: "Call Us",
-          link: `tel:${PHONE_NUMBER}`,
+          name: "Contact Us",
+          link: `/contact`,
           primary: false,
         },
       ],

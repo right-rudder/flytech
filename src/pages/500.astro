@@ -1,15 +1,16 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
 import HeaderScreen from "../components/HeaderScreen.astro";
 import data500 from "../data/500-data";
+import LayoutNoEnroll from "../layouts/LayoutNoEnroll.astro";
+import ErrorPages from "../components/ErrorPages.astro";
 
 const { data } = data500;
 ---
 
-<BaseLayout
+<LayoutNoEnroll
   siteTitle={data.pageTitle}
   siteDescription={data.pageDescription}
   keywords={data.pageKeywords}
 >
-  <HeaderScreen content={data.header} />
-</BaseLayout>
+  <ErrorPages content={data.header} />
+</LayoutNoEnroll>

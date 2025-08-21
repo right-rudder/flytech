@@ -11,6 +11,8 @@ import flyWithUsCTA from "../data/fly-with-us-cta";
 import AirlinesCloud from "../components/AirlinesCloud.astro";
 import FAQs from "../components/FAQs";
 import { GeneralFAQs } from "../data/general-faqs";
+import LayoutNoEnroll from "../layouts/LayoutNoEnroll.astro";
+import ErrorPages from "../components/ErrorPages.astro";
 
 const data = {
   siteTitle: "Wrong route | FlyTech Flight School, Saint Joseph, MO",
@@ -31,8 +33,8 @@ const data = {
         primary: true,
       },
       {
-        name: "Book a Flight",
-        link: "/discovery-flight",
+        name: "Contact Us",
+        link: "/contact",
         primary: true,
       },
     ],
@@ -40,11 +42,10 @@ const data = {
 };
 ---
 
-<BaseLayout
+<LayoutNoEnroll
   siteTitle={data.siteTitle}
   siteDescription={data.pageDescription}
   keywords={data.pageKeywords}
 >
-  <!-- HEADER -->
-  <HeaderScreen content={data.header} />
-</BaseLayout>
+  <ErrorPages content={data.header} />
+</LayoutNoEnroll>
