@@ -166,7 +166,7 @@ const homePage = {
         "Fly over St. Joseph landmarks like the Chiefs training camp and more during your discovery flight. Experience the thrill of flying and see if the skies are calling you.",
       buttons: [
         {
-          name: "Schedule Today",
+          name: "Start Flying Today",
           link: "/discovery-flight",
           primary: true,
         },
