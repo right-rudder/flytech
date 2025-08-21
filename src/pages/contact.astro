@@ -8,6 +8,7 @@ import ContactComponent from "../components/Forms/Contact.astro";
 import CTAVideoWhite from "../components/CTAVideoWhite.astro";
 import HeaderSmall from "../components/HeaderSmall.astro";
 import videoList from "../data/videos.js";
+import PageSummary from "../components/PageSummary.astro";
 
 const randomVideo = videoList[Math.floor(Math.random() * videoList.length)];
 const dataForVideo = {
@@ -25,6 +26,7 @@ const { data } = contactPage;
   keywords={data.pageKeywords}
 >
   <HeaderSmall content={data.header} />
+  <PageSummary content={data.pageSummary} />
   <!-- <CTAVideoWhite video={randomVideo} data={dataForVideo} /> -->
   <ContactComponent />
   <ProgramSwiper content={programsSwiper} />

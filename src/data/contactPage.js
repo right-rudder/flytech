@@ -16,6 +16,14 @@ const contactPage = {
       paragraph:
         "Have questions or need more information? Our team at FlyTech Flight School is ready to assist you. Reach out to learn more about our programs, schedule a visit, or get guidance on starting your pilot training.",
     },
+    pageSummary: {
+      title: "Get in Touch with FlyTech",
+      paragraphs: [
+        "Have questions about flight training, Discovery Flights, or program options? Our team at FlyTech is here to help you every step of the way. Whether you’re just exploring aviation or ready to begin your pilot journey, we’ll provide the guidance you need.",
+        "Reach out to schedule a visit, request more information, or speak directly with an instructor. We’re committed to making your path to the skies clear, simple, and exciting.",
+      ],
+      buttons: [],
+    },
   },
 };
 
