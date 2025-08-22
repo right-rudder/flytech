@@ -4,12 +4,12 @@ const { video, data } = Astro.props;
 ---
 
 <div
-  class="bg-neutral-900 flex flex-col lg:flex-row justify-center items-center"
+  class="bg-neutral-900 max-w-sm md:max-w-none flex flex-col lg:flex-row lg:justify-center items-center"
 >
   <div
-    class="flex flex-col lg:flex-row py-24 items-center justify-center gap-20 px-2 lg:px-8 max-w-7xl mx-auto overflow-hidden"
+    class="flex flex-col-reverse w-full lg:flex-row py-12 lg:py-24 justify-center items-center lg:gap-20 px-2 lg:px-8 max-w-7xl overflow-hidden"
   >
-    <div class="flex-1 flex justify-center items-center">
+    <div class="flex-1 flex justify-center items-center w-full">
       <YouTube
         id={video.videoId}
         class="aspect-video w-full"
@@ -24,11 +24,11 @@ const { video, data } = Astro.props;
           <Fragment set:html={video.title} />
         </h2> -->
         <h2
-          class="text-4xl md:text-5xl font-semibold text-white leading-tight uppercase"
+          class="text-2xl md:text-5xl lg:text-6xl text-left md:max-w-3xl lg:max-w-5xl font-title text-white uppercase lg:tracking-tight"
         >
           <Fragment set:html={data.headerH1} />
         </h2>
-        <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
+        <p class="text-base md:text-xl text-gray-300 leading-relaxed">
           {data.paragraph}
         </p>
       </div>
