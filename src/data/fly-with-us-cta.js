@@ -8,7 +8,7 @@ const flyWithUsCTA = {
   buttons: [
     {
       name: "START FLYING TODAY",
-      link: "#",
+      link: "/enroll",
       primary: true,
     },
   ],
