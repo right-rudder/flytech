@@ -38,11 +38,8 @@ export default function FAQs({ faqs, type }) {
         </div>
         <p className="text-center mt-12 text-gray-600">
           If you have any additional questions please send us an email to{" "}
-          <a
-            href={`mailto:${EMAIL_ADDRESS}`}
-            className="text-primary-800 hover:underline"
-          >
-            {EMAIL_ADDRESS}
+          <a href="/contact" className="text-primary-800 hover:underline">
+            Contact Us
           </a>
         </p>
       </div>
