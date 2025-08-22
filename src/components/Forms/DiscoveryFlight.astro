@@ -7,7 +7,7 @@ import {
 } from "../../consts";
 import FormDiscoveryFlight from "../../components/Forms/FormDiscoveryFlight.astro";
 import ImageComp2 from "../../components/ImageComp2.astro";
-import imgForm from "../../assets/plane-wing-at-cloudy-sunset.webp";
+import imgForm from "../../assets/IMG_2879.webp";
 
 const upperheading = "Discovery Flight";
 const title = `Book a Flight with <span class="text-primary-500">${COMPANY_NICKNAME}</span>`;
@@ -15,18 +15,20 @@ const description = "The best way to start your journey in the skies";
 ---
 
 <section
-  class="relative text-white scroll-my-20 lg:scroll-my-28 py-20"
+  style={`background-image: url(${imgForm.src});`}
+  class="relative bg-cover bg-center bg-no-repeat text-white scroll-my-20 lg:scroll-my-28 py-20"
   id="enroll"
 >
+  <div class="absolute inset-0 bg-black/70 mix-blend-multiply"></div>
   <!-- Background Image -->
-  <div class="fixed aspect-video inset-0 top-24 -z-50 pointer-events-none">
+  <!-- <div class="fixed aspect-video inset-0 top-24 -z-50 pointer-events-none">
     <ImageComp2
       imagePath={imgForm}
       imageAlt="Background Image"
       styles="w-full h-full object-cover"
     />
     <div class="absolute inset-0 bg-black/70 mix-blend-multiply"></div>
-  </div>
+  </div> -->
   <div class="relative z-10 max-w-7xl mx-auto">
     <div class="flex flex-col gap-10 lg:gap-0 lg:flex-row">
       <!-- Text Section -->
