@@ -54,7 +54,7 @@ const programsSwiper = {
       imageAlt:
         "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
       description:
-        "Created for people who desire to fly one or two seat aircraft that are smaller, lighter, and easier to fly. Limited to planes with lower take off weight (smaller, lighter aircraft) with no more than two seats. Require a minimum of 20 hours of flight training.",
+        "Created for people who desire to fly one or two seat aircraft that are smaller, lighter, and easier to fly. ",
       link: "/flight-training/sports-pilot-certificate",
     },
   ],
