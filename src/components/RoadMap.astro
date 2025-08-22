@@ -4,7 +4,7 @@ const { content } = Astro.props;
 
 <section
   id="first-time-pilots"
-  class="py-24 px-5 w-full bg-white flex flex-col items-center mx-auto scroll-my-20"
+  class="py-24 px-5 w-full bg-white flex flex-col items-center mx-auto scroll-my-20 overflow-hidden"
 >
   <h3 class="section-upper">STRUCTURED TRAINING, CLEAR PROGRESS</h3>
   <h4 class="section-title text-neutral-800">FlyTech’s Training Structure</h4>
@@ -14,48 +14,90 @@ const { content } = Astro.props;
     designed for students to fly 3–4 times per week, supported by structured
     ground school sessions and dedicated personal study.
   </p>
-  <div class="grid mt-12 lg:grid-cols-3 mx-auto gap-10">
+  <div class="flex flex-col lg:flex-row py-6 lg:py-12 items-center gap-10">
     <div
-      class="border border-primary-500/50 rounded py-8 px-12 flex flex-col gap-5 justify-between bg-neutral-800 hover:bg-primary-700 duration-500 group"
+      class="w-full items-center text-center border border-primary-500/50 rounded py-8 px-2 lg:px-12 flex flex-col gap-5 justify-between bg-neutral-800 hover:bg-primary-700 duration-500 group"
     >
       <a href="#starting">
         <div class="flex justify-center align-middle items-center">
           <h3
-            class="text-lg text-white uppercase font-semibold tracking-widest duration-500"
+            class="w-3/4 text-lg text-white uppercase font-semibold tracking-widest duration-500"
           >
             Starting Your Journey
           </h3>
-          <svg class="placeholder-svg"></svg>
+          <div class="w-1/4 flex justify-end">
+            <svg
+              class="w-6 h-6 text-white group-hover:text-white/70 duration-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"></path>
+            </svg>
+          </div>
         </div>
       </a>
     </div>
 
     <div
-      class="border border-primary-500/50 rounded py-8 px-12 flex flex-col gap-5 justify-between bg-neutral-800 hover:bg-primary-700 duration-500 group"
+      class="items-center w-full text-center max-w-xs lg:max-w-none border border-primary-500/50 rounded py-8 px-2 lg:px-12 flex flex-col gap-5 justify-center bg-neutral-800 hover:bg-primary-700 duration-500 group"
     >
       <a href="#career">
-        <div class="flex justify-center align-middle items-center">
+        <div class="w-full flex justify-center align-middle items-center">
           <h3
-            class="text-lg text-white uppercase font-semibold tracking-widest duration-700"
+            class="w-3/4 text-lg text-white uppercase font-semibold tracking-widest duration-500"
           >
             Your career path
           </h3>
-          <svg class="placeholder-svg"></svg>
+          <div class="w-1/4 flex justify-end">
+            <svg
+              class="w-6 h-6 text-white group-hover:text-white/70 duration-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"></path>
+            </svg>
+          </div>
         </div>
       </a>
     </div>
 
     <div
-      class="border border-primary-500/50 rounded py-8 px-12 flex flex-col gap-5 justify-between bg-neutral-800 hover:bg-primary-700 duration-500 group"
+      class="items-center w-full text-center border border-primary-500/50 rounded py-8 px-2 lg:px-12 flex flex-col gap-5 justify-between bg-neutral-800 hover:bg-primary-700 duration-500 group"
     >
       <a href="#advancing">
         <div class="flex justify-center align-middle items-center">
           <h3
-            class="text-lg text-white uppercase font-semibold tracking-widest duration-700"
+            class="w-3/4 text-lg text-white uppercase font-semibold tracking-widest duration-700"
           >
             Advancing Your Skills
           </h3>
-          <svg class="placeholder-svg"></svg>
+          <div class="w-1/4 flex justify-end">
+            <svg
+              class="w-6 h-6 text-white group-hover:text-white/70 duration-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"></path>
+            </svg>
+          </div>
         </div>
       </a>
     </div>
