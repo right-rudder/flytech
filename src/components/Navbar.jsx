@@ -120,14 +120,14 @@ const Navbar = ({ pathname }) => {
                         <a
                           href={item.link}
                           target={`${item.link.includes("http") ? "_blank" : "_self"}`}
-                          className="font-bold  sm:text-lg xl:text-xl group-last:text-white group-last:hover:text-primary-700 duration-300 hover:underline drop-shadow-sm decoration-primary-500 decoration-4 underline-offset-[10px] py-12 whitespace-nowrap group-last:font-bold group-last:bg-primary-600 group-last:ring-2 group-last:ring-white group-last:py-2 group-last:px-5 group-last:hover:bg-white group-last:hover:no-underline"
+                          className="font-bold  sm:text-lg xl:text-xl group-last:text-white group-last:hover:text-primary-700 duration-300 hover:underline drop-shadow-sm decoration-primary-500 decoration-4 underline-offset-[10px] py-4 whitespace-nowrap group-last:font-bold group-last:bg-primary-600 group-last:ring-2 group-last:ring-white group-last:py-2 group-last:px-5 group-last:hover:bg-white group-last:hover:no-underline"
                         >
                           <span className="relative  w-full h-full ">
                             {item.name}
                           </span>
                         </a>
                       ) : (
-                        <span className="cursor-default text-lg duration-300 hover:underline decoration-primary-500 decoration-4 underline-offset-[10px] py-12 whitespace-nowrap">
+                        <span className="cursor-default text-lg duration-300 hover:underline decoration-primary-500 decoration-4 underline-offset-[10px] py-4 whitespace-nowrap">
                           {item.name}
                         </span>
                       )}
@@ -138,7 +138,7 @@ const Navbar = ({ pathname }) => {
                           {item.submenu.map((subitem, subIndex) => (
                             <li
                               key={subIndex}
-                              className={`${isActive(subitem, pathname) ? "bg-primary-700 text-primary-100" : ""} relative font-normal hover:bg-primary-700 hover:scale-105 px-1 hover:shadow-sm drop-shadow-sm`}
+                              className={`${isActive(subitem, pathname) ? "bg-primary-700 text-primary-100" : ""} relative font-normal hover:bg-primary-700  hover:scale-105 duration-500  px-1 hover:shadow-sm drop-shadow-sm`}
                               onMouseEnter={() => setSubHoveredIndex(subIndex)}
                               onMouseLeave={() => setSubHoveredIndex(null)}
                             >
@@ -391,7 +391,7 @@ const Navbar = ({ pathname }) => {
                 target="_blank"
                 aria-label="LinkedIn"
                 title="LinkedIn"
-                className="transition-colors duration-300 text-white hover:text-white/70 hover:scale-105"
+                className="transition-colors duration-300 text-white hover:text-white/70  hover:scale-105 duration-500 "
               >
                 <svg
                   viewBox="0 0 16 16"
@@ -408,7 +408,7 @@ const Navbar = ({ pathname }) => {
                 target="_blank"
                 aria-label="Instagram"
                 title="Instagram"
-                className="transition-colors duration-300 text-white hover:text-white/70 hover:scale-105"
+                className="transition-colors duration-300 text-white hover:text-white/70  hover:scale-105 duration-500 "
               >
                 <svg
                   viewBox="0 0 30 30"
@@ -426,7 +426,7 @@ const Navbar = ({ pathname }) => {
                 target="_blank"
                 aria-label="Facebook"
                 title="Facebook"
-                className="transition-colors duration-300 text-white hover:text-white/70 hover:scale-105"
+                className="transition-colors duration-300 text-white hover:text-white/70  hover:scale-105 duration-500 "
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -443,7 +443,7 @@ const Navbar = ({ pathname }) => {
                 target="_blank"
                 aria-label="X"
                 title="X"
-                className="transition-colors duration-300 text-white hover:text-white/70 hover:scale-105"
+                className="transition-colors duration-300 text-white hover:text-white/70  hover:scale-105 duration-500 "
               >
                 <svg
                   className="size-7 -m-1 p-0"
@@ -465,7 +465,7 @@ const Navbar = ({ pathname }) => {
                 target="_blank"
                 aria-label="Youtube"
                 title="Youtube"
-                className="transition-colors duration-300 text-white hover:text-white/70 hover:scale-105"
+                className="transition-colors duration-300 text-white hover:text-white/70  hover:scale-105 duration-500 "
               >
                 <svg
                   className="size-7"
