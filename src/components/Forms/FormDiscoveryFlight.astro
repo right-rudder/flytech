@@ -113,7 +113,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
       </div>
 
       <div class="mt-2.5">
-        <span class="text-primary-600 text-sm font-medium"
+        <span class="text-white/90 text-sm font-medium"
           >*This is only a request, staff will contact you for confirmation on
           date and time.</span
         >
@@ -141,26 +141,23 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
         </button>
         <input type="hidden" id="agree-terms" name="agree-terms" value="no" />
       </div>
-      <label
-        class="text-sm leading-6 text-black dark:text-white"
-        id="switch-1-label"
-      >
+      <label class="text-sm leading-6 text-white/90" id="switch-1-label">
         I agree to the <a
           href="/privacy-policy-terms-of-service"
           target="_blank"
-          class="text-primary-700 hover:text-primary-400 font-semibold hover:underline"
+          class="text-white hover:text-primary-400 font-semibold hover:underline"
           >Privacy Policy</a
         > and <a
           href="/privacy-policy-terms-of-service#terms-of-service"
           target="_blank"
-          class="text-primary-700 hover:text-primary-400 font-semibold hover:underline"
+          class="text-white hover:text-primary-400 font-semibold hover:underline"
           >Terms of Service</a
         > provided by the company. By providing my phone number, I agree to receive
         text notes from the business.
       </label>
     </div>
   </div>
-  <div class="mt-10">
+  <div class="mt-10 w-full flex items-center justify-center">
     <button type="submit" id="submit-btn" class="btn-primary">Submit</button>
   </div>
 </form>
