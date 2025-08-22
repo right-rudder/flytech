@@ -73,56 +73,6 @@ const fleetPage = {
       ],
       planes: [
         {
-          name: "Cessna 172 Skyhawk",
-          tail: "N733AJ",
-          model: "C172",
-          summary:
-            "1976 CESSNA 172N — Fixed-wing single engine (4 seats / 1 engine)",
-          year: 1976,
-          manufacture: "Cessna",
-          engine: "Lycoming O-320 Series (Reciprocating)",
-          weight: "Less than 12,500 lbs",
-          horsepower: "180 hp",
-          airworthiness: "Standard",
-          speed: "105 mph",
-          imagePath: "/src/assets/plane-cesna-ground-flytech (4).webp",
-          imageAlt: "Cessna 172 Skyhawk aircraft",
-          description:
-            "The Cessna 172 Skyhawk is the world’s most popular training aircraft, celebrated for its reliability, forgiving handling, and excellent safety record. It’s the perfect choice for both new and experienced pilots looking to refine their skills.",
-          features: [
-            "Four-seat capacity",
-            "High-wing design for stability and visibility",
-            "Simple yet reliable avionics",
-          ],
-          avionics: [
-            "Garmin GNS 430 GPS/NAV/COM",
-            "Dual NAV/COM radios",
-            "VOR with glideslope",
-          ],
-          equipment: [
-            "Dual yoke controls",
-            "Manual flaps",
-            "Standard six-pack instrument layout",
-          ],
-          faq: [
-            {
-              question: "What is the fuel capacity of the Sling LSA?",
-              answer:
-                "The Sling LSA has a fuel capacity of 24.5 gallons (93 liters).",
-            },
-          ],
-          images: [
-            {
-              imagePath: "/src/assets/plane-ground-sunset.webp",
-              imageAlt: "Cessna 172 side view",
-            },
-            {
-              imagePath: "/images/fleet/cessna-172-cockpit.jpg",
-              imageAlt: "Cessna 172 cockpit",
-            },
-          ],
-        },
-        {
           name: "2023 Sling LSA",
           tail: "N900FT",
           model: "LSA 2023",
@@ -174,6 +124,56 @@ const fleetPage = {
             {
               imagePath: "/images/fleet/sling-lsa-cockpit.jpg",
               imageAlt: "Sling LSA cockpit",
+            },
+          ],
+        },
+        {
+          name: "Cessna 172 Skyhawk",
+          tail: "N733AJ",
+          model: "C172",
+          summary:
+            "1976 CESSNA 172N — Fixed-wing single engine (4 seats / 1 engine)",
+          year: 1976,
+          manufacture: "Cessna",
+          engine: "Lycoming O-320 Series (Reciprocating)",
+          weight: "Less than 12,500 lbs",
+          horsepower: "180 hp",
+          airworthiness: "Standard",
+          speed: "105 mph",
+          imagePath: "/src/assets/plane-cesna-ground-flytech (4).webp",
+          imageAlt: "Cessna 172 Skyhawk aircraft",
+          description:
+            "The Cessna 172 Skyhawk is the world’s most popular training aircraft, celebrated for its reliability, forgiving handling, and excellent safety record. It’s the perfect choice for both new and experienced pilots looking to refine their skills.",
+          features: [
+            "Four-seat capacity",
+            "High-wing design for stability and visibility",
+            "Simple yet reliable avionics",
+          ],
+          avionics: [
+            "Garmin GNS 430 GPS/NAV/COM",
+            "Dual NAV/COM radios",
+            "VOR with glideslope",
+          ],
+          equipment: [
+            "Dual yoke controls",
+            "Manual flaps",
+            "Standard six-pack instrument layout",
+          ],
+          faq: [
+            {
+              question: "What is the fuel capacity of the Sling LSA?",
+              answer:
+                "The Sling LSA has a fuel capacity of 24.5 gallons (93 liters).",
+            },
+          ],
+          images: [
+            {
+              imagePath: "/src/assets/plane-ground-sunset.webp",
+              imageAlt: "Cessna 172 side view",
+            },
+            {
+              imagePath: "/images/fleet/cessna-172-cockpit.jpg",
+              imageAlt: "Cessna 172 cockpit",
             },
           ],
         },
