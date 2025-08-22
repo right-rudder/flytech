@@ -109,7 +109,7 @@ export const mobileNavbarLinks = [
   },
   {
     name: "Enroll Now",
-    link: "#enroll",
+    link: "/#enroll",
     submenu: [],
   },
 ];
