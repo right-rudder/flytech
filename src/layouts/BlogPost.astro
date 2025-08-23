@@ -8,14 +8,15 @@ import CTAVideoWhite from "../components/CTAVideoWhite.astro";
 import videoList from "../data/videos.js";
 
 const randomVideo = videoList[Math.floor(Math.random() * videoList.length)];
+
 const dataForVideo = {
-  header: `<span class="text-primary-600 uppercase text-lg lg:text-2xl lg:max-w-3xl font-sans text-center font-bold tracking-tight">Fly with the team that’s</br></span>revolutionizing pilot training`,
-  title:
-    "At FlyTech Pilot Academy, we combine modern aircraft, immersive technology, and a passionate team of instructors to give you an efficient, professional, and enjoyable path to the cockpit. Whether you're starting fresh or advancing your career, we make it simple.",
+  headerH1: `<span class="text-primary-600 uppercase text-lg lg:text-2xl lg:max-w-3xl font-sans text-center font-bold tracking-tight">Fly with the team</br></span>Where Excellence Takes Flight`,
+  paragraph:
+    "If you’ve ever dreamed of flying, there’s no better time to begin. FlyTech Flight School is your launchpad, where you’ll train in modern aircraft, work one-on-one with expert instructors, and earn your pilot certificate and ratings.",
   buttons: [
     {
       name: "START FLYING TODAY",
-      link: "#enroll",
+      link: "/discovery-flight",
       primary: true,
     },
   ],
