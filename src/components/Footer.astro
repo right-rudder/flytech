@@ -32,7 +32,7 @@ const { pathname } = Astro.url;
     class="px-4 pt-24 pb-16 lg:pb-2 flex flex-col lg:flex-row justify-between lg:px-10 lg:file:py-10"
   >
     <div class="flex flex-col lg:flex-row pb-8 justify-around w-full lg:gap-10">
-      <div class="lg:col-span-2 flex flex-col items-center">
+      <div class="lg:col-span-2 flex flex-col items-center py-4">
         <a
           href="/"
           aria-label="Go home"
@@ -47,7 +47,9 @@ const { pathname } = Astro.url;
         </a>
         <div class="flex justify-center align-middle items-center w-full">
           <a
-            href="/privacy-policy"
+            href="https://www.google.com/maps?ll=39.771489,-94.903192&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=3597859851635819456"
+            target="_blank"
+            rel="noopener noreferrer"
             class="transition-colors duration-300 text-xs lg:text-sm -mt-2 pb-2 text-white hover:text-primary-400"
           >
             <span class="">200 NW Rosecrans Rd</span>
@@ -82,10 +84,10 @@ const { pathname } = Astro.url;
             <div
               class={`${index % 2 === 0 ? "text-center" : "text-center"} lg:col-span-2`}
             >
-              <p class="font-bold text-xl lg:pb-3 font-sans lg:text-sm tracking-wide text-white uppercase">
+              <p class="font-bold text-xl lg:pb-3 font-sans lg:text-sm tracking-wide text-white uppercase py-2">
                 {column.title}
               </p>
-              <ul class="mt-2 space-y-2 text-lg font-sans2 lg:text-sm xl:text-base font-light">
+              <ul class="mt-2 space-y-2 text-lg font-sans2 lg:text-xs xl:text-base font-light">
                 {column.links.map((link) => (
                   <li>
                     <a
@@ -100,7 +102,9 @@ const { pathname } = Astro.url;
             </div>
           ))
         }
-        <div class="col-span-2 lg:col-span-3 xl:col-span-4 w-full lg:w-[350px]">
+        <div
+          class="col-span-2 lg:col-span-3 xl:col-span-4 w-full lg:w-[350px] hidden md:block"
+        >
           <div class="flex justify-center items-center">
             <!--WIDGET METAR-->
             <a
@@ -123,13 +127,13 @@ const { pathname } = Astro.url;
       </div>
     </div>
   </div>
-  <div class="pt-5 pb-10 border-t border-accent">
+  <div class="py-5 border-t border-accent">
     <div
       class="mx-auto flex flex-col gap-2 lg:flex-row justify-between items-center align-middle max-w-7xl"
     >
       <p class="text-sm text-gray-100 text-center">
-        © Copyright {year} &#x2022; FlyTech Flight School & Aircraft Management,
-        LLC. &#x2022; All rights reserved.
+        © Copyright {year} &#x2022; FlyTech Flight School, LLC. &#x2022; All rights
+        reserved.
       </p>
       <span class="text-white text-center flex gap-2">
         Powered by
