@@ -105,7 +105,7 @@ const Navbar = ({ pathname }) => {
                   className={`${navBar || openMobile ? "h-full max-w-1/2" : "h-full  max-w-1/2"} object-contain duration-500 drop-shadow-md`}
                 />
               </a>
-              <div className="hidden ml-12 lg:flex justify-end lg:w-[70%]">
+              <div className="hidden lg:flex flex-1 justify-end">
                 <ul
                   className={`${navBar || openMobile ? "text-white" : "text-white"} flex justify-between align-middle gap-7 w-full items-center`}
                 >
