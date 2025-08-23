@@ -4,10 +4,8 @@ import ImageComp from "./ImageComp.astro";
 const { content } = Astro.props;
 ---
 
-<section
-  class="grid grid-cols-1 lg:grid-cols-2 px-4 lg:px-12 lg:py-12 h-full bg-neutral-900"
->
-  <div class="pr-4 lg:pr-12 py-6 lg:py-0">
+<section class="grid grid-cols-1 lg:grid-cols-2 lg:py-12 h-full bg-neutral-900">
+  <div class="px-4 lg:px-12 py-6 lg:py-0">
     {
       content.upperHeading && (
         <h3 class="mx-auto mt-12 uppercase text-lg lg:text-xl lg:max-w-3xl font-sans text-center font-bold tracking-tight text-primary-500">
@@ -33,10 +31,10 @@ const { content } = Astro.props;
     }
     {
       content.bullets && (
-        <div class="mt-6 flex flex-col justify-center align-middle items-center">
+        <div class="mt-6 flex flex-col justify-center align-middle items-center text-center lg:text-left">
           {content.bulletsTitle && (
             <h4
-              class="font-title text-3xl mt-8 mb-3 text-primary-500"
+              class="font-title text-3xl mt-8 mb-3 text-primary-500 pb-4 lg:pb-6"
               set:html={content.bulletsTitle}
             />
           )}
@@ -76,7 +74,7 @@ const { content } = Astro.props;
     }
     {
       content.finalSection && (
-        <div class="mt-10 mb-5">
+        <div class="mt-10 mb-5 text-center lg:text-left">
           <h2 class="font-title text-3xl text-primary-500">
             {content.finalSection.heading}
           </h2>
