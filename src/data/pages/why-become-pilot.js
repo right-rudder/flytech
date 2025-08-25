@@ -34,7 +34,7 @@ const pilotTrainingMadeSimple = {
       ],
       buttons: [
         {
-          name: "Book a Flight",
+          name: "Discovery Flight",
           link: "/discovery-flight",
           primary: false,
         },
