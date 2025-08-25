@@ -81,6 +81,15 @@ const teamData = {
         summary:
           "Dan Batliner P.E. is a Partner and Student Pilot at FlyTech Pilot Academy. With a background in engineering, Dan brings a unique perspective to the aviation field. His commitment to learning and passion for flight make him an integral part of the FlyTech team. As a student pilot, Dan is dedicated to advancing his skills and knowledge in aviation, while also contributing to the growth and success of the flight school.",
       },
+      {
+        imagePath: "/src/assets/Mark-5.webp",
+        imageAlt:
+          "Mark Gaines",
+        name: "Mark Gaines D.P.E.",
+        title: "Partner",
+        summary:
+          `With over twenty years of diverse experience in the aviation industry, I've had the privilege of working in gemeral, military, and commercial aviation, flight training, sUAS operations, and engaging in aviation volunteering and mentorship programs. My greatest joy comes from helping others achieve their dreams of flying. <a href="https://www.flygllc.com/" target="_blank" class="hover:text-primary-700 transition-all duration-300">Learn more about me here.</a>`,
+      },
     ],
 
     heading2: "Our Certified Flight Instructors",
