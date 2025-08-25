@@ -38,7 +38,7 @@ const whyData = {
       {
         title: "Modern Training Aircraft",
         description:
-          "Train in the Sling NGT, one of the fastest-growing training aircraft in the U.S., known for its low fuel burn and tech-rich cockpit environment.",
+          "Train in the Sling NGT or Cessna 172, both equipped with modern avionics to prepare you for today’s technology.",
       },
       {
         title: "Integrated iPad Flight Bag",
@@ -46,12 +46,12 @@ const whyData = {
           "From day one, you'll use an iPad as your primary flight bag—streamlining planning, navigation, checklists, and post-flight debriefing with ForeFlight.",
       },
       {
-        title: "Advanced Garmin & Video Feedback",
+        title: "Certified Redbird Simulator Training",
         description:
-          "Garmin avionics and cockpit cameras record every maneuver and communication. Post-flight video reviews help accelerate your skills and confidence.",
+          "Get proficient while saving money and flying through any weather. Our simulator keeps training going and builds skills that transfer directly to the cockpit.",
       },
     ],
-    imagePath: "/src/assets/N900FT_2.webp", // Update with actual image path
+    imagePath: "/src/assets/N900FT_2.webp",
     imageAlt: "Cessna 172 parked at Speedway Flight Training during sunset",
   },
 
