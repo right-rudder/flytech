@@ -20,7 +20,7 @@ const homePage = {
           primary: true,
         },
         {
-          name: "Book a Flight",
+          name: "Discovery Flight",
           link: "/discovery-flight",
           primary: true,
         },
@@ -77,17 +77,17 @@ const homePage = {
         {
           title: "Modern Training Aircraft",
           description:
-            "Train in the Sling NGT, one of the fastest-growing training aircraft in the U.S., known for its low fuel burn and tech-rich cockpit environment.",
+            "Train in the Sling NGT or Cessna 172, both equipped with modern avionics to prepare you for today’s technology.",
         },
         {
           title: "Integrated iPad Flight Bag",
           description:
-            "From day one, you'll use an iPad as your primary flight bag—streamlining planning, navigation, checklists, and post-flight debriefing with ForeFlight.",
+            "From day one, you'll use an iPad as your primary flight bag, streamlining planning, navigation, checklists, and post-flight debriefing with ForeFlight.",
         },
         {
-          title: "Advanced Garmin & Video Feedback",
+          title: "Certified Redbird Simulator Training",
           description:
-            "Garmin avionics and cockpit cameras record every maneuver and communication. Post-flight video reviews help accelerate your skills and confidence.",
+            "Get proficient while saving money and flying through any weather. Our simulator keeps training going and builds skills that transfer directly to the cockpit.",
         },
       ],
       imagePath:
