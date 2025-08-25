@@ -203,7 +203,7 @@ const fleetPage = {
         },
       ],
       testimonials: {
-        title: "What our pilots say",
+        title: "What our instructors say",
         description:
           "Hear from our pilots about their experiences flying in FlyTech Pilot Academy.",
         testimonials: [
@@ -259,7 +259,7 @@ const fleetPage = {
         "Book a Flight and get a firsthand feel for flying with FlyTech. It’s the perfect way to decide if aviation is right for you — and we’ll be happy to answer your questions in person.",
       buttons: [
         {
-          name: "Book a Flight",
+          name: "Discovery Flight",
           link: "/discovery-flight",
           primary: true,
         },
