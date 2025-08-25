@@ -56,9 +56,9 @@ const certifiedFlightInstructorData = {
           "Expand your teaching capabilities with the Certified Flight Instructor Instruments (CFII) add-on. This advanced training allows you to instruct students in instrument flying techniques and procedures. We offer accelerated and flexible CFII training options to fit your schedule.",
       },
       {
-        title: "Multi-Engine Instructor (MEI)",
+        title: " Instructor (MEI)",
         description:
-          "Elevate your flight instruction skills with the Multi-Engine Instructor (MEI) add-on. Learn to teach multi-engine aircraft operations and systems to aspiring pilots. Our MEI training program provides the knowledge and experience needed to become a proficient multi-engine flight instructor. Contact us to learn more about our MEI training options.",
+          "Elevate your flight instruction skills with the  Instructor (MEI) add-on. Learn to teach  aircraft operations and systems to aspiring pilots. Our MEI training program provides the knowledge and experience needed to become a proficient  flight instructor. Contact us to learn more about our MEI training options.",
         duration: "~2 months",
       },
     ],

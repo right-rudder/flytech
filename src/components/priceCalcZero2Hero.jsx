@@ -221,7 +221,7 @@ const PriceCalcZero2Hero = () => {
                           htmlFor="heldMe"
                           className="text-sm tracking-tighter"
                         >
-                          Multi-Engine Rating
+                          Rating
                         </label>
                       </div>
                     </fieldset>
@@ -332,7 +332,7 @@ const PriceCalcZero2Hero = () => {
                         <span className="text-primary-500 font-semibold">
                           <FaCheckCircle className="text-primary-300 text-xl" />
                         </span>
-                        <span>Multi-Engine Rating</span>
+                        <span> Rating</span>
                       </li>
                     )}
                   </ul>
@@ -412,7 +412,7 @@ const PriceCalcZero2Hero = () => {
                         />
                         <span className="tooltip text-sm tracking-tighter">
                           Written tests are ~$175 per certification (not
-                          required for the Multi-Engine Rating or MEI add-on).
+                          required for the Rating or MEI add-on).
                         </span>
                         <label
                           htmlFor="written"
@@ -607,11 +607,10 @@ const PriceCalcZero2Hero = () => {
                     >
                       <span className="tooltip text-sm tracking-tighter">
                         Career track students need 25 total ME hours to reach a
-                        Multi-Engine certification. You can achieve this by
-                        either getting your MEI or flying 15 hours via time
-                        building.
+                        certification. You can achieve this by either getting
+                        your MEI or flying 15 hours via time building.
                       </span>
-                      Multi-Engine Rating
+                      Rating
                     </label>
                   </div>
                 </fieldset>

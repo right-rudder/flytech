@@ -1,7 +1,7 @@
 export const GeneralFAQs = [
   {
     title: "How long does it take to complete the flight training program?",
-    content: `Total time depends on a variety of factors including weather, aircraft availability, instructor availability, and student skill level. While times may vary, obtaining your private pilot certificate can be done in less than a year. Check out our <a href="/timeline-to-be-a-pilot" class="text-primary-800 hover:underline hover:brightness-125 duration-200">timeline page</a> for more details.`,
+    content: `Total time depends on a variety of factors including weather, aircraft availability, instructor availability, and student skill level. While times may vary, obtaining your private pilot certificate can be done in less than a year. Check out our <a href="//why-become-a-pilot" class="text-primary-800 hover:underline hover:brightness-125 duration-200">timeline page</a> for more details.`,
   },
   {
     title: "What type of aircraft are used for flight training?",
@@ -9,7 +9,7 @@ export const GeneralFAQs = [
   },
   {
     title: "What is the cost of the flight training program?",
-    content: `The total cost of flight training varies depending on how many hours you need, certificate sought, and airplane chosen. To gauge how much flight training might cost you, check out our <a href="/approximate-pilot-training-costs"  class="text-primary-800 hover:underline hover:brightness-125 duration-200">cost estimator page</a>.`,
+    content: `The total cost of flight training varies depending on how many hours you need, certificate sought, and airplane chosen. To gauge how much flight training might cost you, check out our <a href="/contact"  class="text-primary-800 hover:underline hover:brightness-125 duration-200">cost estimator page</a>.`,
   },
   {
     title:
@@ -19,7 +19,7 @@ export const GeneralFAQs = [
   {
     title:
       "What are the different pilot licenses or ratings I can obtain through FlyTech?",
-    content: `FlyTech offers training from private pilot through certified flight instructor (CFI), including instrument rating, commercial pilot training, , certified flight instructor-instrument (CFII), and multi-engine instructor (MEI). Many of our students have used the experience and training received here at FlyTech to begin successful airline careers.`,
+    content: `FlyTech offers training from private pilot through certified flight instructor (CFI), including instrument rating, commercial pilot training, , certified flight instructor-instrument (CFII), and  instructor (MEI). Many of our students have used the experience and training received here at FlyTech to begin successful airline careers.`,
   },
   {
     title:

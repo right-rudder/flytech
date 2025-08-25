@@ -52,9 +52,9 @@ const certifiedFlightInstructorInstrumentsData = {
 
     // addons: [
     //   {
-    //     title: "Multi-Engine Instructor (MEI)",
+    //     title: " Instructor (MEI)",
     //     description:
-    //       "Enhance your instructor credentials further by adding the Multi-Engine Instructor (MEI) rating. This allows you to teach multi-engine operations in both VFR and IFR environments.",
+    //       "Enhance your instructor credentials further by adding the  Instructor (MEI) rating. This allows you to teach  operations in both VFR and IFR environments.",
     //     duration: "~2 months",
     //   },
     // ],

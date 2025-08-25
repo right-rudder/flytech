@@ -8,7 +8,7 @@ export const SITE_DESCRIPTION =
 
 // Updated keywords with a focus on SEO, including relevant aviation terms and multiple localities
 export const KEYWORDS =
-  "FlyTech Pilot Academy, flight training Saint Joseph MO, pilot school Saint Joseph Missouri, how to become a pilot Missouri, flight school near me, find a flight school Saint Joseph, private pilot license Saint Joseph MO, discovery flight Saint Joseph, introductory flight Missouri, instrument rating Falcon Field, commercial pilot school Saint Joseph, commercial pilot license Missouri, certified flight instructor training MO, CFI academy Missouri, airline pilot program Missouri, aviation academy Missouri, best flight school Saint Joseph, top flight schools Phoenix area, multi-engine rating MO, learn to fly Cessna Saint Joseph MO, Diamond aircraft training Missouri, flight training cost Saint Joseph MO, pilot certification Saint Joseph, Falcon Field flight school, KSTJ pilot training";
+  "FlyTech Pilot Academy, flight training Saint Joseph MO, pilot school Saint Joseph Missouri, how to become a pilot Missouri, flight school near me, find a flight school Saint Joseph, private pilot license Saint Joseph MO, discovery flight Saint Joseph, introductory flight Missouri, instrument rating Falcon Field, commercial pilot school Saint Joseph, commercial pilot license Missouri, certified flight instructor training MO, CFI academy Missouri, airline pilot program Missouri, aviation academy Missouri, best flight school Saint Joseph, top flight schools Phoenix area,  rating MO, learn to fly Cessna Saint Joseph MO, Diamond aircraft training Missouri, flight training cost Saint Joseph MO, pilot certification Saint Joseph, Falcon Field flight school, KSTJ pilot training";
 
 export const OG_IMAGE = "/FlyTech-OG-Image.png";
 
@@ -20,6 +20,9 @@ export const CITY_STATE = "Saint Joseph, MO";
 export const AIRPORT = "Rosecrans Memorial Airport";
 
 export const AIRPORT_CODE = "KSTJ";
+
+export const GEO_LATITUDE = 39.7679;
+export const GEO_LONGITUDE = -94.8467;
 
 export const LOCATIONS = [
   {

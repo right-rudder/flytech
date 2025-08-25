@@ -48,9 +48,9 @@ const currentVideo = getCurrentVideo(videoList, "discovery flight");
 ---
 
 <BaseLayout
-  pageTitle="Blog | FlyTech Pilot Academy"
-  pageDescription="Get the latest insights and tips from FlyTech Pilot Academy. Stay up-to-date with the latest happenings in the world of flight training."
-  pageKeywords="blog, flight training blog, aviation blog, pilot training blog, flight school blog, latest tips for pilots, latest insights for pilots"
+  siteTitle="Blog | FlyTech Pilot Academy"
+  siteDescription="Get the latest insights and tips from FlyTech Pilot Academy. Stay up-to-date with the latest happenings in the world of flight training."
+  keywords="blog, flight training blog, aviation blog, pilot training blog, flight school blog, latest tips for pilots, latest insights for pilots"
 >
   <!-- Header -->
   <HeaderSmall content={data.header} />
@@ -122,8 +122,8 @@ const currentVideo = getCurrentVideo(videoList, "discovery flight");
             posts.length && (
               <article class="relative group w-full lg:m-0 w-full isolate flex flex-col justify-end overflow-hidden  bg-white px-8 pb-8 pt-48 lg:pt-80 lg:px-40 hover:ring-1 hover:ring-primary-500 duration-200">
                 <img
-                  src={posts[posts.length - 1].data.heroImage}
-                  alt={posts[posts.length - 1].data.title}
+                  src={posts[0].data.heroImage}
+                  alt={posts[0].data.title}
                   class="absolute inset-0 -z-10 h-full w-full object-cover group-hover:scale-110 group-hover:brightness-125 duration-200"
                 />
                 <div class="absolute inset-0 -z-10 bg-gradient-to-t from-slate-950 via-slate-900/20 group-hover:bg-primary-600/60 duration-200" />
@@ -131,9 +131,7 @@ const currentVideo = getCurrentVideo(videoList, "discovery flight");
 
                 <div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-100">
                   <time datetime="2020-03-16" class="mr-8 text-primary-600">
-                    <FormattedDate
-                      date={posts[posts.length - 1].data.pubDate}
-                    />
+                    <FormattedDate date={posts[0].data.pubDate} />
                   </time>
                   <div class="-ml-4 flex items-center gap-x-4">
                     <svg
@@ -143,14 +141,14 @@ const currentVideo = getCurrentVideo(videoList, "discovery flight");
                       <circle cx="1" cy="1" r="1" />
                     </svg>
                     <div class="flex font-bold text-base text-primary-200">
-                      {posts[posts.length - 1].data.author}
+                      {posts[0].data.author}
                     </div>
                   </div>
                 </div>
                 <h3 class="mt-3 text-lg font-title font-black leading-6 text-primary-100">
-                  <a href={`/blog/${posts[posts.length - 1].slug}/`}>
+                  <a href={`/blog/${posts[0].slug}/`}>
                     <span class="absolute inset-0" />
-                    {posts[posts.length - 1].data.title}
+                    {posts[0].data.title}
                   </a>
                 </h3>
               </article>
@@ -162,7 +160,7 @@ const currentVideo = getCurrentVideo(videoList, "discovery flight");
         class="w-full flex flex-wrap gap-3 lg:gap-6 mt-16 mx-auto justify-center"
       >
         {
-          posts.slice(0, -1).map((post, index) => (
+          posts.slice(1, posts.length).map((post, index) => (
             <article class="relative group w-full lg:m-0 md:w-2/5 lg:w-1/4 isolate flex flex-col justify-end overflow-hidden  bg-white px-8 pb-8 pt-48 lg:pt-80 hover:ring-1 hover:ring-primary-500 duration-200">
               <img
                 src={post.data.heroImage}

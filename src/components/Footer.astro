@@ -37,7 +37,7 @@ const { pathname } = Astro.url;
           href="/"
           aria-label="Go home"
           title="Company"
-          class="flex items-start justify-start w-full"
+          class="flex items-start justify-center w-full"
         >
           <Image
             src={logo}
@@ -50,18 +50,22 @@ const { pathname } = Astro.url;
             href="https://www.google.com/maps?ll=39.771489,-94.903192&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=3597859851635819456"
             target="_blank"
             rel="noopener noreferrer"
-            class="transition-colors duration-300 text-xs lg:text-sm -mt-2 pb-2 text-white hover:text-primary-400"
+            class="transition-colors duration-300 text-xs lg:text-sm text-center py-6 text-white hover:text-primary-400"
           >
             <span class="">200 NW Rosecrans Rd</span>
-            <span class="text-primary-400 text-sm pt-3"> &#x2022; </span>
+            <!-- <br /> -->
+            <!-- <span class="text-primary-400 text-sm pt-3"> &#x2022; </span> -->
+            <!-- <br /> -->
             <span class="">St Joseph, MO 64503</span>
           </a>
         </div>
         <div class="mt-2 lg:max-w-sm font-sans2 w-full">
-          <p class="text-sm text-white px-4 lg:px-0 text-center w-full">
+          <p class="text-sm text-white px-4 lg:px-0 text-center w-full py-4">
             {SITE_DESCRIPTION}
           </p>
-          <div class="flex justify-center align-middle items-center w-full">
+          <div
+            class="flex justify-center text-center align-middle items-center border-t-2 py-2 w-full border-primary-500 border-solid"
+          >
             <a
               href="/privacy-policy"
               class="mt-3 mr-4 transition-colors duration-300 text-sm text-white hover:text-primary-400"
