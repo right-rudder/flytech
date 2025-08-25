@@ -19,7 +19,7 @@ export const GeneralFAQs = [
   {
     title:
       "What are the different pilot licenses or ratings I can obtain through FlyTech?",
-    content: `FlyTech offers training from private pilot through certified flight instructor (CFI), including instrument rating, commercial pilot training, , certified flight instructor-instrument (CFII), and multi-engine instructor (MEI). Many of our students have used the experience and training received here at FlyTech to begin successful airline careers.`,
+    content: `FlyTech offers training from private pilot through certified flight instructor (CFI), including instrument rating, commercial pilot training, , certified flight instructor-instrument (CFII), and  instructor (MEI). Many of our students have used the experience and training received here at FlyTech to begin successful airline careers.`,
   },
   {
     title:
