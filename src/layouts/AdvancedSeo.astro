@@ -1,0 +1,66 @@
+---
+const { url, title, description } = Astro.props;
+
+// Generate JSON-LD for current page
+const pageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": url,
+  url: url,
+  name: title,
+  description: description,
+  isPartOf: {
+    "@type": "WebSite",
+    "@id": "https://flystj.com#website",
+    url: "https://flystj.com",
+    name: "FlyTech Pilot Academy",
+    description:
+      "FlyTech Pilot Academy is a flight school dedicated to providing high-quality flight training and aviation education to aspiring pilots. Our experienced instructors and modern fleet of aircraft ensure that students receive comprehensive training in a safe and supportive environment.",
+    publisher: {
+      "@type": "Organization",
+      name: "FlyTech Pilot Academy",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://flystj.com/flytech-logo_1000px.webp",
+      },
+    },
+  },
+  breadcrumb: {
+    "@type": "BreadcrumbList",
+    itemListElement: [],
+  },
+};
+
+// Add hreflang data for international students
+const hreflangData = [
+  { lang: "en-US", url: url },
+  { lang: "x-default", url: url },
+];
+---
+
+<!-- Additional Page-specific Schema -->
+<script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />
+
+<!-- Hreflang for international SEO -->{
+  hreflangData.map(({ lang, url }) => (
+    <link rel="alternate" hreflang={lang} href={url} />
+  ))
+}
+
+<!-- Additional SEO meta tags -->
+<meta name="referrer" content="origin-when-cross-origin" />
+<meta name="color-scheme" content="light" />
+<meta name="format-detection" content="telephone=yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-touch-fullscreen" content="yes" />
+
+<!-- Performance hints -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="dns-prefetch" href="//www.googletagmanager.com" />
+<link rel="dns-prefetch" href="//www.google-analytics.com" />
+
+<!-- Security headers -->
+<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+<meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+<meta http-equiv="X-XSS-Protection" content="1; mode=block" />
