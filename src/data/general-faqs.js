@@ -5,7 +5,7 @@ export const GeneralFAQs = [
   },
   {
     title: "What type of aircraft are used for flight training?",
-    content: `Our primary training aircraft are our fleet of Cessna 172s, equipped with six-pack steam gauges and Garmin G5 flight displays. For multi-engine training, we lease Diamond DA42 aircraft.`,
+    content: `Our primary training aircraft are our fleet of Cessna 172s, equipped with six-pack steam gauges and Garmin G5 flight displays. For , we lease Diamond DA42 aircraft.`,
   },
   {
     title: "What is the cost of the flight training program?",
@@ -19,7 +19,7 @@ export const GeneralFAQs = [
   {
     title:
       "What are the different pilot licenses or ratings I can obtain through FlyTech?",
-    content: `FlyTech offers training from private pilot through certified flight instructor (CFI), including instrument rating, commercial pilot training, multi-engine training, certified flight instructor-instrument (CFII), and multi-engine instructor (MEI). Many of our students have used the experience and training received here at FlyTech to begin successful airline careers.`,
+    content: `FlyTech offers training from private pilot through certified flight instructor (CFI), including instrument rating, commercial pilot training, , certified flight instructor-instrument (CFII), and multi-engine instructor (MEI). Many of our students have used the experience and training received here at FlyTech to begin successful airline careers.`,
   },
   {
     title:

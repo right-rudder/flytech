@@ -3,7 +3,7 @@ import { COMPANY_NAME } from "../../consts";
 const sportPilotData = {
   pageTitle: `Sport Pilot Certificate | ${COMPANY_NAME}`,
   pageDescription:
-    "Earn your Sport Pilot Certificate at FlyTech Flight School. Learn to fly light sport aircraft with less training time and no medical certificate required.",
+    "Earn your Sport Pilot Certificate at FlyTech Pilot Academy. Learn to fly light sport aircraft with less training time and no medical certificate required.",
   pageKeywords:
     "sport pilot certificate, light sport aircraft, learn to fly, FAA sport license, fly small planes, pilot training Missouri",
 

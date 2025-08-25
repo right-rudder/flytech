@@ -2,9 +2,9 @@ import WhoAreUs from "../components/WhoAreUs.astro";
 import { COMPANY_NAME } from "../consts";
 
 const whyData = {
-  pageTitle: `Why Choose FlyTech Flight School in Saint Joseph, MO? | ${COMPANY_NAME}`,
+  pageTitle: `Why Choose FlyTech Pilot Academy in Saint Joseph, MO? | ${COMPANY_NAME}`,
   pageDescription:
-    "FlyTech Flight School in Saint Joseph, MO offers real-world airspace experience, personalized instruction, and cutting-edge aircraft. Learn to fly with confidence in an environment designed to accelerate your success.",
+    "FlyTech Pilot Academy in Saint Joseph, MO offers real-world airspace experience, personalized instruction, and cutting-edge aircraft. Learn to fly with confidence in an environment designed to accelerate your success.",
   pageKeywords:
     "flight school Saint Joseph MO, pilot training Missouri, Sling NGT training aircraft, Garmin avionics, ForeFlight, flight school near Kansas City, real-world flight training Missouri",
 
@@ -12,7 +12,7 @@ const whyData = {
   header: {
     stars: true,
     imagePath: "/src/assets/plane-orange-ground-usa-flag.webp",
-    imageAlt: "FlyTech Flight School campus and facilities",
+    imageAlt: "FlyTech Pilot Academy campus and facilities",
     headerH1: `Why Choose <strong class="text-primary-600">FlyTech?</strong>`,
     paragraph: `FlyTech isn’t just a flight school — it's a tight-knit team of local aviators, instructors, and mentors passionate about helping the next generation of pilots succeed. With modern training tools, hands-on experience, and a supportive environment, FlyTech offers a better, smarter way to learn to fly.`,
     buttons: [
@@ -136,7 +136,7 @@ const whyData = {
       primary: true,
     },
     imagePath: "/src/assets/student-receiving-signed-shirt.webp",
-    imageAlt: "FlyTech Flight School student smiling in front of an airplane",
+    imageAlt: "FlyTech Pilot Academy student smiling in front of an airplane",
   },
 
   gMaps: [
@@ -154,7 +154,7 @@ const whyData = {
     title: "A Community of Pilots Making Flight Training Accessible",
     imagePath: "/src/assets/students_groundschool.webp",
     imageAlt:
-      "FlyTech Flight School instructors and students standing in front of an airplane",
+      "FlyTech Pilot Academy instructors and students standing in front of an airplane",
     descriptions: [
       "FlyTech is a community built by local recreational, commercial, and military pilots, united by a mission to make flight training more accessible, efficient, and enjoyable for everyone.",
       "We recognized how difficult it used to be to become a pilot—and we set out to change that. With advancements in technology and evolving regulations, it’s never been a better time to start flying.",

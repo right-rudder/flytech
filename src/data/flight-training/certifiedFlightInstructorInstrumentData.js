@@ -3,7 +3,7 @@ import { COMPANY_NAME } from "../../consts";
 const certifiedFlightInstructorInstrumentsData = {
   pageTitle: `Certified Flight Instructor – Instrument (CFII) | ${COMPANY_NAME}`,
   pageDescription:
-    "Expand your flight instructor credentials with FlyTech Flight School’s Certified Flight Instructor – Instrument (CFII) program. Learn to teach instrument flying skills and prepare pilots for IFR proficiency.",
+    "Expand your flight instructor credentials with FlyTech Pilot Academy’s Certified Flight Instructor – Instrument (CFII) program. Learn to teach instrument flying skills and prepare pilots for IFR proficiency.",
   pageKeywords:
     "certified flight instructor instrument Missouri, CFII training Saint Joseph, instrument flight instructor certification, become a CFII, IFR instructor course, advanced flight training",
 
@@ -12,7 +12,7 @@ const certifiedFlightInstructorInstrumentsData = {
     stars: true,
     imagePath: "/src/assets/plane-pilots-checking-airship.webp",
     imageAlt:
-      "FlyTech Flight School instructor and student practicing instrument flight in a Cessna cockpit",
+      "FlyTech Pilot Academy instructor and student practicing instrument flight in a Cessna cockpit",
     headerH1: `Certified Flight Instructor – <strong class="text-primary-600">Instrument (CFII)</strong>`,
     paragraph: `Advance your aviation career by becoming a Certified Flight Instructor – Instrument. Gain the knowledge and skills to teach pilots advanced IFR techniques and help them succeed in challenging flight conditions.`,
     buttons: [
@@ -33,7 +33,7 @@ const certifiedFlightInstructorInstrumentsData = {
 
     title: "Overview",
     description: `
-      The Certified Flight Instructor – Instrument (CFII) program at FlyTech Flight School is designed for licensed flight instructors who want to expand their teaching qualifications to include instrument training.
+      The Certified Flight Instructor – Instrument (CFII) program at FlyTech Pilot Academy is designed for licensed flight instructors who want to expand their teaching qualifications to include instrument training.
       <br/><br/>
       Our program covers advanced instrument flying principles, IFR regulations, navigation systems, instrument approaches, and teaching techniques specific to instrument students.
       <br/><br/>

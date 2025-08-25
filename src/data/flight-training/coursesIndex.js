@@ -5,7 +5,7 @@ const coursesIndex = {
     // SEO Header Stuff
     pageTitle: `Training Programs | ${COMPANY_NAME}`,
     pageDescription:
-      "Discover FlyTech Flight School’s comprehensive pilot training programs. From Private Pilot License to advanced certifications like Instrument Rating, Multi-Engine, and Certified Flight Instructor, our expert-led courses are designed to help you achieve your aviation dreams.",
+      "Discover FlyTech Pilot Academy’s comprehensive pilot training programs. From Private Pilot License to advanced certifications like Instrument Rating, Multi-Engine, and Certified Flight Instructor, our expert-led courses are designed to help you achieve your aviation dreams.",
     pageKeywords:
       "flight training courses Missouri, aviation certifications, private to commercial pilot, multi-engine rating training, CFI courses Saint Joseph, aviation school programs",
 
@@ -14,9 +14,9 @@ const coursesIndex = {
       stars: true,
       imagePath: "/src/assets/stock-pierre-goiffon-t56w7xguZWA-unsplash.webp",
       imageAlt:
-        "Photograph of a FlyTech Flight School aircraft soaring over the Missouri landscape",
+        "Photograph of a FlyTech Pilot Academy aircraft soaring over the Missouri landscape",
       headerH1: `Flight <br> training <strong class="text-primary-600">PROGRAMS</strong>`,
-      paragraph: `Join FlyTech Flight School and take your first step towards a successful aviation career. Whether you're starting with a discovery flight or pursuing advanced ratings, we’re here to support you every step of the way.`,
+      paragraph: `Join FlyTech Pilot Academy and take your first step towards a successful aviation career. Whether you're starting with a discovery flight or pursuing advanced ratings, we’re here to support you every step of the way.`,
       buttons: [
         {
           name: "Our programs",

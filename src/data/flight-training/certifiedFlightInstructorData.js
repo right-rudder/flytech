@@ -3,7 +3,7 @@ import { COMPANY_NAME } from "../../consts";
 const certifiedFlightInstructorData = {
   pageTitle: `Certified Flight Instructor (CFI) | ${COMPANY_NAME}`,
   pageDescription:
-    "Launch your career as a flight instructor with FlyTech Flight School’s Certified Flight Instructor (CFI) program. Gain the experience and skills needed to teach the next generation of pilots.",
+    "Launch your career as a flight instructor with FlyTech Pilot Academy’s Certified Flight Instructor (CFI) program. Gain the experience and skills needed to teach the next generation of pilots.",
   pageKeywords:
     "certified flight instructor Missouri, CFI training Saint Joseph, flight instructor certification, become a CFI, flight school, pilot instructor training",
 
@@ -12,9 +12,9 @@ const certifiedFlightInstructorData = {
     stars: true,
     imagePath: "/src/assets/students-in-front-of-slinger-2.webp",
     imageAlt:
-      "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
+      "FlyTech Pilot Academy student and flight instructor in a Cessna airplane cockpit",
     headerH1: `Certified Flight <strong class="text-primary-600" >INSTRUCTOR (CFI)</strong>`,
-    paragraph: `Become a leader in aviation with FlyTech Flight School’s CFI program. Gain valuable experience while teaching aspiring pilots and advancing your own career.`,
+    paragraph: `Become a leader in aviation with FlyTech Pilot Academy’s CFI program. Gain valuable experience while teaching aspiring pilots and advancing your own career.`,
     buttons: [
       {
         name: "Enroll Today",
@@ -33,7 +33,7 @@ const certifiedFlightInstructorData = {
 
     title: "Overview",
     description: `
-      The Certified Flight Instructor (CFI) program at FlyTech Flight School is designed for pilots looking to advance their careers by teaching others how to fly. This program equips you with the instructional skills, flight proficiency, and teaching techniques necessary to become an FAA-certified instructor.
+      The Certified Flight Instructor (CFI) program at FlyTech Pilot Academy is designed for pilots looking to advance their careers by teaching others how to fly. This program equips you with the instructional skills, flight proficiency, and teaching techniques necessary to become an FAA-certified instructor.
       <br/><br/>
       FlyTech offers an <strong>accelerated (~4-8 weeks)</strong> and a <strong>flexible (at-your-own pace)</strong> CFI training program. Our flight instructors will guide you through the process of becoming a proficient flight instructor, preparing you for a rewarding career in aviation.
       <br/><br/>
@@ -68,7 +68,7 @@ const certifiedFlightInstructorData = {
       imageAlt: "Female pilot smiling",
       title: "Enroll in the CFI Program",
       description:
-        "Start your journey as a Certified Flight Instructor at FlyTech Flight School and gain the experience needed for a successful aviation career.",
+        "Start your journey as a Certified Flight Instructor at FlyTech Pilot Academy and gain the experience needed for a successful aviation career.",
       button: {
         name: "Enroll Now",
         link: "/#enroll",

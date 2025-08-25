@@ -3,18 +3,18 @@ import { COMPANY_NAME } from "../consts";
 const teamData = {
   pageTitle: `The FlyTech Crew | ${COMPANY_NAME}`,
   pageDescription:
-    "Discover the dedicated team behind FlyTech Flight School. Our leadership and certified flight instructors are committed to providing exceptional training and support to help you achieve your aviation goals.",
+    "Discover the dedicated team behind FlyTech Pilot Academy. Our leadership and certified flight instructors are committed to providing exceptional training and support to help you achieve your aviation goals.",
   pageKeywords:
-    "FlyTech Flight School team, flight instructors, aviation experts, leadership team, certified flight instructors, aviation training",
+    "FlyTech Pilot Academy team, flight instructors, aviation experts, leadership team, certified flight instructors, aviation training",
 
   // Top Header
   header: {
     stars: true,
     imagePath: "/src/assets/pilot-checking-plane-engine.webp",
     imageAlt:
-      "FlyTech Flight School student and flight instructor in a Cessna airplane cockpit",
+      "FlyTech Pilot Academy student and flight instructor in a Cessna airplane cockpit",
     headerH1: `Meet our <strong class="text-primary-600">TEAM</strong>`,
-    paragraph: `Get to know the passionate and experienced team at FlyTech Flight School. Our leadership and certified flight instructors are dedicated to helping you succeed in your aviation journey.`,
+    paragraph: `Get to know the passionate and experienced team at FlyTech Pilot Academy. Our leadership and certified flight instructors are dedicated to helping you succeed in your aviation journey.`,
     buttons: [
       {
         name: "Enroll Today",
@@ -39,47 +39,47 @@ const teamData = {
     leadership: [
       {
         imagePath: "/src/assets/lute-1.webp",
-        imageAlt: "Lute Atieh Pilot, Managing Partner at FlyTech Flight School",
+        imageAlt: "Lute Atieh Pilot, Managing Partner at FlyTech Pilot Academy",
         name: "Lute Atieh",
         title: "Pilot, Managing Partner",
         summary:
-          "Lute Atieh is a Pilot and Managing Partner at FlyTech Flight School. With extensive experience in aviation, Lute is dedicated to providing high-quality flight training and ensuring the safety and success of all students. His leadership and expertise in the field make him a vital part of the FlyTech team, as he works tirelessly to foster a supportive and effective learning environment for aspiring pilots.",
+          "Lute Atieh is a Pilot and Managing Partner at FlyTech Pilot Academy. With extensive experience in aviation, Lute is dedicated to providing high-quality flight training and ensuring the safety and success of all students. His leadership and expertise in the field make him a vital part of the FlyTech team, as he works tirelessly to foster a supportive and effective learning environment for aspiring pilots.",
       },
       {
         imagePath: "/src/assets/Daniel-Lamaster.webp",
         imageAlt:
-          "Daniel Lamaster Chief Flight Instructor at FlyTech Flight School",
+          "Daniel Lamaster Chief Flight Instructor at FlyTech Pilot Academy",
         name: "Daniel Lamaster",
         title: "Chief Flight Instructor",
         summary:
-          "Daniel Lamaster is the Chief Flight Instructor at FlyTech Flight School. With a wealth of experience in flight training, Daniel is committed to providing exceptional instruction and mentorship to students. His expertise in aviation and dedication to safety ensure that students receive the highest quality training. As a leader in the FlyTech team, Daniel plays a crucial role in shaping the next generation of skilled pilots.",
+          "Daniel Lamaster is the Chief Flight Instructor at FlyTech Pilot Academy. With a wealth of experience in flight training, Daniel is committed to providing exceptional instruction and mentorship to students. His expertise in aviation and dedication to safety ensure that students receive the highest quality training. As a leader in the FlyTech team, Daniel plays a crucial role in shaping the next generation of skilled pilots.",
       },
       {
         imagePath: "/src/assets/Travis.webp",
         imageAlt:
-          "Travis Hawkins partner and Director of Technology at FlyTech Flight School",
+          "Travis Hawkins partner and Director of Technology at FlyTech Pilot Academy",
         name: "Travis Hawkins",
         title: "Pilot, Partner, Director of Technology",
         summary:
-          "Travis Hawkins is a seasoned pilot and the Director of Technology at FlyTech Flight School. With a passion for aviation and technology, he brings a unique blend of skills to the team. Travis is dedicated to enhancing the flight training experience through innovative solutions and ensuring that students receive top-notch instruction. His commitment to excellence and safety in aviation makes him an invaluable asset to FlyTech.",
+          "Travis Hawkins is a seasoned pilot and the Director of Technology at FlyTech Pilot Academy. With a passion for aviation and technology, he brings a unique blend of skills to the team. Travis is dedicated to enhancing the flight training experience through innovative solutions and ensuring that students receive top-notch instruction. His commitment to excellence and safety in aviation makes him an invaluable asset to FlyTech.",
       },
       {
         imagePath: "/src/assets/Jason.webp",
         imageAlt:
-          "Jason Chase Partner, Dir of H.S. Partnerships at FlyTech Flight School",
+          "Jason Chase Partner, Dir of H.S. Partnerships at FlyTech Pilot Academy",
         name: "Jason Chase",
         title: "Partner, Dir of H.S. Partnerships, Student Pilot",
         summary:
-          "Jason Chase is a Partner and Director of High School Partnerships at FlyTech Flight School. With a focus on building strong relationships with high schools, he plays a crucial role in expanding opportunities for students interested in aviation. As a student pilot himself, Jason understands the challenges and rewards of flight training, and he is committed to helping aspiring pilots achieve their goals. His passion for aviation and dedication to education make him a key member of the FlyTech team.",
+          "Jason Chase is a Partner and Director of High School Partnerships at FlyTech Pilot Academy. With a focus on building strong relationships with high schools, he plays a crucial role in expanding opportunities for students interested in aviation. As a student pilot himself, Jason understands the challenges and rewards of flight training, and he is committed to helping aspiring pilots achieve their goals. His passion for aviation and dedication to education make him a key member of the FlyTech team.",
       },
       {
         imagePath: "/src/assets/Dan-Batliner-980x980.webp",
         imageAlt:
-          "Dan Batliner P.E. Partner, Student Pilot at FlyTech Flight School",
+          "Dan Batliner P.E. Partner, Student Pilot at FlyTech Pilot Academy",
         name: "Dan Batliner P.E.",
         title: "Partner, Student Pilot",
         summary:
-          "Dan Batliner P.E. is a Partner and Student Pilot at FlyTech Flight School. With a background in engineering, Dan brings a unique perspective to the aviation field. His commitment to learning and passion for flight make him an integral part of the FlyTech team. As a student pilot, Dan is dedicated to advancing his skills and knowledge in aviation, while also contributing to the growth and success of the flight school.",
+          "Dan Batliner P.E. is a Partner and Student Pilot at FlyTech Pilot Academy. With a background in engineering, Dan brings a unique perspective to the aviation field. His commitment to learning and passion for flight make him an integral part of the FlyTech team. As a student pilot, Dan is dedicated to advancing his skills and knowledge in aviation, while also contributing to the growth and success of the flight school.",
       },
     ],
 
@@ -103,7 +103,7 @@ const teamData = {
     cta: {
       title: "Enroll in the CFI Program",
       description:
-        "Start your journey as a Certified Flight Instructor at FlyTech Flight School and gain the experience needed for a successful aviation career.",
+        "Start your journey as a Certified Flight Instructor at FlyTech Pilot Academy and gain the experience needed for a successful aviation career.",
       button: {
         name: "Enroll Now",
         link: "/#enroll",

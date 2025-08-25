@@ -5,7 +5,7 @@ const groundSchoolData = {
   pageDescription:
     "Join FlyTech's in-person ground school sessions led by experienced instructors. Open to all student pilots—whether you're enrolled in a school or not. Just $50 for 3 hours of training in Saint Joseph, MO.",
   pageKeywords:
-    "ground school Saint Joseph MO, pilot ground school, aviation classes Saint Joseph, flight training Saint Joseph, FlyTech Flight School ground school, aviation knowledge classes",
+    "ground school Saint Joseph MO, pilot ground school, aviation classes Saint Joseph, flight training Saint Joseph, FlyTech Pilot Academy ground school, aviation knowledge classes",
 
   // Top Header
   header: {

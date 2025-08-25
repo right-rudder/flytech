@@ -4,15 +4,15 @@ export const SITE_TITLE =
 
 // Updated meta description with accurate location and keywords
 export const SITE_DESCRIPTION =
-  "FlyTech Flight School in Saint Joseph, MO, provides top-quality flight training for aspiring pilots. Whether you're looking to earn your private pilot license, instrument rating, or commercial pilot certificate, our experienced instructors and well-maintained fleet will help you achieve your aviation goals. We also offer multi-engine training and flight instructor certification. Start your journey with FlyTech today!";
+  "FlyTech Pilot Academy in Saint Joseph, MO, provides top-quality flight training for aspiring pilots. Whether you're looking to earn your private pilot license, instrument rating, or commercial pilot certificate, our experienced instructors and well-maintained fleet will help you achieve your aviation goals. We also offer  and flight instructor certification. Start your journey with FlyTech today!";
 
 // Updated keywords with a focus on SEO, including relevant aviation terms and multiple localities
 export const KEYWORDS =
-  "FlyTech Flight School, flight training Saint Joseph MO, pilot school Saint Joseph Missouri, how to become a pilot Missouri, flight school near me, find a flight school Saint Joseph, private pilot license Saint Joseph MO, discovery flight Saint Joseph, introductory flight Missouri, instrument rating Falcon Field, commercial pilot school Saint Joseph, commercial pilot license Missouri, certified flight instructor training MO, CFI academy Missouri, airline pilot program Missouri, aviation academy Missouri, best flight school Saint Joseph, top flight schools Phoenix area, multi-engine rating MO, learn to fly Cessna Saint Joseph MO, Diamond aircraft training Missouri, flight training cost Saint Joseph MO, pilot certification Saint Joseph, Falcon Field flight school, KSTJ pilot training";
+  "FlyTech Pilot Academy, flight training Saint Joseph MO, pilot school Saint Joseph Missouri, how to become a pilot Missouri, flight school near me, find a flight school Saint Joseph, private pilot license Saint Joseph MO, discovery flight Saint Joseph, introductory flight Missouri, instrument rating Falcon Field, commercial pilot school Saint Joseph, commercial pilot license Missouri, certified flight instructor training MO, CFI academy Missouri, airline pilot program Missouri, aviation academy Missouri, best flight school Saint Joseph, top flight schools Phoenix area, multi-engine rating MO, learn to fly Cessna Saint Joseph MO, Diamond aircraft training Missouri, flight training cost Saint Joseph MO, pilot certification Saint Joseph, Falcon Field flight school, KSTJ pilot training";
 
 export const OG_IMAGE = "/FlyTech-OG-Image.png";
 
-export const COMPANY_NAME = "FlyTech Flight School";
+export const COMPANY_NAME = "FlyTech Pilot Academy";
 export const COMPANY_NICKNAME = "FlyTech";
 
 export const CITY_STATE = "Saint Joseph, MO";

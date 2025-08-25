@@ -1,7 +1,7 @@
 const enrollInfo = {
   data: {
     //SEO Header Stuff
-    pageTitle: "Enroll Now | FlyTech Flight School, Saint Joseph, MO",
+    pageTitle: "Enroll Now | FlyTech Pilot Academy, Saint Joseph, MO",
     pageDescription:
       "Start your aviation journey with a discovery flight at Elite Flight Training Academy. Contact us to schedule your flight today!",
     pageKeywords:

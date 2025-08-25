@@ -2,7 +2,7 @@ const programs = {
   upperHeading: "Explore",
   heading: "Our Training Programs",
   description:
-    "Whether you're starting your aviation journey, advancing your skills, or pursuing a career in aviation, FlyTech Flight School offers tailored programs for all experience levels.",
+    "Whether you're starting your aviation journey, advancing your skills, or pursuing a career in aviation, FlyTech Pilot Academy offers tailored programs for all experience levels.",
   cards: [
     {
       title: "Private Pilot Certificate",

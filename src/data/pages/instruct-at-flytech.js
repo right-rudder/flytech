@@ -2,9 +2,9 @@ const instructAtFlyTech = {
   data: {
     //SEO Header Stuff
     pageTitle:
-      "Start Your Pilot Career || FlyTech Flight School, Saint Joseph, MO",
+      "Start Your Pilot Career || FlyTech Pilot Academy, Saint Joseph, MO",
     pageDescription:
-      "Begin your pilot career as a certified flight instructor (CFI) at FlyTech Flight School. We offer a 30-day CFI program to help you build the necessary hours to become an airline pilot. Contact us today!",
+      "Begin your pilot career as a certified flight instructor (CFI) at FlyTech Pilot Academy. We offer a 30-day CFI program to help you build the necessary hours to become an airline pilot. Contact us today!",
     pageKeywords:
       "flight training, flight training Saint Joseph, flight training Missouri, flight school, flight school Saint Joseph, flight school Missouri, pilot training, CFI training, certified flight instructor, pilot career, airline pilot, Saint Joseph, MO, Missouri",
 
@@ -13,7 +13,7 @@ const instructAtFlyTech = {
       stars: true,
       imagePath: "/src/assets/stock-max-nustedt-_uwWKY22_HA-unsplash.webp",
       imageAlt:
-        "FlyTech Flight School airplane landing at Rosecrans Memorial Airport in Saint Joseph, Missouri",
+        "FlyTech Pilot Academy airplane landing at Rosecrans Memorial Airport in Saint Joseph, Missouri",
       headerH1: `Career Track<br>Pilots`,
       paragraph:
         "Start your pilot career after getting your commercial certificate. Start flying now and build the necessary hours to become an airline pilot. One way FlyTech can help is by becoming a certified flight instructor (CFI).",

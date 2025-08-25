@@ -93,14 +93,14 @@ const Navbar = ({ pathname }) => {
             <div className="flex w-full items-center py-5 justify-center lg:justify-between">
               <a
                 href="/"
-                title="FlyTech flight school"
+                title="FlyTech Pilot Academy"
                 className="hover:brightness-110 flex h-14 lg:h-16 justify-end align-middle items-center duration-200 ease-in-out py-1 px-2"
               >
                 <img
                   src="/flytech-logo-wg_1000px-980x262.webp"
-                  alt="FlyTech Flight School  Logo"
-                  aria-label="FlyTech Flight School  Logo"
-                  title="FlyTech Flight School "
+                  alt="FlyTech Pilot Academy  Logo"
+                  aria-label="FlyTech Pilot Academy  Logo"
+                  title="FlyTech Pilot Academy "
                   loading="eager"
                   className={`${navBar || openMobile ? "h-full max-w-1/2" : "h-full  max-w-1/2"} object-contain duration-500 drop-shadow-md`}
                 />
@@ -270,9 +270,9 @@ const Navbar = ({ pathname }) => {
         >
           <img
             src="/flytech-logo-wg_1000px-980x262.webp"
-            alt="FlyTech Flight School  Logo"
-            aria-label="FlyTech Flight School  Logo"
-            title="FlyTech Flight School "
+            alt="FlyTech Pilot Academy  Logo"
+            aria-label="FlyTech Pilot Academy  Logo"
+            title="FlyTech Pilot Academy "
             className="object-contain h-24 w-full drop-shadow-sm max-w-md px-10"
           />
         </a>

@@ -2,7 +2,7 @@ const aproxPilotTrainingCosts = {
   data: {
     //SEO Header Stuff
     pageTitle:
-      "Approximate Pilot Training Costs | FlyTech Flight School, Saint Joseph, MO",
+      "Approximate Pilot Training Costs | FlyTech Pilot Academy, Saint Joseph, MO",
     pageDescription:
       "Get an estimate on how much could it cost to be a pilot at different licenses and rating. We're in the Phoenix, Missouri area at Falcon Field.  Many of our students come from Saint Joseph, Gilbert, Scottsdale, Apache Junction, Chandler, Tempe, Queen Creek, Fountain Hills, Paradise Valley, Phoenix",
     pageKeywords:
@@ -13,10 +13,10 @@ const aproxPilotTrainingCosts = {
       stars: true,
       imagePath: "/src/assets/IMG_2879.webp",
       imageAlt:
-        "FlyTech Flight School airplane landing at Rosecrans Memorial Airport in Saint Joseph, Missouri",
+        "FlyTech Pilot Academy airplane landing at Rosecrans Memorial Airport in Saint Joseph, Missouri",
       headerH1: `Approximate<br>Training Costs`,
       paragraph:
-        "The cost of flight training varies greatly depending on a number of factors such as type of training, the student's aptitude and experience level, and the type of aircraft used. Affordable options for pilot training are available at FlyTech Flight School.",
+        "The cost of flight training varies greatly depending on a number of factors such as type of training, the student's aptitude and experience level, and the type of aircraft used. Affordable options for pilot training are available at FlyTech Pilot Academy.",
       buttons: [
         {
           name: "Enroll Now",

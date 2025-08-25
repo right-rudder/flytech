@@ -2,7 +2,7 @@ const timelineToBePilot = {
   data: {
     //SEO Header Stuff
     pageTitle:
-      "Timeline to be a Pilot | FlyTech Flight School, Saint Joseph, MO",
+      "Timeline to be a Pilot | FlyTech Pilot Academy, Saint Joseph, MO",
     pageDescription:
       "Curious about the timeline to become a pilot? FlyTech offers a detailed timeline of the pilot training process.  Get a clear understanding of the steps involved in your pilot journey. We're in the Phoenix, Missouri area at Falcon Field.  Many of our students come from Saint Joseph, Gilbert, Scottsdale, Apache Junction, Chandler, Tempe, Queen Creek, Fountain Hills, Paradise Valley, Phoenix",
     pageKeywords:
@@ -13,7 +13,7 @@ const timelineToBePilot = {
       stars: true,
       imagePath: "/src/assets/planes-orange-yellow-ground.webp",
       imageAlt:
-        "FlyTech Flight School airplane landing at Rosecrans Memorial Airport in Saint Joseph, Missouri",
+        "FlyTech Pilot Academy airplane landing at Rosecrans Memorial Airport in Saint Joseph, Missouri",
       headerH1: `Pilot Training<br>Timeline`,
       paragraph:
         "Start your pilot career after getting your commercial certificate. Start flying now and build the necessary hours to become an airline pilot. One way FlyTech can help is by becoming a certified flight instructor (CFI).",
@@ -56,7 +56,7 @@ const timelineToBePilot = {
       },
       imagePath: "/src/assets/stock-adrien-brun-L87clzV761M-unsplash.webp",
       imageAlt:
-        "FlyTech Flight School airline pilot next to a commercial airplane",
+        "FlyTech Pilot Academy airline pilot next to a commercial airplane",
     },
 
     contentCTA: {
@@ -70,7 +70,7 @@ const timelineToBePilot = {
       ],
       imagePath: "/src/assets/stock-roger-starnes-sr-vNgjt5WFJLE-unsplash.webp",
       imageAlt:
-        "FlyTech Flight School student and instructor doing a preflight check on a Cessna 172",
+        "FlyTech Pilot Academy student and instructor doing a preflight check on a Cessna 172",
     },
   },
 };

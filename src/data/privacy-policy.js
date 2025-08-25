@@ -5,7 +5,7 @@ const privacyPolicies = {
     header: {
       stars: true,
       imagePath: "/src/assets/plane-orange-ground-usa-flag.webp",
-      imageAlt: "FlyTech Flight School campus and facilities",
+      imageAlt: "FlyTech Pilot Academy campus and facilities",
       headerH1: `Privacy Policy of<br /> ${COMPANY_NAME}`,
       paragraph: ``,
       buttons: [],

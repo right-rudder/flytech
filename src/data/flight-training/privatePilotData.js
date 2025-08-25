@@ -11,7 +11,7 @@ const privatePilotData = {
   header: {
     stars: true,
     imagePath: "/src/assets/cockpit-flying-slinger.webp",
-    imageAlt: "A FlyTech Flight School aircraft in flight over Missouri",
+    imageAlt: "A FlyTech Pilot Academy aircraft in flight over Missouri",
     headerH1: `Private <strong class="text-primary-600">Pilot Certificate</strong>`,
     paragraph: `Take the first step toward the skies with FlyTech’s Private Pilot Certificate. Train with experienced instructors and gain the flight hours and skills needed to fly confidently and safely.`,
     buttons: [

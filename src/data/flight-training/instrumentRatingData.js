@@ -3,7 +3,7 @@ import { COMPANY_NAME } from "../../consts";
 const instrumentRatingData = {
   pageTitle: `Instrument Rating | ${COMPANY_NAME}`,
   pageDescription:
-    "Earn your Instrument Rating with FlyTech Flight School and fly safely in low-visibility conditions. Master IFR procedures, advanced navigation, and weather interpretation with expert instruction.",
+    "Earn your Instrument Rating with FlyTech Pilot Academy and fly safely in low-visibility conditions. Master IFR procedures, advanced navigation, and weather interpretation with expert instruction.",
   pageKeywords:
     "instrument rating flight school, IFR certification Missouri, advanced pilot training, fly in low visibility, aviation school, FAA instrument training",
 

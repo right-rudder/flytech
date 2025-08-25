@@ -3,7 +3,7 @@ import { COMPANY_NAME } from "../../consts";
 const multiEngineData = {
   pageTitle: `Multi-Engine Rating Course in Saint Joseph, MO | ${COMPANY_NAME}`,
   pageDescription:
-    "Earn your Multi-Engine Rating at FlyTech Flight School in Saint Joseph, MO. Master twin-engine aircraft operations and expand your career opportunities with expert training.",
+    "Earn your Multi-Engine Rating at FlyTech Pilot Academy in Saint Joseph, MO. Master twin-engine aircraft operations and expand your career opportunities with expert training.",
   pageKeywords:
     "multi-engine rating Saint Joseph MO, twin-engine pilot training Saint Joseph, flight school Saint Joseph MO, commercial pilot training Saint Joseph, aviation school Saint Joseph MO, multi-engine certification Saint Joseph",
 
@@ -11,9 +11,9 @@ const multiEngineData = {
   header: {
     stars: true,
     imagePath: "/src/assets/placeholder-img.webp",
-    imageAlt: "FlyTech Flight School student by a multi-engine airplane",
+    imageAlt: "FlyTech Pilot Academy student by a multi-engine airplane",
     headerH1: `Multi-Engine <br>RATING</span>`,
-    paragraph: `Take your flying skills to the next level with FlyTech Flight School's Multi-Engine Rating program. Learn to operate twin-engine aircraft with confidence and precision.`,
+    paragraph: `Take your flying skills to the next level with FlyTech Pilot Academy's Multi-Engine Rating program. Learn to operate twin-engine aircraft with confidence and precision.`,
     buttons: [
       {
         name: "Enroll Today",
@@ -32,7 +32,7 @@ const multiEngineData = {
 
     title: "Overview",
     description: `
-      The Multi-Engine Rating (MER) program at FlyTech Flight School is designed for pilots who want to expand their skill set by learning to fly twin-engine aircraft. This rating is essential for those pursuing a career in commercial aviation and offers a deeper understanding of complex aircraft systems.
+      The Multi-Engine Rating (MER) program at FlyTech Pilot Academy is designed for pilots who want to expand their skill set by learning to fly twin-engine aircraft. This rating is essential for those pursuing a career in commercial aviation and offers a deeper understanding of complex aircraft systems.
       <br/>
       <br/>
       During the course, you will receive hands-on training in multi-engine aerodynamics, emergency procedures, engine-out operations, and aircraft performance calculations. You will learn how to safely manage engine failures, asymmetrical thrust, and other challenges unique to multi-engine flying.
@@ -61,7 +61,7 @@ const multiEngineData = {
       imageAlt: "Female pilot smiling",
       title: "Enroll in the Multi-Engine Rating Program",
       description:
-        "Advance your aviation skills and career opportunities by earning your Multi-Engine Rating at FlyTech Flight School.",
+        "Advance your aviation skills and career opportunities by earning your Multi-Engine Rating at FlyTech Pilot Academy.",
       button: {
         name: "Enroll Now",
         link: "/#enroll",

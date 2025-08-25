@@ -11,7 +11,7 @@ const currentStudents = {
     stars: true,
     imagePath: "/src/assets/N900FT_cropped.jpg",
     imageAlt:
-      "FlyTech Flight School Sling aircraft parked on ramp at Rosecrans Memorial Airport",
+      "FlyTech Pilot Academy Sling aircraft parked on ramp at Rosecrans Memorial Airport",
     headerH1: `NEW STUDENT</br><span class="text-primary-600">RESOURCES</span>`,
     paragraph:
       "Everything you need to begin your aviation journey with FlyTech Pilot Academy. Download essential documents, watch instructional videos, and access recommended materials to prepare for your training.",

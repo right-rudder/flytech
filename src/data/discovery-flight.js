@@ -3,9 +3,9 @@ import PageSummary from "../components/PageSummary.astro";
 const discoveryFlight = {
   data: {
     //SEO Header Stuff
-    pageTitle: "Discovery Flight | FlyTech Flight School, Saint Joseph, MO",
+    pageTitle: "Discovery Flight | FlyTech Pilot Academy, Saint Joseph, MO",
     pageDescription:
-      "Book a Flight at FlyTech Flight School in Saint Joseph, MO. Experience the thrill of flying and see if becoming a pilot is right for you!",
+      "Book a Flight at FlyTech Pilot Academy in Saint Joseph, MO. Experience the thrill of flying and see if becoming a pilot is right for you!",
     pageKeywords:
       "Discovery Flight, Flight School, Flight Training, Pilot Training, Learn to Fly, Private Pilot, Sport Pilot, Recreational Pilot, Flight Instructor, Flight Instruction, Flight School Saint Joseph, MO, Kankakee Flight School, Kankakee Flight Training, Saint Joseph Pilot Training, Saint Joseph Learn to Fly, Saint Joseph Private Pilot, Saint Joseph Sport Pilot, Saint Joseph Recreational Pilot, Saint Joseph Flight Instructor, Saint Joseph Flight Instruction",
     //
@@ -15,7 +15,7 @@ const discoveryFlight = {
       stars: true,
 
       imagePath: "/src/assets/plane-hangar-back-sunset.webp",
-      imageAlt: "FlyTech Flight School flight over Saint Joseph, MO",
+      imageAlt: "FlyTech Pilot Academy flight over Saint Joseph, MO",
       headerH1: `Discovery <strong class="text-primary-600">Flight</strong>`,
       paragraph:
         "Fly at FlyTech and See if Flying is for You! Book a Flight Today!",
