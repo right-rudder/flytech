@@ -21,6 +21,9 @@ export const AIRPORT = "Rosecrans Memorial Airport";
 
 export const AIRPORT_CODE = "KSTJ";
 
+export const GEO_LATITUDE = 39.7679;
+export const GEO_LONGITUDE = -94.8467;
+
 export const LOCATIONS = [
   {
     title: `Flight Dispatch Center`,
