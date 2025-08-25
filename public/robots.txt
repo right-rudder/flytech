@@ -1,13 +1,14 @@
 # robots.txt for ... Flight School
-https://flystj.com/
+#https://flystj.com/
 
 User-agent: *
 Allow: /
 
 # Prevent indexing of any temporary or admin pages if they exist
 Disallow: /admin/
-Disallow: /temp/
-Disallow: /draft/
+Disallow: /.well-known/
+Disallow: /api/
+Disallow: /_astro/
 
 # Allow all bots to access the sitemap
 Sitemap: https://flystj.com/sitemap-index.xml
@@ -16,8 +17,33 @@ Sitemap: https://flystj.com/sitemap-index.xml
 User-agent: Googlebot
 Allow: /
 
+User-agent: AdsBot-Google
+Allow: /
+
 User-agent: Bingbot
 Allow: /
 
+User-agent: Slurp
+Allow: / # Yahoo Slurp
+
 User-agent: DuckDuckBot
 Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: *
+Allow: /
+
+# Block unwanted crawlers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
