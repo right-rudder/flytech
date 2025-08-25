@@ -1,6 +1,13 @@
 ---
 import "../styles/global.css";
+import {
+  COMPANY_NAME,
+  GEO_LATITUDE,
+  GEO_LONGITUDE,
+  COMPANY_NICKNAME,
+} from "../consts.ts";
 
+import AdvancedSEO from "../layouts/AdvancedSeo.astro";
 interface Props {
   title: string;
   description: string;
@@ -45,12 +52,38 @@ const {
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 <meta name="keywords" content={keywords} />
+<link rel="manifest" href="/manifest.json" />
+<!-- SEO Meta Tags -->
+<meta
+  name="robots"
+  content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+/>
+<meta
+  name="googlebot"
+  content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+/>
+<meta name="author" content={COMPANY_NAME} />
+<meta name="theme-color" content="#367536" />
+
+<!-- Language and locale -->
+<meta name="language" content="en-US" />
+<meta property="og:locale" content="en_US" />
+
+<!-- Geographic targeting -->
+<meta name="geo.region" content="US-FL" />
+<meta name="geo.placename" content="Titusville" />
+<meta name="geo.position" content={`${GEO_LATITUDE};${GEO_LONGITUDE}`} />
+<meta name="ICBM" content={`${GEO_LATITUDE}, ${GEO_LONGITUDE}`} />
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={new URL(image, Astro.url)} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content={title} />
+<meta property="og:site_name" content={COMPANY_NAME} />
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
@@ -58,6 +91,35 @@ const {
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
 <link rel="sitemap" href="/sitemap-index.xml" />
+
+<!-- Preconnect to external domains for faster loading -->
+<link rel="preconnect" href="https://www.googletagmanager.com" />
+<link rel="preconnect" href="https://www.google-analytics.com" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<!-- DNS prefetch for external resources -->
+<link rel="dns-prefetch" href="//www.googletagmanager.com" />
+<link rel="dns-prefetch" href="//www.google-analytics.com" />
+
+<!-- Preload critical resources -->
+<link
+  rel="preload"
+  href="/flytech-logo-wg_1000px-980x262.webp"
+  as="image"
+  type="image/webp"
+/>
+
+<!-- Additional SEO Meta Tags -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta
+  name="apple-mobile-web-app-status-bar-style"
+  content="black-translucent"
+/>
+<meta name="apple-mobile-web-app-title" content={COMPANY_NICKNAME} />
+<meta name="application-name" content={COMPANY_NAME} />
+<meta name="msapplication-TileColor" content="#367536" />
+<meta name="msapplication-config" content="/browserconfig.xml" />
 
 <!-- Google Tag Manager -->
 <script type="text/javascript">
@@ -162,3 +224,5 @@ const {
     "hasMap": "https://maps.app.goo.gl/hpXiCLrGxLiZQjop8"
   }
 </script>
+
+<AdvancedSEO url={canonicalURL} title={title} description={description} />
