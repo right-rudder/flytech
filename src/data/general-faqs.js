@@ -1,43 +1,71 @@
 export const GeneralFAQs = [
   {
-    title: "How long does it take to complete the flight training program?",
-    content: `Total time depends on a variety of factors including weather, aircraft availability, instructor availability, and student skill level. While times may vary, obtaining your private pilot certificate can be done in less than a year. Check out our <a href="//why-become-a-pilot" class="text-primary-800 hover:underline hover:brightness-125 duration-200">timeline page</a> for more details.`,
+    title: "What is the cost of flight training?",
+    content: `The cost depends on your goals and how often you fly, but FlyTech is one of the most affordable and efficient programs in the region. Students pay as they go, and financing is available.<br/><br/>
+    <strong>As a general guide:</strong>
+    <ul class="list-disc pl-5 mt-2">
+      <li>Sport Pilot Certificate – about $5,800</li>
+      <li>Private Pilot Certificate – an additional $6,000–$12,000 if starting from scratch</li>
+    </ul>
+    <br/>
+    Keep in mind, FAA requirements are minimums—many students choose to fly more hours for added confidence before their exams.`,
+  },
+  {
+    title: "How long does it take to earn a certificate?",
+    content: `Each certificate has minimum FAA requirements, but your schedule largely determines how quickly you finish. You can train weekly, bi-weekly, or even monthly—there’s no set pace. We’ll help design a schedule that fits both your lifestyle and budget.<br/><br/>
+    <strong>Typical timelines:</strong>
+    <ul class="list-disc pl-5 mt-2">
+      <li>Sport Pilot Certificate – about 6 months with 2–3 lessons per month</li>
+      <li>Private Pilot Certificate – typically 12–18 months</li>
+    </ul>
+    <br/>
+    Additional ratings depend on your hours, experience, and training frequency.`,
   },
   {
     title: "What type of aircraft are used for flight training?",
-    content: `Our primary training aircraft are our fleet of Cessna 172s, equipped with six-pack steam gauges and Garmin G5 flight displays. For , we lease Diamond DA42 aircraft.`,
+    content: `Our fleet is built around two of the most trusted training aircraft: the Sling NGT and the Cessna 172. For multi-engine and complex ratings, we also maintain access to a Piper Seminole in Kansas City. Training is supported by our Redbird MCX full-motion simulator.<br/><br/>
+     <a href="/fleet" class="text-primary-800 hover:underline hover:brightness-125 duration-200">Visit our fleet page for more details</a>.`,
   },
   {
-    title: "What is the cost of the flight training program?",
-    content: `The total cost of flight training varies depending on how many hours you need, certificate sought, and airplane chosen. To gauge how much flight training might cost you, check out our <a href="/contact"  class="text-primary-800 hover:underline hover:brightness-125 duration-200">cost estimator page</a>.`,
+    title: "Is financial assistance or scholarships available?",
+    content: `Yes! Students can:
+    <ul class="list-disc pl-5 mt-2">
+      <li>Pay as they go, flight by flight</li>
+      <li>Purchase bulk time at discounted rates</li>
+      <li>Apply for financing through Stratus Financial (career students) or AOPA (recreational flyers)</li>
+      <li>Seek loans from local banks for Sport or Private training</li>
+    </ul>
+    <br/>
+    <a href="/financing" class="text-primary-800 hover:underline hover:brightness-125 duration-200">Visit our financing page</a> or request a call to explore your best option.`,
   },
   {
-    title:
-      "Is financial assistance or scholarships available for flight training students?",
-    content: `While we don't directly offer financing or scholarships to our students, we have partnered with a few financing companies to help students fund their pilot training. Check out our <a href="/financing" class="text-primary-800 hover:underline hover:brightness-125 duration-200">financing page</a> for more details.`,
-  },
-  {
-    title:
-      "What are the different pilot licenses or ratings I can obtain through FlyTech?",
-    content: `FlyTech offers training from private pilot through certified flight instructor (CFI), including instrument rating, commercial pilot training, , certified flight instructor-instrument (CFII), and  instructor (MEI). Many of our students have used the experience and training received here at FlyTech to begin successful airline careers.`,
-  },
-  {
-    title:
-      "Does FlyTech provide accommodation or assistance in finding accommodation for students?",
-    content: `We do not provide accommodation directly, but you can call us for information on housing options that may be available.`,
+    title: "What licenses or ratings can I earn at FlyTech?",
+    content: `We offer training for:
+    <ul class="list-disc pl-5 mt-2">
+      <li>Sport Pilot</li>
+      <li>Private Pilot</li>
+      <li>Instrument Rating</li>
+      <li>Commercial Pilot</li>
+      <li>Certified Flight Instructor (CFI, CFII, MEI)</li>
+    </ul>
+    <br/>
+    We also provide training for endorsements such as twin and complex, plus refresher training for rusty pilots needing an IPC or updated avionics experience.`,
   },
   {
     title: "Can I choose between part-time or full-time training?",
-    content: `Of course! FlyTech offers both flexible and accelerated programs to help you get your pilot certificate and ratings. Check out our individual program pages for more details.`,
+    content: `Absolutely. FlyTech offers both flexible and accelerated programs, so you can train at your own pace or fast-track your license.`,
   },
   {
-    title:
-      "Are there any medical requirements or restrictions for becoming a pilot?",
-    content: `The FAA has medical standards that all pilots must meet in order to be the pilot in command (PIC) of an aircraft. This is done by a medical exam from an FAA-approved medical doctor. However, to just get started, you can do a discovery flight and begin training. By the time you're ready to solo, you'll need to have completed an FAA medical exam. Talk to an instructor or one of our team members for more information.`,
+    title: "Are there medical requirements to become a pilot?",
+    content: `Yes. To act as pilot-in-command, you’ll need to pass an FAA medical exam with an FAA-approved doctor. However, you can begin training and take discovery flights before obtaining your medical. By the time you’re ready to solo, the exam must be complete. Our team can guide you through the process.`,
   },
   {
-    title:
-      "Are there any opportunities for flight experience beyond the standard training curriculum?",
-    content: `Yes! Students who complete all their ratings through FlyTech are guaranteed an interview for a certified flight instructor (CFI) position. Becoming a CFI is a great way to build flight hours and gain experience for a career in aviation. Check out our page about beginning your pilot career as a <a href="/flight-training/certified-flight-instructor"  class="text-primary-800 hover:underline hover:brightness-125 duration-200">CFI</a> for more details.`,
+    title: "Does FlyTech provide housing assistance?",
+    content: `Yes. We have limited on-airfield housing and can also help coordinate off-airport accommodations, whether you need short-term or long-term options.`,
+  },
+  {
+    title: "Are there opportunities beyond standard training?",
+    content: `Yes! Students who complete all their ratings with FlyTech are guaranteed an interview for a Certified Flight Instructor (CFI) position. Becoming a CFI is one of the best ways to build hours and gain experience toward a professional aviation career.<br/><br/>
+    Still have questions? <a href="/contact" class="text-primary-800 hover:underline hover:brightness-125 duration-200">Get in touch</a>.`,
   },
 ];
