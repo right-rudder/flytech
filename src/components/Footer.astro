@@ -64,21 +64,31 @@ const { pathname } = Astro.url;
             {SITE_DESCRIPTION}
           </p>
           <div
-            class="flex justify-center text-center align-middle items-center border-t-2 py-2 w-full border-primary-500 border-solid"
+            class="flex justify-center text-center align-middle items-center border-y-2 py-2 w-full border-primary-500 border-solid"
           >
             <a
               href="/privacy-policy"
-              class="mt-3 mr-4 transition-colors duration-300 text-sm text-white hover:text-primary-400"
+              class="mr-4 transition-colors duration-300 text-sm text-white hover:text-primary-400"
               >Privacy Policy
             </a>
-            <span class="text-primary-400 text-sm pt-3"> &#x2022; </span>
+            <span class="text-primary-400 text-sm"> &#x2022; </span>
             <a
               href="/terms-of-service"
-              class="mt-3 ml-4 transition-colors duration-300 text-sm text-white hover:text-primary-400"
+              class="ml-4 transition-colors duration-300 text-sm text-white hover:text-primary-400"
               >Terms of Service
             </a>
           </div>
         </div>
+        <!-- Phone Number -->
+        <a
+          href=`tel:${PHONE_NUMBER}`
+          aria-labelledby="Call Us Now"
+          title="Call Us Now"
+          aria-label="Call telephone Link"
+          class="transition-colors duration-300 text-xs lg:text-sm text-center pt-2 text-white hover:text-primary-400"
+        >
+          <span class="">{PHONE_NUMBER}</span>
+        </a>
       </div>
       <div
         class="flex flex-col lg:flex-row justify-between gap-10 lg:px-10 lg:gap-10 w-full"
