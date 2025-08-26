@@ -71,17 +71,6 @@ const whyData = {
     ],
   },
 
-  approachInfo: {
-    upperHeading: "The FlyTech Approach",
-    title: "A Community of Pilots Making Flight Training Accessible",
-    descriptions: [
-      "FlyTech is a community built by local recreational, commercial, and military pilots, united by a mission to make flight training more accessible, efficient, and enjoyable for everyone.",
-      "No matter your age or aviation goal, whether you’re chasing a lifelong dream, preparing for a career, or simply looking for a new adventure, we offer flexible options designed with you in mind. Every student learns differently, which is why we combine personalized one-on-one instruction with optional group ground school sessions. You set the pace, and we provide training paths that match your lifestyle.",
-      "Our hybrid ground school blends the best of both worlds: interactive video lessons to review from home, paired with in-person sessions that bring concepts to life before stepping into the simulator or cockpit. This balanced mix of technology and traditional instruction maximizes your learning, shortens your timeline, and saves you money.",
-      "As a Part 61 flight school, we offer complete flexibility to progress at your own speed, or follow one of our guided timelines (6, 9, 12, or 18 months). We’ve streamlined the path to your license without ever compromising safety or quality, making training more affordable, efficient, and rewarding.",
-    ],
-  },
-
   contentSplit: {
     upperHeading: "Get Started",
     heading: "Launch Your Aviation Journey with Confidence",
@@ -162,17 +151,28 @@ const whyData = {
     },
   ],
 
-  whoAreUs: {
-    upperHeading: "Who We Are",
+  approachInfo: {
+    upperHeading: "The FlyTech Approach",
     title: "A Community of Pilots Making Flight Training Accessible",
-    imagePath: "/src/assets/students_groundschool.webp",
+    descriptions: [
+      "FlyTech is a community built by local recreational, commercial, and military pilots, united by a mission to make flight training more accessible, efficient, and enjoyable for everyone.",
+      "No matter your age or aviation goal, whether you’re chasing a lifelong dream, preparing for a career, or simply looking for a new adventure, we offer flexible options designed with you in mind. Every student learns differently, which is why we combine personalized one-on-one instruction with optional group ground school sessions. You set the pace, and we provide training paths that match your lifestyle.",
+      "Our hybrid ground school blends the best of both worlds: interactive video lessons to review from home, paired with in-person sessions that bring concepts to life before stepping into the simulator or cockpit. This balanced mix of technology and traditional instruction maximizes your learning, shortens your timeline, and saves you money.",
+      "As a Part 61 flight school, we offer complete flexibility to progress at your own speed, or follow one of our guided timelines (6, 9, 12, or 18 months). We’ve streamlined the path to your license without ever compromising safety or quality, making training more affordable, efficient, and rewarding.",
+    ],
+  },
+
+  whoAreUs: {
+    upperHeading: "The FlyTech Approach",
+    title: "A Community of Pilots Making Flight Training Accessible",
+    imagePath: "/src/assets/ground-school-students-classroom-cut-wide.jpeg",
     imageAlt:
       "FlyTech Pilot Academy instructors and students standing in front of an airplane",
     descriptions: [
       "FlyTech is a community built by local recreational, commercial, and military pilots, united by a mission to make flight training more accessible, efficient, and enjoyable for everyone.",
-      "We recognized how difficult it used to be to become a pilot—and we set out to change that. With advancements in technology and evolving regulations, it’s never been a better time to start flying.",
-      "As a Part 61 flight school, we give you the flexibility to train at your own pace, or follow one of our recommended timelines (6, 9, 12, or 18 months) to fit your lifestyle.",
-      "We’ve streamlined the path to your license without compromising on safety or quality—making it more affordable, more efficient, and more enjoyable.",
+      "No matter your age or aviation goal, whether you’re chasing a lifelong dream, preparing for a career, or simply looking for a new adventure, we offer flexible options designed with you in mind. Every student learns differently, which is why we combine personalized one-on-one instruction with optional group ground school sessions. You set the pace, and we provide training paths that match your lifestyle.",
+      "Our hybrid ground school blends the best of both worlds: interactive video lessons to review from home, paired with in-person sessions that bring concepts to life before stepping into the simulator or cockpit. This balanced mix of technology and traditional instruction maximizes your learning, shortens your timeline, and saves you money.",
+      "As a Part 61 flight school, we offer complete flexibility to progress at your own speed, or follow one of our guided timelines (6, 9, 12, or 18 months). We’ve streamlined the path to your license without ever compromising safety or quality, making training more affordable, efficient, and rewarding.",
     ],
     bullets: [
       {
