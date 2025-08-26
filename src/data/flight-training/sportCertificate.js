@@ -32,11 +32,11 @@ const sportPilotData = {
 
     title: "Program Overview",
     description: `
-      Introduced in 2004, the Sport Pilot Certificate is a streamlined FAA license designed for those who want to fly small, lightweight aircraft for fun or personal travel. It’s a great option if you're looking for a faster, more affordable path to the skies—without compromising safety or enjoyment.
+      Introduced in 2004, the Sport Pilot Certificate is a streamlined FAA license designed for those who want to fly small, lightweight aircraft for fun or personal travel. It’s a great option if you're looking for a faster, more affordable path to the skies,without compromising safety or enjoyment.
       <br/><br/>
-      Sport pilots are limited to flying aircraft with no more than two seats and a maximum takeoff weight under 1,320 lbs. The training requires fewer hours than a traditional Private Pilot certificate and can often be completed without an FAA medical certificate—just a valid U.S. driver’s license is enough.
+      Sport pilots are limited to flying aircraft with no more than two seats and a maximum takeoff weight under 1,320 lbs. The training requires fewer hours than a traditional Private Pilot certificate and can often be completed without an FAA medical certificate,just a valid U.S. driver’s license is enough.
       <br/><br/>
-      FlyTech’s Sport Pilot program covers all FAA-required dual and solo flight time, cross-country navigation, and checkride preparation—getting you safely and confidently into the air.`,
+      FlyTech’s Sport Pilot program covers all FAA-required dual and solo flight time, cross-country navigation, and checkride preparation,getting you safely and confidently into the air.`,
 
     keyPoints: [
       "Minimum of 20 hours total flight time",

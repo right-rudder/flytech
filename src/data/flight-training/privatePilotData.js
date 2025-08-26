@@ -32,9 +32,9 @@ const privatePilotData = {
 
     title: "Program Overview",
     description: `
-      The Private Pilot Certificate is the most common—and most essential—first step in aviation. At FlyTech, you’ll train under FAA-certified instructors through a proven curriculum that balances in-depth ground school with hands-on flight experience.
+      The Private Pilot Certificate is the most common,and most essential,first step in aviation. At FlyTech, you’ll train under FAA-certified instructors through a proven curriculum that balances in-depth ground school with hands-on flight experience.
       <br/><br/>
-      You'll learn the fundamentals of aerodynamics, aircraft systems, weather theory, FAA regulations, radio communication, and flight planning. Practical training includes day and night flights, solo navigation, instrument work, and cross-country routes—building real-world confidence in the cockpit.
+      You'll learn the fundamentals of aerodynamics, aircraft systems, weather theory, FAA regulations, radio communication, and flight planning. Practical training includes day and night flights, solo navigation, instrument work, and cross-country routes,building real-world confidence in the cockpit.
       <br/><br/>
       By the end of the program, you’ll have logged at least 40 hours of flight time and be fully prepared to pass your FAA checkride. Whether you’re pursuing aviation professionally or recreationally, FlyTech will help you earn your wings and take flight with skill and confidence.`,
 

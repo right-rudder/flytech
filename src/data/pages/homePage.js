@@ -128,7 +128,7 @@ const homePage = {
         {
           title: "Flexible Flight Schedules",
           descriptions: [
-            "Choose from recommended programs lasting 6, 9, 12, or 18 months—or create your own training schedule.",
+            "Choose from recommended programs lasting 6, 9, 12, or 18 months,or create your own training schedule.",
           ],
           icon: "M9 12.75 11.25 15 15 9.75...",
         },
@@ -142,7 +142,7 @@ const homePage = {
       heading: "Is Aviation Right For You?",
       descriptions: [
         "Flight training can feel overwhelming at first. At FlyTech, we make the journey clear and achievable by answering your questions early on.",
-        "Our affordable discovery flight is your first step. Whether you train for a career or hobby, your journey starts here—with safety, mentorship, and community at the core.",
+        "Our affordable discovery flight is your first step. Whether you train for a career or hobby, your journey starts here,with safety, mentorship, and community at the core.",
         `Take our quiz to explore if becoming a pilot is the right path for you and learn more about training with FlyTech Pilot Academy.`,
       ],
       imageLegend: `Luke Poulos<br><small class="text-white font-normal text-sm">Founder & CEO</small>`,
@@ -195,7 +195,7 @@ const homePage = {
         },
         {
           title: "Professional Team, Outstanding Training",
-          body: "I’ve been pleased with my experience at FlyTech. It was awesome to see one of my son’s former colleagues join the instructor team—Connor Musser. The professionalism and quality of instruction here are top-notch.",
+          body: "I’ve been pleased with my experience at FlyTech. It was awesome to see one of my son’s former colleagues join the instructor team,Connor Musser. The professionalism and quality of instruction here are top-notch.",
           author: "Steve C.",
         },
         {
@@ -215,7 +215,7 @@ const homePage = {
         },
         {
           title: "Cutting-Edge Planes & Exceptional Training",
-          body: "FlyTech has a brand-new plane decked out with the latest Garmin tech, but what really stands out is their incredible team. They make learning enjoyable and effective—highly recommend!",
+          body: "FlyTech has a brand-new plane decked out with the latest Garmin tech, but what really stands out is their incredible team. They make learning enjoyable and effective,highly recommend!",
           author: "Stephen B.",
         },
         {
@@ -225,7 +225,7 @@ const homePage = {
         },
         {
           title: "A Welcoming Aviation Family",
-          body: "FlyTech is simply amazing. They treat students like family and make everyone feel welcome. If you’re considering a pilot’s license, start here—you won’t regret it.",
+          body: "FlyTech is simply amazing. They treat students like family and make everyone feel welcome. If you’re considering a pilot’s license, start here,you won’t regret it.",
           author: "Amy N.",
         },
         {

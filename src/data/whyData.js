@@ -15,7 +15,7 @@ const whyData = {
     imagePath: "/src/assets/plane-orange-ground-usa-flag.webp",
     imageAlt: "FlyTech Pilot Academy campus and facilities",
     headerH1: `Why Choose <strong class="text-primary-600">FlyTech?</strong>`,
-    paragraph: `FlyTech isn’t just a flight school — it's a tight-knit team of local aviators, instructors, and mentors passionate about helping the next generation of pilots succeed. With modern training tools, hands-on experience, and a supportive environment, FlyTech offers a better, smarter way to learn to fly.`,
+    paragraph: `FlyTech isn’t just a flight school , it's a tight-knit team of local aviators, instructors, and mentors passionate about helping the next generation of pilots succeed. With modern training tools, hands-on experience, and a supportive environment, FlyTech offers a better, smarter way to learn to fly.`,
     buttons: [
       {
         name: "Enroll Today",
@@ -44,7 +44,7 @@ const whyData = {
       {
         title: "Integrated iPad Flight Bag",
         description:
-          "From day one, you'll use an iPad as your primary flight bag—streamlining planning, navigation, checklists, and post-flight debriefing with ForeFlight.",
+          "From day one, you'll use an iPad as your primary flight bag,streamlining planning, navigation, checklists, and post-flight debriefing with ForeFlight.",
       },
       {
         title: "Certified Redbird Simulator Training",
@@ -129,7 +129,7 @@ const whyData = {
       heading: "Ready for Takeoff?",
       descriptions: [
         "Whether you're just discovering aviation or you're ready to pursue a full-time pilot career, FlyTech has the tools, team, and tech to help you get there.",
-        "Start your training in a place where you're more than a student — you're part of a community committed to your future in the skies.",
+        "Start your training in a place where you're more than a student , you're part of a community committed to your future in the skies.",
       ],
     },
     finalButton: {
