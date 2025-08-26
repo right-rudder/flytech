@@ -37,22 +37,27 @@ const fleetPage = {
         {
           title: "Advanced Avionics",
           description:
-            "Our airplanes are equipped with state-of-the-art avionics systems, ensuring precision navigation and enhanced safety.",
-        },
-        {
-          title: "High Performance",
-          description:
-            "Experience unmatched performance with powerful engines and aerodynamic designs that deliver exceptional speed and agility.",
+            "Our airplanes are equipped with state-of-the-art avionics systems, ensuring precision navigation and enhanced safety. (Garmin G3X, GTN 650, GTN 750, G5)",
         },
         {
           title: "Fuel Efficiency",
           description:
-            "Designed with sustainability in mind, our aircraft offer superior fuel efficiency, reducing environmental impact.",
+            "Purchased with efficiency in mind, our aircraft offer superior fuel efficiency, reducing your cost.",
         },
         {
-          title: "Comfort and Luxury",
+          title: "Electronic Flight Bag",
           description:
-            "From spacious cabins to premium interiors, our airplanes provide a comfortable and enjoyable flying experience.",
+            "FlyTech is a ForeFlight school. Safety meets convenience with advanced runway and obstacle analysis, flight records, and access to FlyTech’s airplane handbook, pre-flight documents, and digital SOPs directly on students’ and CFIs’ iPads.",
+        },
+        {
+          title: "Electronic Scheduling",
+          description:
+            "With FourForces, managing your training is simple and stress-free. Students can log in anytime to see real-time aircraft and instructor availability, book lessons that fit their schedule, and stay organized with automatic reminders. No phone calls, no back-and-forth, just an easy way to keep your training on track while balancing school, work, or family. Every flight is invoiced through this portal, making it convenient to track your expenses.",
+        },
+        {
+          title: "Electronic Ground school",
+          description:
+            "With GroundSchool.com, you can study when and where it works best for you. Review lessons on your own time, take practice tests, and then bring what you’ve learned into our classroom, simulator, and cockpit sessions. It’s a simple, flexible way to stay on track.",
         },
       ],
       others: [
