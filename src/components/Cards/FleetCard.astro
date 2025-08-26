@@ -194,11 +194,11 @@ import imgLeft from "../../assets/N900FT-ground.webp";
                 class="border-b-2 border-transparent py-6 text-sm font-medium whitespace-nowrap text-white/90 hover:border-gray-300 hover:text-primary-600 aria-selected:border-primary-600 aria-selected:text-primary-600"
                 >Model</button
               >
-              <button
+              <!-- <button
                 id="tab-faq"
                 class="border-b-2 border-transparent py-6 text-sm font-medium whitespace-nowrap text-white/90 hover:border-gray-300 hover:text-primary-600 aria-selected:border-primary-600 aria-selected:text-primary-600"
                 >FAQ</button
-              >
+              > -->
               <!-- <button
                 id="tab-license"
                 class="border-b-2 border-transparent py-6 text-sm font-medium whitespace-nowrap text-white/90 hover:border-gray-300 hover:text-primary-600 aria-selected:border-primary-600 aria-selected:text-primary-600"
@@ -309,6 +309,7 @@ import imgLeft from "../../assets/N900FT-ground.webp";
                     </div>
                   </div>
                   <!-- Airworthiness -->
+                   { content.airworthiness &&  (
                   <div class="mt-2">
                     <p class="text-sm/6 text-white/80">Airworthiness</p>
                     <div class="mt-4 flex items-center">
@@ -331,6 +332,8 @@ import imgLeft from "../../assets/N900FT-ground.webp";
                       </div>
                     </div>
                   </div>
+
+                   )}
                 </div>
               </div>
             </div>
