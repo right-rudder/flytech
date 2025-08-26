@@ -39,7 +39,7 @@ export const LOCATIONS = [
 
 export const PHONE_NUMBER = "1-816-722-5785";
 export const ADDRESS_LINE_1 = "200 NW Rosecrans";
-export const ADDRESS_LINE_2 = "Saint Joseph, Missouri 85215";
+export const ADDRESS_LINE_2 = "Saint Joseph, Missouri 64503";
 export const FACEBOOK_URL =
   "https://www.facebook.com/profile.php?id=100094124601741&mibextid=LQQJ4d";
 export const INSTAGRAM_URL = "https://www.instagram.com/flytech_pilot_academy";
