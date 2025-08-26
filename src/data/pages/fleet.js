@@ -88,7 +88,7 @@ const fleetPage = {
           engine: "Rotax 912 iS (4 Cycle)",
           weight: "Less than 12,500 lbs",
           horsepower: "100 hp",
-          airworthiness: "Light Sport / Acrobatic",
+          // airworthiness: "Light Sport / Acrobatic",
           speed: "120 mph",
           imagePath:
             "/src/assets/plane-slinger-ground-pilots-saying-goodbye.webp",
@@ -106,7 +106,6 @@ const fleetPage = {
             "Garmin G5 with integral battery",
             "Garmin GTN 650",
             "Angle of Attack indicator",
-            "Internal Red LED Cabin Light",
           ],
           equipment: [
             "Rotax 912 ULS (100 hp) & Rotax 912iS",
@@ -143,7 +142,7 @@ const fleetPage = {
           engine: "Lycoming O-320 Series (Reciprocating)",
           weight: "Less than 12,500 lbs",
           horsepower: "180 hp",
-          airworthiness: "Standard",
+          // airworthiness: "Standard",
           speed: "105 mph",
           imagePath: "/src/assets/plane-cesna-ground-flytech (4).webp",
           imageAlt: "Cessna 172 Skyhawk aircraft",
@@ -155,6 +154,7 @@ const fleetPage = {
             "Simple yet reliable avionics",
           ],
           avionics: [
+            "Dual Garmin G5 & Garmin GTN 750",
             "Garmin GNS 430 GPS/NAV/COM",
             "Dual NAV/COM radios",
             "VOR with glideslope",
