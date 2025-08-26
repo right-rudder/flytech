@@ -176,7 +176,7 @@ const whyData = {
     ],
     bullets: [
       {
-        title: "Experienced Instructors",
+        title: "Experienced Instructors & Owners",
         numbers: "10+",
       },
       {
