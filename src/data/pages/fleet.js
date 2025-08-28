@@ -199,7 +199,7 @@ const fleetPage = {
               imageAlt: "Redbird MCX side view with student training",
             },
             {
-              imagePath: "/src/assets/placeholder-img.webp",
+              imagePath: "/src/assets/simulator-redbird.webp",
               imageAlt: "Redbird MCX cockpit view",
             },
           ],
