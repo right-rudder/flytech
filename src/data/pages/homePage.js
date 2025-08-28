@@ -32,38 +32,53 @@ const homePage = {
         {
           imagePath: "/src/assets/sling_logo.webp",
           imageAlt: "Sling Aircraft Logo",
-          link: "https://www.google.com/",
+          link: "https://www.slingaircraft.com/",
         },
         {
           imagePath: "/src/assets/foreflight_logo-480x241.webp",
           imageAlt: "ForeFlight Logo",
-          link: "https://www.google.com/",
+          link: "https://foreflight.com/",
         },
         {
           imagePath: "/src/assets/garmin_logo-300x150.webp",
           imageAlt: "Garmin Logo",
-          link: "https://www.google.com/",
+          link: "https://www.garmin.com/aviation/",
         },
         {
           imagePath: "/src/assets/fly_four_forces_logo-1.webp",
           imageAlt: "Fly Four Forces Logo",
-          link: "https://www.google.com/",
+          link: "https://flyfourforces.com/",
         },
         {
           imagePath: "/src/assets/aopa-logo.webp",
           imageAlt: "AOPA Logo",
-          link: "https://www.google.com/",
+          link: "https://www.aopa.org/",
         },
         {
           imagePath: "/src/assets/Screenshot-2025-03-15-at-11.47.30 AM.webp",
           imageAlt: "Lightspeed Logo",
-          link: "https://www.google.com/",
+          link: "https://lightspeedaviation.com/",
         },
         {
           imagePath:
             "/src/assets/Stratus-Tagline-Color-CMYK-300-Outline-980x165.webp",
-          imageAlt: "Stratuss Financial Logo",
-          link: "https://www.google.com/",
+          imageAlt: "Stratus Financial Logo",
+          link: "https://stratus.finance/",
+        },
+        {
+          imagePath: "/src/assets/Partner-Hillyard Technicial Center.png",
+          imageAlt: "Hillyard Technicial Center logo",
+          link: "https://hillyardtech.sjsd.k12.mo.us",
+        },
+        {
+          imagePath: "/src/assets/partner-Cessna_Logo.webp",
+          imageAlt: "Cessna logo",
+          link: "https://cessna.txtav.com",
+        },
+        {
+          imagePath: "/src/assets/Partner-Gold-Seal-CFIl-med.jpg",
+          imageAlt: "Gold Seal CFI logo",
+          link: "https://www.faa.gov",
         },
       ],
     },
