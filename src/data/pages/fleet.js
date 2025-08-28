@@ -31,7 +31,7 @@ const fleetPage = {
       title: "Our Fleet",
       description:
         "At FlyTech Pilot Academy, we pride ourselves on maintaining a modern and reliable fleet of aircraft and simulators to provide our students with the best possible training experience. Our fleet is regularly inspected and maintained to ensure safety, performance, and comfort.",
-      imagePath: "/images/fleet/fleet-overview.jpg",
+      imagePath: "/src/assets/fleet-overview.jpg",
       imageAlt: "Overview of FlyTech Pilot Academy's fleet",
       features: [
         {
@@ -65,14 +65,14 @@ const fleetPage = {
           title: "ForeFlight",
           description:
             "FlyTech is a ForeFlight school. Safety meets convenience with advanced runway and obstacle analysis, flight records, and access to FlyTech’s airplane handbook, pre-flight documents, and digital SOPs directly on students’ and CFIs’ iPads. We monitor student progress through logs, records, and usage data,also valuable for business forecasting. ForeFlight is included in the tuition.",
-          imagePath: "/images/fleet/foreflight-logo.png",
+          imagePath: "/src/assets/foreflight-logo.png",
           imageAlt: "ForeFlight logo",
         },
         {
           title: "In and Out of Cockpit Video",
           description:
             "The FlyTech VIRB Ultra 30 Aviation In-Cockpit Bundle enhances training by recording high-quality video and audio from every flight. Stereo headset audio cables capture pilot communications and ATC transmissions directly in your footage. A propeller filter ensures clear visuals, while the lightweight cage mount secures the camera inside the cockpit,perfect for reviewing and sharing your flights.",
-          imagePath: "/images/fleet/garmin-virb-ultra-30.jpg",
+          imagePath: "/src/assets/garmin-virb-ultra-30.jpg",
           imageAlt: "Garmin VIRB Ultra 30 aircraft camera",
         },
       ],
@@ -126,7 +126,7 @@ const fleetPage = {
               imageAlt: "Sling LSA side view",
             },
             {
-              imagePath: "/images/fleet/sling-lsa-cockpit.jpg",
+              imagePath: "/src/assets/sling-lsa-cockpit.jpg",
               imageAlt: "Sling LSA cockpit",
             },
           ],
@@ -177,7 +177,7 @@ const fleetPage = {
               imageAlt: "Cessna 172 side view",
             },
             {
-              imagePath: "/images/fleet/cessna-172-cockpit.jpg",
+              imagePath: "/src/assets/cessna-172-cockpit.jpg",
               imageAlt: "Cessna 172 cockpit",
             },
           ],
@@ -186,17 +186,20 @@ const fleetPage = {
       simulators: [
         {
           name: "Redbird FMX",
+          manufacture: "Redbird Flight Simulations",
+          model: "FMX",
+          year: 2023,
           description:
             "The Redbird FMX is a full-motion flight simulator designed to prepare students for real-world flying. Training here builds confidence, decision-making skills, and the ability to handle any situation in the air.",
-          imagePath: "/images/fleet/redbird-fmx.jpg",
+          imagePath: "/src/assets/placeholder-img.webp",
           imageAlt: "Redbird FMX flight simulator",
           images: [
             {
-              imagePath: "/images/fleet/redbird-fmx-side.jpg",
+              imagePath: "/src/assets/placeholder-img.webp",
               imageAlt: "Redbird FMX side view",
             },
             {
-              imagePath: "/images/fleet/redbird-fmx-cockpit.jpg",
+              imagePath: "/src/assets/placeholder-img.webp",
               imageAlt: "Redbird FMX cockpit",
             },
           ],
