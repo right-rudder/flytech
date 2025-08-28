@@ -23,6 +23,7 @@ import { getCurrentVideo } from "../scripts/videoSpinner.js";
 import WidgetGoogleReviews from "../components/FCRM/WidgetGoogleReviews.astro";
 import CTAContact from "../components/CTAContact.astro";
 import Enroll from "../components/Forms/Enroll.astro";
+import InstagramFeed from "../components/ElfSight/InstagramFeed.astro";
 
 // Transform FAQ format for schema
 const faqSchemaItems = GeneralFAQs.map((faq) => ({
@@ -48,7 +49,7 @@ const dataForVideo = {
 >
   <!-- HEADER -->
   <HeaderScreen content={data.header} />
-  <CTAVideo video={videoHome} data={dataForVideo} />
+  <InstagramFeed />
   <BlogFeed data={data.blogfeed} />
   <AirlinesCloud data={data.airlinesCloud} />
   <FlightTrainingAdvantages content={data.advantagesInfo} />
@@ -60,6 +61,7 @@ const dataForVideo = {
   <FAQs faqs={GeneralFAQs} type="General" client:visible />
   <FAQSchema items={faqSchemaItems} />
   <MapsLocation />
-  <CTAColor content={data.flyWithUsCTA} />
+  <!-- <CTAVideo video={videoHome} data={dataForVideo} /> -->
+  <!-- <CTAColor content={data.flyWithUsCTA} /> -->
   <script src="../scripts/creativeSwiper.js"></script>
 </BaseLayout>
