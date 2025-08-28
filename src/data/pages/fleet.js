@@ -185,28 +185,30 @@ const fleetPage = {
       ],
       simulators: [
         {
-          name: "Redbird FMX",
+          name: "Redbird MCX",
           manufacture: "Redbird Flight Simulations",
-          model: "FMX",
+          model: "MCX",
           year: 2023,
           description:
-            "The Redbird FMX is a full-motion flight simulator designed to prepare students for real-world flying. Training here builds confidence, decision-making skills, and the ability to handle any situation in the air.",
+            "The Redbird MCX is a full-motion flight simulator equipped with a 3-axis electric motion platform, providing realistic yaw, pitch, and roll feedback. With immersive 200° wraparound visuals and worldwide terrain databases, it allows students to safely practice both VFR and IFR procedures, complex maneuvers, and airport operations from around the globe. This simulator enhances confidence, composure, and decision-making skills while reducing training costs.",
           imagePath: "/src/assets/simulator.webp",
-          imageAlt: "Redbird FMX flight simulator",
+          imageAlt: "Redbird MCX full motion flight simulator",
           images: [
             {
               imagePath: "/src/assets/simulator-with-student.webp",
-              imageAlt: "Redbird FMX side view",
+              imageAlt: "Redbird MCX side view with student training",
             },
             {
               imagePath: "/src/assets/placeholder-img.webp",
-              imageAlt: "Redbird FMX cockpit",
+              imageAlt: "Redbird MCX cockpit view",
             },
           ],
           features: [
-            "Full-motion flight simulator",
-            "Realistic cockpit environment",
-            "Advanced avionics simulation",
+            "3-axis full motion (yaw, pitch, roll)",
+            "200° wraparound visuals with worldwide terrain",
+            "Supports both VFR and IFR training",
+            "C172-S configuration with realistic avionics",
+            "Cost-effective practice for complex maneuvers and scenarios",
           ],
         },
       ],
