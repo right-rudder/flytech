@@ -14,6 +14,7 @@ import GoogleMaps from "../../components/GoogleMaps.astro";
 
 import pageData from "../../data/whyData.js";
 import WhoAreUs from "../../components/WhoAreUs.astro";
+import GoogleReviewsRow from "../../components/ElfSight/GoogleReviewsRow.astro";
 ---
 
 <BaseLayout
@@ -24,7 +25,8 @@ import WhoAreUs from "../../components/WhoAreUs.astro";
   <!-- HEADER -->
   <HeaderSmall content={pageData.header} />
   <PageSummary content={pageData.pageSummary} />
-  <TestimonialsSwiper />
+  <GoogleReviewsRow />
+  <!-- <TestimonialsSwiper /> -->
   <!-- PAGE SUMMARY -->
   <FlightTrainingAdvantages content={pageData.advantagesInfo} />
   <WhoAreUs content={pageData.whoAreUs} />
