@@ -191,11 +191,11 @@ const fleetPage = {
           year: 2023,
           description:
             "The Redbird FMX is a full-motion flight simulator designed to prepare students for real-world flying. Training here builds confidence, decision-making skills, and the ability to handle any situation in the air.",
-          imagePath: "/src/assets/placeholder-img.webp",
+          imagePath: "/src/assets/simulator.webp",
           imageAlt: "Redbird FMX flight simulator",
           images: [
             {
-              imagePath: "/src/assets/placeholder-img.webp",
+              imagePath: "/src/assets/simulator-with-student.webp",
               imageAlt: "Redbird FMX side view",
             },
             {
