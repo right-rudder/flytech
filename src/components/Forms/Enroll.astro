@@ -3,6 +3,7 @@ import {
   COMPANY_NICKNAME,
   LOCATIONS,
   PHONE_NUMBER,
+  PHONE_NUMBER_PRETTY,
   EMAIL_ADDRESS,
 } from "../../consts";
 import FormEnroll from "../../components/Forms/FormEnroll.astro";
@@ -114,7 +115,7 @@ const description = "Let's Get You In The Air";
                   {/* Phone Number */}
                   <div class="flex-col-reverse lg:flex-row justify-end items-center gap-6 lg:gap-12  hover:text-primary-500 hidden lg:flex">
                     <div class="ml-5 p-text text-center lg:text-right">
-                      <a href={`tel:${PHONE_NUMBER}`}>{PHONE_NUMBER}</a>
+                      <a href={`tel:${PHONE_NUMBER}`}>{PHONE_NUMBER_PRETTY}</a>
                     </div>
                     <div>
                       <svg
