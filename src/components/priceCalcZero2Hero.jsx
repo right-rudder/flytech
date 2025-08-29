@@ -2,7 +2,10 @@ import { FaCheckCircle } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { FaPhone } from "react-icons/fa6";
 
-import { PHONE_NUMBER } from "../consts";
+import { 
+  PHONE_NUMBER,  
+  PHONE_NUMBER_PRETTY,
+} from "../consts";
 
 const PriceCalcZero2Hero = () => {
   const [total, setTotal] = useState(0);
@@ -459,7 +462,7 @@ const PriceCalcZero2Hero = () => {
                       className="btn-accent inline-flex justify-center items-center gap-2 w-full"
                     >
                       <FaPhone />
-                      <span>{PHONE_NUMBER}</span>
+                      <span>{PHONE_NUMBER_PRETTY}</span>
                     </a>
                   </div>
                 </div>

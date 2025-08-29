@@ -37,6 +37,7 @@ export const LOCATIONS = [
   },
 ];
 
+export const PHONE_NUMBER_PRETTY = "(816) 722-KSTJ (5785)";
 export const PHONE_NUMBER = "1-816-722-5785";
 export const ADDRESS_LINE_1 = "200 NW Rosecrans";
 export const ADDRESS_LINE_2 = "Saint Joseph, Missouri 64503";
