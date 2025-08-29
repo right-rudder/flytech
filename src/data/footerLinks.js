@@ -54,23 +54,6 @@ export const footerLinks = [
     ],
   },
   {
-    title: "Students",
-    links: [
-      {
-        name: "Four Forces",
-        link: "https://flyfourforces.com/login",
-      },
-      {
-        name: "Ground School",
-        link: "https://groundschool.com",
-      },
-      {
-        name: "Student Resources",
-        link: "/current-students",
-      },
-    ],
-  },
-  {
     title: "About",
     links: [
       {
