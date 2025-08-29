@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeaderScreen from "../components/HeaderScreen.astro";
+import contactConfirmation from "../data/contact-confirmation-data";
+import videoList from "../data/videos.js";
+import { getCurrentVideo } from "../scripts/videoSpinner.js";
+import flyWithUsCTA from "../data/fly-with-us-cta";
+import CTAVideoWhite from "../components/CTAVideoWhite.astro";
+
+const { data } = contactConfirmation;
+const currentVideo = getCurrentVideo(videoList, "discovery flight");
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <HeaderScreen content={data.header} />
+  <CTAVideoWhite video={currentVideo} data={flyWithUsCTA} />
+</BaseLayout>
