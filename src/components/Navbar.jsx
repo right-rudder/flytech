@@ -11,6 +11,7 @@ import {
   TWITTER_URL,
   YOUTUBE_URL,
   PHONE_NUMBER,
+  PHONE_NUMBER_PRETTY,
 } from "../consts.ts";
 
 const Navbar = ({ pathname }) => {
@@ -380,7 +381,7 @@ const Navbar = ({ pathname }) => {
               <FaPhone className="size-4 text-white" />
             </a>
             <a href={`tel:${PHONE_NUMBER}`} aria-label="Call">
-              {PHONE_NUMBER}
+              {PHONE_NUMBER_PRETTY}
             </a>
           </div>
 
