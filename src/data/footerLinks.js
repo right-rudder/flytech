@@ -51,6 +51,10 @@ export const footerLinks = [
         name: "Sports Pilot Certificate",
         link: "/flight-training/sports-pilot-certificate",
       },
+      {
+        name: "Rusty Pilot IPC",
+        link: "/flight-training/rusty-pilot-ipc",
+      },
     ],
   },
   {
