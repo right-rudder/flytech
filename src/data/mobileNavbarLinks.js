@@ -68,6 +68,10 @@ export const mobileNavbarLinks = [
         name: "Student Resources",
         link: "/current-students#student-resources",
       },
+      {
+        name: "Events",
+        link: "/current-students#events",
+      },
     ],
   },
   {

@@ -19,6 +19,14 @@ export const footerLinks = [
         link: "/why-become-a-pilot",
       },
       {
+        name: "Current Students",
+        link: "/current-students",
+      },
+      {
+        name: "Events",
+        link: "/#events",
+      },
+      {
         name: "Contact Us",
         link: "/contact",
       },
