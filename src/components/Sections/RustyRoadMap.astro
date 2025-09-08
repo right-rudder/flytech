@@ -78,26 +78,6 @@ ensuring you’re safe, confident, and ready for your next adventure in the sky.
     </a>
   </div>
 
-  <!-- Sidebar -->
-  <div
-    id="sidebar-nav"
-    class="hidden md:flex flex-col gap-6 fixed top-1/2 right-0 -translate-y-1/2 text-gray-100 z-50 py-6 px-6"
-  >
-    {
-      sections.map((section, i) => (
-        <a
-          href={`#${section.id}`}
-          id={`link-${section.id}`}
-          class={`hover:text-primary-400 transition-all duration-300 ease-out text-right ${
-            i === 0 ? "text-primary-400 scale-110 font-bold" : ""
-          }`}
-        >
-          {section.title}
-        </a>
-      ))
-    }
-  </div>
-
   <!-- Sections -->
   <div class="max-w-6xl mx-auto py-20 px-6 space-y-32">
     {
@@ -138,11 +118,13 @@ ensuring you’re safe, confident, and ready for your next adventure in the sky.
               {section.title}
             </h2>
             <p
-              class={`mt-4 text-neutral-300 text-center ${i % 2 === 1 ? "md:text-left" : "md:text-right"}`}
+              class={`mt-4 text-neutral-300 text-center ${
+                i % 2 === 1 ? "md:text-left" : "md:text-right"
+              }`}
             >
               {section.text}
             </p>
-            <a href="/enroll" class={`btn-primary mt-6 inline-block `}>
+            <a href="/enroll" class="btn-primary mt-6 inline-block">
               enroll now
             </a>
           </div>
@@ -161,28 +143,67 @@ ensuring you’re safe, confident, and ready for your next adventure in the sky.
   </div>
 </section>
 
+<!-- Sidebar OUTSIDE the section -->
+<div
+  id="sidebar-nav"
+  class="md:flex flex-col gap-6 fixed top-1/2 right-0 -translate-y-1/2 text-gray-100 z-50 py-6 px-6 hidden"
+>
+  {
+    sections.map((section, i) => (
+      <a
+        href={`#${section.id}`}
+        id={`link-${section.id}`}
+        class={`hover:text-primary-400 transition-all duration-300 ease-out text-right ${
+          i === 0 ? "text-primary-400 scale-110 font-bold" : ""
+        }`}
+      >
+        {section.title}
+      </a>
+    ))
+  }
+</div>
+
 <script>
   const sections = document.querySelectorAll(".max-w-6xl > div[id]");
   const navLinks = document.querySelectorAll("#sidebar-nav a");
+  const sidebar = document.querySelector("#sidebar-nav");
+  const mainSection = document.querySelector("#rusty-pilot-roadmap");
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        const id = entry.target.getAttribute("id");
-        const link = document.querySelector(`#link-${id}`);
-        if (entry.isIntersecting) {
-          navLinks.forEach((l) => {
-            l.classList.remove("text-primary-400", "scale-110", "font-bold");
-          });
-          link.classList.add("text-primary-400", "scale-110", "font-bold");
-        }
-      });
-    },
-    {
-      threshold: 0.5,
-      rootMargin: "-20% 0px -20% 0px",
-    },
-  );
+  if (sidebar && mainSection) {
+    // Highlight sidebar links as you scroll through steps
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const id = entry.target.getAttribute("id");
+          const link = document.querySelector(`#link-${id}`);
+          if (entry.isIntersecting) {
+            navLinks.forEach((l) => {
+              l.classList.remove("text-primary-400", "scale-110", "font-bold");
+            });
+            link.classList.add("text-primary-400", "scale-110", "font-bold");
+          }
+        });
+      },
+      {
+        threshold: 0.5,
+        rootMargin: "-20% 0px -20% 0px",
+      },
+    );
 
-  sections.forEach((section) => observer.observe(section));
+    sections.forEach((section) => observer.observe(section));
+
+    // Show sidebar only when section is in viewport
+    const sidebarObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          (sidebar as HTMLElement).style.display = entry.isIntersecting
+            ? "hidden md:flex"
+            : "none";
+        });
+      },
+      { threshold: 0.1 },
+    );
+
+    sidebarObserver.observe(mainSection);
+  }
 </script>
