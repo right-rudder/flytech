@@ -12,7 +12,7 @@ const sections = [
     tag: "STEP 1",
     title: "Reconnect With Your Pilot Journey",
     text: `Haven’t flown in months or years? You’re not alone. The first step is deciding to get back in the cockpit.
-    At FlyTech, our Rusty Pilot & IPC programs are designed for aviators just like you—helping you regain confidence, refresh your knowledge, and rediscover the joy of flying.`,
+At FlyTech, our Rusty Pilot & IPC programs are designed for aviators just like you—helping you regain confidence, refresh your knowledge, and rediscover the joy of flying.`,
     img: "/src/assets/wing-sky-sunset.webp",
   },
   {
@@ -20,8 +20,8 @@ const sections = [
     tag: "STEP 2",
     title: "Schedule Your Personalized Refresher",
     text: `Every pilot’s needs are different. Whether you need a simple Flight Review, an Instrument Proficiency Check,
-    or both—we’ll create a tailored plan for you. With flexible scheduling, modern aircraft, and a Redbird simulator,
-    you’ll sharpen your skills on your own terms without pressure.`,
+or both—we’ll create a tailored plan for you. With flexible scheduling, modern aircraft, and a Redbird simulator,
+you’ll sharpen your skills on your own terms without pressure.`,
     img: "/src/assets/wing-sky-sunset.webp",
   },
   {
@@ -29,7 +29,7 @@ const sections = [
     tag: "STEP 3",
     title: "Train With Expert Guidance",
     text: `Work side-by-side with FAA-certified instructors who specialize in getting pilots current again.
-    You’ll review FAA updates, practice maneuvers, refresh IFR procedures if needed, and rebuild muscle memory in a supportive, stress-free environment.`,
+You’ll review FAA updates, practice maneuvers, refresh IFR procedures if needed, and rebuild muscle memory in a supportive, stress-free environment.`,
     img: "/src/assets/wing-sky-sunset.webp",
   },
   {
@@ -37,8 +37,8 @@ const sections = [
     tag: "STEP 4",
     title: "Take Off With Confidence",
     text: `By the end of your Rusty Pilot or IPC training, you’ll meet FAA requirements, hold the endorsements you need,
-    and feel comfortable in the left seat again. More than a checkmark, it’s about restoring your passion for flying and
-    ensuring you’re safe, confident, and ready for your next adventure in the sky.`,
+and feel comfortable in the left seat again. More than a checkmark, it’s about restoring your passion for flying and
+ensuring you’re safe, confident, and ready for your next adventure in the sky.`,
     img: "/src/assets/wing-sky-sunset.webp",
   },
 ];
@@ -104,29 +104,55 @@ const sections = [
       sections.map((section, i) => (
         <div
           id={section.id}
-          class={`relative grid md:grid-cols-2 items-center ${
+          class={`relative flex flex-col md:flex-row items-center gap-8 ${
             i % 2 === 1 ? "md:flex-row-reverse" : ""
           }`}
         >
-          <span class="absolute -top-10 left-0 text-8xl md:text-9xl font-bold text-white/15 select-none text-right">
+          {/* Step Number */}
+          <span
+            class={`absolute -top-10 text-8xl md:text-9xl font-bold text-white/15 select-none ${
+              i % 2 === 1 ? "right-0 text-right" : "left-0 text-left"
+            }`}
+          >
             {section.id}
           </span>
 
-          <div class="relative z-10 bg-neutral-800 py-12 px-12 flex flex-col items-end">
-            <span class="text-sm tracking-widest text-primary-400 font-semibold text-right">
+          {/* Text block */}
+          <div
+            class={`relative z-10 bg-neutral-800 py-12 px-12 flex flex-col ${
+              i % 2 === 1 ? "items-start text-left" : "items-end text-right"
+            }`}
+          >
+            <span
+              class={`text-sm tracking-widest text-primary-400 font-semibold ${
+                i % 2 === 1 ? "text-left" : "text-right"
+              }`}
+            >
               {section.tag}
             </span>
-            <h2 class="text-3xl md:text-4xl font-bold mt-2 text-right">
+            <h2
+              class={`text-3xl md:text-4xl font-bold mt-2 ${
+                i % 2 === 1 ? "text-left" : "text-right"
+              }`}
+            >
               {section.title}
             </h2>
-            <p class="mt-4 text-neutral-300 text-right">{section.text}</p>
-            <a href="/enroll" class="btn-primary mt-6 inline-block  text-right">
+            <p
+              class={`mt-4 text-neutral-300 ${i % 2 === 1 ? "text-left" : "text-right"}`}
+            >
+              {section.text}
+            </p>
+            <a
+              href="/enroll"
+              class={`btn-primary mt-6 inline-block ${i % 2 === 1 ? "text-left" : "text-right"}`}
+            >
               enroll now
             </a>
           </div>
 
+          {/* Image block */}
           <div class="relative z-10">
-            <img src={section.img} alt={section.title} class=" shadow-lg" />
+            <img src={section.img} alt={section.title} class="shadow-lg" />
           </div>
         </div>
       ))
