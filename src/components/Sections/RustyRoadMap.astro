@@ -1,0 +1,161 @@
+---
+const program = {
+  upperHeading: "RUSTY PILOT",
+  heading: "Be prepared to take back the Skies!",
+  subHeading:
+    "If it’s been months or years since you last flew, FlyTech can help you shake off the rust. Our Rusty Pilot and IPC programs are designed to refresh your knowledge, restore your confidence, and prepare you for safe flying again—whether for VFR or IFR operations.",
+};
+
+const sections = [
+  {
+    id: "01",
+    tag: "STEP 1",
+    title: "Reconnect With Your Pilot Journey",
+    text: `Haven’t flown in months or years? You’re not alone. The first step is deciding to get back in the cockpit.
+    At FlyTech, our Rusty Pilot & IPC programs are designed for aviators just like you—helping you regain confidence, refresh your knowledge, and rediscover the joy of flying.`,
+    img: "/src/assets/wing-sky-sunset.webp",
+  },
+  {
+    id: "02",
+    tag: "STEP 2",
+    title: "Schedule Your Personalized Refresher",
+    text: `Every pilot’s needs are different. Whether you need a simple Flight Review, an Instrument Proficiency Check,
+    or both—we’ll create a tailored plan for you. With flexible scheduling, modern aircraft, and a Redbird simulator,
+    you’ll sharpen your skills on your own terms without pressure.`,
+    img: "/src/assets/wing-sky-sunset.webp",
+  },
+  {
+    id: "03",
+    tag: "STEP 3",
+    title: "Train With Expert Guidance",
+    text: `Work side-by-side with FAA-certified instructors who specialize in getting pilots current again.
+    You’ll review FAA updates, practice maneuvers, refresh IFR procedures if needed, and rebuild muscle memory in a supportive, stress-free environment.`,
+    img: "/src/assets/wing-sky-sunset.webp",
+  },
+  {
+    id: "04",
+    tag: "STEP 4",
+    title: "Take Off With Confidence",
+    text: `By the end of your Rusty Pilot or IPC training, you’ll meet FAA requirements, hold the endorsements you need,
+    and feel comfortable in the left seat again. More than a checkmark, it’s about restoring your passion for flying and
+    ensuring you’re safe, confident, and ready for your next adventure in the sky.`,
+    img: "/src/assets/wing-sky-sunset.webp",
+  },
+];
+---
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+<section class="text-white relative overflow-hidden" id="rusty-pilot-roadmap">
+  <div class="w-full text-center pt-12">
+    {
+      program.upperHeading && (
+        <h3 class="mx-auto uppercase text-lg lg:text-xl max-w-3xl font-sans font-bold tracking-tight text-white">
+          {program.upperHeading}
+        </h3>
+      )
+    }
+    {
+      program.heading && (
+        <h2 class="mx-auto mb-3 text-4xl lg:text-6xl max-w-3xl font-title font-bold tracking-tight text-primary-500">
+          {program.heading}
+        </h2>
+      )
+    }
+    {
+      program.subHeading && (
+        <p class="mx-auto mb-12 text-lg max-w-3xl tracking-loose text-white/90">
+          {program.subHeading}
+        </p>
+      )
+    }
+    <a href="#program-details" class="btn-primary inline-block">
+      See Program Details
+    </a>
+  </div>
+
+  <!-- Sidebar -->
+  <div
+    id="sidebar-nav"
+    class="hidden md:flex flex-col gap-6 fixed top-1/2 right-0 -translate-y-1/2 text-gray-100 z-50 py-6 px-6"
+  >
+    {
+      sections.map((section, i) => (
+        <a
+          href={`#${section.id}`}
+          id={`link-${section.id}`}
+          class={`hover:text-primary-400 transition-all duration-300 ease-out text-right ${
+            i === 0 ? "text-primary-400 scale-110 font-bold" : ""
+          }`}
+        >
+          {section.title}
+        </a>
+      ))
+    }
+  </div>
+
+  <!-- Sections -->
+  <div class="max-w-6xl mx-auto py-20 px-6 space-y-32">
+    {
+      sections.map((section, i) => (
+        <div
+          id={section.id}
+          class={`relative grid md:grid-cols-2 items-center ${
+            i % 2 === 1 ? "md:flex-row-reverse" : ""
+          }`}
+        >
+          <span class="absolute -top-10 left-0 text-8xl md:text-9xl font-bold text-white/15 select-none text-right">
+            {section.id}
+          </span>
+
+          <div class="relative z-10 bg-neutral-800 py-12 px-12 flex flex-col items-end">
+            <span class="text-sm tracking-widest text-primary-400 font-semibold text-right">
+              {section.tag}
+            </span>
+            <h2 class="text-3xl md:text-4xl font-bold mt-2 text-right">
+              {section.title}
+            </h2>
+            <p class="mt-4 text-neutral-300 text-right">{section.text}</p>
+            <a href="/enroll" class="btn-primary mt-6 inline-block  text-right">
+              enroll now
+            </a>
+          </div>
+
+          <div class="relative z-10">
+            <img src={section.img} alt={section.title} class=" shadow-lg" />
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>
+
+<script>
+  const sections = document.querySelectorAll(".max-w-6xl > div[id]");
+  const navLinks = document.querySelectorAll("#sidebar-nav a");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const id = entry.target.getAttribute("id");
+        const link = document.querySelector(`#link-${id}`);
+        if (entry.isIntersecting) {
+          navLinks.forEach((l) => {
+            l.classList.remove("text-primary-400", "scale-110", "font-bold");
+          });
+          link.classList.add("text-primary-400", "scale-110", "font-bold");
+        }
+      });
+    },
+    {
+      threshold: 0.5,
+      rootMargin: "-20% 0px -20% 0px",
+    },
+  );
+
+  sections.forEach((section) => observer.observe(section));
+</script>
