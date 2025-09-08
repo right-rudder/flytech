@@ -1,4 +1,6 @@
 ---
+import ImageComp from "../ImageComp.astro";
+
 const program = {
   upperHeading: "RUSTY PILOT",
   heading: "Be prepared to take back the Skies!",
@@ -131,10 +133,11 @@ ensuring you’re safe, confident, and ready for your next adventure in the sky.
 
           {/* Image block */}
           <div class="relative z-10 w-full h-full md:h-[36rem] lg:h-[48rem]">
-            <img
-              src={section.img}
-              alt={section.title}
-              class="shadow-lg w-full h-full object-cover"
+            <ImageComp
+              imagePath={section.img}
+              imageAlt={section.title}
+              styles="w-full h-full object-cover shadow-lg"
+              loading="eager"
             />
           </div>
         </div>
