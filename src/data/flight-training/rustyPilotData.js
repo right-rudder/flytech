@@ -13,7 +13,7 @@ const rustyPilotICP = {
     imagePath: "/src/assets/cockpit-flying-slinger.webp",
     imageAlt: "FlyTech Pilot Academy instructor and pilot during IPC training",
     headerH1: `Rusty Pilot & <strong class="text-primary-600">IPC Program</strong>`,
-    paragraph: `If it’s been months or years since you last flew, FlyTech can help you shake off the rust. Our Rusty Pilot and IPC programs are designed to refresh your knowledge, restore your confidence, and prepare you for safe flying again—whether for VFR or IFR operations.`,
+    paragraph: `If it’s been months or years since you last flew, FlyTech can help you shake off the rust. Our Rusty Pilot and IPC programs are designed to refresh your knowledge, restore your confidence, and prepare you for safe flying again, whether for VFR or IFR operations.`,
     buttons: [
       {
         name: "Schedule Your Session",
