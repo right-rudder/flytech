@@ -9,6 +9,7 @@ import CourseSchema from "../../components/CourseSchema.astro";
 import BreadcrumbSchema from "../../components/BreadcrumbSchema.astro";
 import CTAVideoWhite from "../../components/CTAVideoWhite.astro";
 import videoList from "../../data/videos.js";
+import RustyRoadMap from "../../components/Sections/RustyRoadMap.astro";
 
 const randomVideo = videoList[Math.floor(Math.random() * videoList.length)];
 const dataForVideo = {
@@ -32,6 +33,7 @@ const breadcrumbItems = [
 >
   <HeaderSmall content={programData.header} />
   <CTAVideoWhite video={randomVideo} data={dataForVideo} />
+  <RustyRoadMap />
   <ProgramDetails program={programData.details} />
   <CTAColor content={flyWithUsCTA} />
 
