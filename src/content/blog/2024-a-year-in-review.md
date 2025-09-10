@@ -3,7 +3,7 @@ pubDate: "November 29, 2024"
 author: "Lute Atieh"
 title: "2024: A Year in Review"
 description: "Description"
-heroImage: "/blog/Blog-2024-In-Review-480x679.webp"
+heroImage: "/src/assets/Blog-2024-In-Review-480x679.webp"
 readingTime: 4
 category: "Update"
 tags:

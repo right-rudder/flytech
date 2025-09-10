@@ -3,7 +3,7 @@ pubDate: "January 6, 2025"
 author: "Lute Atieh"
 title: "FlyTech Pilot Academy Celebrates Historic First Graduate"
 description: "New academy marks major milestone as inaugural student is issued license by FAA."
-heroImage: "/blog/Blog Kolin and FAA Rep.webp"
+heroImage: "/src/assets/Blog Kolin and FAA Rep.webp"
 readingTime: 4
 category: "News"
 tags:
