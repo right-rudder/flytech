@@ -40,4 +40,10 @@ export default defineConfig({
     "/wp-content/uploads/2025/03/Sling-2-LSA-Maintenance-Manual-Rev-2.9.pdf":
       "/",
   },
+  vite: {
+    css: {
+      // combine all CSS into a single file per page
+      codeSplit: false,
+    },
+  },
 });
