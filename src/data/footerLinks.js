@@ -22,10 +22,10 @@ export const footerLinks = [
         name: "Current Students",
         link: "/current-students",
       },
-      {
-        name: "Events",
-        link: "/#events",
-      },
+      // {
+      //   name: "Events",
+      //   link: "/#events",
+      // },
       {
         name: "Contact Us",
         link: "/contact",
