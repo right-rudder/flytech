@@ -12,7 +12,7 @@ const { siteTitle, siteDescription, keywords } = Astro.props;
 import Banner from "../components/Banner.astro";
 import Enroll from "../components/Forms/Enroll.astro";
 import ImageComp2 from "../components/ImageComp2.astro";
-import imgForm from '../assets/wing-flying-sky.webp';
+import imgForm from "../assets/wing-flying-sky.webp";
 ---
 
 <!doctype html>
@@ -24,19 +24,32 @@ import imgForm from '../assets/wing-flying-sky.webp';
       keywords={keywords || KEYWORDS}
       image={OG_IMAGE}
     />
-    
-    {imgForm && <link rel="preload" as="image" href={imgForm.src} />}
+
+    <!-- Preload LCP image with high priority -->
+    {
+      imgForm && (
+        <link
+          rel="preload"
+          as="image"
+          href={imgForm.src}
+          fetchpriority="high"
+        />
+      )
+    }
   </head>
   <body class="font-sans">
     <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
+    <noscript>
+      <iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-M97RG5CD"
         height="0"
         width="0"
-        style="display:none;visibility:hidden"></iframe></noscript
-    >
-    <!-- Background Image -->
+        style="display:none;visibility:hidden"
+      >
+      </iframe>
+    </noscript>
+
+    <!-- Background / LCP Image -->
     <div class="fixed inset-0 top-24 -z-50 pointer-events-none overflow-hidden">
       <div class="absolute inset-0 bg-black/70 mix-blend-multiply"></div>
       <ImageComp2
@@ -44,18 +57,25 @@ import imgForm from '../assets/wing-flying-sky.webp';
         imageAlt="Background Image"
         styles="w-full h-full object-cover"
         loading="eager"
+        fetchpriority="high"
       />
     </div>
+
     <!-- End Google Tag Manager (noscript) -->
     <Banner />
+
     <header class="w-full h-0 sticky inset-0 z-50 font-sans tracking-wider">
       <Navbar pathname={pathname} client:load />
     </header>
+
     <main>
       <slot />
     </main>
+
     <Enroll />
     <Footer />
+
+    <!-- Optional components commented out -->
     <!-- <ChatWidget /> -->
     <!-- <SocialMediaSchema title={siteTitle} description={siteDescription} /> -->
   </body>

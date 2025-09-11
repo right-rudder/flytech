@@ -2,21 +2,32 @@
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 
+interface Props {
+  imagePath: ImageMetadata;
+  imageAlt: string;
+  quality?: number;
+  styles?: string;
+  loading?: "lazy" | "eager";
+  fetchpriority?: "high" | "low" | "auto";
+}
+
 const {
   imagePath,
   imageAlt,
   quality = 60,
   styles = "",
   loading = "lazy",
+  fetchpriority = "auto",
 } = Astro.props;
 ---
 
 <Image
   src={imagePath}
   alt={imageAlt}
-  class={`${styles}`}
+  class={styles}
   quality={quality}
   loading={loading}
   widths={[120, 240, 540, 720, 1080, 1440, 1920]}
-  sizes={`(max-width: 120px) 120px, (max-width: 240px) 240px, (max-width: 540px) 540px, (max-width: 720px) 720px, (max-width: 1080px) 1080px, (max-width: 1440px) 1440px, 1920px`}
+  sizes="(max-width: 120px) 120px, (max-width: 240px) 240px, (max-width: 540px) 540px, (max-width: 720px) 720px, (max-width: 1080px) 1080px, (max-width: 1440px) 1440px, 1920px"
+  fetchpriority={fetchpriority}
 />
