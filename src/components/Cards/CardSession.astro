@@ -1,0 +1,76 @@
+---
+const { session, isTBD = false, isPast = false } = Astro.props;
+
+const cardBase =
+  "w-full border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition duration-200";
+const cardClasses = cardBase + (isPast ? " opacity-70" : "");
+
+const titleClass =
+  "text-xl mb-1 " +
+  (isTBD
+    ? "font-bold text-primary-800"
+    : isPast
+      ? "font-semibold text-gray-600"
+      : "font-semibold text-primary-800");
+
+const paraClass = (isPast ? "text-gray-500" : "text-gray-600") + " mb-2";
+
+const listClass =
+  "list-disc list-inside " +
+  (isPast ? "text-gray-500" : "text-gray-700") +
+  " text-sm mb-4";
+
+const statusClass =
+  "inline-block px-3 py-1 text-sm rounded-full " +
+  (isPast
+    ? "bg-gray-100 text-gray-600"
+    : isTBD
+      ? "bg-primary-100 text-primary-800"
+      : "bg-green-100 text-green-800");
+---
+
+<div class={cardClasses}>
+  <h3 class={titleClass}>
+    {isTBD ? session.topics.join(" + ") : session.date}
+  </h3>
+
+  <p class={paraClass}>
+    {
+      isTBD ? (
+        <>
+          Date: <span class="font-semibold">TBD</span>
+        </>
+      ) : (
+        session.time
+      )
+    }
+  </p>
+
+  {
+    !isTBD ? (
+      <ul class={listClass}>
+        {session.topics.map((t) => (
+          <li>{t}</li>
+        ))}
+      </ul>
+    ) : (
+      <p class="text-gray-600 text-sm mb-4">
+        Time: <span class="font-semibold">TBD</span>
+      </p>
+    )
+  }
+
+  <span class={statusClass}>{session.status}</span>
+
+  {
+    !isTBD && !isPast && (
+      <a
+        href="https://www.flightcircle.com/shop/f97c5d7539a7/4000020629"
+        target="_blank"
+        class="block mt-3 text-center text-white bg-primary-600 hover:bg-primary-700 px-4 py-2 rounded text-sm font-medium"
+      >
+        Register – $50
+      </a>
+    )
+  }
+</div>

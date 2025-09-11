@@ -24,6 +24,7 @@ import WidgetGoogleReviews from "../components/FCRM/WidgetGoogleReviews.astro";
 import CTAContact from "../components/CTAContact.astro";
 import Enroll from "../components/Forms/Enroll.astro";
 import InstagramFeed from "../components/ElfSight/InstagramFeed.astro";
+import EventSessions from "../components/EventSessions.astro";
 
 // Transform FAQ format for schema
 const faqSchemaItems = GeneralFAQs.map((faq) => ({
@@ -53,6 +54,7 @@ const dataForVideo = {
   <BlogFeed data={data.blogfeed} />
   <AirlinesCloud data={data.airlinesCloud} />
   <FlightTrainingAdvantages content={data.advantagesInfo} />
+  <!-- <EventSessions /> -->
   <WidgetGoogleReviews />
   <!-- <CTAColor content={flyWithUsCTA} /> -->
   <CTAVideoWhite video={currentVideo} data={flyWithUsCTA} />

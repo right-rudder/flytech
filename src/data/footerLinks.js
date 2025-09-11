@@ -19,6 +19,14 @@ export const footerLinks = [
         link: "/why-become-a-pilot",
       },
       {
+        name: "Current Students",
+        link: "/current-students",
+      },
+      // {
+      //   name: "Events",
+      //   link: "/#events",
+      // },
+      {
         name: "Contact Us",
         link: "/contact",
       },
@@ -50,6 +58,10 @@ export const footerLinks = [
       {
         name: "Sports Pilot Certificate",
         link: "/flight-training/sports-pilot-certificate",
+      },
+      {
+        name: "Rusty Pilot IPC",
+        link: "/flight-training/rusty-pilot-ipc",
       },
     ],
   },

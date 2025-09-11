@@ -3,6 +3,7 @@ import { mobileNavbarLinks } from "../data/mobileNavbarLinks.js";
 import { useEffect, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaPhone } from "react-icons/fa";
+import Logo from "./Logo.jsx";
 
 import {
   FACEBOOK_URL,
@@ -97,14 +98,18 @@ const Navbar = ({ pathname }) => {
                 title="FlyTech Pilot Academy"
                 className="hover:brightness-110 flex h-14 lg:h-16 justify-end align-middle items-center duration-200 ease-in-out py-1 px-2"
               >
-                <img
+                <Logo className="h-14 lg:h-16" />
+
+                {/* <img
                   src="/flytech-logo-wg_1000px-980x262.webp"
                   alt="FlyTech Pilot Academy  Logo"
                   aria-label="FlyTech Pilot Academy  Logo"
                   title="FlyTech Pilot Academy "
                   loading="eager"
+                  width="100%"
+                  height="100%"
                   className={`${navBar || openMobile ? "h-full max-w-1/2" : "h-full  max-w-1/2"} object-contain duration-500 drop-shadow-md`}
-                />
+                /> */}
               </a>
               <div className="hidden lg:flex flex-1 justify-end">
                 <ul

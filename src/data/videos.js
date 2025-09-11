@@ -9,11 +9,11 @@ const videoList = [
     description: "discovery flight",
     videoId: "UYIGh0f_FsQ",
   },
-  {
-    title: "Lane Hall Solo Flight Training",
-    description: "Lane Hall Solo",
-    videoId: "FSliFHlpze0",
-  },
+  // {
+  //   title: "Lane Hall Solo Flight Training",
+  //   description: "Lane Hall Solo",
+  //   videoId: "FSliFHlpze0",
+  // },
   {
     title: "Take Off and Adhoc IFR Setup",
     description: "Take off and adhoc IFR Setup",

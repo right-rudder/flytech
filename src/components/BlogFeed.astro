@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import FormattedDate from "./FormattedDate.astro";
+import ImageComp from "../../src/components/ImageComp.astro";
 
 const posts = (await getCollection("blog"))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
@@ -73,12 +74,18 @@ const { data } = Astro.props;
     {
       posts.map((post, index) => (
         <article class="relative group w-full lg:m-0 md:w-2/5 lg:w-1/4 isolate flex flex-col justify-end overflow-hidden  bg-white px-8 pb-8 pt-48 hover:ring-1 hover:ring-primary-300 duration-200">
-          <img
+          {/* <img
             src={post.data.heroImage}
             alt={post.data.title}
             loading="lazy"
             aspect-ratio="1/1"
             class="absolute inset-0 -z-10 h-full w-full object-cover group-hover:scale-110 group-hover:brightness-125 duration-200"
+          /> */}
+          <ImageComp
+            imagePath={post.data.heroImage}
+            imageAlt={post.data.title}
+            loading="lazy"
+            styles="absolute aspect-[1/1] inset-0 -z-10 h-full w-full object-cover group-hover:scale-110 group-hover:brightness-125 duration-200"
           />
           <div class="absolute inset-0 -z-10 bg-gradient-to-t from-primary-950 to-primary-950/20 group-hover:bg-primary-800/60 duration-200" />
           <div class="absolute inset-0 -z-10  ring-1 ring-inset ring-gray-900/10" />

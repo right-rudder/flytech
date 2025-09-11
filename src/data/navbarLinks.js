@@ -41,6 +41,10 @@ export const navbarLinks = [
         name: "Sports Pilot Certificate",
         link: "/flight-training/sports-pilot-certificate",
       },
+      {
+        name: "Rusty Pilot IPC",
+        link: "/flight-training/rusty-pilot-ipc",
+      },
     ],
   },
   {
@@ -59,6 +63,10 @@ export const navbarLinks = [
         name: "Student Resources",
         link: "/current-students#student-resources",
       },
+      // {
+      //   name: "Events",
+      //   link: "/current-students#events",
+      // },
     ],
   },
   {

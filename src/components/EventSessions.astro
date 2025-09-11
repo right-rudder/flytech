@@ -1,0 +1,83 @@
+---
+import groundSchoolSessions from "../data/event-sessions.js";
+import TextCard from "./Cards/TextCard.astro";
+import SessionCard from "./Cards/CardSession.astro";
+
+const textContent = {
+  upperheading: "Events",
+  title: `Next Events at <span class="text-primary-500">FlyTech</span>`,
+  description:
+    "Upcoming Events for our students and community. Check our latest activities.",
+};
+
+const now = new Date();
+const parseDate = (dateStr: string) =>
+  dateStr === "TBD" ? new Date(0) : new Date(dateStr);
+
+const scheduled = groundSchoolSessions.filter((s) => parseDate(s.date) > now);
+const past = groundSchoolSessions
+  .filter((s) => parseDate(s.date) <= now)
+  .sort((a, b) => parseDate(b.date).getTime() - parseDate(a.date).getTime());
+const upcoming = groundSchoolSessions.filter((s) => s.date === "TBD");
+---
+
+<section class="py-20 bg-white" id="events">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div
+      class="flex flex-col gap-10 lg:flex-row-reverse items-start justify-center"
+    >
+      <div class="w-full lg:w-1/3">
+        <TextCard content={textContent} right={false} />
+      </div>
+
+      <div
+        class="w-full h-full lg:w-2/3 mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-6 lg:gap-8"
+      >
+        {
+          scheduled.length > 0 && (
+            <section>
+              <h3 class="text-2xl font-semibold text-primary-800 mb-4">
+                Scheduled Sessions
+              </h3>
+              <div class="flex flex-wrap gap-6 lg:gap-12">
+                {scheduled.map((s) => (
+                  <SessionCard session={s} />
+                ))}
+              </div>
+            </section>
+          )
+        }
+
+        {
+          upcoming.length > 0 && (
+            <section>
+              <h3 class="text-2xl font-semibold text-primary-800 mb-4">
+                To Be Scheduled
+              </h3>
+              <div class="flex flex-wrap gap-6 lg:gap-12">
+                {upcoming.map((s) => (
+                  <SessionCard session={s} isTBD={true} />
+                ))}
+              </div>
+            </section>
+          )
+        }
+
+        {
+          past.length > 0 && (
+            <section>
+              <h3 class="text-2xl font-semibold text-primary-800 mb-4">
+                Past Sessions
+              </h3>
+              <div class="flex flex-wrap gap-6 lg:gap-12">
+                {past.map((s) => (
+                  <SessionCard session={s} isPast={true} />
+                ))}
+              </div>
+            </section>
+          )
+        }
+      </div>
+    </div>
+  </div>
+</section>
