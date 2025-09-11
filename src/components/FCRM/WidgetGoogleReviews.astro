@@ -9,24 +9,32 @@ import TextCardDark from "../Cards/TextCardDark.astro";
         upperheading: "What Our Students Say",
         title: `Our Students <span class="text-primary-500"> Love Us</span>`,
         description:
-          "At FlyTech Pilot Academy, we prioritize creating a supportive and safe learning environment where students thrive. Here’s what some of our students have to say about their training experiences.",
+          "At FlyTech Pilot Academy, we prioritize creating a supportive and safe learning environment where students thrive. Here's what some of our students have to say about their training experiences.",
       }}
       textOrientation="center"
     />
   </div>
-  <div class="min-h-20 lg:min-h-[600px]">
-    <script
-      type="text/javascript"
-      src="https://reputationhub.site/reputation/assets/review-widget.js"
-      async></script>
-    <iframe
-      class="lc_reviews_widget"
-      src="https://reputationhub.site/reputation/widgets/review_widget/3vFNi9MbXshlpgYHZ34h"
-      frameborder="0"
-      scrolling="no"
-      style="min-width: 100%; width: 100%;"
-    >
-    </iframe>
+
+  <!-- Reviews container with loading placeholder -->
+  <div class="min-h-20 lg:min-h-[600px] reviews-container">
+    <!-- Loading placeholder -->
+    <div class="reviews-placeholder flex items-center justify-center h-full">
+      <div class="text-neutral-400 text-center">
+        <div class="animate-pulse">Loading reviews...</div>
+      </div>
+    </div>
+
+    <!-- Reviews content (initially hidden) -->
+    <div class="reviews-content" style="display: none;">
+      <iframe
+        class="lc_reviews_widget"
+        src="https://reputationhub.site/reputation/widgets/review_widget/3vFNi9MbXshlpgYHZ34h"
+        frameborder="0"
+        scrolling="no"
+        style="min-width: 100%; width: 100%;"
+      >
+      </iframe>
+    </div>
   </div>
 
   <div
@@ -35,9 +43,53 @@ import TextCardDark from "../Cards/TextCardDark.astro";
     <a
       href="https://search.google.com/local/writereview?placeid=ChIJJZSPiTMFwIcRwINkCHkq7jE"
       target="_blank"
-      class=`btn-primary  w-full md:w-auto hover:scale-110 transition-transform duration-300 ease-in-out`
+      class="btn-primary w-full md:w-auto hover:scale-110 transition-transform duration-300 ease-in-out"
     >
       <span class="drop-shadow-sm">Write a Review</span>
     </a>
   </div>
 </section>
+
+<script>
+  // Intersection Observer for lazy loading reviews
+  const observerOptions = {
+    root: null,
+    rootMargin: "50px", // Start loading when element is 50px before entering viewport
+    threshold: 0.1,
+  };
+
+  const reviewsObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const container = entry.target;
+        const placeholder = container.querySelector(".reviews-placeholder");
+        const content = container.querySelector(".reviews-content");
+
+        // Hide placeholder and show content
+        if (placeholder && content) {
+          placeholder.style.display = "none";
+          content.style.display = "block";
+
+          // Load the external script
+          const script = document.createElement("script");
+          script.type = "text/javascript";
+          script.src =
+            "https://reputationhub.site/reputation/assets/review-widget.js";
+          script.async = true;
+          document.head.appendChild(script);
+        }
+
+        // Stop observing once loaded
+        reviewsObserver.unobserve(container);
+      }
+    });
+  }, observerOptions);
+
+  // Start observing when DOM is loaded
+  document.addEventListener("DOMContentLoaded", () => {
+    const reviewsContainer = document.querySelector(".reviews-container");
+    if (reviewsContainer) {
+      reviewsObserver.observe(reviewsContainer);
+    }
+  });
+</script>
