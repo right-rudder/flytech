@@ -2,9 +2,9 @@ const fleetPage = {
   data: {
     // SEO Header Stuff
     pageDescription:
-      "Find answers to common questions about FlyTech Pilot Academy’s flight training programs, enrollment process, costs, scheduling, and more. Get clarity before you take off.",
+      "Explore FlyTech Pilot Academy's modern fleet of training aircraft. Learn about our well-maintained planes and discover the perfect aircraft for your flight training.",
     pageKeywords:
-      "FlyTech FAQ, flight school questions, pilot training info, aviation program answers, pilot license, discovery flights, private pilot, commercial pilot, Saint Joseph MO",
+      "FlyTech fleet, training aircraft, flight school planes, pilot training aircraft, aviation fleet, flight training planes, Saint Joseph MO flight school",
 
     // Top header
     header: {

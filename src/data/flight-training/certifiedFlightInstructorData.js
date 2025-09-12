@@ -1,7 +1,7 @@
 import { COMPANY_NAME } from "../../consts";
 
 const certifiedFlightInstructorData = {
-  pageTitle: `Certified Flight Instructor (CFI) | ${COMPANY_NAME}`,
+  pageTitle: `Certified Flight Instructor (CFI) | ${COMPANY_NAME}, Saint Joseph, MO`,
   pageDescription:
     "Launch your career as a flight instructor with FlyTech Pilot Academy’s Certified Flight Instructor (CFI) program. Gain the experience and skills needed to teach the next generation of pilots.",
   pageKeywords:

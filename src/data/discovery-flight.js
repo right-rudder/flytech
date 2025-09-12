@@ -7,7 +7,7 @@ const discoveryFlight = {
     pageDescription:
       "Book a Flight at FlyTech Pilot Academy in Saint Joseph, MO. Experience the thrill of flying and see if becoming a pilot is right for you!",
     pageKeywords:
-      "Discovery Flight, Flight School, Flight Training, Pilot Training, Learn to Fly, Private Pilot, Sport Pilot, Recreational Pilot, Flight Instructor, Flight Instruction, Flight School Saint Joseph, MO, Kankakee Flight School, Kankakee Flight Training, Saint Joseph Pilot Training, Saint Joseph Learn to Fly, Saint Joseph Private Pilot, Saint Joseph Sport Pilot, Saint Joseph Recreational Pilot, Saint Joseph Flight Instructor, Saint Joseph Flight Instruction",
+      "discovery flight Saint Joseph MO, intro flight lesson, flight training experience, learn to fly Missouri, FlyTech pilot academy, aviation discovery, flight school near Kansas City",
     //
 
     //top header

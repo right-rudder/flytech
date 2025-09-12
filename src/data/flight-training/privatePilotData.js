@@ -1,7 +1,7 @@
 import { COMPANY_NAME } from "../../consts";
 
 const privatePilotData = {
-  pageTitle: `Private Pilot License | ${COMPANY_NAME}`,
+  pageTitle: `Private Pilot License | ${COMPANY_NAME}, Saint Joseph, MO`,
   pageDescription:
     "Begin your aviation journey with FlyTech’s Private Pilot Certificate program. Learn from expert instructors, master essential flight skills, and earn your wings with confidence.",
   pageKeywords:

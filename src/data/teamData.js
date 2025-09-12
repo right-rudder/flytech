@@ -3,7 +3,7 @@ import { COMPANY_NAME } from "../consts";
 const teamData = {
   pageTitle: `The FlyTech Crew | ${COMPANY_NAME}`,
   pageDescription:
-    "Discover the dedicated team behind FlyTech Pilot Academy. Our leadership and certified flight instructors are committed to providing exceptional training and support to help you achieve your aviation goals.",
+    "Meet the expert team at FlyTech Pilot Academy in Saint Joseph, MO. Our certified flight instructors and leadership provide exceptional aviation training.",
   pageKeywords:
     "FlyTech Pilot Academy team, flight instructors, aviation experts, leadership team, certified flight instructors, aviation training",
 
@@ -83,12 +83,10 @@ const teamData = {
       },
       {
         imagePath: "/src/assets/Mark-5.webp",
-        imageAlt:
-          "Mark Gaines",
+        imageAlt: "Mark Gaines",
         name: "Mark Gaines D.P.E.",
         title: "Partner",
-        summary:
-          `With over twenty years of diverse experience in the aviation industry, I've had the privilege of working in gemeral, military, and commercial aviation, flight training, sUAS operations, and engaging in aviation volunteering and mentorship programs. My greatest joy comes from helping others achieve their dreams of flying. <a href="https://www.flygllc.com/" target="_blank" class="hover:text-primary-700 transition-all duration-300">Learn more about me here.</a>`,
+        summary: `With over twenty years of diverse experience in the aviation industry, I've had the privilege of working in gemeral, military, and commercial aviation, flight training, sUAS operations, and engaging in aviation volunteering and mentorship programs. My greatest joy comes from helping others achieve their dreams of flying. <a href="https://www.flygllc.com/" target="_blank" class="hover:text-primary-700 transition-all duration-300">Learn more about me here.</a>`,
       },
     ],
 

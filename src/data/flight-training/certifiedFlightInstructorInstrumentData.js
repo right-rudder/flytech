@@ -1,7 +1,7 @@
 import { COMPANY_NAME } from "../../consts";
 
 const certifiedFlightInstructorInstrumentsData = {
-  pageTitle: `Certified Flight Instructor – Instrument (CFII) | ${COMPANY_NAME}`,
+  pageTitle: `Certified Flight Instructor – Instrument (CFII) | ${COMPANY_NAME}, Saint Joseph, MO`,
   pageDescription:
     "Expand your flight instructor credentials with FlyTech Pilot Academy’s Certified Flight Instructor – Instrument (CFII) program. Learn to teach instrument flying skills and prepare pilots for IFR proficiency.",
   pageKeywords:

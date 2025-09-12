@@ -4,7 +4,7 @@ const pilotTrainingMadeSimple = {
     pageTitle:
       "Pilot Training Made Simple | FlyTech Pilot Academy Saint Joseph, MO",
     pageDescription:
-      "FlyTech Pilot Academy  offers flight training in Saint Joseph, MO. We offer private pilot training, instrument rating training, commercial pilot training, and more. Contact us today!",
+      "FlyTech Pilot Academy offers comprehensive flight training in Saint Joseph, MO. From private pilot to commercial certification. Contact us today!",
     pageKeywords:
       "flight training, flight school, pilot training, private pilot training, instrument rating training, commercial pilot training, Saint Joseph, MO",
 

@@ -1,7 +1,7 @@
 import { COMPANY_NAME } from "../../consts";
 
 const rustyPilotICP = {
-  pageTitle: `Rusty Pilot & IPC Program | ${COMPANY_NAME}`,
+  pageTitle: `Rusty Pilot & IPC Program | ${COMPANY_NAME}, Saint Joseph, MO`,
   pageDescription:
     "Haven’t flown in a while? Regain your skills and confidence with FlyTech’s Rusty Pilot and Instrument Proficiency Check (IPC) programs. Brush up on regulations, sharpen your flying skills, and get back in the cockpit with expert support.",
   pageKeywords:

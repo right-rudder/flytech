@@ -1,7 +1,7 @@
 import { COMPANY_NAME } from "../../consts";
 
 const commercialPilotData = {
-  pageTitle: `Commercial Pilot | ${COMPANY_NAME}`,
+  pageTitle: `Commercial Pilot License | ${COMPANY_NAME}, Saint Joseph, MO`,
   pageDescription:
     "Launch your professional aviation career with FlyTech Pilot Academy’s Commercial Pilot License (CPL) program. Gain the skills and experience to fly for hire.",
   pageKeywords:

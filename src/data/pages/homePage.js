@@ -1,6 +1,7 @@
 const homePage = {
   data: {
     //SEO Header Stuff
+    pageTitle: "FlyTech Pilot Academy | Flight Training in Saint Joseph, MO",
     pageDescription:
       "FlyTech Pilot Academy offers flight training in Saint Joseph, MO. We provide modern instruction in private pilot training, sport pilot certificates, instrument and commercial ratings, and more.",
     pageKeywords:

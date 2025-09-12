@@ -1,7 +1,7 @@
 import { COMPANY_NAME } from "../../consts";
 
 const instrumentRatingData = {
-  pageTitle: `Instrument Rating | ${COMPANY_NAME}`,
+  pageTitle: `Instrument Rating | ${COMPANY_NAME}, Saint Joseph, MO`,
   pageDescription:
     "Earn your Instrument Rating with FlyTech Pilot Academy and fly safely in low-visibility conditions. Master IFR procedures, advanced navigation, and weather interpretation with expert instruction.",
   pageKeywords:
