@@ -3,7 +3,8 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeaderSmall from "../../components/HeaderSmall.astro";
 import CTAColor from "../../components/CTAColor.astro";
 import flyWithUsCTA from "../../data/fly-with-us-cta";
-
+import FlightTrainingCourseSchema from "../../components/FlightTrainingCourseSchema.astro";
+import BreadcrumbSchema from "../../components/BreadcrumbSchema.astro";
 import ProgramDetails from "../../components/ProgramDetails.astro";
 import programData from "../../data/flight-training/commercialPilotData.js";
 import CTAVideoWhite from "../../components/CTAVideoWhite.astro";
@@ -16,6 +17,15 @@ const dataForVideo = {
     "At FlyTech Pilot Academy, we combine modern aircraft, immersive technology, and a passionate team of instructors to give you an efficient, professional, and enjoyable path to the cockpit. Whether you're starting fresh or advancing your career, we make it simple.",
   buttons: [],
 };
+
+const breadcrumbItems = [
+  { name: "Home", item: "/" },
+  { name: "Flight Training", item: "/flight-training" },
+  {
+    name: "Commercial Pilot License",
+    item: "/flight-training/commercial-pilot",
+  },
+];
 ---
 
 <BaseLayout
@@ -29,4 +39,32 @@ const dataForVideo = {
   <ProgramDetails program={programData.details} />
 
   <CTAColor content={flyWithUsCTA} />
+
+  <FlightTrainingCourseSchema
+    courseName="Commercial Pilot License Training"
+    description="Comprehensive training program for aspiring commercial pilots, focusing on advanced flight techniques and instructional skills."
+    courseCode="CPL-001"
+    duration="6-12 months"
+    totalHours={150}
+    groundHours={50}
+    flightHours={40}
+    prerequisites={[
+      "Valid medical certificate",
+      "English proficiency",
+      "Private Pilot License",
+      "215 hours of flight time",
+    ]}
+    outcomes={[
+      "Solo flight operations",
+      "Cross-country navigation",
+      "Radio communication procedures",
+      "Weather interpretation",
+      "Navigation systems",
+      "Federal Aviation Regulations knowledge",
+    ]}
+    certification="Commercial Pilot Certificate"
+    difficulty="Advanced"
+  />
+
+  <BreadcrumbSchema items={breadcrumbItems} />
 </BaseLayout>

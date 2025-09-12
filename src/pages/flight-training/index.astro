@@ -5,6 +5,8 @@ import GridPrograms from "../../components/GridPrograms.astro";
 import programs from "../../data/flight-training/programSwiper.js";
 import CTAColor from "../../components/CTAColor.astro";
 import flyWithUsCTA from "../../data/fly-with-us-cta";
+import EducationalOrganizationSchema from "../../components/EducationalOrganizationSchema.astro";
+import BreadcrumbSchema from "../../components/BreadcrumbSchema.astro";
 import CTAVideoWhite from "../../components/CTAVideoWhite.astro";
 import videoList from "../../data/videos.js";
 
@@ -19,6 +21,11 @@ const dataForVideo = {
 import coursesIndex from "../../data/flight-training/coursesIndex.js";
 
 const { data } = coursesIndex;
+
+const breadcrumbItems = [
+  { name: "Home", item: "/" },
+  { name: "Flight Training", item: "/flight-training" },
+];
 ---
 
 <BaseLayout
@@ -26,6 +33,10 @@ const { data } = coursesIndex;
   siteDescription={data.pageDescription}
   keywords={data.pageKeywords}
 >
+  <EducationalOrganizationSchema />
+
+  <BreadcrumbSchema items={breadcrumbItems} />
+
   <HeaderSmall content={data.header} />
   <CTAVideoWhite video={randomVideo} data={dataForVideo} />
   <GridPrograms content={programs} />

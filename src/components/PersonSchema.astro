@@ -1,0 +1,85 @@
+---
+interface Props {
+  name: string;
+  jobTitle: string;
+  description?: string;
+  email?: string;
+  image?: string;
+  certifications?: string[];
+  experience?: string;
+  specialties?: string[];
+}
+
+const { 
+  name,
+  jobTitle,
+  description = "",
+  email = "",
+  image = "/FlyTech-OG-Image.png",
+  certifications = [],
+  experience = "",
+  specialties = []
+} = Astro.props;
+---
+
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": name,
+  "jobTitle": jobTitle,
+  "description": description,
+  "image": new URL(image, Astro.url).toString(),
+  "email": email || undefined,
+  "worksFor": {
+    "@type": "EducationalOrganization",
+    "name": "FlyTech Pilot Academy",
+    "url": "https://flystj.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "200 NW Rosecrans Rd",
+      "addressLocality": "Saint Joseph",
+      "addressRegion": "MO", 
+      "postalCode": "64503",
+      "addressCountry": "US"
+    }
+  },
+  "hasOccupation": {
+    "@type": "Occupation",
+    "name": jobTitle,
+    "occupationLocation": {
+      "@type": "City",
+      "name": "Saint Joseph",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Missouri"
+      }
+    }
+  },
+  "hasCredential": certifications.map(cert => ({
+    "@type": "EducationalOccupationalCredential",
+    "name": cert,
+    "credentialCategory": "professional certification"
+  })),
+  "knowsAbout": specialties.length > 0 ? specialties : [
+    "Flight Training",
+    "Aviation Safety", 
+    "Pilot Education",
+    "Aircraft Operations"
+  ],
+  "expertise": experience || "Professional flight instruction and aviation training",
+  "memberOf": {
+    "@type": "Organization",
+    "name": "FlyTech Pilot Academy Flight Training Team"
+  },
+  "affiliation": {
+    "@type": "EducationalOrganization", 
+    "name": "FlyTech Pilot Academy",
+    "url": "https://flystj.com"
+  },
+  "contactPoint": email ? {
+    "@type": "ContactPoint",
+    "email": email,
+    "contactType": "professional"
+  } : undefined
+})}>
+</script>

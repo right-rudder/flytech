@@ -1,7 +1,7 @@
 import { COMPANY_NAME } from "../../consts";
 
 const certifiedFlightInstructorData = {
-  pageTitle: `Certified Flight Instructor (CFI) | ${COMPANY_NAME}`,
+  pageTitle: `Certified Flight Instructor (CFI) | ${COMPANY_NAME}, Saint Joseph, MO`,
   pageDescription:
     "Launch your career as a flight instructor with FlyTech Pilot Academy’s Certified Flight Instructor (CFI) program. Gain the experience and skills needed to teach the next generation of pilots.",
   pageKeywords:
@@ -77,20 +77,40 @@ const certifiedFlightInstructorData = {
 
     faqs: [
       {
+        question: "What are the prerequisites for CFI training?",
+        answer:
+          "You must hold a Commercial Pilot License, be at least 18 years old, have a valid FAA medical certificate, and demonstrate proficiency in flight maneuvers and aeronautical knowledge. An Instrument Rating is highly recommended.",
+      },
+      {
         question:
           "How long does it take to become a Certified Flight Instructor?",
         answer:
-          "Most students complete their CFI training in 4-8 weeks, depending on proficiency and study schedule.",
+          "Most students complete their CFI training in 4-8 weeks, depending on proficiency and study schedule. The training is intensive and requires dedicated preparation for both the flight test and complex oral examination.",
       },
       {
         question: "Do I need a Commercial Pilot License before becoming a CFI?",
         answer:
-          "Yes, a Commercial Pilot License (CPL) is required before obtaining a Certified Flight Instructor (CFI) certification.",
+          "Yes, a Commercial Pilot License (CPL) is required before obtaining a Certified Flight Instructor (CFI) certification. The CFI builds upon commercial pilot skills with advanced teaching techniques.",
+      },
+      {
+        question: "What does CFI training include?",
+        answer:
+          "CFI training covers advanced flight maneuvers from the right seat, fundamentals of instruction, lesson planning, student evaluation, safety management, and effective teaching techniques. You'll learn to demonstrate maneuvers, identify and correct student errors, and manage training progression.",
       },
       {
         question: "What can I do with a CFI certification?",
         answer:
-          "As a CFI, you can teach student pilots, build valuable flight hours, and gain experience for future airline or corporate pilot opportunities.",
+          "As a CFI, you can teach student pilots, build valuable flight hours, and gain experience for future airline or corporate pilot opportunities. Many airlines prefer candidates with flight instruction experience. CFIs also work in corporate training, university programs, and specialized flight schools.",
+      },
+      {
+        question: "Does FlyTech hire CFI graduates?",
+        answer:
+          "Yes! Students who complete all their ratings with FlyTech are guaranteed an interview for a CFI position. This provides an excellent opportunity to build flight hours while gaining teaching experience in a supportive environment.",
+      },
+      {
+        question: "What is the CFI checkride like?",
+        answer:
+          "The CFI checkride is comprehensive, including a detailed oral examination covering teaching methods, regulations, and technical knowledge, plus a flight test where you demonstrate instructional techniques and advanced maneuvers. Our program thoroughly prepares you for this challenging but rewarding milestone.",
       },
     ],
 

@@ -1,0 +1,138 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+  courses?: string[];
+}
+
+const { 
+  title = "FlyTech Pilot Academy Flight Training",
+  description = "Professional flight training programs leading to pilot certification at Rosecrans Memorial Airport in Saint Joseph, Missouri.",
+  courses = [
+    "Private Pilot License Training",
+    "Instrument Rating Training", 
+    "Commercial Pilot Training",
+    "Multi-Engine Rating",
+    "Certified Flight Instructor Training",
+    "Sport Pilot Certificate"
+  ]
+} = Astro.props;
+---
+
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "@id": "https://flystj.com#educational-organization",
+  "name": "FlyTech Pilot Academy",
+  "alternateName": "FlyTech",
+  "url": "https://flystj.com",
+  "logo": "https://flystj.com/flytech-logo-wg_1000px-980x262.webp",
+  "image": "https://flystj.com/FlyTech-OG-Image.png",
+  "description": description,
+  "telephone": "+1-816-722-5785",
+  "email": "info@flystj.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "200 NW Rosecrans Rd",
+    "addressLocality": "Saint Joseph",
+    "addressRegion": "MO",
+    "postalCode": "64503",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.7714893,
+    "longitude": -94.9031922
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Saint Joseph",
+      "containedInPlace": {
+        "@type": "State", 
+        "name": "Missouri"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Kansas City",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Missouri"
+      }
+    },
+    {
+      "@type": "State",
+      "name": "Missouri"
+    },
+    {
+      "@type": "State", 
+      "name": "Kansas"
+    }
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "certificate",
+      "name": "Private Pilot Certificate"
+    },
+    {
+      "@type": "EducationalOccupationalCredential", 
+      "credentialCategory": "rating",
+      "name": "Instrument Rating"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "certificate", 
+      "name": "Commercial Pilot Certificate"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "rating",
+      "name": "Multi-Engine Rating"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "certificate",
+      "name": "Certified Flight Instructor Certificate"
+    }
+  ],
+  "department": [
+    {
+      "@type": "Organization",
+      "name": "Flight Training Department",
+      "description": "Comprehensive pilot training from private pilot through airline transport pilot"
+    },
+    {
+      "@type": "Organization", 
+      "name": "Ground School Department",
+      "description": "Aviation knowledge and theory instruction supporting practical flight training"
+    }
+  ],
+  "makesOffer": courses.map(course => ({
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Course",
+      "name": course,
+      "provider": {
+        "@type": "Organization",
+        "name": "FlyTech Pilot Academy"
+      }
+    },
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  })),
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-816-722-5785",
+    "contactType": "admissions",
+    "availableLanguage": "en",
+    "areaServed": "US"
+  },
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=100094124601741",
+    "https://www.instagram.com/flytech_pilot_academy",
+    "https://www.linkedin.com/company/flytech-pilot-academy"
+  ]
+})}>
+</script>

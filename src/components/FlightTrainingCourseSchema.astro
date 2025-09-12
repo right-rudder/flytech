@@ -1,0 +1,135 @@
+---
+interface Props {
+  courseName: string;
+  description: string;
+  courseCode?: string;
+  duration?: string;
+  totalHours?: number;
+  groundHours?: number;
+  flightHours?: number;
+  price?: string;
+  prerequisites?: string[];
+  outcomes?: string[];
+  certification?: string;
+  difficulty?: "Beginner" | "Intermediate" | "Advanced";
+}
+
+const { 
+  courseName,
+  description,
+  courseCode = "",
+  duration = "Self-paced",
+  totalHours = 0,
+  groundHours = 0,
+  flightHours = 0,
+  price = "Contact for pricing",
+  prerequisites = [],
+  outcomes = [],
+  certification = "",
+  difficulty = "Beginner"
+} = Astro.props;
+---
+
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": courseName,
+  "description": description,
+  "courseCode": courseCode || undefined,
+  "timeRequired": duration,
+  "totalTime": totalHours > 0 ? `PT${totalHours}H` : undefined,
+  "coursePrerequisites": prerequisites.length > 0 ? prerequisites.join(", ") : "None",
+  "educationalLevel": difficulty,
+  "provider": {
+    "@type": "EducationalOrganization",
+    "@id": "https://flystj.com#educational-organization",
+    "name": "FlyTech Pilot Academy",
+    "url": "https://flystj.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "200 NW Rosecrans Rd",
+      "addressLocality": "Saint Joseph",
+      "addressRegion": "MO",
+      "postalCode": "64503",
+      "addressCountry": "US"
+    },
+    "telephone": "+1-816-722-5785",
+    "email": "info@flystj.com"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": ["onsite", "blended"],
+    "courseWorkload": `${groundHours > 0 ? groundHours + ' hours ground instruction' : ''} ${flightHours > 0 ? flightHours + ' hours flight training' : ''}`.trim(),
+    "timeRequired": duration,
+    "location": {
+      "@type": "Place",
+      "name": "FlyTech Pilot Academy at Rosecrans Memorial Airport",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "200 NW Rosecrans Rd", 
+        "addressLocality": "Saint Joseph",
+        "addressRegion": "MO",
+        "postalCode": "64503",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.7714893,
+        "longitude": -94.9031922
+      }
+    },
+    "instructor": {
+      "@type": "Person",
+      "jobTitle": "Certified Flight Instructor",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "FlyTech Pilot Academy"
+      }
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "category": "Flight Training Course",
+    "priceCurrency": "USD", 
+    "price": price,
+    "availability": "https://schema.org/InStock",
+    "url": Astro.url.toString()
+  },
+  "learningResourceType": "Course",
+  "educationalUse": "instruction",
+  "inLanguage": "en-US",
+  "isAccessibleForFree": false,
+  "audience": {
+    "@type": "EducationalAudience",
+    "educationalRole": "student",
+    "audienceType": "aspiring pilot"
+  },
+  "competencyRequired": prerequisites.length > 0 ? prerequisites : ["English proficiency", "Medical certificate eligibility"],
+  "teaches": outcomes.length > 0 ? outcomes : [
+    "Aircraft operation and control",
+    "Navigation and flight planning", 
+    "Aviation regulations and safety",
+    "Radio communication procedures"
+  ],
+  "assesses": certification ? [certification] : ["Practical flight skills", "Aviation knowledge"],
+  "educationalCredentialAwarded": certification ? {
+    "@type": "EducationalOccupationalCredential",
+    "name": certification,
+    "credentialCategory": certification.toLowerCase().includes("certificate") ? "certificate" : "rating"
+  } : undefined,
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Aviation Training"
+    },
+    {
+      "@type": "Thing",
+      "name": "Flight Instruction"
+    },
+    {
+      "@type": "Thing", 
+      "name": "Pilot Education"
+    }
+  ]
+})}>
+</script>

@@ -1,0 +1,105 @@
+---
+interface Props {
+  serviceName: string;
+  description: string;
+  serviceType?: string;
+  areaServed?: string[];
+  price?: string;
+  duration?: string;
+  category?: string;
+}
+
+const { 
+  serviceName,
+  description,
+  serviceType = "EducationalService",
+  areaServed = ["Saint Joseph, MO", "Kansas City, MO", "Missouri", "Kansas"],
+  price = "Contact for pricing",
+  duration = "Varies",
+  category = "Flight Training"
+} = Astro.props;
+---
+
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": serviceType,
+  "name": serviceName,
+  "description": description,
+  "category": category,
+  "provider": {
+    "@type": "EducationalOrganization",
+    "@id": "https://flystj.com#educational-organization", 
+    "name": "FlyTech Pilot Academy",
+    "url": "https://flystj.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "200 NW Rosecrans Rd",
+      "addressLocality": "Saint Joseph",
+      "addressRegion": "MO",
+      "postalCode": "64503",
+      "addressCountry": "US"
+    },
+    "telephone": "+1-816-722-5785",
+    "email": "info@flystj.com"
+  },
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": Astro.url.toString(),
+    "serviceName": serviceName,
+    "serviceLocation": {
+      "@type": "Place",
+      "name": "FlyTech Pilot Academy", 
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "200 NW Rosecrans Rd",
+        "addressLocality": "Saint Joseph",
+        "addressRegion": "MO", 
+        "postalCode": "64503",
+        "addressCountry": "US"
+      }
+    }
+  },
+  "areaServed": areaServed.map(area => ({
+    "@type": "Place",
+    "name": area
+  })),
+  "offers": {
+    "@type": "Offer",
+    "price": price,
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "category": category,
+    "itemOffered": {
+      "@type": "Service",
+      "name": serviceName
+    }
+  },
+  "hoursAvailable": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "opens": "09:00",
+    "closes": "17:00"
+  },
+  "isRelatedTo": [
+    {
+      "@type": "Thing",
+      "name": "Aviation Training"
+    },
+    {
+      "@type": "Thing",
+      "name": "Flight Education"
+    },
+    {
+      "@type": "Thing",
+      "name": "Pilot Certification"
+    }
+  ],
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "aspiring pilots",
+    "name": "Students and Aviation Enthusiasts"
+  },
+  "termsOfService": "https://flystj.com/terms-of-service"
+})}>
+</script>

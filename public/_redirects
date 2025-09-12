@@ -1,0 +1,30 @@
+# Netlify redirects for FlyTech Pilot Academy
+# https://docs.netlify.com/routing/redirects/
+
+# Legacy page redirects
+/n900ft/ /about/fleet/ 301
+/training/ /flight-training/ 301
+/faq/ /about/faq/ 301
+/financing/ /about/financing/ 301
+/housing/ /about/housing/ 301
+/pricing/ / 301
+/fleet/ /about/fleet/ 301
+/aviation-resources/ /current-students/ 301
+/mcx-sim/ /about/fleet/ 301
+/about-us/ /about/ 301
+/sign-in/ /current-students/ 301
+/explore-flight-pass/ /discover-flight/ 301
+/sling-ngt-cockpit/ /about/fleet/ 301
+
+# PDF and document redirects
+/loan-option-payment-computation-202506-flytech/ / 301
+/wp-content/uploads/2024/06/FlyTech_Invitation_June_28_11am.pdf / 301
+/wp-content/uploads/2025/03/Sling-Checklist-912iS.pdf / 301
+/wp-content/uploads/2025/07/Updated-Sling-Checklist.pdf / 301
+/wp-content/uploads/2025/03/VFR-Syllabus-V1.pdf / 301
+/wp-content/uploads/2025/03/Sling-LSA-Maneuver-Guide.pdf / 301
+/wp-content/uploads/2025/03/FlyTech-Private-Pilot-Check-ride-Checklist.pdf / 301
+/wp-content/uploads/2025/06/Loan-Option-Payment-Computation-202506-FlyTech.pdf / 301
+/wp-content/uploads/2025/03/Private-Pilot-Everything-You-Need-To-Know.pdf / 301
+/wp-content/uploads/2025/03/Private-Pilot-Syllabus-Gold-Seal-Online-Ground-School.pdf / 301
+/wp-content/uploads/2025/03/Sling-2-LSA-Maintenance-Manual-Rev-2.9.pdf / 301

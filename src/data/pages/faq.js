@@ -1,8 +1,10 @@
 const faqPage = {
   data: {
-    // SEO Header Stuff
+    //SEO Header Stuff
+    pageTitle:
+      "Frequently Asked Questions | FlyTech Pilot Academy, Saint Joseph, MO",
     pageDescription:
-      "Find answers to common questions about FlyTech Pilot Academy’s flight training programs, enrollment process, costs, scheduling, and more. Get clarity before you take off.",
+      "Frequently asked questions about flight training at FlyTech Pilot Academy. Get answers to common questions about becoming a pilot, flight training costs, and more. We're located in Saint Joseph, Missouri at Rosecrans Memorial Airport.",
     pageKeywords:
       "FlyTech FAQ, flight school questions, pilot training info, aviation program answers, pilot license, discovery flights, private pilot, commercial pilot, Saint Joseph MO",
 

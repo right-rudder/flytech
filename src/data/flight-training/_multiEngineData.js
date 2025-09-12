@@ -1,7 +1,7 @@
 import { COMPANY_NAME } from "../../consts";
 
 const multiEngineData = {
-  pageTitle: ` Rating Course in Saint Joseph, MO | ${COMPANY_NAME}`,
+  pageTitle: `Multi-Engine Rating Course | ${COMPANY_NAME}, Saint Joseph, MO`,
   pageDescription:
     "Earn your  Rating at FlyTech Pilot Academy in Saint Joseph, MO. Master twin-engine aircraft operations and expand your career opportunities with expert training.",
   pageKeywords:

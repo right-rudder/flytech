@@ -5,6 +5,7 @@ import enrollInfo from "../data/enroll-info";
 import contactPage from "../data/contactPage";
 import ProgramSwiper from "../components/ProgramSwiper.astro";
 import ContactComponent from "../components/Forms/Contact.astro";
+import ServiceSchema from "../components/ServiceSchema.astro";
 import CTAVideoWhite from "../components/CTAVideoWhite.astro";
 import HeaderSmall from "../components/HeaderSmall.astro";
 import videoList from "../data/videos.js";
@@ -25,6 +26,15 @@ const { data } = contactPage;
   siteDescription={data.pageDescription}
   keywords={data.pageKeywords}
 >
+  <ServiceSchema
+    serviceName="Flight Training Consultation"
+    description="Contact FlyTech Pilot Academy for information about flight training programs, scheduling, and aviation career guidance. Located at Rosecrans Memorial Airport in Saint Joseph, Missouri."
+    serviceType="EducationalService"
+    duration="Consultation"
+    price="Free consultation"
+    category="Aviation Consultation"
+  />
+
   <HeaderSmall content={data.header} />
   <PageSummary content={data.pageSummary} />
   <!-- <CTAVideoWhite video={randomVideo} data={dataForVideo} /> -->

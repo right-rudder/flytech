@@ -6,6 +6,7 @@ import flyWithUsCTA from "../../data/fly-with-us-cta";
 import ProgramDetails from "../../components/ProgramDetails.astro";
 import programData from "../../data/flight-training/privatePilotData.js";
 import CourseSchema from "../../components/CourseSchema.astro";
+import FlightTrainingCourseSchema from "../../components/FlightTrainingCourseSchema.astro";
 import BreadcrumbSchema from "../../components/BreadcrumbSchema.astro";
 import CTAVideoWhite from "../../components/CTAVideoWhite.astro";
 import videoList from "../../data/videos.js";
@@ -40,6 +41,25 @@ const breadcrumbItems = [
     description={programData.pageDescription}
     courseWorkload="Approximately 55-60 hours of flight time and ground instruction"
     programDuration="3-6 months on average"
+  />
+  <FlightTrainingCourseSchema
+    courseName="Private Pilot License Training"
+    description="Comprehensive private pilot training program leading to FAA Private Pilot Certificate"
+    courseCode="PPL-001"
+    duration="3-6 months"
+    totalHours={60}
+    groundHours={20}
+    flightHours={40}
+    prerequisites={["Valid medical certificate", "English proficiency"]}
+    outcomes={[
+      "Solo flight operations",
+      "Cross-country navigation",
+      "Radio communication procedures",
+      "Weather interpretation",
+      "Federal Aviation Regulations knowledge",
+    ]}
+    certification="Private Pilot Certificate"
+    difficulty="Beginner"
   />
   <BreadcrumbSchema items={breadcrumbItems} />
 </BaseLayout>

@@ -5,6 +5,7 @@ import CTAColor from "../../components/CTAColor.astro";
 import flyWithUsCTA from "../../data/fly-with-us-cta";
 import About from "../../components/About.astro";
 import pageData from "../../data/teamData.js";
+import PersonSchema from "../../components/PersonSchema.astro";
 import CTAVideo from "../../components/CTAVideo.astro";
 import videoList from "../../data/videos.js";
 
@@ -22,6 +23,43 @@ const dataForVideo = {
   siteDescription={pageData.pageDescription}
   keywords={pageData.pageKeywords}
 >
+  {/* Schema for key team members */}
+  <PersonSchema
+    name="Lute Atieh"
+    jobTitle="Managing Partner"
+    description="Pilot and Managing Partner at FlyTech Pilot Academy with extensive experience in aviation, dedicated to providing high-quality flight training and ensuring the safety and success of all students."
+    specialties={[
+      "Aviation Management",
+      "Flight Training",
+      "Safety Operations",
+      "Leadership",
+    ]}
+  />
+
+  <PersonSchema
+    name="Daniel Lamaster"
+    jobTitle="Chief Flight Instructor"
+    description="Chief Flight Instructor at FlyTech Pilot Academy with a wealth of experience in flight training, committed to providing exceptional instruction and mentorship to students."
+    specialties={[
+      "Flight Instruction",
+      "Aviation Training",
+      "Safety Management",
+      "Student Mentorship",
+    ]}
+  />
+
+  <PersonSchema
+    name="Travis Hawkins"
+    jobTitle="Director of Technology"
+    description="Seasoned pilot and Director of Technology at FlyTech Pilot Academy, bringing a unique blend of aviation and technology skills to enhance the flight training experience."
+    specialties={[
+      "Aviation Technology",
+      "Flight Training",
+      "Software Solutions",
+      "Technology Integration",
+    ]}
+  />
+
   <HeaderSmall content={pageData.header} />
   <CTAVideo video={randomVideo} data={dataForVideo} />
 

@@ -14,6 +14,7 @@ import GoogleMaps from "../../components/GoogleMaps.astro";
 
 import pageData from "../../data/whyData.js";
 import WhoAreUs from "../../components/WhoAreUs.astro";
+import EducationalOrganizationSchema from "../../components/EducationalOrganizationSchema.astro";
 import GoogleReviewsRow from "../../components/ElfSight/GoogleReviewsRow.astro";
 ---
 
@@ -22,6 +23,8 @@ import GoogleReviewsRow from "../../components/ElfSight/GoogleReviewsRow.astro";
   siteDescription={pageData.pageDescription}
   keywords={pageData.pageKeywords}
 >
+  <EducationalOrganizationSchema />
+
   <!-- HEADER -->
   <HeaderSmall content={pageData.header} />
   <PageSummary content={pageData.pageSummary} />
