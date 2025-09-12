@@ -3,13 +3,21 @@ import privacyPolicies from "../data/privacy-policy";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { COMPANY_NAME } from "../consts";
 import HeaderSmall from "../components/HeaderSmall.astro";
+import BreadcrumbSchema from "../components/BreadcrumbSchema.astro";
 const { data } = privacyPolicies;
+
+const breadcrumbItems = [
+  { name: "Home", item: "/" },
+  { name: "Privacy Policy", item: "/privacy-policy" },
+];
 ---
 
 <BaseLayout
   siteTitle=`Privacy Policy | ${COMPANY_NAME}`
   siteDescription=`Privacy Policy of ${COMPANY_NAME}`
 >
+  <BreadcrumbSchema items={breadcrumbItems} />
+  
   <!-- <HeaderSmall content={data.header} /> -->
 
   <section class="pt-12 font-serif flex flex-col items-center bg-white">

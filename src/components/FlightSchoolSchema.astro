@@ -1,0 +1,167 @@
+---
+import { COMPANY_NAME, LOCATIONS, PHONE_NUMBER, FACEBOOK_URL, INSTAGRAM_URL, LINKEDIN_URL } from "../consts";
+
+interface Props {
+  aircraftTypes?: string[];
+  instructorCount?: number;
+  studentCapacity?: number;
+}
+
+const { 
+  aircraftTypes = ["Sling NGT", "Cessna 172", "Piper Seminole"],
+  instructorCount = 8,
+  studentCapacity = 50
+} = Astro.props;
+
+const primaryLocation = LOCATIONS[0];
+---
+
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "EducationalOrganization"],
+  "@id": "https://flystj.com#flight-school",
+  "name": COMPANY_NAME,
+  "alternateName": ["FlyTech", "FlyTech Academy"],
+  "url": "https://flystj.com",
+  "logo": "https://flystj.com/flytech-logo-wg_1000px-980x262.webp",
+  "image": "https://flystj.com/FlyTech-OG-Image.png",
+  "description": "Professional flight school offering comprehensive pilot training programs from private pilot through certified flight instructor at Rosecrans Memorial Airport in Saint Joseph, Missouri.",
+  "telephone": PHONE_NUMBER,
+  "email": primaryLocation.email,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": primaryLocation.address,
+    "addressLocality": primaryLocation.city,
+    "addressRegion": primaryLocation.state,
+    "postalCode": primaryLocation.zip,
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.7714893,
+    "longitude": -94.9031922
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "09:00", 
+      "closes": "17:00"
+    }
+  ],
+  "priceRange": "$$",
+  "paymentAccepted": ["Cash", "Credit Card", "Debit Card", "Financing"],
+  "currenciesAccepted": "USD",
+  "hasMap": primaryLocation.gMaps,
+  "isAccessibleForFree": false,
+  "maximumAttendeeCapacity": studentCapacity,
+  "employee": [
+    {
+      "@type": "Person",
+      "jobTitle": "Chief Flight Instructor",
+      "worksFor": {
+        "@type": "Organization",
+        "name": COMPANY_NAME
+      }
+    },
+    {
+      "@type": "Person", 
+      "jobTitle": "Flight Instructor",
+      "worksFor": {
+        "@type": "Organization",
+        "name": COMPANY_NAME
+      }
+    }
+  ],
+  "owns": aircraftTypes.map(aircraft => ({
+    "@type": "Vehicle",
+    "vehicleConfiguration": "training aircraft",
+    "model": aircraft,
+    "vehicleEngine": {
+      "@type": "EngineSpecification",
+      "fuelType": "aviation gasoline"
+    }
+  })),
+  "offers": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Discovery Flight",
+        "description": "Introductory flight experience with certified instructor"
+      },
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Course",
+        "name": "Private Pilot Training",
+        "description": "Complete private pilot license training program"
+      },
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Course", 
+        "name": "Instrument Rating Training",
+        "description": "Instrument flight rules rating training"
+      },
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Course",
+        "name": "Commercial Pilot Training", 
+        "description": "Commercial pilot license training program"
+      },
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    }
+  ],
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.7714893,
+      "longitude": -94.9031922
+    },
+    "geoRadius": 100000
+  },
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": PHONE_NUMBER,
+      "contactType": "customer service",
+      "areaServed": "US",
+      "availableLanguage": "en"
+    },
+    {
+      "@type": "ContactPoint",
+      "email": primaryLocation.email,
+      "contactType": "admissions",
+      "areaServed": "US",
+      "availableLanguage": "en"
+    }
+  ],
+  "sameAs": [FACEBOOK_URL, INSTAGRAM_URL, LINKEDIN_URL].filter(Boolean),
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "25",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+})}>
+</script>

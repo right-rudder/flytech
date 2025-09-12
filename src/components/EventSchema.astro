@@ -1,0 +1,109 @@
+---
+interface Props {
+  name: string;
+  description: string;
+  eventType?: "EducationEvent" | "Event";
+  startDate?: string;
+  endDate?: string;
+  duration?: string;
+  price?: string;
+  isRecurring?: boolean;
+  location?: string;
+}
+
+const { 
+  name,
+  description,
+  eventType = "EducationEvent",
+  startDate = "",
+  endDate = "",
+  duration = "PT2H",
+  price = "Contact for pricing",
+  isRecurring = true,
+  location = "Rosecrans Memorial Airport"
+} = Astro.props;
+
+// Generate event dates if not provided
+const today = new Date();
+const defaultStartDate = startDate || new Date(today.getTime() + 24 * 60 * 60 * 1000).toISOString();
+const defaultEndDate = endDate || new Date(today.getTime() + 24 * 60 * 60 * 1000 + 2 * 60 * 60 * 1000).toISOString();
+---
+
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": eventType,
+  "name": name,
+  "description": description,
+  "startDate": defaultStartDate,
+  "endDate": defaultEndDate,
+  "duration": duration,
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "location": {
+    "@type": "Place",
+    "name": `FlyTech Pilot Academy - ${location}`,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "200 NW Rosecrans Rd",
+      "addressLocality": "Saint Joseph",
+      "addressRegion": "MO",
+      "postalCode": "64503",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.7714893,
+      "longitude": -94.9031922
+    }
+  },
+  "organizer": {
+    "@type": "EducationalOrganization",
+    "name": "FlyTech Pilot Academy",
+    "url": "https://flystj.com",
+    "telephone": "+1-816-722-5785",
+    "email": "info@flystj.com"
+  },
+  "performer": {
+    "@type": "Organization",
+    "name": "FlyTech Pilot Academy Certified Flight Instructors"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://flystj.com/discovery-flight",
+    "price": price,
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "validFrom": defaultStartDate,
+    "category": "Flight Training"
+  },
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "aspiring pilots",
+    "name": "Future Pilots and Aviation Enthusiasts"
+  },
+  "educationRequirements": "No prior aviation experience required",
+  "maximumAttendeeCapacity": isRecurring ? undefined : 2,
+  "isAccessibleForFree": false,
+  "inLanguage": "en-US",
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Flight Training"
+    },
+    {
+      "@type": "Thing", 
+      "name": "Aviation Education"
+    },
+    {
+      "@type": "Thing",
+      "name": "Pilot Certification"
+    }
+  ],
+  "teaches": eventType === "EducationEvent" ? [
+    "Basic aircraft controls",
+    "Pre-flight inspection procedures", 
+    "Aviation communication",
+    "Flight safety principles"
+  ] : undefined
+})}>
+</script>

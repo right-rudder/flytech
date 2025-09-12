@@ -13,6 +13,7 @@ const { data } = discoveryFlight;
 import ImageComp from "../components/ImageComp.astro";
 import { COMPANY_NAME, PHONE_NUMBER, EMAIL_ADDRESS } from "../consts";
 import FormDiscoveryFlight from "../components/Forms/FormDiscoveryFlight.astro";
+import ServiceSchema from "../components/ServiceSchema.astro";
 import PageSummary from "../components/PageSummary.astro";
 
 const breadcrumbs = [
@@ -20,56 +21,23 @@ const breadcrumbs = [
   { name: "Discovery Flight", url: "/discovery-flight/" },
 ];
 
-// Discovery flight structured data
-const discoveryFlightSchema = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  name: "Discovery Flight",
-  description:
-    "Experience the thrill of flying with a certified instructor at Hawkins Flight Academy. Perfect introduction to aviation for aspiring pilots.",
-  provider: {
-    "@type": "EducationalOrganization",
-    name: "Hawkins Flight Academy",
-    url: "https://hawkinsflight.com/",
-  },
-  offers: {
-    "@type": "Offer",
-    description: "Introductory flight lesson with certified instructor",
-    priceCurrency: "USD",
-    availability: "https://schema.org/InStock",
-  },
-  areaServed: [
-    {
-      "@type": "City",
-      name: "Shelbyville",
-      containedInPlace: {
-        "@type": "State",
-        name: "Tennessee",
-      },
-    },
-    {
-      "@type": "City",
-      name: "Tupelo",
-      containedInPlace: {
-        "@type": "State",
-        name: "Mississippi",
-      },
-    },
-  ],
-};
+// Discovery flight structured data - Now handled by ServiceSchema component
 ---
-
-<!-- Discovery Flight Structured Data -->
-<script
-  type="application/ld+json"
-  set:html={JSON.stringify(discoveryFlightSchema)}
-/>
 
 <BaseLayout
   siteTitle={data.pageTitle}
   siteDescription={data.pageDescription}
   keywords={data.pageKeywords}
 >
+  <ServiceSchema
+    serviceName="Discovery Flight Experience"
+    description="Experience the thrill of flying with a certified instructor at FlyTech Pilot Academy. Perfect introduction to aviation for aspiring pilots at Rosecrans Memorial Airport."
+    serviceType="EducationalService"
+    duration="60 minutes"
+    price="Call for pricing"
+    category="Flight Training"
+  />
+
   <!-- HEADER -->
   <HeaderSmall content={data.header} />
   <PageSummary content={data.pageSummary} />

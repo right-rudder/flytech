@@ -3,7 +3,8 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeaderSmall from "../../components/HeaderSmall.astro";
 import CTAColor from "../../components/CTAColor.astro";
 import flyWithUsCTA from "../../data/fly-with-us-cta";
-
+import FlightTrainingCourseSchema from "../../components/FlightTrainingCourseSchema.astro";
+import BreadcrumbSchema from "../../components/BreadcrumbSchema.astro";
 import ProgramDetails from "../../components/ProgramDetails.astro";
 import programData from "../../data/flight-training/instrumentRatingData.js";
 import CTAVideoWhite from "../../components/CTAVideoWhite.astro";
@@ -16,6 +17,12 @@ const dataForVideo = {
     "At FlyTech Pilot Academy, we combine modern aircraft, immersive technology, and a passionate team of instructors to give you an efficient, professional, and enjoyable path to the cockpit. Whether you're starting fresh or advancing your career, we make it simple.",
   buttons: [],
 };
+
+const breadcrumbItems = [
+  { name: "Home", item: "/" },
+  { name: "Flight Training", item: "/flight-training" },
+  { name: "Instrument Rating", item: "/flight-training/instrument-rating" },
+];
 ---
 
 <BaseLayout
@@ -29,4 +36,24 @@ const dataForVideo = {
   <ProgramDetails program={programData.details} />
 
   <CTAColor content={flyWithUsCTA} />
+  <FlightTrainingCourseSchema
+    courseName="Instrument Rating Training"
+    description="Comprehensive instrument rating training program leading to FAA Instrument Rating"
+    courseCode="IR-001"
+    duration="2-4 months"
+    totalHours={40}
+    groundHours={10}
+    flightHours={30}
+    prerequisites={["Valid medical certificate", "English proficiency"]}
+    outcomes={[
+      "Solo flight operations",
+      "Cross-country navigation",
+      "Radio communication procedures",
+      "Weather interpretation",
+      "Federal Aviation Regulations knowledge",
+    ]}
+    certification="Instrument Rating Certificate"
+    difficulty="Beginner"
+  />
+  <BreadcrumbSchema items={breadcrumbItems} />
 </BaseLayout>

@@ -5,7 +5,7 @@ import CTAColor from "../../components/CTAColor.astro";
 import flyWithUsCTA from "../../data/fly-with-us-cta";
 import ProgramDetails from "../../components/ProgramDetails.astro";
 import programData from "../../data/flight-training/sportCertificate.js";
-import CourseSchema from "../../components/CourseSchema.astro";
+import FlightTrainingCourseSchema from "../../components/FlightTrainingCourseSchema.astro";
 import BreadcrumbSchema from "../../components/BreadcrumbSchema.astro";
 import CTAVideoWhite from "../../components/CTAVideoWhite.astro";
 import videoList from "../../data/videos.js";
@@ -21,7 +21,10 @@ const dataForVideo = {
 const breadcrumbItems = [
   { name: "Home", item: "/" },
   { name: "Flight Training", item: "/flight-training" },
-  { name: "Private Pilot License", item: "/flight-training/private-pilot" },
+  {
+    name: "Sport Pilot Certificate",
+    item: "/flight-training/sport-pilot-certificate",
+  },
 ];
 ---
 
@@ -30,16 +33,33 @@ const breadcrumbItems = [
   siteDescription={programData.pageDescription}
   keywords={programData.pageKeywords}
 >
+  <FlightTrainingCourseSchema
+    courseName="Sport Pilot Certificate"
+    description="Learn to fly light sport aircraft with our Sport Pilot Certificate program. Perfect for recreational flying with simplified medical requirements and focused training on modern LSA aircraft."
+    duration="3-6 months"
+    totalHours={20}
+    flightHours={15}
+    groundHours={5}
+    price="$8,500"
+    prerequisites={[
+      "Valid driver's license",
+      "Basic medical self-certification",
+    ]}
+    outcomes={[
+      "Operate light sport aircraft safely",
+      "Navigate in controlled and uncontrolled airspace",
+      "Understand weather patterns and decision making",
+      "Master basic aircraft systems and procedures",
+      "Execute safe takeoffs and landings",
+    ]}
+    certification="FAA Sport Pilot Certificate"
+    difficulty="Beginner"
+  />
+
+  <BreadcrumbSchema items={breadcrumbItems} />
+
   <HeaderSmall content={programData.header} />
   <CTAVideoWhite video={randomVideo} data={dataForVideo} />
   <ProgramDetails program={programData.details} />
   <CTAColor content={flyWithUsCTA} />
-
-  <CourseSchema
-    title={programData.pageTitle}
-    description={programData.pageDescription}
-    courseWorkload="Approximately 55-60 hours of flight time and ground instruction"
-    programDuration="3-6 months on average"
-  />
-  <BreadcrumbSchema items={breadcrumbItems} />
 </BaseLayout>
