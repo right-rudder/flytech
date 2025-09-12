@@ -1,6 +1,7 @@
 const fleetPage = {
   data: {
     // SEO Header Stuff
+    pageTitle: "Our Training Fleet | FlyTech Pilot Academy, Saint Joseph, MO",
     pageDescription:
       "Explore FlyTech Pilot Academy's modern fleet of training aircraft. Learn about our well-maintained planes and discover the perfect aircraft for your flight training.",
     pageKeywords:
