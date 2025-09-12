@@ -61,19 +61,35 @@ const commercialPilotData = {
 
     faqs: [
       {
+        question: "What are the prerequisites for Commercial Pilot training?",
+        answer:
+          "You must have a Private Pilot Certificate, Instrument Rating, and at least 250 total flight hours. You must also be at least 18 years old and hold a valid FAA medical certificate.",
+      },
+      {
         question: "How long does it take to get a Commercial Pilot License?",
         answer:
-          "Most students complete their CPL in 2-3 months, depending on training frequency and flight hours logged.",
+          "Most students complete their CPL in 2-3 months, depending on training frequency and flight hours logged. The time can vary based on weather, scheduling, and individual progress.",
       },
       {
         question: "Do I need an Instrument Rating before starting?",
         answer:
-          "Yes, an Instrument Rating is required before obtaining a Commercial Pilot License.",
+          "Yes, an Instrument Rating is required before obtaining a Commercial Pilot License. This ensures you have the advanced flying skills needed for commercial operations.",
       },
       {
         question: "What can I do with a Commercial Pilot License?",
         answer:
-          "With a CPL, you can work as a commercial pilot in charter flights, corporate aviation, flight instruction, and more.",
+          "With a CPL, you can work as a commercial pilot in charter flights, corporate aviation, flight instruction, cargo operations, aerial photography, banner towing, and many other commercial aviation roles.",
+      },
+      {
+        question: "What does Commercial Pilot training include?",
+        answer:
+          "Training covers advanced maneuvers, commercial operations, complex aircraft systems, advanced navigation, emergency procedures, and professional flight planning. You'll also complete ground instruction on commercial regulations and operations.",
+      },
+      {
+        question:
+          "How many flight hours are required for the Commercial License?",
+        answer:
+          "The FAA requires a minimum of 250 total flight hours, including specific cross-country, night, and instrument time. FlyTech's program is designed to efficiently meet these requirements while building professional-level skills.",
       },
     ],
 

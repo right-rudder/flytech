@@ -1,0 +1,57 @@
+---
+interface FAQItem {
+  title: string;
+  content: string;
+}
+
+interface FAQCategory {
+  name: string;
+  faqs: FAQItem[];
+}
+
+interface Props {
+  categories?: FAQCategory[];
+  items?: FAQItem[];
+}
+
+const { categories = [], items = [] } = Astro.props;
+
+// Convert content to clean text for schema
+const cleanText = (content: string) => {
+  return content.replace(/<[^>]*>?/gm, "").trim();
+};
+
+// Combine all FAQs from categories and items
+let allFAQs: FAQItem[] = [];
+
+// Add items directly if provided
+if (items.length > 0) {
+  allFAQs = [...allFAQs, ...items];
+}
+
+// Add FAQs from categories if provided
+if (categories.length > 0) {
+  categories.forEach(category => {
+    allFAQs = [...allFAQs, ...category.faqs];
+  });
+}
+
+// Transform to schema format
+const schemaFAQs = allFAQs.map(faq => ({
+  "@type": "Question",
+  "name": faq.title,
+  "acceptedAnswer": {
+    "@type": "Answer",
+    "text": cleanText(faq.content)
+  }
+}));
+---
+
+{schemaFAQs.length > 0 && (
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": schemaFAQs
+  })}>
+  </script>
+)}

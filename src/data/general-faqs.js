@@ -68,4 +68,32 @@ export const GeneralFAQs = [
     content: `Yes! Students who complete all their ratings with FlyTech are guaranteed an interview for a Certified Flight Instructor (CFI) position. Becoming a CFI is one of the best ways to build hours and gain experience toward a professional aviation career.<br/><br/>
     Still have questions? <a href="/contact" class="text-primary-800 hover:underline hover:brightness-125 duration-200">Get in touch</a>.`,
   },
+  {
+    title: "What happens if weather cancels my flight lesson?",
+    content: `Weather is a natural part of aviation training. If conditions aren't safe for flying, we'll reschedule your lesson at no charge. We use these opportunities for ground instruction, simulator training, or to review flight maneuvers and procedures. This flexibility ensures your training continues productively regardless of weather conditions.`,
+  },
+  {
+    title: "What qualifications do your flight instructors have?",
+    content: `All FlyTech instructors are FAA-certified with extensive flight experience. Our team includes CFIs, CFIIs, and MEIs with diverse backgrounds in both civilian and military aviation. Many have airline experience and continue flying professionally while teaching. We prioritize mentorship-focused instruction over high-volume training.`,
+  },
+  {
+    title: "Can I use my training at FlyTech toward a career in aviation?",
+    content: `Absolutely! Many of our graduates have gone on to careers with airlines, cargo carriers, corporate aviation, and flight instruction. Our training meets all FAA requirements for commercial aviation careers. We also offer guidance on building flight hours and connecting with aviation employers in the region.`,
+  },
+  {
+    title: "What is the difference between Part 61 and Part 141 training?",
+    content: `FlyTech operates under FAA Part 61, which offers more flexibility in curriculum and scheduling compared to Part 141. Part 61 allows for personalized training plans, accommodating your schedule and learning pace. While Part 141 programs are more rigid, Part 61 often provides more thorough, individualized instruction that leads to better-prepared pilots.`,
+  },
+  {
+    title: "Do you offer ground school and what does it include?",
+    content: `Yes! We offer comprehensive ground school through GroundSchool.com, allowing you to study at your own pace. Ground instruction covers aerodynamics, aircraft systems, weather, navigation, FAA regulations, and flight planning. We supplement online learning with in-person sessions, simulator time, and practical application during flight lessons.`,
+  },
+  {
+    title: "What equipment do I need to start flight training?",
+    content: `Initially, you'll need very little,just bring yourself and a desire to learn! We provide headsets and all training materials for your first few lessons. As you progress, we recommend purchasing your own aviation headset, iPad with ForeFlight, and basic flight training supplies. We'll guide you on equipment purchases based on your specific training goals.`,
+  },
+  {
+    title: "How do I schedule flights and what is your cancellation policy?",
+    content: `We use FourForces scheduling system, allowing you to book lessons online 24/7 with real-time aircraft and instructor availability. For cancellations, we require at least 24-hour notice to avoid charges. Weather cancellations are always free and we'll work with you to reschedule promptly.`,
+  },
 ];

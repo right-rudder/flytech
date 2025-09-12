@@ -117,7 +117,23 @@ const fleetPage = {
             {
               question: "What is the fuel capacity of the Sling LSA?",
               answer:
-                "The Sling LSA has a fuel capacity of 24.5 gallons (93 liters).",
+                "The Sling LSA has a fuel capacity of 24.5 gallons (93 liters), providing approximately 3-4 hours of flight time depending on power settings.",
+            },
+            {
+              question: "What makes the Sling LSA ideal for training?",
+              answer:
+                "The Sling LSA features modern avionics, excellent visibility, forgiving flight characteristics, and efficient fuel consumption. Its side-by-side seating and responsive controls make it perfect for Sport Pilot and Private Pilot training.",
+            },
+            {
+              question: "What certificates can I earn in the Sling LSA?",
+              answer:
+                "You can complete Sport Pilot Certificate and Private Pilot Certificate training in the Sling LSA. It's also excellent for recreational flying and maintaining proficiency.",
+            },
+            {
+              question:
+                "How does the Sling LSA compare to traditional trainers?",
+              answer:
+                "The Sling LSA offers more modern avionics, better fuel efficiency, and advanced safety features compared to older training aircraft. Students get experience with current technology while learning fundamental flying skills.",
             },
           ],
           images: [
@@ -166,9 +182,25 @@ const fleetPage = {
           ],
           faq: [
             {
-              question: "What is the fuel capacity of the Sling LSA?",
+              question: "What is the fuel capacity of the Cessna 172?",
               answer:
-                "The Sling LSA has a fuel capacity of 24.5 gallons (93 liters).",
+                "The Cessna 172 has a fuel capacity of 38 gallons (144 liters), providing approximately 4-5 hours of flight time depending on power settings.",
+            },
+            {
+              question:
+                "Why is the Cessna 172 considered the best training aircraft?",
+              answer:
+                "The Cessna 172 is known for its stability, forgiving flight characteristics, excellent safety record, and straightforward systems. Its high-wing design provides great visibility and natural stability, making it ideal for new pilots.",
+            },
+            {
+              question: "What advanced training can I do in the Cessna 172?",
+              answer:
+                "The Cessna 172 is perfect for Private Pilot, Instrument Rating, and Commercial Pilot training. Its IFR avionics package makes it excellent for instrument flight training and complex navigation procedures.",
+            },
+            {
+              question: "How many people can the Cessna 172 carry?",
+              answer:
+                "The Cessna 172 has four seats and can typically carry 2-3 people with full fuel, depending on passenger weight and baggage. For training, it's primarily used with one instructor and one student.",
             },
           ],
           images: [

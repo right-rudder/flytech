@@ -105,24 +105,39 @@ const instrumentRatingData = {
 
     faqs: [
       {
+        question: "What are the prerequisites for Instrument Rating training?",
+        answer:
+          "You must hold a Private Pilot Certificate and have logged at least 50 hours of cross-country pilot-in-command time. You must also pass an FAA medical exam and be proficient in basic flight maneuvers.",
+      },
+      {
         question: "What is an Instrument Rating?",
         answer:
-          "An Instrument Rating allows a pilot to fly under Instrument Flight Rules (IFR), enabling safer flight in poor visibility, clouds, or adverse weather conditions.",
+          "An Instrument Rating allows a pilot to fly under Instrument Flight Rules (IFR), enabling safer flight in poor visibility, clouds, or adverse weather conditions. It significantly increases flight safety and operational capability.",
+      },
+      {
+        question: "How many hours of instrument training are required?",
+        answer:
+          "The FAA requires 40 hours of actual or simulated instrument time, including specific cross-country and approach requirements. FlyTech's structured program efficiently meets these requirements while building real-world IFR skills.",
       },
       {
         question: "Is the simulator approved for FAA instrument time?",
         answer:
-          "Yes. Our full-motion simulator is certified and can be used toward the flight time requirements for your Instrument Rating.",
+          "Yes. Our Redbird MCX full-motion simulator is FAA-approved and can be used toward the flight time requirements for your Instrument Rating. It's a cost-effective way to practice complex procedures and emergency scenarios.",
       },
       {
         question: "Can I use my own aircraft?",
         answer:
-          "Absolutely. We offer instruction in your aircraft at a reduced hourly rate. Just be sure your plane is IFR-equipped and insured.",
+          "Absolutely. We offer instruction in your aircraft at a reduced hourly rate. Just be sure your plane is IFR-equipped with appropriate avionics and properly insured for training operations.",
       },
       {
         question: "How long does Instrument Training take?",
         answer:
-          "Most students complete their Instrument Rating within 2–4 months, depending on frequency and prior experience.",
+          "Most students complete their Instrument Rating within 2–4 months, depending on training frequency and prior experience. Students training 2-3 times per week typically finish faster than those with less frequent lessons.",
+      },
+      {
+        question: "What practical benefits does an Instrument Rating provide?",
+        answer:
+          "Beyond weather flying capability, an Instrument Rating improves overall pilot skills, increases safety margins, allows access to the full air traffic control system, and is required for most commercial aviation careers.",
       },
     ],
   },
