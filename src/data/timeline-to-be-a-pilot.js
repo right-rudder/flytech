@@ -4,9 +4,9 @@ const timelineToBePilot = {
     pageTitle:
       "Timeline to be a Pilot | FlyTech Pilot Academy, Saint Joseph, MO",
     pageDescription:
-      "Curious about the timeline to become a pilot? FlyTech offers a detailed timeline of the pilot training process.  Get a clear understanding of the steps involved in your pilot journey. We're in the Phoenix, Missouri area at Falcon Field.  Many of our students come from Saint Joseph, Gilbert, Scottsdale, Apache Junction, Chandler, Tempe, Queen Creek, Fountain Hills, Paradise Valley, Phoenix",
+      "Curious about the timeline to become a pilot? FlyTech offers a detailed timeline of the pilot training process. Get a clear understanding of the steps involved in your pilot journey. We're located in Saint Joseph, Missouri at Rosecrans Memorial Airport. Many of our students come from Saint Joseph, Kansas City, St. Louis, Columbia, Springfield, and throughout Missouri and Kansas.",
     pageKeywords:
-      "Timeline to Become a Pilot, Pilot Training Process, Saint Joseph Flight School, Phoenix Flight School, Scottsdale Flight School, Chandler Flight School, Gilbert Flight School, Apache Junction Flight School, Tempe Flight School, Queen Creek Flight School, Fountain Hills Flight School, Paradise Valley Flight School, Phoenix Flight Training, Saint Joseph Flight Training, Scottsdale Flight Training, Chandler Flight Training, Gilbert Flight Training, Apache Junction Flight Training, Tempe Flight Training, Queen Creek Flight Training, Fountain Hills Flight Training, Paradise Valley Flight Training",
+      "Timeline to Become a Pilot, Pilot Training Process, Saint Joseph Flight School, Missouri Flight School, Kansas City Flight School, St. Louis Flight School, Columbia Flight School, Springfield Flight School, Missouri Flight Training, Saint Joseph Flight Training, Kansas City Flight Training, St. Louis Flight Training, Columbia Flight Training, Springfield Flight Training, KSTJ, Rosecrans Memorial Airport",
 
     //top header
     header: {

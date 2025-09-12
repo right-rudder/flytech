@@ -4,7 +4,7 @@ const homePage = {
     pageDescription:
       "FlyTech Pilot Academy offers flight training in Saint Joseph, MO. We provide modern instruction in private pilot training, sport pilot certificates, instrument and commercial ratings, and more.",
     pageKeywords:
-      "pilot academy, flight training, sport pilot license, private pilot, instrument rating, commercial pilot training, Saint Joseph, Kansas, FlyTech",
+      "pilot academy, flight training, sport pilot license, private pilot, instrument rating, commercial pilot training, Saint Joseph, Missouri, FlyTech, multi-engine rating, KSTJ",
 
     //top header
     header: {
