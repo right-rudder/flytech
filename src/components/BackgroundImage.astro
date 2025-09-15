@@ -1,0 +1,31 @@
+<div class="fixed inset-0 top-24 -z-50 pointer-events-none overflow-hidden">
+  <div class="absolute inset-0 bg-black/70 mix-blend-multiply"></div>
+  <div id="background-placeholder" class="w-full h-full"></div>
+</div>
+
+<script type="module">
+  let bgLoaded = false;
+
+  function loadBackgroundImage() {
+    if (bgLoaded) return;
+    bgLoaded = true;
+
+    const placeholder = document.getElementById("background-placeholder");
+    const img = document.createElement("img");
+    img.src = "/assets/wing-flying-sky.webp"; // <-- public folder path
+    img.alt = "Background Image";
+    img.className = "w-full h-full object-cover";
+    img.loading = "lazy";
+
+    placeholder.appendChild(img);
+  }
+
+  function onScrollLoadBackground() {
+    if (window.scrollY > 200) {
+      loadBackgroundImage();
+      window.removeEventListener("scroll", onScrollLoadBackground);
+    }
+  }
+
+  window.addEventListener("scroll", onScrollLoadBackground, { passive: true });
+</script>

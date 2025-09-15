@@ -49,7 +49,7 @@ import imgForm from "../assets/wing-flying-sky.webp";
       crossorigin
     />
     <!-- Preload LCP image with high priority -->
-    {
+    <!-- {
       imgForm && (
         <link
           rel="preload"
@@ -58,7 +58,7 @@ import imgForm from "../assets/wing-flying-sky.webp";
           fetchpriority="high"
         />
       )
-    }
+    } -->
   </head>
   <body class="font-sans">
     <!-- Google Tag Manager (noscript) -->
@@ -73,7 +73,7 @@ import imgForm from "../assets/wing-flying-sky.webp";
     </noscript>
 
     <!-- Background / LCP Image -->
-    <div class="fixed inset-0 top-24 -z-50 pointer-events-none overflow-hidden">
+    <!-- <div class="fixed inset-0 top-24 -z-50 pointer-events-none overflow-hidden">
       <div class="absolute inset-0 bg-black/70 mix-blend-multiply"></div>
       <ImageComp2
         imagePath={imgForm}
@@ -84,7 +84,7 @@ import imgForm from "../assets/wing-flying-sky.webp";
         widths={[720, 1080, 1440]}
         sizes="100vw"
       />
-    </div>
+    </div> -->
 
     <!-- End Google Tag Manager (noscript) -->
     <Banner />
