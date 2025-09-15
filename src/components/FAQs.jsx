@@ -21,10 +21,10 @@ export default function FAQs({ faqs, type }) {
                 <summary className="cursor-pointer font-semibold text-primary-800 marker:hidden">
                   {faq.title}
                 </summary>
-                <p
-                  className=" block mt-2 text-gray-700"
+                <div
+                  className="block mt-2 text-gray-700"
                   dangerouslySetInnerHTML={{ __html: faq.content }}
-                ></p>
+                />
               </details>
             ))}
           </dl>

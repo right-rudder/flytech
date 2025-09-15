@@ -29,7 +29,6 @@ import EventSessions from "../components/EventSessions.astro";
 // Transform FAQ format for schema
 const faqSchemaItems = GeneralFAQs.map((faq) => ({
   question: faq.title,
-  // Remove HTML tags for clean schema
   answer: faq.content.replace(/<[^>]*>?/gm, ""),
 }));
 
@@ -60,7 +59,7 @@ const dataForVideo = {
   <CTAVideoWhite video={currentVideo} data={flyWithUsCTA} />
   <ProgramSwiper content={programsSwiper} />
   <!-- <Testimonials content={data.testimonials} /> -->
-  <FAQs faqs={GeneralFAQs} type="General" client:idle />
+  <FAQs faqs={GeneralFAQs} type="General" client:visible />
   <FAQSchema items={faqSchemaItems} />
   <MapsLocation />
   <!-- <CTAVideo video={videoHome} data={dataForVideo} /> -->
