@@ -24,12 +24,16 @@ const data = {
   <div
     class="flex flex-col-reverse w-full lg:flex-row py-12 lg:py-24 justify-center items-center gap-2 lg:gap-20 px-2 lg:px-8 max-w-7xl overflow-hidden"
   >
-    <div class="flex-1 flex justify-center items-center w-full">
-      <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div
+      class="flex-1 flex justify-center items-center w-full"
+      id="instagram-placeholder"
+    >
       <div
-        class="elfsight-app-e9deb9fa-35f9-4190-b1a7-6d497aec0407"
-        data-elfsight-app-lazy
+        class="absolute inset-0 flex items-center justify-center text-primary-600"
       >
+        <span class="animate-pulse text-primary-600 uppercase"
+          >Loading reviews...</span
+        >
       </div>
     </div>
 
@@ -62,3 +66,33 @@ const data = {
     </div>
   </div>
 </div>
+
+<script type="module">
+  let instagramLoaded = false;
+
+  function loadInstagramFeed() {
+    if (instagramLoaded) return;
+    instagramLoaded = true;
+
+    // Load the external Elfsight script
+    const script = document.createElement("script");
+    script.src = "https://elfsightcdn.com/platform.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    // Replace placeholder with widget container
+    const placeholder = document.getElementById("instagram-placeholder");
+    placeholder.innerHTML = `
+      <div class="elfsight-app-e9deb9fa-35f9-4190-b1a7-6d497aec0407" data-elfsight-app-lazy></div>
+    `;
+  }
+
+  function onScrollLoadInstagram() {
+    if (window.scrollY > 200) {
+      loadInstagramFeed();
+      window.removeEventListener("scroll", onScrollLoadInstagram);
+    }
+  }
+
+  window.addEventListener("scroll", onScrollLoadInstagram, { passive: true });
+</script>
