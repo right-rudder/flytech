@@ -1,19 +1,6 @@
-import { useState } from "react";
-import Accordion from "./accordion";
 import { EMAIL_ADDRESS } from "../consts";
 
 export default function FAQs({ faqs, type }) {
-  const [open, setOpen] = useState("");
-  const handleClick = (e) => {
-    if (open === e.target.id) {
-      console.log("closing", e.target.id);
-      setOpen("");
-    } else {
-      console.log("opening", e.target.id);
-      setOpen(e.target.id);
-    }
-  };
-
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-12 lg:pt-16 lg:pb-12">
@@ -24,18 +11,25 @@ export default function FAQs({ faqs, type }) {
           <h2 className="mx-auto mb-3 text-4xl lg:text-6xl lg:max-w-3xl font-title text-center font-bold tracking-tight text-primary-900">
             Frequently Asked Questions
           </h2>
+
           <dl className="flex flex-col gap-2 mt-6">
             {faqs.map((faq, index) => (
-              <Accordion
+              <details
                 key={index}
-                index={index}
-                faq={faq}
-                toggled={faq.title === open}
-                onShow={handleClick}
-              />
+                className="border rounded-lg p-4 transition-all duration-300 ease-in-out open:shadow-md"
+              >
+                <summary className="cursor-pointer font-semibold text-primary-800 marker:hidden">
+                  {faq.title}
+                </summary>
+                <p
+                  className=" block mt-2 text-gray-700"
+                  dangerouslySetInnerHTML={{ __html: faq.content }}
+                ></p>
+              </details>
             ))}
           </dl>
         </div>
+
         <p className="text-center mt-12 text-gray-600">
           If you have any additional questions please send us an email to{" "}
           <a href="/contact" className="text-primary-800 hover:underline">
