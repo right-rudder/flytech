@@ -2,27 +2,83 @@ import { EMAIL_ADDRESS } from "../consts";
 
 export default function FAQs({ faqs, type }) {
   return (
-    <div className="bg-white">
-      <div className="mx-auto max-w-7xl px-6 py-24 sm:py-12 lg:pt-16 lg:pb-12">
-        <div className="mx-auto max-w-4xl">
-          <p className="mx-auto mt-12 uppercase text-lg lg:text-xl lg:max-w-3xl font-sans text-center font-bold tracking-tight text-primary-500">
+    <div style={{ backgroundColor: "#ffffff" }}>
+      <div
+        style={{
+          maxWidth: "1120px",
+          margin: "0 auto",
+          padding: "6rem 1.5rem",
+        }}
+      >
+        <div style={{ maxWidth: "768px", margin: "0 auto" }}>
+          <p
+            style={{
+              marginTop: "3rem",
+              textTransform: "uppercase",
+              fontSize: "1.125rem", // lg:text-lg
+              fontFamily: '"Open Sans Variable", sans-serif',
+              fontWeight: "700",
+              textAlign: "center",
+              letterSpacing: "0.05em",
+              color: "#57b553", // text-primary-500
+              maxWidth: "768px",
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
+          >
             {type}
           </p>
-          <h2 className="mx-auto mb-3 text-4xl lg:text-6xl lg:max-w-3xl font-title text-center font-bold tracking-tight text-primary-900">
+
+          <h2
+            style={{
+              marginTop: "0.75rem",
+              marginBottom: "0.75rem",
+              fontSize: "2.25rem", // text-4xl
+              lineHeight: "2.5rem",
+              fontFamily: '"Kanit", sans-serif',
+              fontWeight: "700",
+              textAlign: "center",
+              letterSpacing: "0.05em",
+              color: "#1c401d", // text-primary-900
+              maxWidth: "768px",
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
+          >
             Frequently Asked Questions
           </h2>
 
-          <dl className="flex flex-col gap-2 mt-6">
+          <dl
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "0.5rem",
+              marginTop: "1.5rem",
+            }}
+          >
             {faqs.map((faq, index) => (
               <details
                 key={index}
-                className="border rounded-lg p-4 transition-all duration-300 ease-in-out open:shadow-md"
+                style={{
+                  border: "1px solid #e5e7eb",
+                  borderRadius: "0.5rem",
+                  padding: "1rem",
+                  transition: "all 0.3s ease-in-out",
+                  boxShadow: "none",
+                }}
               >
-                <summary className="cursor-pointer font-semibold text-primary-800 marker:hidden">
+                <summary
+                  style={{
+                    cursor: "pointer",
+                    fontWeight: "600",
+                    color: "#52525b", // text-primary-800 alternative
+                    listStyle: "none",
+                  }}
+                >
                   {faq.title}
                 </summary>
                 <div
-                  className="block mt-2 text-gray-700"
+                  style={{ marginTop: "0.5rem", color: "#4b5563" }} // text-gray-700
                   dangerouslySetInnerHTML={{ __html: faq.content }}
                 />
               </details>
@@ -30,9 +86,18 @@ export default function FAQs({ faqs, type }) {
           </dl>
         </div>
 
-        <p className="text-center mt-12 text-gray-600">
+        <p
+          style={{
+            textAlign: "center",
+            marginTop: "3rem",
+            color: "#4b5563", // text-gray-600
+          }}
+        >
           If you have any additional questions please send us an email to{" "}
-          <a href="/contact" className="text-primary-800 hover:underline">
+          <a
+            href="/contact"
+            style={{ color: "#52525b", textDecoration: "underline" }}
+          >
             Contact Us
           </a>
         </p>
