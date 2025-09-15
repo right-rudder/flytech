@@ -28,6 +28,8 @@ const { data } = Astro.props;
                 imagePath={airline.imagePath}
                 imageAlt={airline.imageAlt}
                 styles="max-w-52 lg:max-w-40 lg:max-h-16 object-contain hover:scale-110 duration-500 ease-in-out"
+                width={[120, 240, 360]}
+                sizes="(max-width: 120px) 120px, (max-width: 240px) 240px, (max-width: 360px) 360px"
               />
             </a>
           ))
