@@ -37,7 +37,7 @@ export default {
           200: "#bae9b9",
           300: "#94db94",
           400: "#70ca6f",
-          500: "#57b553", // Base color
+          500: "#57b553",
           600: "#469444",
           700: "#367536",
           800: "#285829",
@@ -99,5 +99,26 @@ export default {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    // Inject @font-face with font-display swap for LCP optimization
+    function ({ addBase }) {
+      addBase({
+        "@font-face": {
+          fontFamily: "Kanit",
+          fontWeight: "400",
+          fontStyle: "normal",
+          fontDisplay: "swap",
+          src: 'url("/_astro/kanit-lat….C1Jk-JCr.woff2") format("woff2")',
+        },
+        "@font-face": {
+          fontFamily: "Open Sans Variable",
+          fontWeight: "400",
+          fontStyle: "normal",
+          fontDisplay: "swap",
+          src: 'url("/_astro/open-sans….CYuRH5ug.woff2") format("woff2")',
+        },
+      });
+    },
+  ],
 };

@@ -32,6 +32,22 @@ import imgForm from "../assets/wing-flying-sky.webp";
     />
     <link rel="preconnect" href="https://i.ytimg.com" crossorigin />
     <link rel="preconnect" href="https://metar-taf.com" crossorigin />
+    <!-- Preload the critical LCP font -->
+    <link
+      rel="preload"
+      href="/_astro/kanit-lat….C1Jk-JCr.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link
+      rel="preload"
+      href="/_astro/open-sans….CYuRH5ug.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <!-- Preload LCP image with high priority -->
     {
       imgForm && (
@@ -74,7 +90,7 @@ import imgForm from "../assets/wing-flying-sky.webp";
     <Banner />
 
     <header class="w-full h-0 sticky inset-0 z-50 font-sans tracking-wider">
-      <Navbar pathname={pathname} client:load />
+      <Navbar pathname={pathname} client:idle />
     </header>
 
     <main>
