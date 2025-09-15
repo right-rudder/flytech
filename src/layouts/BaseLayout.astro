@@ -63,8 +63,10 @@ import imgForm from "../assets/wing-flying-sky.webp";
         imagePath={imgForm}
         imageAlt="Background Image"
         styles="w-full h-full object-cover"
-        loading="eager"
+        loading="lazy"
         fetchpriority="high"
+        widths={[720, 1080, 1440]}
+        sizes="100vw"
       />
     </div>
 

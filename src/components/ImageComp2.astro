@@ -9,6 +9,8 @@ interface Props {
   styles?: string;
   loading?: "lazy" | "eager";
   fetchpriority?: "high" | "low" | "auto";
+  widths?: number[];
+  sizes?: string;
 }
 
 const {
@@ -18,6 +20,8 @@ const {
   styles = "",
   loading = "lazy",
   fetchpriority = "auto",
+  widths = [120, 240, 540, 720, 1080, 1440, 1920],
+  sizes = `(max-width: 120px) 120px, (max-width: 240px) 240px, (max-width: 540px) 540px, (max-width: 720px) 720px, (max-width: 1080px) 1080px, (max-width: 1440px) 1440px, 1920px`,
 } = Astro.props;
 ---
 
@@ -27,7 +31,7 @@ const {
   class={styles}
   quality={quality}
   loading={loading}
-  widths={[120, 240, 540, 720, 1080, 1440, 1920]}
-  sizes="(max-width: 120px) 120px, (max-width: 240px) 240px, (max-width: 540px) 540px, (max-width: 720px) 720px, (max-width: 1080px) 1080px, (max-width: 1440px) 1440px, 1920px"
+  widths={widths}
+  sizes={sizes}
   fetchpriority={fetchpriority}
 />
