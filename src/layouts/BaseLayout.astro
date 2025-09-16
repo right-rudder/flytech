@@ -4,7 +4,7 @@ import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION, KEYWORDS, OG_IMAGE } from "../consts";
 import "@fontsource/kanit";
 import "@fontsource-variable/open-sans";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/_Navbar";
 import SocialMediaSchema from "../components/SocialMediaSchema.astro";
 const { pathname } = Astro.url;
 const { siteTitle, siteDescription, keywords } = Astro.props;
@@ -90,7 +90,7 @@ import imgForm from "../assets/wing-flying-sky.webp";
     <Banner />
 
     <header class="w-full h-0 sticky inset-0 z-50 font-sans tracking-wider">
-      <Navbar pathname={pathname} client:idle />
+      <Navbar pathname={pathname} client:visible />
     </header>
 
     <main>

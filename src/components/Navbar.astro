@@ -1,0 +1,60 @@
+---
+// Navbar.astro
+import { navbarLinks } from "../data/navbarLinks.js";
+import { mobileNavbarLinks } from "../data/mobileNavbarLinks.js";
+import Logo from "./Logo.jsx";
+import { PHONE_NUMBER, PHONE_NUMBER_PRETTY } from "../consts.ts";
+import NavbarMobile from "./NavbarMobile";
+---
+
+<nav class="relative z-50">
+  <!-- Desktop Navbar (static) -->
+  <div
+    class="hidden lg:flex justify-between items-center bg-primary-600/95 shadow-md h-24 px-8"
+  >
+    <a href="/" title="FlyTech Pilot Academy" class="flex items-center h-full">
+      <Logo className="h-16" />
+    </a>
+
+    <ul
+      class="flex gap-8 items-center uppercase font-title text-white font-medium"
+    >
+      {
+        navbarLinks.map((item) => (
+          <li class="relative group">
+            {item.link ? (
+              <a
+                href={item.link}
+                target={item.link.startsWith("http") ? "_blank" : "_self"}
+                class="hover:underline decoration-primary-500 underline-offset-4"
+              >
+                {item.name}
+              </a>
+            ) : (
+              <span>{item.name}</span>
+            )}
+
+            {item.submenu && item.submenu.length > 0 && (
+              <ul class="absolute left-0 top-full bg-primary-600/95 opacity-0 group-hover:opacity-100 transition-opacity min-w-[10rem]">
+                {item.submenu.map((sub) => (
+                  <li class="hover:bg-primary-700 px-4 py-2">
+                    {sub.link ? (
+                      <a href={sub.link}>{sub.name}</a>
+                    ) : (
+                      <span>{sub.name}</span>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+
+  <!-- Mobile Navbar (hydrated) -->
+  <div class="lg:hidden">
+    <NavbarMobile client:load navbarLinks={mobileNavbarLinks} />
+  </div>
+</nav>
