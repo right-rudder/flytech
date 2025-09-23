@@ -28,7 +28,7 @@ FAA regulations ensure safety, efficiency, and accountability in the skies. Comp
 
 Student pilots should focus on these essential FAA topics:
 
-- **Certification Requirements:** Private Pilot License (PPL), Commercial Pilot License (CPL), Instrument Rating, and other certifications. Learn more about our [PPL training program](/programs/private-pilot-license) and [CPL program](/programs/commercial-pilot-license).
+- **Certification Requirements:** Private Pilot License (PPL), Commercial Pilot License (CPL), Instrument Rating, and other certifications. Learn more about our [PPL training program](/flight-training/private-pilot) and [CPL program](/flight-training/commercial-pilot).
 - **Flight Time Limitations:** Logging hours accurately, following duty restrictions, and maintaining currency.
 - **Airspace Rules:** Understanding controlled, uncontrolled, and special use airspace.
 - **Aircraft Operations:** Pre-flight inspections, maintenance reporting, and standard operating procedures.
@@ -57,16 +57,16 @@ By combining technical skills with regulatory knowledge, FlyTech ensures graduat
 - Use flight simulators to practice compliance in controlled environments.
 - Ask instructors for clarification on any regulation you find confusing, understanding the rules is as important as flying the aircraft.
 
-For more information about FlyTech Pilot Academy’s programs or to [schedule a visit](/contact), please visit [www.FLYSTJ.com](https://www.flystj.com).
+For more information about FlyTech Pilot Academy’s programs or to [schedule a visit](/contact), please visit [www.flustj.com](https://www.flystj.com).
 
----
+<!-- ---
 
 ## Related Resources
 
 - [Flight School Safety: How FlyTech Keeps Students Secure](/blog/flight-school-safety)
 - [Top Skills Every Aspiring Pilot Must Master](/blog/pilot-skills-guide)
 - [Private Pilot License (PPL) Training](/programs/private-pilot-license)
-- [Commercial Pilot License (CPL) Training](/programs/commercial-pilot-license)
+- [Commercial Pilot License (CPL) Training](/programs/commercial-pilot-license) -->
 
 ---
 
