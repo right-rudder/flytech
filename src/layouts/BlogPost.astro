@@ -6,6 +6,7 @@ import { KEYWORDS } from "../consts";
 import BlogPostSchema from "../components/BlogPostSchema.astro";
 import CTAVideoWhite from "../components/CTAVideoWhite.astro";
 import videoList from "../data/videos.js";
+import ImageComp from "../components/ImageComp.astro";
 
 const randomVideo = videoList[Math.floor(Math.random() * videoList.length)];
 
@@ -51,10 +52,10 @@ const {
       >
         {
           heroImage && (
-            <img
-              class="object-cover h-full w-full bg-white"
-              src={heroImage}
-              alt={title}
+            <ImageComp
+              imagePath={heroImage}
+              imageAlt={title}
+              styles="object-cover h-full w-full bg-white"
             />
           )
         }
