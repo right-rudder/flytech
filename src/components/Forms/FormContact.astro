@@ -133,9 +133,12 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
   const thumb = document.getElementById("terms-thumb");
   const hiddenInput = document.getElementById("agree-terms");
   const submitBtn = document.getElementById("submit-btn");
+  const form = document.getElementById("enroll_form");
 
   let isChecked = false;
+  const SUBMIT_COOLDOWN = 30 * 1000; // 30 seconds
 
+  // Terms toggle
   toggle.addEventListener("click", () => {
     isChecked = !isChecked;
     hiddenInput.value = isChecked ? "yes" : "no";
@@ -145,111 +148,81 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
     thumb.classList.toggle("translate-x-3.5", isChecked);
     thumb.classList.toggle("translate-x-0", !isChecked);
 
-    if (isChecked) {
-      submitBtn.disabled = false;
-      submitBtn.classList.remove(
-        "cursor-not-allowed",
-        "bg-gray-400",
-        "hover:bg-gray-400",
-        "hover:text-picton-blue-700",
-      );
-    } else {
-      submitBtn.disabled = true;
-      submitBtn.classList.add(
-        "cursor-not-allowed",
-        "bg-gray-400",
-        "hover:bg-gray-400",
-        "hover:text-picton-blue-700",
-      );
-    }
+    submitBtn.disabled = !isChecked;
+    submitBtn.classList.toggle("cursor-not-allowed", !isChecked);
+    submitBtn.classList.toggle("bg-gray-400", !isChecked);
   });
-  submitBtn.disabled = true;
-  submitBtn.classList.add(
-    "cursor-not-allowed",
-    "bg-gray-400",
-    "hover:bg-gray-400",
-    "hover:text-picton-blue-700",
-  );
-  document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("enroll_form");
-    if (!form) {
-      console.error("Form element not found.");
-      return;
-    }
 
+  // Initialize submit button
+  submitBtn.disabled = true;
+  submitBtn.classList.add("cursor-not-allowed", "bg-gray-400");
+
+  if (!form) {
+    console.error("Form element not found.");
+  } else {
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
 
+      // Honeypot check
       const formData = new FormData(form);
-      const confirmEmail = formData.get("confirm-email")?.trim();
-      if (confirmEmail) return;
+      if (formData.get("confirm-email")?.trim()) return;
 
-      const webhookURL = FORM_WEBHOOK_URL;
-      const apiKey = PORTAL_API_KEY;
-      const cp_account_random_id = CP_ACCOUNT_RANDOM_ID;
-
-      const urlEncodedBody = new URLSearchParams(formData).toString();
-
-      const excludedFields = [
-        "first-name",
-        "last-name",
-        "email",
-        "phone",
-        "confirm-email",
-        "agree-terms",
-      ];
-
-      const metadata = {};
-
-      for (const [key, value] of formData.entries()) {
-        if (!excludedFields.includes(key)) {
-          metadata[key] = value?.trim?.() ?? value;
-        }
+      // Cooldown using localStorage
+      const lastSubmit = parseInt(
+        localStorage.getItem("lastSubmit") || "0",
+        10,
+      );
+      const now = Date.now();
+      if (now - lastSubmit < SUBMIT_COOLDOWN) {
+        alert("Please wait a few seconds before submitting again.");
+        return;
       }
+      localStorage.setItem("lastSubmit", now.toString());
 
-      const jsonBody = {
-        first_name: formData.get("first-name")?.trim() || "",
-        last_name: formData.get("last-name")?.trim() || "",
-        email: formData.get("email")?.trim() || "",
-        phone: formData.get("phone")?.trim() || "",
-        campaign: "contact",
-        account_random_id: cp_account_random_id,
-        metadata: metadata,
-      };
+      // Disable submit button
+      submitBtn.disabled = true;
+      submitBtn.classList.add("cursor-not-allowed", "bg-gray-400");
 
       try {
         const [ghlRes, portalRes] = await Promise.all([
-          fetch(webhookURL, {
+          fetch(FORM_WEBHOOK_URL, {
             method: "POST",
-            headers: {
-              "Content-Type": "application/x-www-form-urlencoded",
-            },
-            body: urlEncodedBody,
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString(),
           }),
           fetch("https://portal.rightruddermarketing.com/api/leads", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
               Accept: "application/json",
-              "x-api-key": apiKey,
+              "x-api-key": PORTAL_API_KEY,
             },
-            body: JSON.stringify(jsonBody),
+            body: JSON.stringify({
+              first_name: formData.get("first-name")?.toString() || "",
+              last_name: formData.get("last-name")?.toString() || "",
+              email: formData.get("email")?.toString() || "",
+              phone: formData.get("phone")?.toString() || "",
+              campaign: "contact",
+              account_random_id: CP_ACCOUNT_RANDOM_ID,
+            }),
           }),
         ]);
 
         if (ghlRes.ok && portalRes.ok) {
           window.location.href = "/contact-confirmation";
         } else {
-          console.error("Submission failed", {
-            ghlStatus: ghlRes.status,
-            portalStatus: portalRes.status,
-          });
+          alert("Submission failed. Please try again later.");
+          submitBtn.disabled = false;
+          submitBtn.classList.remove("cursor-not-allowed", "bg-gray-400");
         }
       } catch (err) {
         console.error("Submission error:", err);
+        alert("An error occurred. Please try again later.");
+        submitBtn.disabled = false;
+        submitBtn.classList.remove("cursor-not-allowed", "bg-gray-400");
       }
     });
-  });
+  }
 </script>
 
 <!-- <div class="min-h-[400px] lg:min-h-[800px]">
