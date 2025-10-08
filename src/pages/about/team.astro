@@ -8,6 +8,8 @@ import pageData from "../../data/teamData.js";
 import PersonSchema from "../../components/PersonSchema.astro";
 import CTAVideo from "../../components/CTAVideo.astro";
 import videoList from "../../data/videos.js";
+import FormJoinOurTeam from "../../components/Forms/FormJoinOurTeam.astro";
+import JoinOurTeam from "../../components/Forms/JoinOurTeam.astro";
 
 const randomVideo = videoList[Math.floor(Math.random() * videoList.length)];
 const dataForVideo = {
@@ -64,6 +66,8 @@ const dataForVideo = {
   <CTAVideo video={randomVideo} data={dataForVideo} />
 
   <About content={pageData.details} />
+
+  <JoinOurTeam />
 
   <CTAColor content={flyWithUsCTA} />
 </BaseLayout>
