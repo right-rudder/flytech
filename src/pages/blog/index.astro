@@ -161,16 +161,16 @@ const currentVideo = getCurrentVideo(videoList, "discovery flight");
         </div>
       </div>
       <div
-        class="w-full flex flex-wrap gap-3 lg:gap-6 mt-16 mx-auto justify-center"
+        class="w-full flex flex-wrap gap-3 lg:gap-6 mt-16 mx-auto justify-around"
       >
         {
           posts.slice(1, posts.length).map((post, index) => (
-            <article class="relative group w-full lg:m-0 md:w-2/5 lg:w-1/4 isolate flex flex-col justify-end overflow-hidden  bg-white px-8 pb-8 pt-48 lg:pt-80 hover:ring-1 hover:ring-primary-500 duration-200">
+            <article class="relative group w-full max-h-32 lg:m-0 md:w-2/5 lg:w-1/4 isolate flex flex-col justify-end overflow-hidden  bg-white px-8 pb-8 pt-48 lg:pt-80 hover:ring-1 hover:ring-primary-500 duration-200">
               <div class="h-full w-full absolute inset-0 -z-10">
                 <ImageComp
                   imagePath={post.data.heroImage}
                   imageAlt={post.data.title}
-                  class="absolute inset-0 -z-10 h-full w-full object-cover group-hover:scale-110 group-hover:brightness-125 duration-200"
+                  styles="absolute inset-0 -z-10 h-full w-full object-cover group-hover:scale-110 group-hover:brightness-125 duration-200"
                 />
               </div>
               <div class="absolute inset-0 -z-10 bg-gradient-to-t from-slate-950 via-slate-900/20 group-hover:bg-primary-600/60 duration-200" />
