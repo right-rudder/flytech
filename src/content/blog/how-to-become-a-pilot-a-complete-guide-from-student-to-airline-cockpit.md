@@ -28,7 +28,7 @@ The best way to start is by experiencing your first flight. A Discovery Flight a
 ## Step 2: Begin Flight Training
 
 Students typically start by pursuing their Private Pilot License (PPL), which lays the foundation for all future certifications. At Flytech, training includes a blend of ground instruction, simulator sessions, and hands-on flight time with certified instructors.  
-[Explore Flight Training Programs](/flight-training-programs)
+[Explore Flight Training Programs](/flight-training)
 
 ## Step 3: Add Ratings and Build Hours
 
@@ -41,4 +41,4 @@ For those aspiring to the airlines, the final milestone is the Airline Transport
 ## A Clear Path Forward
 
 Every successful pilot career begins with a single flight. With experienced instructors, modern training equipment, and a student-focused approach, Flytech Pilot Academy provides everything needed to help future aviators reach their goals.  
-[Enroll Today](/enroll)
+[Enroll Today](/#enroll)
