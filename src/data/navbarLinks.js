@@ -82,6 +82,10 @@ export const navbarLinks = [
         link: "/about/team",
       },
       {
+        name: "Join Us",
+        link: "/about/team#form",
+      },
+      {
         name: "Our Fleet",
         link: "/about/fleet",
       },
