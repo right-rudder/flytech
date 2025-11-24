@@ -1,6 +1,17 @@
-import { EMAIL_ADDRESS } from "../consts";
+import { useState } from "react";
 
 export default function FAQs({ faqs, type }) {
+  const [openList, setOpenList] = useState([]);
+
+  const handleClick = (event) => {
+    const id = event.target.id;
+    if (openList.includes(id)) {
+      setOpenList(openList.filter(item => item !== id));
+    } else {
+      setOpenList([...openList, id]);
+    }
+  }
+
   return (
     <div style={{ backgroundColor: "#ffffff" }}>
       <div
@@ -57,7 +68,7 @@ export default function FAQs({ faqs, type }) {
             }}
           >
             {faqs.map((faq, index) => (
-              <details
+              <div
                 key={index}
                 style={{
                   border: "1px solid #e5e7eb",
@@ -65,23 +76,31 @@ export default function FAQs({ faqs, type }) {
                   padding: "1rem",
                   transition: "all 0.3s ease-in-out",
                   boxShadow: "none",
+                  overflow: "hidden",
                 }}
               >
-                <summary
+                <button
                   style={{
                     cursor: "pointer",
                     fontWeight: "600",
                     color: "#52525b", // text-primary-800 alternative
                     listStyle: "none",
                   }}
+                  onClick={handleClick}
+                  id={"faq-" + faq.title}
                 >
                   {faq.title}
-                </summary>
+                </button>
                 <div
                   style={{ marginTop: "0.5rem", color: "#4b5563" }} // text-gray-700
+                  className={`transition-all duration-500 ease-in-out ${
+                    openList.includes("faq-" + faq.title)
+                      ? "max-h-[1000px] opacity-100"
+                      : "max-h-0 opacity-0"
+                  }`}
                   dangerouslySetInnerHTML={{ __html: faq.content }}
                 />
-              </details>
+              </div>
             ))}
           </dl>
         </div>

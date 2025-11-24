@@ -27,10 +27,10 @@ const Accordion = ({ faq, toggled, onShow, index }) => {
 
       {/* Smooth animated content */}
       <dd
-        className={`transition-all duration-700 ease-in-out overflow-hidden ${
+        className={`transition-all duration-700 ease-in-out overflow-hidden border-x-2 border-b-2 ${
           toggled
-            ? "max-h-[1000px] opacity-100 bg-white border-2 border-gray-200 rounded-b-lg"
-            : "max-h-0 opacity-0"
+            ? "max-h-[1000px] opacity-100 border-gray-200 rounded-b-lg"
+            : "max-h-0 opacity-0 border-transparent"
         }`}
       >
         <div className="px-9 pt-0 pb-9 text-black font-medium w-full">
