@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { BiChevronRight } from "react-icons/bi";
 
 export default function FAQs({ faqs, type }) {
   const [openList, setOpenList] = useState([]);
@@ -73,7 +74,6 @@ export default function FAQs({ faqs, type }) {
                 style={{
                   border: "1px solid #e5e7eb",
                   borderRadius: "0.5rem",
-                  padding: "1rem",
                   transition: "all 0.3s ease-in-out",
                   boxShadow: "none",
                   overflow: "hidden",
@@ -86,17 +86,19 @@ export default function FAQs({ faqs, type }) {
                     color: "#52525b", // text-primary-800 alternative
                     listStyle: "none",
                   }}
+                  className="w-full flex justify-between items-center gap-4 px-4 pt-4 transition-colors duration-300 ease-in-out hover:bg-gray-50"
                   onClick={handleClick}
                   id={"faq-" + faq.title}
                 >
                   {faq.title}
+                  <BiChevronRight className={`size-6 transition-all duration-500 ease-in-out ${openList.includes("faq-" + faq.title) ? "rotate-90" : "rotate-0"}`} />
                 </button>
                 <div
-                  style={{ marginTop: "0.5rem", color: "#4b5563" }} // text-gray-700
-                  className={`transition-all duration-500 ease-in-out ${
+                  style={{ color: "#4b5563" }} // text-gray-700
+                  className={`transition-all pt-4 px-4 duration-500 ease-in-out ${
                     openList.includes("faq-" + faq.title)
-                      ? "max-h-[1000px] opacity-100"
-                      : "max-h-0 opacity-0"
+                      ? "max-h-[1000px] opacity-100 pb-4"
+                      : "max-h-0 opacity-0 pb-0"
                   }`}
                   dangerouslySetInnerHTML={{ __html: faq.content }}
                 />
