@@ -1,6 +1,18 @@
-import { EMAIL_ADDRESS } from "../consts";
+import { useState } from "react";
+import { BiChevronRight } from "react-icons/bi";
 
 export default function FAQs({ faqs, type }) {
+  const [openList, setOpenList] = useState([]);
+
+  const handleClick = (event) => {
+    const id = event.target.id;
+    if (openList.includes(id)) {
+      setOpenList(openList.filter(item => item !== id));
+    } else {
+      setOpenList([...openList, id]);
+    }
+  }
+
   return (
     <div style={{ backgroundColor: "#ffffff" }}>
       <div
@@ -57,31 +69,40 @@ export default function FAQs({ faqs, type }) {
             }}
           >
             {faqs.map((faq, index) => (
-              <details
+              <div
                 key={index}
                 style={{
                   border: "1px solid #e5e7eb",
                   borderRadius: "0.5rem",
-                  padding: "1rem",
                   transition: "all 0.3s ease-in-out",
                   boxShadow: "none",
+                  overflow: "hidden",
                 }}
               >
-                <summary
+                <button
                   style={{
                     cursor: "pointer",
                     fontWeight: "600",
                     color: "#52525b", // text-primary-800 alternative
                     listStyle: "none",
                   }}
+                  className={`w-full flex justify-between items-center gap-4 py-4 px-4 transition-all duration-300 ease-in-out hover:bg-gray-50`}
+                  onClick={handleClick}
+                  id={"faq-" + faq.title}
                 >
                   {faq.title}
-                </summary>
+                  <BiChevronRight className={`pointer-events-none shrink-0 size-6 transition-all duration-500 ease-in-out ${openList.includes("faq-" + faq.title) ? "rotate-90" : "rotate-0"}`} />
+                </button>
                 <div
-                  style={{ marginTop: "0.5rem", color: "#4b5563" }} // text-gray-700
+                  style={{ color: "#4b5563" }} // text-gray-700
+                  className={`transition-all px-4 duration-500 ease-in-out ${
+                    openList.includes("faq-" + faq.title)
+                      ? "max-h-[1000px] opacity-100 pb-4"
+                      : "max-h-0 opacity-0 py-0"
+                  }`}
                   dangerouslySetInnerHTML={{ __html: faq.content }}
                 />
-              </details>
+              </div>
             ))}
           </dl>
         </div>
