@@ -18,6 +18,10 @@ export const navbarLinks = [
     link: "/flight-training",
     submenu: [
       {
+        name: "Sports Pilot Certificate",
+        link: "/flight-training/sports-pilot-certificate",
+      },
+      {
         name: "Private Pilot",
         link: "/flight-training/private-pilot",
       },
@@ -38,10 +42,6 @@ export const navbarLinks = [
         link: "/flight-training/certified-flight-instructor-instruments",
       },
       {
-        name: "Sports Pilot Certificate",
-        link: "/flight-training/sports-pilot-certificate",
-      },
-      {
         name: "Rusty Pilot IPC",
         link: "/flight-training/rusty-pilot-ipc",
       },
@@ -57,7 +57,7 @@ export const navbarLinks = [
       },
       {
         name: "Ground School",
-        link: "https://groundschool.com",
+        link: "https://account.atlantaflight.com/if/flow/dynamic-authentication-flow/",
       },
       {
         name: "Student Resources",
@@ -116,8 +116,8 @@ export const navbarLinks = [
     ],
   },
   {
-    name: "Enroll Now",
-    link: "#enroll",
+    name: "Contact Us",
+    link: "/contact",
     submenu: [],
   },
 ];

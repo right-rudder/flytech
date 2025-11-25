@@ -139,7 +139,7 @@ const Navbar = ({ pathname }) => {
                       )}
                       {item.submenu && item.submenu.length > 0 && (
                         <ul
-                          className={`absolute top-10 -left-8 bg-primary-600/95 min-w-56 text-center border-b-4 border-white/20 whitespace-nowrap text-white duration-200 ease-out ${hoveredIndex === index ? "max-h-auto w-auto opacity-100" : "max-h-0 h-0 opacity-0 overflow-hidden"}`}
+                          className={`absolute top-10 -right-8 bg-primary-600/95 min-w-56 text-center border-b-4 border-white/20 whitespace-nowrap text-white duration-200 ease-out ${hoveredIndex === index ? "max-h-auto w-auto opacity-100" : "max-h-0 h-0 opacity-0 overflow-hidden"}`}
                         >
                           {item.submenu.map((subitem, subIndex) => (
                             <li

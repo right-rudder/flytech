@@ -28,7 +28,7 @@ const sportPilotData = {
     upperHeading: "Fly Light. Fly Free.",
     heading: "Sport Pilot Certificate",
     subHeading:
-      "Perfect for recreational pilots, the Sport Pilot Certificate lets you fly smaller, lighter aircraft with less training time and lower costs.",
+      "The Sport Pilot Certificate is the most accessible way to begin your aviation journey. Designed in 2004 to reduce training time and cost, it allows you to fly light, simple aircraft for recreation or personal travel. It’s the perfect option for anyone who wants to get in the air quickly, safely, and affordably.",
 
     title: "Program Overview",
     description: `
@@ -53,8 +53,8 @@ const sportPilotData = {
       description:
         "Join FlyTech and earn your Sport Pilot Certificate with fewer hours, lower cost, and maximum fun. Start flying light sport aircraft today.",
       button: {
-        name: "Enroll Today",
-        link: "/#enroll",
+        name: "Start Flying Today",
+        link: "/discovery-flight",
       },
     },
 

@@ -16,8 +16,8 @@ const multiEngineData = {
     paragraph: `Take your flying skills to the next level with FlyTech Pilot Academy's  Rating program. Learn to operate twin-engine aircraft with confidence and precision.`,
     buttons: [
       {
-        name: "Enroll Today",
-        link: "/#enroll",
+        name: "Start Flying Today",
+        link: "/discovery-flight",
         primary: false,
       },
     ],

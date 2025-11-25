@@ -19,7 +19,13 @@ const discoveryFlight = {
       headerH1: `Discovery <strong class="text-primary-600">Flight</strong>`,
       paragraph:
         "Fly at FlyTech and See if Flying is for You! Book a Flight Today!",
-      buttons: [],
+      buttons: [
+        {
+          name: "Discovery Flight",
+          link: "#discovery-flight",
+          primary: true,
+        },
+      ],
     },
 
     pageSummary: {

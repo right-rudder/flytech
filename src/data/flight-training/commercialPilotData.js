@@ -17,8 +17,8 @@ const commercialPilotData = {
     paragraph: `Turn your passion for flying into a career with FlyTech Pilot Academy's Commercial Pilot License program. Gain the expertise needed to fly professionally and get paid to do what you love.`,
     buttons: [
       {
-        name: "Enroll Today",
-        link: "/#enroll",
+        name: "Start Flying Today",
+        link: "/discovery-flight",
         primary: false,
       },
     ],

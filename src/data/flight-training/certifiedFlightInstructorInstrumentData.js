@@ -17,8 +17,8 @@ const certifiedFlightInstructorInstrumentsData = {
     paragraph: `Advance your aviation career by becoming a Certified Flight Instructor – Instrument. Gain the knowledge and skills to teach pilots advanced IFR techniques and help them succeed in challenging flight conditions.`,
     buttons: [
       {
-        name: "Enroll Today",
-        link: "/#enroll",
+        name: "Start Flying Today",
+        link: "/discovery-flight",
         primary: false,
       },
     ],

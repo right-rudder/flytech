@@ -9,10 +9,10 @@ const { content } = Astro.props;
   <h3 class="section-upper">STRUCTURED TRAINING, CLEAR PROGRESS</h3>
   <h4 class="section-title text-neutral-800">FlyTech’s Training Structure</h4>
   <p class="text-gray-600 text-center max-w-5xl mt-6">
-    guiding students from Zero to Hero at Rosecrans Memorial Airport (KSTJ) in
-    Saint Joseph, Missouri. Serving the greater Kansas City and Saint Joseph
-    area, our program is designed for students to fly 3–4 times per week,
-    supported by structured ground school sessions and dedicated personal study.
+    FlyTech trains pilots from Zero to Hero at Rosecrans Memorial Airport (KSTJ)
+    in Saint Joseph, Missouri. With students from across the Kansas City and
+    Saint Joseph region, our program is built for consistent progress through
+    flight lessons, structured ground school, and guided personal study.
   </p>
   <div class="flex flex-col lg:flex-row py-6 lg:py-12 items-center gap-10">
     <div
@@ -47,12 +47,12 @@ const { content } = Astro.props;
     <div
       class="items-center w-full text-center max-w-xs lg:max-w-none border border-primary-500/50 rounded py-8 px-2 lg:px-12 flex flex-col gap-5 justify-center bg-neutral-800 hover:bg-primary-700 duration-500 group"
     >
-      <a href="#career">
+      <a href="#advancing">
         <div class="w-full flex justify-center align-middle items-center">
           <h3
             class="w-3/4 text-lg text-white uppercase font-semibold tracking-widest duration-500"
           >
-            Your career path
+            Advancing Your Skills
           </h3>
           <div class="w-1/4 flex justify-end">
             <svg
@@ -76,12 +76,12 @@ const { content } = Astro.props;
     <div
       class="items-center w-full text-center border border-primary-500/50 rounded py-8 px-2 lg:px-12 flex flex-col gap-5 justify-between bg-neutral-800 hover:bg-primary-700 duration-500 group"
     >
-      <a href="#advancing">
+      <a href="#career">
         <div class="flex justify-center align-middle items-center">
           <h3
             class="w-3/4 text-lg text-white uppercase font-semibold tracking-widest duration-700"
           >
-            Advancing Your Skills
+            Your career path
           </h3>
           <div class="w-1/4 flex justify-end">
             <svg
@@ -134,16 +134,15 @@ const { content } = Astro.props;
               Sports Pilot Certificate (SPL)
             </h4>
             <p class="text-slate-800 p-text pb-5 text-justify">
-              Perfect for recreational pilots, the Sport Pilot Certificate lets
-              you fly smaller, lighter aircraft with less training time and
-              lower costs.Introduced in 2004, the Sport Pilot Certificate is a
-              streamlined FAA license designed for those who want to fly small,
-              lightweight aircraft for fun or personal travel. It’s a great
-              option if you're looking for a faster, more affordable path to the
-              skies,without compromising safety or enjoyment.
+              The Sport Pilot Certificate is the most accessible way to begin
+              your aviation journey. Designed in 2004 to reduce training time
+              and cost, it allows you to fly light, simple aircraft for
+              recreation or personal travel. It’s the perfect option for anyone
+              who wants to get in the air quickly, safely, and affordably.
             </p>
-            <a href="/flight-training/private-pilot" class="btn-primary w-full"
-              >SPORTS PILOT CERTIFICATE</a
+            <a
+              href="/flight-training/sports-pilot-certificate"
+              class="btn-primary w-full">SPORTS PILOT CERTIFICATE</a
             >
           </div>
           <div class="flex flex-col justify-center p-4">
@@ -192,57 +191,13 @@ const { content } = Astro.props;
           >
           </div>
         </div>
-
+        <!--  Advancing -->
         <div
           class="w-full col-start-6 col-end-10 my-4 mr-auto p-4 bg-white"
-          id="career"
+          id="advancing"
         >
           <h3
             class="font-bold text-4xl mb-2 font-title text-primary-700 uppercase text-center"
-          >
-            Your career path
-          </h3>
-          <div class="flex flex-col justify-center p-4">
-            <h4 class="text-3xl text-slate-600 italic py-5 mb-1 text-center">
-              Commercial Pilot Certification (CPL)
-            </h4>
-            <p class="text-slate-800 p-text pb-5 text-justify">
-              A commercial certificate grants you the privilege to fly for
-              compensation or hire. With the guidance of our seasoned
-              instructors, you'll acquire the mastery of operating advanced
-              aircraft, encompassing advanced maneuvers and emergency
-              procedures. Rest assured, you will be thoroughly prepared and
-              equipped to overcome any challenges in your aviation career.
-            </p>
-            <a
-              href="/flight-training/commercial-pilot"
-              class="btn-primary w-full">COMMERCIAL PILOT TRAINING</a
-            >
-          </div>
-          <div class="flex flex-col justify-center mt-8 p-4">
-            <h4 class="text-3xl text-slate-600 italic py-5 mb-1 text-center">
-              Certified Flight Instructor (CFI)
-            </h4>
-            <p class="text-slate-800 p-text pb-5 text-justify">
-              Share your expertise and proficiency with aspiring pilots, while
-              accumulating valuable flight hours and experience. Once you get
-              your CFI at FlyTech, we offer guaranteed interviews to instruct at
-              FlyTech. Build you hours here and then qualify to go to the
-              airlines.
-            </p>
-            <a
-              href="/flight-training/certified-flight-instructor"
-              class="btn-primary w-full">CFI TRAINING</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-row-reverse md:contents">
-        <div class="w-full col-start-1 col-end-5 p-4 my-4 ml-auto bg-white">
-          <h3
-            class="font-bold text-4xl mb-2 font-title text-primary-700 uppercase text-center"
-            id="advancing"
           >
             Advancing Your Skills
           </h3>
@@ -264,6 +219,33 @@ const { content } = Astro.props;
           </div>
           <div class="flex flex-col justify-center mt-8 p-4">
             <h4 class="text-3xl text-slate-600 italic py-5 mb-1 text-center">
+              Certified Flight Instructor (CFI)
+            </h4>
+            <p class="text-slate-800 p-text pb-5 text-justify">
+              Share your expertise and proficiency with aspiring pilots, while
+              accumulating valuable flight hours and experience. Once you get
+              your CFI at FlyTech, we offer guaranteed interviews to instruct at
+              FlyTech. Build you hours here and then qualify to go to the
+              airlines.
+            </p>
+            <a
+              href="/flight-training/certified-flight-instructor"
+              class="btn-primary w-full">CFI TRAINING</a
+            >
+          </div>
+        </div>
+      </div>
+      <!--  Career -->
+      <div class="flex flex-row-reverse md:contents">
+        <div class="w-full col-start-1 col-end-5 p-4 my-4 ml-auto bg-white">
+          <h3
+            class="font-bold text-4xl mb-2 font-title text-primary-700 uppercase text-center"
+            id="career"
+          >
+            Your career path
+          </h3>
+          <div class="flex flex-col justify-center mt-8 p-4">
+            <h4 class="text-3xl text-slate-600 italic py-5 mb-1 text-center">
               Certified Flight Instructor-Instrument (CFII)
             </h4>
             <p class="text-slate-800 p-text pb-5 text-justify">
@@ -276,18 +258,35 @@ const { content } = Astro.props;
               class="btn-primary w-full">CFII TRAINING</a
             >
           </div>
+          <div class="flex flex-col justify-center p-4">
+            <h4 class="text-3xl text-slate-600 italic py-5 mb-1 text-center">
+              Commercial Pilot Certification (CPL)
+            </h4>
+            <p class="text-slate-800 p-text pb-5 text-justify">
+              A commercial certificate grants you the privilege to fly for
+              compensation or hire. With the guidance of our seasoned
+              instructors, you'll acquire the mastery of operating advanced
+              aircraft, encompassing advanced maneuvers and emergency
+              procedures. Rest assured, you will be thoroughly prepared and
+              equipped to overcome any challenges in your aviation career.
+            </p>
+            <a
+              href="/flight-training/commercial-pilot"
+              class="btn-primary w-full">COMMERCIAL PILOT TRAINING</a
+            >
+          </div>
         </div>
-        <div
-          class="col-start-5 col-end-6 mr-10 md:mx-auto hidden md:block relative"
-        >
-          <div class="h-full w-6 flex items-center justify-center">
-            <div class="h-full w-0.5 bg-primary-500 pointer-events-none"></div>
-          </div>
+      </div>
+      <div
+        class="col-start-5 col-end-6 mr-10 md:mx-auto hidden md:block relative"
+      >
+        <div class="h-full w-6 flex items-center justify-center">
+          <div class="h-full w-0.5 bg-primary-500 pointer-events-none"></div>
+        </div>
 
-          <div
-            class="w-6 h-6 absolute top-1/2 -mt-3 border-2 border-primary-500 bg-primary-500 shadow"
-          >
-          </div>
+        <div
+          class="w-6 h-6 absolute top-1/2 -mt-3 border-2 border-primary-500 bg-primary-500 shadow"
+        >
         </div>
       </div>
     </div>

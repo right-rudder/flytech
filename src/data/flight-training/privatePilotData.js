@@ -16,8 +16,8 @@ const privatePilotData = {
     paragraph: `Take the first step toward the skies with FlyTech’s Private Pilot Certificate. Train with experienced instructors and gain the flight hours and skills needed to fly confidently and safely.`,
     buttons: [
       {
-        name: "Enroll Today",
-        link: "/#enroll",
+        name: "Start Flying Today",
+        link: "/discovery-flight",
         primary: true,
       },
     ],

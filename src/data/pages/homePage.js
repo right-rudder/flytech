@@ -77,9 +77,9 @@ const homePage = {
           link: "https://cessna.txtav.com",
         },
         {
-          imagePath: "/src/assets/Partner-Gold-Seal-CFIl-med.jpg",
+          imagePath: "/src/assets/gold-seal.png",
           imageAlt: "Gold Seal CFI logo",
-          link: "https://www.faa.gov",
+          link: "https://groundschool.com",
         },
       ],
     },

@@ -4,7 +4,7 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
 ---
 
-<form class="mx-auto max-w-xl" id="enroll_form">
+<form class="mx-auto max-w-xl" id="discovery-flight">
   <div class="grid grid-cols-1 gap-x-8 gap-y-2 sm:grid-cols-2">
     <!-- First Name -->
     <div>
@@ -109,6 +109,30 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           <option value="9A - 11AM" class="bg-primary-600">9AM - 11AM</option>
           <option value="11A - 1PM" class="bg-primary-600">11AM - 1PM</option>
           <option value="1PM - 3PM" class="bg-primary-600">1PM - 3PM</option>
+        </select>
+      </div>
+
+      <!-- Goal-->
+      <div class="mt-2.5">
+        <label
+          for="discovery-goal"
+          class="mb-0 block py-2 text-sm text-gray-900 text-white"
+        >
+          Goal
+        </label>
+        <select
+          required
+          id="discovery-goal"
+          name="discovery-goal"
+          class="block font-extralight w-full py-2 shadow-sm ring-inset ring-gray-300 placeholder:text-gray-300 bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none"
+        >
+          <option value="recreational" class="bg-primary-600"
+            >Recreational</option
+          >
+          <option value="professional" class="bg-primary-600"
+            >Professional</option
+          >
+          <option value="other" class="bg-primary-600">Other</option>
         </select>
       </div>
 

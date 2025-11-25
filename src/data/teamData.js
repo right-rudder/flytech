@@ -17,8 +17,8 @@ const teamData = {
     paragraph: `Get to know the passionate and experienced team at FlyTech Pilot Academy. Our leadership and certified flight instructors are dedicated to helping you succeed in your aviation journey.`,
     buttons: [
       {
-        name: "Enroll Today",
-        link: "/#enroll",
+        name: "Start Flying Today",
+        link: "/discovery-flight",
         primary: true,
       },
       {
@@ -44,6 +44,13 @@ const teamData = {
         title: "Pilot, Managing Partner",
         summary:
           "Lute Atieh is a Pilot and Managing Partner at FlyTech Pilot Academy. With extensive experience in aviation, Lute is dedicated to providing high-quality flight training and ensuring the safety and success of all students. His leadership and expertise in the field make him a vital part of the FlyTech team, as he works tirelessly to foster a supportive and effective learning environment for aspiring pilots.",
+      },
+      {
+        imagePath: "/src/assets/Mark-5.webp",
+        imageAlt: "Mark Gaines",
+        name: "Mark Gaines D.P.E.",
+        title: "Partner",
+        summary: `With over twenty years of diverse experience in the aviation industry, I've had the privilege of working in gemeral, military, and commercial aviation, flight training, sUAS operations, and engaging in aviation volunteering and mentorship programs. My greatest joy comes from helping others achieve their dreams of flying. <a href="https://www.flygllc.com/" target="_blank" class="hover:text-primary-700 transition-all duration-300">Learn more about me here.</a>`,
       },
       {
         imagePath: "/src/assets/Daniel-Lamaster.webp",
@@ -75,18 +82,11 @@ const teamData = {
       {
         imagePath: "/src/assets/Dan-Batliner-980x980.webp",
         imageAlt:
-          "Dan Batliner P.E. Partner, Student Pilot at FlyTech Pilot Academy",
+          "Dan Batliner P.E. Partner, Flight Instructor at FlyTech Pilot Academy",
         name: "Dan Batliner P.E.",
-        title: "Partner, Student Pilot",
+        title: "Partner, CFI",
         summary:
-          "Dan Batliner P.E. is a Partner and Student Pilot at FlyTech Pilot Academy. With a background in engineering, Dan brings a unique perspective to the aviation field. His commitment to learning and passion for flight make him an integral part of the FlyTech team. As a student pilot, Dan is dedicated to advancing his skills and knowledge in aviation, while also contributing to the growth and success of the flight school.",
-      },
-      {
-        imagePath: "/src/assets/Mark-5.webp",
-        imageAlt: "Mark Gaines",
-        name: "Mark Gaines D.P.E.",
-        title: "Partner",
-        summary: `With over twenty years of diverse experience in the aviation industry, I've had the privilege of working in gemeral, military, and commercial aviation, flight training, sUAS operations, and engaging in aviation volunteering and mentorship programs. My greatest joy comes from helping others achieve their dreams of flying. <a href="https://www.flygllc.com/" target="_blank" class="hover:text-primary-700 transition-all duration-300">Learn more about me here.</a>`,
+          "Dan Batliner P.E. is a Partner and Flight Instructor at FlyTech Pilot Academy. With a background in engineering, Dan brings a unique perspective to the aviation field. His commitment to learning and passion for flight make him an integral part of the FlyTech team. As an instructor, Dan is dedicated to helping students build strong fundamentals, develop safe habits, and grow confidently in their aviation journey.",
       },
     ],
 
@@ -95,6 +95,11 @@ const teamData = {
       "At FlyTech, our dedicated instructors prioritize delivering top-notch flight training to students. They combine their extensive aviation expertise, passion for the field, and commitment to creating a safe and supportive learning atmosphere. By doing so, they enable students to reach their aspirations and develop into proficient pilots.",
 
     team: [
+      {
+        img: "/src/assets/Daniel-Lamaster.webp",
+        name: "Daniel Lamaster",
+        title: "Chief Flight Instructor",
+      },
       {
         img: "/src/assets/IMG_1279-3.webp",
         name: "Conner Musser",

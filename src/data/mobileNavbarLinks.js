@@ -20,6 +20,10 @@ export const mobileNavbarLinks = [
         link: "/flight-training",
       },
       {
+        name: "Sports Pilot Certificate",
+        link: "/flight-training/sports-pilot-certificate",
+      },
+      {
         name: "Private Pilot",
         link: "/flight-training/private-pilot",
       },
@@ -38,10 +42,6 @@ export const mobileNavbarLinks = [
       {
         name: "CFI - Instruments",
         link: "/flight-training/certified-flight-instructor-instruments",
-      },
-      {
-        name: "Sports Pilot Certificate",
-        link: "/flight-training/sports-pilot-certificate",
       },
       {
         name: "Rusty Pilot IPC",
@@ -116,8 +116,8 @@ export const mobileNavbarLinks = [
     ],
   },
   {
-    name: "Enroll Now",
-    link: "/#enroll",
+    name: "Contact Us",
+    link: "/contact",
     submenu: [],
   },
 ];
