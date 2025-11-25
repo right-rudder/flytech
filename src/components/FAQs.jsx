@@ -86,19 +86,19 @@ export default function FAQs({ faqs, type }) {
                     color: "#52525b", // text-primary-800 alternative
                     listStyle: "none",
                   }}
-                  className="w-full flex justify-between items-center gap-4 px-4 pt-4 transition-colors duration-300 ease-in-out hover:bg-gray-50"
+                  className={`w-full flex justify-between items-center gap-4 py-4 px-4 transition-all duration-300 ease-in-out hover:bg-gray-50`}
                   onClick={handleClick}
                   id={"faq-" + faq.title}
                 >
                   {faq.title}
-                  <BiChevronRight className={`size-6 transition-all duration-500 ease-in-out ${openList.includes("faq-" + faq.title) ? "rotate-90" : "rotate-0"}`} />
+                  <BiChevronRight className={`pointer-events-none shrink-0 size-6 transition-all duration-500 ease-in-out ${openList.includes("faq-" + faq.title) ? "rotate-90" : "rotate-0"}`} />
                 </button>
                 <div
                   style={{ color: "#4b5563" }} // text-gray-700
-                  className={`transition-all pt-4 px-4 duration-500 ease-in-out ${
+                  className={`transition-all px-4 duration-500 ease-in-out ${
                     openList.includes("faq-" + faq.title)
                       ? "max-h-[1000px] opacity-100 pb-4"
-                      : "max-h-0 opacity-0 pb-0"
+                      : "max-h-0 opacity-0 py-0"
                   }`}
                   dangerouslySetInnerHTML={{ __html: faq.content }}
                 />
