@@ -48,4 +48,4 @@ Whether your dream is to fly for personal fulfillment or to establish a lifelong
 
 Your journey in aviation begins with the right training, and the decision between a PPL and CPL is one of the first defining steps.
 
-[Enroll Today](/enroll)
+[Enroll Today](/#enroll)
