@@ -69,13 +69,13 @@ const fleetPage = {
           imagePath: "/src/assets/foreflight-logo.png",
           imageAlt: "ForeFlight logo",
         },
-        {
-          title: "In and Out of Cockpit Video",
-          description:
-            "The FlyTech VIRB Ultra 30 Aviation In-Cockpit Bundle enhances training by recording high-quality video and audio from every flight. Stereo headset audio cables capture pilot communications and ATC transmissions directly in your footage. A propeller filter ensures clear visuals, while the lightweight cage mount secures the camera inside the cockpit,perfect for reviewing and sharing your flights.",
-          imagePath: "/src/assets/garmin-virb-ultra-30.jpg",
-          imageAlt: "Garmin VIRB Ultra 30 aircraft camera",
-        },
+        // {
+        //   title: "In and Out of Cockpit Video",
+        //   description:
+        //     "The FlyTech VIRB Ultra 30 Aviation In-Cockpit Bundle enhances training by recording high-quality video and audio from every flight. Stereo headset audio cables capture pilot communications and ATC transmissions directly in your footage. A propeller filter ensures clear visuals, while the lightweight cage mount secures the camera inside the cockpit,perfect for reviewing and sharing your flights.",
+        //   imagePath: "/src/assets/garmin-virb-ultra-30.jpg",
+        //   imageAlt: "Garmin VIRB Ultra 30 aircraft camera",
+        // },
       ],
       planes: [
         {

@@ -15,6 +15,7 @@ import { COMPANY_NAME, PHONE_NUMBER, EMAIL_ADDRESS } from "../consts";
 import FormDiscoveryFlight from "../components/Forms/FormDiscoveryFlight.astro";
 import ServiceSchema from "../components/ServiceSchema.astro";
 import PageSummary from "../components/PageSummary.astro";
+import FleetCTA from "../components/Cards/FleetCTA.astro";
 
 const breadcrumbs = [
   { name: "Home", url: "/" },
@@ -178,6 +179,8 @@ const breadcrumbs = [
 
   <!-- Discovery Form -->
   <DiscoveryFlightComponent />
-  <ProgramSwiper content={programsSwiper} />
+  <!-- Change this to Our Fleet Component -->
+  <FleetCTA />
+  <!-- <ProgramSwiper content={programsSwiper} /> -->
   <script src="../scripts/creativeSwiper.js"></script>
 </BaseLayout>

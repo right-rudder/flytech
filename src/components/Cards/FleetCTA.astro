@@ -1,0 +1,137 @@
+---
+import imgLeft from "../../assets/plane-slinger-ground-pilots-saying-goodbye.webp";
+import imgRight from "../../assets/plane-cesna-ground-flytech (4).webp";
+import imgTop from "../../assets/pilots-inside-plane-sunset.webp";
+import imgBottom from "../../assets/simulator.webp";
+---
+
+<div class="bg-neutral-900">
+  <div class="pt-6">
+    <p
+      class="mx-auto mt-12 uppercase text-lg lg:text-xl lg:max-w-3xl font-sans text-center font-bold tracking-tight text-white"
+    >
+      Explore
+    </p>
+    <h2
+      class="mx-auto mb-3 text-4xl lg:text-6xl lg:max-w-3xl font-title text-center font-bold tracking-tight text-primary-500"
+    >
+      Our Fleet
+    </h2>
+    <p
+      class="mx-auto mb-12 text-lg max-w-3xl text-center tracking-loose text-neutral-100"
+    >
+      Your aviation dreams take center stage here. Whether pursuing a
+      professional career, building flight hours, or seeking leisurely
+      adventure, we have the perfect path for you.
+    </p>
+  </div>
+  <div class="pb-12">
+    {/* Image gallery */}
+    <div
+      class="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8"
+    >
+      <a
+        href="/about/fleet#Sling Aircraft"
+        class="row-span-2 aspect-3/4 size-full object-cover max-lg:hidden group relative hover:ring-2 hover:ring-primary-300"
+      >
+        <!-- Background image -->
+        <img
+          src={imgLeft.src}
+          alt="Two each of gray, white, and black shirts laying flat."
+          class="row-span-2 aspect-3/4 size-full object-cover max-lg:hidden"
+        />
+
+        <!-- Background overlay - now properly positioned -->
+        <div
+          class="absolute inset-0 z-10 bg-primary-900/60 lg:bg-primary-900/40 group-hover:bg-primary-900/60 duration-500"
+        >
+        </div>
+
+        <!-- Text - needs higher z-index than overlay -->
+        <div class="absolute inset-0 z-20 flex flex-col justify-end pb-8 px-8">
+          <p
+            class="text-lg font-bold text-primary-400 uppercase tracking-wide mb-4 text-center lg:text-left"
+          >
+            Aircraft
+          </p>
+          <h2
+            class="text-3xl lg:text-5xl font-bold text-white mb-4 text-center lg:text-left"
+          >
+            Sling
+          </h2>
+          <p class="text-lg text-muted-200 mb-6 text-center lg:text-left">
+            Advanced aircraft
+          </p>
+        </div>
+      </a>
+
+      <a
+        href="/about/fleet#simulator"
+        class="row-span-2 aspect-3/2 size-full object-cover max-lg:hidden group relative"
+      >
+        <!-- Background image -->
+        <img
+          src={imgBottom.src}
+          alt="Flight simulator"
+          class="col-start-2 row-start-2 aspect-3/2 size-full object-cover max-lg:hidden"
+        />
+
+        <!-- Background overlay -->
+        <div
+          class="absolute inset-0 z-10 bg-primary-900/70 lg:bg-primary-900/50 group-hover:bg-primary-900/70 duration-500"
+        >
+        </div>
+
+        <!-- Text content -->
+        <div
+          class="absolute inset-0 z-20 flex flex-col justify-end items-center p-6 text-center"
+        >
+          <p
+            class="text-lg font-bold text-primary-500 uppercase tracking-wide mb-2"
+          >
+            Training
+          </p>
+          <h2 class="text-3xl lg:text-4xl font-bold text-white mb-2">
+            Simulator
+          </h2>
+          <p class="text-lg text-muted-200">Certified Redbird SIM</p>
+        </div>
+      </a>
+
+      <a
+        href="/about/fleet#Cessna"
+        class="row-span-2 aspect-4/5 size-full object-cover lg:aspect-3/4 group relative"
+      >
+        <!-- Background image -->
+        <img
+          src={imgRight.src}
+          alt="Cessna aircraft"
+          class="row-span-2 aspect-4/5 size-full object-cover lg:aspect-3/4"
+        />
+
+        <!-- Background overlay -->
+        <div
+          class="absolute inset-0 z-10 bg-primary-900/70 lg:bg-primary-900/50 group-hover:bg-primary-900/70 duration-500"
+        >
+        </div>
+
+        <!-- Text content -->
+        <div class="absolute inset-0 z-20 flex flex-col justify-end pb-8 px-8">
+          <p
+            class="text-lg font-bold text-primary-500 uppercase tracking-wide mb-4 text-center lg:text-right"
+          >
+            Aircraft
+          </p>
+          <h2
+            class="text-3xl lg:text-5xl font-bold text-white mb-4 text-center lg:text-right"
+          >
+            Cessna
+          </h2>
+          <p class="text-lg text-muted-200 mb-6 text-center lg:text-right">
+            Our reliable instrument trainer and time-builder
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

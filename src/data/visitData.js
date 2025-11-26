@@ -16,8 +16,8 @@ const visitData = {
     paragraph: `Explore FlyTech Pilot Academy and see firsthand our state-of-the-art facilities and training environment. Schedule a visit today and take the first step towards your aviation career.`,
     buttons: [
       {
-        name: "Enroll Today",
-        link: "/#enroll",
+        name: "Start Flying Today",
+        link: "/discovery-flight",
         primary: false,
       },
       {

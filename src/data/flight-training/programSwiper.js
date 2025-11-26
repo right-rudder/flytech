@@ -5,6 +5,14 @@ const programsSwiper = {
     "Your aviation dreams take center stage here. Whether pursuing a professional career, building flight hours, or seeking leisurely adventure, we have the perfect path for you.",
   cards: [
     {
+      title: "Sport Pilot Certificate",
+      imagePath: "/src/assets/N900FT-ground.webp",
+      imageAlt:
+        "FlyTech Pilot Academy student and flight instructor in a Cessna airplane cockpit",
+      description: "Created for people who desire to fly recreationally. ",
+      link: "/flight-training/sports-pilot-certificate",
+    },
+    {
       title: "Private Pilot",
       imagePath: "/src/assets/N900FT.webp",
       imageAlt:
@@ -47,15 +55,6 @@ const programsSwiper = {
       description:
         "Become a trusted guide in the world of aviation. Become a CFII and help others reach their dreams.",
       link: "/flight-training/certified-flight-instructor-instruments",
-    },
-    {
-      title: "Sport Pilot Certificate",
-      imagePath: "/src/assets/N900FT-ground.webp",
-      imageAlt:
-        "FlyTech Pilot Academy student and flight instructor in a Cessna airplane cockpit",
-      description:
-        "Created for people who desire to fly recreationally. ",
-      link: "/flight-training/sports-pilot-certificate",
     },
   ],
 };

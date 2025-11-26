@@ -15,11 +15,11 @@ const whyData = {
     imagePath: "/src/assets/plane-orange-ground-usa-flag.webp",
     imageAlt: "FlyTech Pilot Academy campus and facilities",
     headerH1: `Why Choose <strong class="text-primary-600">FlyTech?</strong>`,
-    paragraph: `FlyTech isn’t just a flight school , it's a tight-knit team of local aviators, instructors, and mentors passionate about helping the next generation of pilots succeed. With modern training tools, hands-on experience, and a supportive environment, FlyTech offers a better, smarter way to learn to fly.`,
+    paragraph: `FlyTech isn’t just a flight school , it's a tight-knit team of local aviators, instructors, and mentors passionate about helping local pilots succeed. With modern training tools, hands-on experience, and a supportive environment, FlyTech offers a better, smarter way to learn to fly.`,
     buttons: [
       {
-        name: "Enroll Today",
-        link: "/#enroll",
+        name: "Start Flying Today",
+        link: "/discovery-flight",
         primary: true,
       },
       {

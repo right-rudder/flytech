@@ -17,8 +17,8 @@ const certifiedFlightInstructorData = {
     paragraph: `Become a leader in aviation with FlyTech Pilot Academy’s CFI program. Gain valuable experience while teaching aspiring pilots and advancing your own career.`,
     buttons: [
       {
-        name: "Enroll Today",
-        link: "/#enroll",
+        name: "Start Flying Today",
+        link: "/discovery-flight",
         primary: false,
       },
     ],
