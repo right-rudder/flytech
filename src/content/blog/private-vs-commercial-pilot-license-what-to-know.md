@@ -1,5 +1,5 @@
 ---
-pubDate: "November 19, 2026"
+pubDate: "November 19, 2025"
 author: "Lute Atieh"
 title: "Private vs. Commercial Pilot License: What to Know"
 description: "Understand the essential differences between a Private Pilot License (PPL) and a Commercial Pilot License (CPL), and how each aligns with long-term aviation goals."
