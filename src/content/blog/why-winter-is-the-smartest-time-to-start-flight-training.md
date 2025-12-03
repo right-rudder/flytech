@@ -1,5 +1,5 @@
 ---
-pubDate: "November 26, 2026"
+pubDate: "November 26, 2025"
 author: "Lute Atieh"
 title: "Why Winter Is the Smartest Time to Start Flight Training"
 description: "Winter offers smoother air, better aircraft performance, increased availability, and often lower costs—making it one of the smartest seasons to begin flight training at FlyTech Pilot Academy."
