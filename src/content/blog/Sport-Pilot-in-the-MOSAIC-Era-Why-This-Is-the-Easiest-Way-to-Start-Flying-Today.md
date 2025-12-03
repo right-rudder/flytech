@@ -39,7 +39,7 @@ And that is completely fine. I have enjoyed every hour. But it makes a really im
 
 What cost me three years, seventy hours, and about twenty thousand dollars back then could be done today in much less time and for well under half that total cost if I started on the modern sport pilot path. In aviation it is rare that a new set of regulations makes life meaningfully easier and cheaper for normal people. MOSAIC is one of those rare times.
 
-![Dual Garmin Avionics](/src/assets/sport-pilot-blog-2.jpg)
+![Dual Garmin Avionics](/blog/sport-pilot-blog-2.jpg)
 
 ## From Tiny Two Seat Sport Planes to My First 172
 
@@ -76,7 +76,7 @@ The result is simple. Instead of hunting for a very specific light sport model, 
 
 You can train and later rent in the same kind of airplanes many private pilots use, but without committing to the full private pilot path on day one.
 
-![Cessna plane in the runway](/src/assets/sport-pilot-blog-1.jpg)
+![Cessna plane in the runway](/blog/sport-pilot-blog-1.jpg)
 
 ## Time and Money, Using My Experience as the Benchmark
 
