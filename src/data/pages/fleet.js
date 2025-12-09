@@ -65,14 +65,14 @@ const fleetPage = {
         {
           title: "ForeFlight",
           description:
-            "FlyTech is a ForeFlight school. Safety meets convenience with advanced runway and obstacle analysis, flight records, and access to FlyTech’s airplane handbook, pre-flight documents, and digital SOPs directly on students’ and CFIs’ iPads. We monitor student progress through logs, records, and usage data,also valuable for business forecasting. ForeFlight is included in the tuition.",
+            "FlyTech is a ForeFlight school. Safety meets convenience with advanced runway and obstacle analysis, flight records, and access to FlyTech’s airplane handbook, pre-flight documents, and digital SOPs directly on students’ and CFIs’ iPads. We monitor student progress through logs, records, and usage data, also valuable for business forecasting. ForeFlight is included in the tuition.",
           imagePath: "/src/assets/foreflight-logo.png",
           imageAlt: "ForeFlight logo",
         },
         // {
         //   title: "In and Out of Cockpit Video",
         //   description:
-        //     "The FlyTech VIRB Ultra 30 Aviation In-Cockpit Bundle enhances training by recording high-quality video and audio from every flight. Stereo headset audio cables capture pilot communications and ATC transmissions directly in your footage. A propeller filter ensures clear visuals, while the lightweight cage mount secures the camera inside the cockpit,perfect for reviewing and sharing your flights.",
+        //     "The FlyTech VIRB Ultra 30 Aviation In-Cockpit Bundle enhances training by recording high-quality video and audio from every flight. Stereo headset audio cables capture pilot communications and ATC transmissions directly in your footage. A propeller filter ensures clear visuals, while the lightweight cage mount secures the camera inside the cockpit, perfect for reviewing and sharing your flights.",
         //   imagePath: "/src/assets/garmin-virb-ultra-30.jpg",
         //   imageAlt: "Garmin VIRB Ultra 30 aircraft camera",
         // },
@@ -83,7 +83,7 @@ const fleetPage = {
           tail: "N900FT",
           model: "LSA 2023",
           summary:
-            "2023 SLING AIRCRAFT (PTY) LTD SLING LSA , Fixed-wing single engine (2 seats / 1 engine)",
+            "2023 SLING AIRCRAFT (PTY) LTD SLING LSA, Fixed-wing single engine (2 seats / 1 engine)",
           year: 2023,
           manufacture: "Sling Aircraft",
           engine: "Rotax 912 iS (4 Cycle)",
@@ -153,7 +153,7 @@ const fleetPage = {
           tail: "N733AJ",
           model: "C172",
           summary:
-            "1976 CESSNA 172N , Fixed-wing single engine (4 seats / 1 engine)",
+            "1976 CESSNA 172N, Fixed-wing single engine (4 seats / 1 engine)",
           year: 1976,
           manufacture: "Cessna",
           engine: "Lycoming O-320 Series (Reciprocating)",
@@ -299,7 +299,7 @@ const fleetPage = {
       imageAlt: "FlyTech aircraft preparing for a discovery flight",
       headerH1: `<span class="text-primary-600">Still Have Questions?</br></span>Experience It Firsthand`,
       paragraph:
-        "Book a Flight and get a firsthand feel for flying with FlyTech. It’s the perfect way to decide if aviation is right for you , and we’ll be happy to answer your questions in person.",
+        "Book a Flight and get a firsthand feel for flying with FlyTech. It’s the perfect way to decide if aviation is right for you, and we’ll be happy to answer your questions in person.",
       buttons: [
         {
           name: "Discovery Flight",
