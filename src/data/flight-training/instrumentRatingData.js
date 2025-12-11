@@ -36,7 +36,7 @@ const instrumentRatingData = {
       <br/><br/>
       Whether you're flying for career advancement or personal mastery, our program blends simulator and in-aircraft instruction to prepare you for real-world scenarios. You’ll master approaches, holding patterns, IFR communications, flight planning, and more.
       <br/><br/>
-      Training is flexible,choose to fly in your own airplane, ours, or our full-motion simulator, all guided by experienced Certified Flight Instructors (CFIs). We support local and travel-based training within 60 miles of KSTJ.`,
+      Training is flexible, choose to fly in your own airplane, ours, or our full-motion simulator, all guided by experienced Certified Flight Instructors (CFIs). We support local and travel-based training within 60 miles of KSTJ.`,
 
     keyPoints: [
       "Fly confidently in clouds, rain, and reduced visibility",

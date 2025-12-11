@@ -8,11 +8,11 @@ export const GeneralFAQs = [
       <li>Private Pilot Certificate – an additional $6,000–$12,000 if starting from scratch</li>
     </ul>
     <br/>
-    Keep in mind, FAA requirements are minimums,many students choose to fly more hours for added confidence before their exams.`,
+    Keep in mind, FAA requirements are minimums, many students choose to fly more hours for added confidence before their exams.`,
   },
   {
     title: "How long does it take to earn a certificate?",
-    content: `Each certificate has minimum FAA requirements, but your schedule largely determines how quickly you finish. You can train weekly, bi-weekly, or even monthly,there’s no set pace. We’ll help design a schedule that fits both your lifestyle and budget.<br/><br/>
+    content: `Each certificate has minimum FAA requirements, but your schedule largely determines how quickly you finish. You can train weekly, bi-weekly, or even monthly, there’s no set pace. We’ll help design a schedule that fits both your lifestyle and budget.<br/><br/>
     <strong>Typical timelines:</strong>
     <ul class="list-disc pl-5 mt-2">
       <li>Sport Pilot Certificate – about 6 months with 2–3 lessons per month</li>
@@ -90,7 +90,7 @@ export const GeneralFAQs = [
   },
   {
     title: "What equipment do I need to start flight training?",
-    content: `Initially, you'll need very little,just bring yourself and a desire to learn! We provide headsets and all training materials for your first few lessons. As you progress, we recommend purchasing your own aviation headset, iPad with ForeFlight, and basic flight training supplies. We'll guide you on equipment purchases based on your specific training goals.`,
+    content: `Initially, you'll need very little, just bring yourself and a desire to learn! We provide headsets and all training materials for your first few lessons. As you progress, we recommend purchasing your own aviation headset, iPad with ForeFlight, and basic flight training supplies. We'll guide you on equipment purchases based on your specific training goals.`,
   },
   {
     title: "How do I schedule flights and what is your cancellation policy?",

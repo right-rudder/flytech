@@ -32,7 +32,7 @@ const discoveryFlight = {
       title: "Experience a Discovery Flight at FlyTech",
       paragraphs: [
         "There’s no better way to see if flying is right for you than with a Discovery Flight at FlyTech. From the moment you step into the cockpit, you’ll feel what it’s like to be in control of an aircraft, guided by one of our experienced instructors.",
-        "During your flight, you’ll learn the basics of handling the controls, explore the skies above, and enjoy breathtaking views,all while gaining a true sense of what pilot training is like. It’s the perfect first step whether you’re curious about aviation or ready to begin your journey toward becoming a pilot.",
+        "During your flight, you’ll learn the basics of handling the controls, explore the skies above, and enjoy breathtaking views, all while gaining a true sense of what pilot training is like. It’s the perfect first step whether you’re curious about aviation or ready to begin your journey toward becoming a pilot.",
       ],
       buttons: [],
     },
