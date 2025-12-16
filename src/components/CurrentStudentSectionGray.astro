@@ -27,7 +27,7 @@ const sectionTextContentPlaceholder = {
         ]
 }
 
-const { sectionTextContentData = sectionTextContentPlaceholder, imagePosition = "left", imageSize="500px", icon = "doc" } = Astro.props;
+const { id = "content-section-green", sectionTextContentData = sectionTextContentPlaceholder, imagePosition = "left", imageSize="500px", icon = "doc" } = Astro.props;
 
 const isImageLeft = imagePosition === "left";
 
@@ -37,7 +37,7 @@ const textAlign = isImageLeft ? "lg:text-left" : "lg:text-right";
 const itemsAlign = isImageLeft ? "lg:items-start" : "lg:items-end";
 ---
 
-<section id="essential" class="relative bg-neutral-900 pt-20">
+<section id={id} class="relative bg-neutral-900 pt-20">
   <div class="max-w-7xl mx-auto px-4 sm:px-6"> 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
             

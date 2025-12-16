@@ -246,11 +246,11 @@ const otherResources = {
 
   <HeaderSmall content={currentStudents.header} />
   <CurrentStudentGrid />
-  <CurrentStudentSectionGray imageSize="550px" sectionTextContentData={essentialTrainingMaterialsLeft}/>
+  <CurrentStudentSectionGray id="essentials" imageSize="550px" sectionTextContentData={essentialTrainingMaterialsLeft}/>
   <CurrentStudentSectionGray imageSize="650px" imagePosition="right" sectionTextContentData={essentialTrainingMaterialsRight}/>
   <CurrentStudentCTAToList/>
   <CurrentStudentSectionGreen icon="med" imageSize="550px" sectionTextContentData={essentialAviationMedicalExaminers}/>
-  <CurrentStudentSectionGreen icon="video" imagePosition="right" imageSize="750px" sectionTextContentData={helpfullVideos}/>
+  <CurrentStudentSectionGreen id="videos" icon="video" imagePosition="right" imageSize="750px" sectionTextContentData={helpfullVideos}/>
   <CurrentStudentSectionVideos videosData={videos}/>
   <CurrentStudentSectionOtherResources otherResourcesData={otherResources}/>
   <ProgramSwiper content={programsSwiper} />
