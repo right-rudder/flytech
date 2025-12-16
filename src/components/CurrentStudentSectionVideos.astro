@@ -1,0 +1,63 @@
+---
+const videosPlaceholder = {
+  title: "Videos",
+  paragraphs: [
+    "Watch these instructional videos to prepare for your training:",
+  ],
+  videos: [
+        {
+          title: "Pre Flight The Sling NGT",
+          youtubeId: "ArhGt5JgDHU",
+        },
+        {
+          title: "Sling NGT Cockpit Tour",
+          youtubeId: "mQ53FsBfvHA",
+        },
+        {
+          title: "Student Solo Flight",
+          youtubeId: "FSliFHlpze0",
+        },
+      ]
+}
+
+const { videosData = videosPlaceholder } = Astro.props;
+---
+
+<section class="relative bg-primary-600 py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    
+    <div class="flex flex-col items-center text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">
+            {videosData.title}
+        </h2>
+        {videosData.paragraphs.map((paragraph) => (
+            <p class="text-lg text-white/90 max-w-2xl">
+                {paragraph}
+            </p>
+        ))}
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {
+            videosData.videos.map((video) => (
+                <div class="flex flex-col gap-4 group">
+                    <div class="w-full aspect-video overflow-hidden shadow-xl bg-black/20">
+                        <iframe
+                            class="w-full h-full"
+                            src={`https://www.youtube.com/embed/${video.youtubeId}`}
+                            title={video.title}
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <a href={`https://www.youtube.com/embed/${video.youtubeId}`} target="_blank" class="text-xl font-semibold text-white text-center group-hover:text-white/80 transition-colors">
+                        {video.title}
+                    </a>
+                </div>
+            ))
+        }
+    </div>
+
+  </div>
+</section>

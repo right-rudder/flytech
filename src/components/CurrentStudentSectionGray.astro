@@ -1,0 +1,97 @@
+---
+import ImageComp from "./ImageComp.astro";
+
+const sectionTextContentPlaceholder = {
+    mainImage: "/src/assets/IMG_0414.webp",
+    upperHeader: "ESSENTIAL",
+    title:  "Training Materials",
+    paragraphs: [
+        "Download these essential documents to prepare for your training at FlyTech Pilot Academy. These resources will help you get started with your flight training and familiarize yourself."
+    ],
+    buttons: [
+          {
+            title: "New Student Interview Guide",
+            link: "/students/2-New-Student-Interview-Guide.pdf",
+            type: "PDF",
+          },
+          {
+            title: "Ground School",
+            link: "https://drive.google.com/file/d/1T5dL1VipVh8Ba15kUuv5Yz6MNW6iFSxF/view?usp=drive_link",
+            type: "PDF",
+          },
+          {
+            title: "Liability Waiver",
+            link: "https://drive.google.com/file/d/1WdtvAY_NFuowfp1xK3s1my1kvFPR87nG/view?usp=drive_link",
+            type: "PDF",
+          },
+        ]
+}
+
+const { sectionTextContentData = sectionTextContentPlaceholder, imagePosition = "left", imageSize="500px", icon = "doc" } = Astro.props;
+
+const isImageLeft = imagePosition === "left";
+
+const imageOrder = isImageLeft ? "lg:order-1" : "lg:order-2";
+const textOrder = isImageLeft ? "lg:order-2" : "lg:order-1";
+const textAlign = isImageLeft ? "lg:text-left" : "lg:text-right";
+const itemsAlign = isImageLeft ? "lg:items-start" : "lg:items-end";
+---
+
+<section id="essential" class="relative bg-neutral-900 pt-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6"> 
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+            
+            <div
+                class={`col-span-1 lg:col-span-2 w-full overflow-hidden ${imageOrder}`}
+                style={`height: ${imageSize};`}
+                >
+                <ImageComp
+                    imagePath={sectionTextContentData.mainImage}
+                    imageAlt="Flytech Pilot Academy hangar"
+                    styles="object-cover w-full h-full shadow-xl"
+                />
+                </div>
+
+            <div class={`col-span-1 lg:col-span-1 flex flex-col justify-center items-center ${itemsAlign} ${textOrder}`}>
+                <p set:html={sectionTextContentData.upperHeader} class={`text-lg font-bold text-primary-500 uppercase tracking-wide mb-4 text-center ${textAlign}`}/>
+                <h2 set:html={sectionTextContentData.title} class={`text-3xl lg:text-4xl font-bold text-white mb-4 text-center ${textAlign}`}/>
+                
+                {sectionTextContentData.paragraphs.map((paragraph) => (
+                    <p set:html={paragraph} class={`text-lg text-white/90 mb-6 text-center ${textAlign} max-w-[90%]`}/>
+                ))}
+                
+                <div class={`flex flex-col gap-4 w-full items-center ${itemsAlign}`}>
+                    {
+                    sectionTextContentData.buttons.map((button) => (
+                        <a href={button.link}
+                        class="h-fit min-h-[40px] bg-primary-600/90 hover:bg-primary-600/70 font-semibold text-lg lg:text-md w-[400px] lg:w-[350px] text-gray-300 flex items-center justify-center lg:justify-normal gap-3 px-4 py-2 transition-colors rounded-sm">
+                            {
+                                icon == "doc"  && (
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 flex-shrink-0" viewBox="0 0 32 32">
+                                        <path fill="currentColor" d="M16 2H8.25A3.25 3.25 0 0 0 5 5.25v21.5A3.25 3.25 0 0 0 8.25 30h15.5A3.25 3.25 0 0 0 27 26.75V13h-7.75A3.25 3.25 0 0 1 16 9.75zm10.863 9a3.25 3.25 0 0 0-.815-1.366l-6.682-6.682A3.25 3.25 0 0 0 18 2.136V9.75c0 .69.56 1.25 1.25 1.25z"/>
+                                    </svg>
+                                )
+                            }
+                            {
+                                icon == "med"  && (
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 flex-shrink-0" viewBox="0 0 512 512">
+                                        <path fill="currentColor" d="M351.9 256L460 193.6l-48-83.2l-108 62.4V48h-96v124.8l-108-62.4l-48 83.2L160.1 256L52 318.4l48 83.2l108-62.4V464h96V339.2l108 62.4l48-83.2z"/>
+                                    </svg>
+                                )
+                            }
+                            {
+                                icon == "video"  && (
+                                    <svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M12 4c.855 0 1.732.022 2.582.058l1.004.048l.961.057l.9.061l.822.064a3.8 3.8 0 0 1 3.494 3.423l.04.425l.075.91c.07.943.122 1.971.122 2.954s-.052 2.011-.122 2.954l-.075.91l-.04.425a3.8 3.8 0 0 1-3.495 3.423l-.82.063l-.9.062l-.962.057l-1.004.048A62 62 0 0 1 12 20a62 62 0 0 1-2.582-.058l-1.004-.048l-.961-.057l-.9-.062l-.822-.063a3.8 3.8 0 0 1-3.494-3.423l-.04-.425l-.075-.91A41 41 0 0 1 2 12c0-.983.052-2.011.122-2.954l.075-.91l.04-.425A3.8 3.8 0 0 1 5.73 4.288l.821-.064l.9-.061l.962-.057l1.004-.048A62 62 0 0 1 12 4m-2 5.575v4.85c0 .462.5.75.9.52l4.2-2.425a.6.6 0 0 0 0-1.04l-4.2-2.424a.6.6 0 0 0-.9.52Z"/></g></svg>
+                                )
+                            }
+                            <span class="text-left">
+                                {button.title}
+                            </span>
+                        </a>
+                    ))
+                }
+                </div>
+            </div>
+        </div>
+  </div>
+</section>
