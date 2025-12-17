@@ -1,0 +1,59 @@
+---
+import ImageComp from "./ImageComp.astro";
+
+const placeholderData = {
+  mainImage: "/src/assets/IMG_0424.webp",
+  title: "Training Materials",
+  paragraphs: [
+    "Check out our Amazon wishlist for recommended equipment!"
+  ],
+  buttonText: "View Gear List",
+  buttonLink: "https://www.amazon.com/hz/wishlist/ls/3BBJYS4D00N6I?ref_=wl_share"
+};
+
+const {
+  mainImage = placeholderData.mainImage,
+  title = placeholderData.title,
+  paragraphs = placeholderData.paragraphs,
+  buttonText = placeholderData.buttonText,
+  buttonLink = placeholderData.buttonLink
+} = Astro.props;
+---
+
+<section class="bg-neutral-900 py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="flex gap-8 items-start bg-primary-600 p-8">
+
+      <div class="aspect-square h-[150px] overflow-hidden rounded-sm">
+        <ImageComp
+          imagePath={mainImage}
+          imageAlt={title}
+          styles="object-cover w-full h-full"
+        />
+      </div>
+
+      <div class="flex flex-col justify-center">
+        <h2 class="text-2xl lg:text-3xl font-bold text-white mb-4">
+          {title}
+        </h2>
+
+        {paragraphs.map((paragraph) => (
+          <p class="text-base text-white/90 mb-6 max-w-3xl">
+            {paragraph}
+          </p>
+        ))}
+
+        <div>
+          <a
+            href={buttonLink} target="_blank"
+            class="inline-flex items-center gap-2 justify-center min-h-[40px] px-6 py-2 bg-white text-primary-600 font-semibold text-sm hover:bg-white/80 transition-colors rounded-sm"
+          >
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 flex-shrink-0" viewBox="0 0 48 48"><defs><mask id="SVGf8R5Ae4C"><g fill="none" stroke-width="4"><path fill="#fff" fill-rule="evenodd" stroke="#fff" stroke-linejoin="round" d="M6 15h36l-2 27H8z" clip-rule="evenodd"/><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M16 19V6h16v13"/><path stroke="#000" stroke-linecap="round" d="M16 34h16"/></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#SVGf8R5Ae4C)"/></svg>
+            {buttonText}
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
