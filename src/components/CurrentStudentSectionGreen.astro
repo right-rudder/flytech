@@ -63,7 +63,7 @@ const itemsAlign = isImageLeft ? "lg:items-start" : "lg:items-end";
                 <div class={`flex flex-col gap-4 w-full items-center ${itemsAlign}`}>
                     {
                     sectionTextContentData.buttons.map((button) => (
-                        <a href={button.link}
+                        <a href={button.link} target="_blank"
                         class="h-fit min-h-[40px] bg-white/90 hover:bg-white/70 font-semibold text-lg lg:text-md w-[400px] lg:w-[350px] text-primary-600 flex items-center justify-center lg:justify-normal gap-3 px-4 py-2 transition-colors rounded-sm">
                             {
                                 icon == "doc"  && (
