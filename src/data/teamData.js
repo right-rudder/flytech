@@ -88,6 +88,14 @@ const teamData = {
         summary:
           "Dan Batliner P.E. is a Partner and Flight Instructor at FlyTech Pilot Academy. With a background in engineering, Dan brings a unique perspective to the aviation field. His commitment to learning and passion for flight make him an integral part of the FlyTech team. As an instructor, Dan is dedicated to helping students build strong fundamentals, develop safe habits, and grow confidently in their aviation journey.",
       },
+      {
+        imagePath: "/src/assets/Jason Waggoner.png",
+        imageAlt: "Jason Waggoner, Parnert at FlyTech Pilot Academy",
+        name: "Jason Waggoner",
+        title: "Partner",
+        summary:
+          "Leveraging two decades of operations, finance, and brand management experience at organizations such as General Mills and King’s Hawaiian, Jason has a proven track record of building and executing healthy P&L strategies and driving dynamic and differentiated growth opportunities. His leadership focuses on putting data in the hands of operators and empowering those on the front lines to make decisions that achieve the best and most appropriate outcomes.",
+      },
     ],
 
     heading2: "Our Certified Flight Instructors",
