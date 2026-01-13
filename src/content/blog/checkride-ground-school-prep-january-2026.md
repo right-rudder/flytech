@@ -49,6 +49,6 @@ A **$20 fee** is due at the event, with **all proceeds benefiting local EAA Youn
 
 Space is limited, and advance RSVP is strongly encouraged to ensure your place.
 
-[RSVP Here](/ground-school)
+[RSVP Here](https://docs.google.com/forms/d/e/1FAIpQLSdbt7XcYALkv7SYExJajo_e_X4APHMavqwrYCpaKHBAokM0Fw/viewform)
 
 Take the next step toward your check ride with confidence. We look forward to training with you.
