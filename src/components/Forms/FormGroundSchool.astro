@@ -4,7 +4,7 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
 ---
 
-<form class="mx-auto max-w-xl flex flex-col" id="enroll_form">
+<form class="mx-auto max-w-xl flex flex-col" id="ground_school_form">
   <div class="grid grid-cols-1 gap-x-8 gap-y-2 sm:grid-cols-2">
     <!-- First Name -->
     <div>
@@ -133,7 +133,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
   const thumb = document.getElementById("terms-thumb");
   const hiddenInput = document.getElementById("agree-terms");
   const submitBtn = document.getElementById("submit-btn");
-  const form = document.getElementById("enroll_form");
+  const form = document.getElementById("ground_school_form");
 
   let isChecked = false;
   const SUBMIT_COOLDOWN = 30 * 1000; // 30 seconds
