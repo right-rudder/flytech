@@ -1,0 +1,89 @@
+---
+import {
+  COMPANY_NICKNAME,
+  LOCATIONS,
+  PHONE_NUMBER,
+  PHONE_NUMBER_PRETTY,
+  EMAIL_ADDRESS,
+} from "../../consts";
+import FormGroundSchool from "./FormGroundSchool.astro";
+import ImageComp2 from "../../components/ImageComp2.astro";
+import imgForm from "../../assets/Flytech_Saint-Joseph-Missouri_Flight-School_Ground-School-blog-2026.webp";
+
+const upperheading = "RESERVE YOUR SPOT TODAY";
+const title = `Check Ride Ground School Prep | <span class="text-primary-500">${COMPANY_NICKNAME}</span>`;
+const description =
+  "Take your check ride with confidence! Learn, Practice and Succeed. Space is limited-RSVP now to get fully prepared for your check ride!";
+const groundSchoolInfo = [
+  " Saturday, January 17, 2026",
+  "Time: 8:15 AM – 10:00 AM",
+  "FlyTech Pilot Academy",
+  "200 NW Rosecrans Road,",
+  "St. Joseph, MO 64503",
+];
+
+const considerations = [
+  "$20 is due at the event. All proceeds will go toward funding local EAA Young Eagles flights.*",
+];
+---
+
+<section
+  class="relative text-white scroll-my-20 lg:scroll-my-28 py-20 lg:py-44 bg-neutral-800"
+  id="ground-school"
+>
+  <div class="relative z-10 max-w-7xl mx-auto">
+    <div
+      class="flex flex-col-reverse items-center justify-between px-6 max-w-7xl gap-10 lg:gap-0 lg:flex-row"
+    >
+      <!-- Text Section -->
+      <div class="w-full lg:w-1/2">
+        <div class="w-full py-12">
+          <p
+            class="text-lg font-bold text-primary-500 uppercase tracking-wide mb-4 text-center"
+          >
+            {upperheading}
+          </p>
+          <h2
+            class="text-3xl lg:text-5xl font-bold text-white mb-4 text-center"
+          >
+            <Fragment set:html={title} />
+          </h2>
+          <p class="text-lg text-muted-200 mb-6 text-center">
+            {description}
+          </p>
+
+          <ul
+            class="text-lg font-semibold border-y-2 border-white w-3/4 mx-auto text-center py-2 pb-4"
+          >
+            {groundSchoolInfo.map((info) => <li class="mt-2 ">{info}</li>)}
+          </ul>
+          <div class="py-4 max-w-2xl mx-auto text-center px-6">
+            {
+              considerations.map((consideration) => (
+                <p class="italic font-bold leading-wide text-white ">
+                  {consideration}
+                </p>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+      <!-- Form Section -->
+      <div class="w-full lg:w-1/2">
+        <div class="mx-auto px-10">
+          <FormGroundSchool />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+  const contactUs = document.getElementById("contactUs");
+
+  if (isSafari && contactUs) {
+    contactUs.classList.remove("bg-fixed");
+  }
+</script>
