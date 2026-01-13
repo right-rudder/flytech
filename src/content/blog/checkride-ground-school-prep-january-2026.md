@@ -18,20 +18,22 @@ tags:
 
 Preparing for a check ride can feel overwhelming, but the right preparation makes all the difference. On **Saturday, January 17, 2026**, is hosting a **Check Ride Ground School Prep** session designed to help pilots approach their check ride with clarity, confidence, and a solid understanding of what to expect.
 
-### Event Details
+## Event Details
 
 **Date:** Saturday, January 17, 2026  
 **Time:** 8:15 AM to 10:00 AM  
 **Location:** FlyTech Pilot Academy  
 200 NW Rosecrans Road, St. Joseph, MO 64503
 
-### What You Can Expect
+## What You Can Expect
 
 This focused ground school session is built to reinforce key knowledge areas commonly evaluated during FAA check rides. You will review critical topics, practice oral exam-style questions, and gain insight into how examiners think and evaluate applicants.
 
 Whether you are approaching your first check ride or looking for a confidence boost before test day, this session is designed to help you learn, practice, and succeed.
 
-### Why Attend
+![Image](/blog/Flytech_Saint-Joseph-Missouri_Flight-School_Ground-School-blog-2026.webp)
+
+## Why Attend
 
 - Review essential check ride knowledge areas
 - Practice answering oral exam questions
