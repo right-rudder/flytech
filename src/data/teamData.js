@@ -84,7 +84,7 @@ const teamData = {
         imageAlt:
           "Dan Batliner P.E. Partner, Flight Instructor at FlyTech Pilot Academy",
         name: "Dan Batliner P.E.",
-        title: "Partner, CFI",
+        title: "Partner",
         summary:
           "Dan Batliner P.E. is a Partner and Flight Instructor at FlyTech Pilot Academy. With a background in engineering, Dan brings a unique perspective to the aviation field. His commitment to learning and passion for flight make him an integral part of the FlyTech team. As an instructor, Dan is dedicated to helping students build strong fundamentals, develop safe habits, and grow confidently in their aviation journey.",
       },
